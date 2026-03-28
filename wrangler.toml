@@ -1,0 +1,7 @@
+# Used only if you run `wrangler deploy` (Workers Static Assets).
+# For Cloudflare Pages (Git): set build output to `dist` and leave "Deploy command" EMPTY.
+name = "hestiaverse"
+compatibility_date = "2025-09-27"
+
+[assets]
+directory = "./dist"
