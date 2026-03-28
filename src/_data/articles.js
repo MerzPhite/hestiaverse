@@ -712,6 +712,53 @@ module.exports = [
     content: `<p class="text-sm text-muted border-t border-border pt-6 mt-2">Helpful slang: <a href="/articles/online-lingo-words-phrases/#pump-and-dump" class="text-accent font-semibold">pump and dump</a> and <a href="/articles/online-lingo-words-phrases/#rug-pull" class="text-accent font-semibold">rug pull</a> (our <a href="/articles/online-lingo-words-phrases/" class="text-accent">lingo library</a>).</p>`,
   },
   {
+    slug: "payment-apps-g7",
+    title: "Payment apps: how they are used and what is common in G7 countries",
+    labels: ["money-finance", "app", "social-media", "scams"],
+    section: "money-finance",
+    excerpt:
+      "Peer-to-peer apps and mobile wallets are how many teens split costs, shop, and pay strangers. Here is how they work in plain language, plus typical names in the US, UK, Canada, France, Germany, Italy, and Japan.",
+    severity: "Medium",
+    platformTags: ["Venmo", "PayPal", "Apple Pay", "Google Pay", "Interac", "PayPay"],
+    content: `<p class="text-muted text-sm mb-6">Informational only, not financial advice. Brand popularity shifts by year and age group. Listing an app here is not a recommendation. Age rules and features depend on the provider and your country.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What “payment apps” usually means</h3>
+<p>Parents often hear several different ideas grouped together:</p>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Peer-to-peer (P2P):</strong> send money to a friend or contact using a phone number, @username, or QR code (e.g. split concert tickets, pay back lunch).</li>
+  <li><strong class="text-[#e7e9ea]">Digital wallets:</strong> store cards or balances on the phone and tap or pay online (<strong>Apple Pay</strong>, <strong>Google Wallet</strong> / <strong>Google Pay</strong>, Samsung equivalents).</li>
+  <li><strong class="text-[#e7e9ea]">Bank-led transfer tools:</strong> send from bank account to bank account inside one country’s banking system, sometimes inside your bank’s app rather than a separate “social” brand.</li>
+  <li><strong class="text-[#e7e9ea]">Buy-now, shop checkouts:</strong> some apps are tied to shopping, games, or creator tips rather than everyday P2P.</li>
+</ul>
+<p>Teens may use these for <strong>allowance</strong>, <strong>gig or casual work</strong>, <strong>buying from people they know</strong>, <strong>gaming or in-app purchases</strong>, or because a <strong>stranger on social media</strong> asked for money (that last one is where scams spike).</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why this matters for safety</h3>
+<p>Transfers are often <strong>fast and hard to reverse</strong>. That is convenient until someone sends money to the wrong person, falls for a fake “refund” or “investment” chat, or shares screenshots of linked accounts. Pair this topic with <a href="/articles/crypto-scams/" class="text-accent font-semibold">crypto scams</a> and the <a href="/finance/" class="text-accent font-semibold">young people &amp; money overview</a> for a fuller picture.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Commonly used names by G7 country (broad strokes)</h3>
+<p>The G7 is Canada, France, Germany, Italy, Japan, the United Kingdom, and the United States. Below are <strong>widely recognised</strong> payment or transfer methods in each; your child’s school or city may lean harder on one or two.</p>
+
+<ul class="list-disc pl-6 my-2 space-y-3 text-muted">
+  <li><strong class="text-[#e7e9ea]">United States:</strong> <strong>Venmo</strong> and <strong>Cash App</strong> for social P2P; <strong>Zelle</strong> (bank-to-bank, often inside banking apps); <strong>PayPal</strong> for online and some P2P; <strong>Apple Pay</strong> and <strong>Google Wallet</strong> for tap-to-pay and in-app.</li>
+  <li><strong class="text-[#e7e9ea]">United Kingdom:</strong> <strong>PayPal</strong>; major <strong>bank apps</strong> with instant transfers (Faster Payments); <strong>Apple Pay</strong> and <strong>Google Wallet</strong> for cards on the phone; many young adults also use <strong>Monzo</strong>, <strong>Starling</strong>, or <strong>Revolut</strong> for spending, pots, and easy transfers (neobanks, not only “payment apps” in the US sense).</li>
+  <li><strong class="text-[#e7e9ea]">Canada:</strong> <strong>Interac e-Transfer</strong> (bank email or mobile transfer, extremely common); <strong>PayPal</strong>; <strong>Apple Pay</strong> and <strong>Google Wallet</strong>; some use <strong>Wealthsimple Cash</strong> or bank P2P features.</li>
+  <li><strong class="text-[#e7e9ea]">France:</strong> <strong>PayPal</strong>; <strong>Lydia</strong> for P2P and group pots; <strong>Apple Pay</strong> and <strong>Google Wallet</strong>; bank cards with contactless; <strong>Paylib</strong> has been part of the bank-led mobile landscape (usage varies).</li>
+  <li><strong class="text-[#e7e9ea]">Germany:</strong> <strong>PayPal</strong> is very common online; <strong>Giropay</strong>-style online banking redirects for checkout; <strong>SEPA</strong> bank transfers; <strong>Apple Pay</strong> and <strong>Google Wallet</strong> growing for in-store; <strong>Girocard</strong> contactless in shops (often via bank card, not a separate US-style “cash app”).</li>
+  <li><strong class="text-[#e7e9ea]">Italy:</strong> <strong>PayPal</strong>; <strong>Satispay</strong> for in-store QR and P2P; <strong>PostePay</strong> and bank apps; <strong>Apple Pay</strong> and <strong>Google Wallet</strong>; <strong>BANCOMAT Pay</strong> for some bank-linked mobile payments.</li>
+  <li><strong class="text-[#e7e9ea]">Japan:</strong> <strong>PayPay</strong> (QR payments, very visible); <strong>LINE Pay</strong> and <strong>Rakuten Pay</strong>; transit and store e-money such as <strong>Mobile Suica</strong> / <strong>Mobile PASMO</strong>; <strong>Apple Pay</strong> and <strong>Google Wallet</strong>; cash is still used heavily compared with many other G7 states, but phone QR and wallet use keep growing.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Ask which apps are installed and whether they are linked to a parent’s card, a teen account, or a prepaid balance.</li>
+  <li>Agree rules for paying <strong>strangers</strong> (including concert, resale, and “help me unlock my account” scams): when to say no and when to involve you first.</li>
+  <li>Turn on notifications for large or new-recipient transfers where the app allows it.</li>
+  <li>Remind them that screenshots of balances or codes can be used against them; treat DMs asking for money as high risk until proven otherwise.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/crypto-scams/" class="text-accent font-semibold">Crypto scams</a> · <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a></p>`,
+  },
+  {
     slug: "weight-loss-glp1",
     title: "Weight-loss and GLP-1 meds: Ozempic, Wegovy, Mounjaro, and Zepbound",
     labels: ["emerging", "health", "body-image", "social-media", "app"],
@@ -845,37 +892,41 @@ module.exports = [
   },
   {
     slug: "brazilian-butt-lift-bbl",
-    title: "Brazilian butt lift (BBL) — what parents should know",
+    title: "Brazilian butt lift (BBL): what parents should know",
     labels: ["body-image", "health", "emerging", "social-media"],
     section: "body-image",
     excerpt:
-      "A BBL uses your own fat to reshape the buttocks. It’s heavily promoted online — and carries higher serious risk than many other cosmetic surgeries. Here’s the basics.",
+      "A BBL uses your own fat to reshape the buttocks. It is heavily promoted online and carries higher serious risk than many other cosmetic surgeries. Here are the basics.",
     severity: "High",
     platformTags: ["Instagram", "TikTok", "YouTube"],
-    content: `<p class="text-muted text-sm mb-6">Informational only — not medical advice. Surgery laws, eligibility, and safety standards vary by country and clinic. Serious complications, including death, have been documented with BBL when performed unsafely or on unsuitable patients.</p>
+    content: `<p class="text-muted text-sm mb-6">Informational only, not medical advice. Surgery laws, eligibility, and safety standards vary by country and clinic. Serious complications, including death, have been documented with BBL when performed unsafely or on unsuitable patients.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What a BBL is</h3>
-<p>A <strong>Brazilian butt lift (BBL)</strong> is a cosmetic procedure: fat is usually taken from areas like the abdomen or thighs with liposuction, then <strong>reinjected into the buttocks</strong> to change shape and volume. It is <em>not</em> implants — it’s <strong>autologous fat transfer</strong> (your own fat).</p>
+<p>A <strong>Brazilian butt lift (BBL)</strong> is a cosmetic procedure: fat is usually taken from areas like the abdomen or thighs with liposuction, then <strong>reinjected into the buttocks</strong> to change shape and volume. It is <em>not</em> implants. It is <strong>autologous fat transfer</strong> (your own fat).</p>
 <p>Results, recovery time, and whether someone is a good candidate depend on anatomy, health, and surgeon technique. Marketing on social media often shows dramatic “before and after” photos without explaining limits, scars, swelling, or that not all transferred fat survives.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why teens and young adults see it everywhere</h3>
-<p>Short-form video, influencer culture, and music and celebrity imagery have normalised certain body proportions — sometimes described with terms like <strong>“slim thick”</strong> — that may not match how most bodies naturally look. Teens may compare themselves to edited photos, filters, and angles that don’t show recovery bruising, compression garments, or revision surgeries.</p>
+<p>Short-form video, influencer culture, and music and celebrity imagery have normalised certain body proportions, sometimes described with terms like <strong>“slim thick”</strong>, that may not match how most bodies naturally look. Teens may compare themselves to edited photos, filters, and angles that don’t show recovery bruising, compression garments, or revision surgeries.</p>
 <p>Some creators openly discuss having had a BBL; others imply results came from workouts or products. That mix can make surgery feel casual or “everyone does it,” even though it is major surgery with real downtime and risk.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why regulators and surgeons have raised alarms</h3>
-<p>BBL has been associated with a <strong>higher rate of serious complications</strong> than many other cosmetic procedures when fat is injected in ways that can enter blood vessels — for example, <strong>fat embolism</strong> (fat travelling in the bloodstream to the lungs or elsewhere), which can be life-threatening. Professional societies and health agencies in several countries have issued guidance to reduce risk (including how and where fat is placed).</p>
+<p>BBL has been associated with a <strong>higher rate of serious complications</strong> than many other cosmetic procedures when fat is injected in ways that can enter blood vessels, for example <strong>fat embolism</strong> (fat travelling in the bloodstream to the lungs or elsewhere), which can be life-threatening. Professional societies and health agencies in several countries have issued guidance to reduce risk (including how and where fat is placed).</p>
 <p>Other risks can include infection, contour irregularities, asymmetry, fluid collection, blood clots, scarring from liposuction, and outcomes that need <strong>revision surgery</strong>. “Cheap” offers or surgery abroad without clear follow-up care can make complications harder to manage.</p>
-<p class="text-sm text-muted">If your child is researching surgery online, encourage them to use sources aimed at patients from <strong>licensed plastic surgery societies</strong> or national health services — not comment sections or unverified before/after accounts.</p>
+<p class="text-sm text-muted">If your child is researching surgery online, encourage them to use sources aimed at patients from <strong>licensed plastic surgery societies</strong> or national health services, not comment sections or unverified before/after accounts.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">March 2026: reporting on influencer Elena Jessica</h3>
+<p>In March 2026, <a href="https://people.com/socialite-elena-jessica-dies-after-reported-brazilian-butt-lift-surgery-11924164" target="_blank" rel="noopener" class="text-accent font-semibold"><em>People</em> reported</a> that influencer <strong>Elena Jessica</strong> had died after reportedly undergoing Brazilian butt lift surgery. According to that coverage, her sister publicly blamed a plastic surgery clinic; the piece also noted that the clinic had firmly denied those claims. Early news reports may not reflect a full investigation, so treat any single story as a prompt to discuss <strong>real surgical risk</strong> and <strong>verified medical sources</strong>, not as a final legal finding.</p>
+<p class="text-sm text-muted">Source: Luke Chinman, <a href="https://people.com/socialite-elena-jessica-dies-after-reported-brazilian-butt-lift-surgery-11924164" target="_blank" rel="noopener" class="text-accent">“Influencer Elena Jessica Dies After Reportedly Undergoing Brazilian Butt Lift Surgery”</a>, <em>People</em>, published March 11, 2026.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Teens and elective body surgery</h3>
 <p>Cosmetic surgery on minors is a serious ethical and legal topic. Many reputable surgeons will not perform purely cosmetic BBL on patients who are still growing or who lack maturity to consent; laws vary by region. If a teen is fixated on changing their body, <strong>mental health support</strong> and realistic expectations may matter as much as any procedure.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
 <ul class="list-disc pl-6 my-2 space-y-1 text-muted">
-  <li><strong class="text-[#e7e9ea]">Name the trend:</strong> “A lot of what you scroll isn’t neutral — it sells a look.” Discuss filters, lighting, and paid promotion.</li>
+  <li><strong class="text-[#e7e9ea]">Name the trend:</strong> “A lot of what you scroll isn’t neutral: it sells a look.” Discuss filters, lighting, and paid promotion.</li>
   <li><strong class="text-[#e7e9ea]">Separate health from aesthetics:</strong> Exercise and nutrition support wellbeing; they don’t copy surgery outcomes.</li>
-  <li><strong class="text-[#e7e9ea]">If they mention a BBL or “getting work done”:</strong> Stay calm, ask what they’ve seen and why it matters to them — shame often pushes kids toward secrecy.</li>
-  <li><strong class="text-[#e7e9ea]">Red flags:</strong> Secret saving, borrowing money, fixation on one body part, or plans to travel for surgery without family knowledge — treat as a safety conversation.</li>
+  <li><strong class="text-[#e7e9ea]">If they mention a BBL or “getting work done”:</strong> Stay calm, ask what they’ve seen and why it matters to them. Shame often pushes kids toward secrecy.</li>
+  <li><strong class="text-[#e7e9ea]">Red flags:</strong> Secret saving, borrowing money, fixation on one body part, or plans to travel for surgery without family knowledge. Treat that as a safety conversation.</li>
   <li><strong class="text-[#e7e9ea]">Professional help:</strong> A GP, school nurse, or counsellor can support body-image struggles; for eating or obsessive behaviours, ask about specialist services.</li>
 </ul>
 
@@ -949,6 +1000,39 @@ module.exports = [
     section: "ongoing",
     excerpt: "Search and recommendations can surface harmful content from innocent queries.",
     content: `<p>Search engines and recommendation systems can surface violent, sexual, or otherwise harmful content even from innocent queries.</p>`,
+  },
+  {
+    slug: "concert-photos-asking-strangers",
+    title: "Teens paying or asking others to take concert photos",
+    labels: ["social-media", "content", "conversation"],
+    section: "ongoing",
+    excerpt:
+      "At gigs, teens often ask friends or strangers to snap a group shot, or offer a few pounds for a clearer picture. Usually low risk, with a few practical safety habits worth knowing.",
+    severity: "Low",
+    content: `<p class="text-muted text-sm mb-6">Overall risk level: <strong class="text-[#e7e9ea]">low</strong>. This is normal social behaviour at live events, not a red flag on its own.</p>
+
+<p>At concerts and festivals, many teenagers want a decent photo or video for <strong>Instagram</strong>, <strong>TikTok</strong>, or their camera roll. If they are in the pit or far from the stage, they may <strong>ask a friend</strong>, <strong>ask someone nearby</strong>, or occasionally offer a small cash tip or send a quick amount through a <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">payment app</a> so the person takes a bit more care with angles or lighting. Most of the time this is harmless: a ten-second interaction, then everyone moves on.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why parents might still hear about it</h3>
+<p>It can sound odd if you are not at the venue yourself: handing a phone to someone you do not know, or <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">sending money</a> for a picture. Usually the worry is practical, not dramatic: <strong>device safety</strong>, <strong>scams</strong>, or <strong>privacy</strong>, not grooming in the typical sense.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Low-level risks to be aware of</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Unlocked phone in a crowd:</strong> A stranger briefly holding the device could scroll, drop it, or in rare cases misuse access. Risk is low if the exchange is quick and in sight.</li>
+  <li><strong class="text-[#e7e9ea]"><a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps</a>:</strong> Sending money to someone you will not see again can invite overcharging or fake “I will find you in the crowd” promises. Small amounts are common; still worth treating like any stranger payment.</li>
+  <li><strong class="text-[#e7e9ea]">Photos of under-18s online:</strong> Your teen chooses what to post, but crowd shots can include other young people. A quick chat about not posting identifiable images of strangers without thinking fits here.</li>
+  <li><strong class="text-[#e7e9ea]">Theft in dense venues:</strong> Holding a phone out for a long time or leaving it with someone who walks off is a bigger concern than the photo itself.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Treat it as normal unless money or trust gets large or repeated with the same unknown person.</li>
+  <li>Suggest going with a friend so “photo duty” can stay in the group.</li>
+  <li>Remind them to keep the phone <strong>in sight</strong>, use a wrist strap in crowds, and lock sensitive apps if they hand the device over.</li>
+  <li>If they pay for a snap, cap the amount and use the same caution as any <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">cashless payment</a> to a stranger.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps (G7 overview)</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and direct messaging</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
   },
   {
     slug: "online-lingo-words-phrases",
