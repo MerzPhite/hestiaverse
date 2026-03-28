@@ -1,0 +1,39 @@
+---
+layout: base.njk
+title: Your family risk report
+permalink: /assessment/report/
+---
+
+<div id="assessment-report" class="max-w-2xl mx-auto">
+  <div id="report-paywall-block" class="text-center py-12 px-6 bg-surface rounded-xl border border-border">
+    <h2 class="text-xl font-bold mb-3 text-[#e7e9ea]">This report is for subscribers only</h2>
+    <p class="text-muted mb-6">Subscribe to unlock your personalised report and see which risk areas may affect your family.</p>
+    <a href="/assessment/paywall/" class="inline-block py-3 px-6 rounded-lg bg-accent text-bg font-semibold no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">Subscribe to unlock</a>
+  </div>
+
+  <div id="report-content" class="hidden">
+    <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea]">Your family risk report</h2>
+    <p class="text-muted mb-6">Based on your answers, these are the areas we recommend focusing on. Click any topic for our full guide and what to do next.</p>
+    <div id="report-cards" class="space-y-4"></div>
+    <p class="text-muted text-sm mt-8">
+      <a href="/" class="text-accent no-underline hover:underline">Browse all articles</a> for more on specific apps and topics.
+    </p>
+
+    <section id="conversation-starters-section" class="mt-12 pt-10 border-t border-border" aria-label="Conversation starters from your kids' interests">
+      <h2 class="text-xl font-bold mb-2 text-[#e7e9ea]">Conversation starters</h2>
+      <p class="text-muted text-sm mb-6">Save things your kids are passionate about (a band, team, game, or hobby). We’ll fetch a few recent topics so you can bring them up naturally.</p>
+      <div class="mb-6 p-4 bg-surface rounded-xl border border-border">
+        <label for="passion-input" class="block text-sm font-medium text-[#e7e9ea] mb-2">Add an interest</label>
+        <div class="flex gap-2 flex-wrap">
+          <input type="text" id="passion-input" placeholder="e.g. Taylor Swift, Arsenal FC, Minecraft" class="flex-1 min-w-[180px] py-2.5 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-sans" />
+          <button type="button" id="passion-add" class="py-2.5 px-4 rounded-lg bg-accent text-bg font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">Add</button>
+        </div>
+        <ul id="passions-list" class="mt-3 flex flex-wrap gap-2 list-none p-0 m-0"></ul>
+      </div>
+      <div id="conversation-starters-content" class="space-y-8"></div>
+    </section>
+  </div>
+</div>
+
+<script type="application/json" id="assessment-articles-data">{{ articles | json }}</script>
+<script type="module" src="/js/assessment-funnel.js"></script>

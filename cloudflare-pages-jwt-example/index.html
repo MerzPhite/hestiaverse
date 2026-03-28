@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudflare Pages + JWT example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
+    <h1 class="text-xl font-semibold text-gray-800 mb-4">JWT + Edge Functions demo</h1>
+    <form id="login-form" class="space-y-3">
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+        class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
+      />
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+        class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
+      />
+      <button
+        type="submit"
+        class="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+      >
+        Log in
+      </button>
+    </form>
+    <button
+      id="protected-btn"
+      class="mt-4 w-full py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+    >
+      Call protected API
+    </button>
+    <pre id="out" class="mt-4 p-3 bg-gray-50 rounded text-sm overflow-auto"></pre>
+  </div>
+  <script type="module" src="/dist/main.js"></script>
+</body>
+</html>

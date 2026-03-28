@@ -1,0 +1,25 @@
+{
+  "name": "hestiaverse",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "eleventy && tsc",
+    "dev": "eleventy --serve",
+    "dev:full": "npm run build && concurrently \"eleventy --serve --watch\" \"tsc --watch\"",
+    "create-article": "node scripts/create-article.js",
+    "accept-article": "node scripts/accept-article.js",
+    "queue-dashboard": "node scripts/queue-dashboard.js",
+    "fetch-trends": "node scripts/fetch-trends.js",
+    "fetch-tiktok-trends": "node scripts/fetch-tiktok-trends.js",
+    "fetch-connection-topics": "node scripts/fetch-connection-topics.js",
+    "fetch-connection-pop-girls": "node scripts/fetch-connection-pop-girls.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "google-trends-api": "^4.9.2"
+  }
+}

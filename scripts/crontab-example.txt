@@ -1,0 +1,5 @@
+# Hestiaverse: create one article every 5 minutes (queued)
+# Paste this line with: crontab -e
+# Use full path to node so cron finds it.
+
+*/5 * * * * cd "/Users/leorichardson/Desktop/First Website/Hestiaverse" && /opt/homebrew/bin/node scripts/create-article.js >> /tmp/hestiaverse-article.log 2>&1

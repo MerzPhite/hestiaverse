@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Unlock your report
+permalink: /assessment/paywall/
+---
+
+<div id="assessment-paywall" class="max-w-md mx-auto py-8">
+  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea] text-center">Unlock your personalised report</h2>
+  <p class="text-muted text-center mb-8">Get your family's risk summary and what to do next. Subscribe to access the report and future updates.</p>
+
+  <div class="bg-surface rounded-xl border border-border p-6 mb-6">
+    <h3 class="text-lg font-semibold mb-4 text-[#e7e9ea]">Choose a plan</h3>
+    <ul class="space-y-4 list-none p-0 m-0">
+      <li class="flex items-center justify-between py-3 border-b border-border">
+        <span class="text-[#e7e9ea]">Monthly</span>
+        <span class="font-mono text-accent">$9/month</span>
+      </li>
+      <li class="flex items-center justify-between py-3">
+        <span class="text-[#e7e9ea]">Yearly</span>
+        <span class="font-mono text-accent">$79/year</span>
+      </li>
+    </ul>
+    <p class="text-muted text-xs mt-4">Cancel anytime. Your report is available as long as you're subscribed.</p>
+  </div>
+
+  <button type="button" id="paywall-subscribe" class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">
+    Subscribe and view report
+  </button>
+
+  <p id="paywall-integration-note" class="text-muted text-xs mt-4 text-center">
+    Payment integration (e.g. Stripe) can be connected here. For now, use the button above to simulate subscription and view your report.
+  </p>
+</div>
+
+<script type="module" src="/js/assessment-funnel.js"></script>

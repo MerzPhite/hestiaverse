@@ -1,0 +1,33 @@
+---
+description: When asked to write articles, no em dashes (assistant workflow)
+alwaysApply: true
+---
+
+# Articles: no em dashes
+
+**When the user asks you to create, draft, or edit a Hestiaverse article** (e.g. new entries in `articles.js`, finance copy, or any article-style page), **do not use the em dash** (Unicode `—`).
+
+This rule is for **assistant-authored content in chat**. It is **not** about your cron jobs or other scripts that generate articles; those can stay as they are unless you change them separately.
+
+## Use instead
+
+- A **hyphen** for compounds or ranges: `18+`, `cost-per-acquisition`, `yes-or-no`
+- A **comma** or **period** to break or join clauses
+- **Parentheses** for asides: `real money (not play money)`
+- **Colon** before a list or explanation where it reads naturally
+- Rephrase so a single sentence doesn’t need a long interrupting dash
+
+## Examples
+
+```text
+❌ Sportsbooks — often 18+ but weak checks
+✅ Sportsbooks are often 18+ but checks can be weak.
+
+❌ Kalshi — regulated US prediction market
+✅ Kalshi: a regulated US prediction market
+
+❌ Money in, uncertain outcome — possible addiction-shaped habits
+✅ Money in and an uncertain outcome, with possible addiction-shaped habits
+```
+
+Apply to titles, excerpts, and body copy whenever you write article content for this project.

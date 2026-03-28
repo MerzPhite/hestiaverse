@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "sabrina",
+      "label": "Sabrina Carpenter",
+      "type": "artist"
+    },
+    {
+      "id": "chappell",
+      "label": "Chappell Roan",
+      "type": "artist"
+    },
+    {
+      "id": "dua",
+      "label": "Dua Lipa",
+      "type": "artist"
+    },
+    {
+      "id": "olivia",
+      "label": "Olivia Rodrigo",
+      "type": "artist"
+    },
+    {
+      "id": "superbowl",
+      "label": "Super Bowl LX",
+      "type": "event"
+    },
+    {
+      "id": "pringles",
+      "label": "Pringles Ad Campaign",
+      "type": "event"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sabrina",
+      "target": "superbowl",
+      "label": "stars in"
+    },
+    {
+      "source": "superbowl",
+      "target": "pringles",
+      "label": "part of"
+    },
+    {
+      "source": "sabrina",
+      "target": "chappell",
+      "label": "trending with"
+    },
+    {
+      "source": "sabrina",
+      "target": "dua",
+      "label": "trending with"
+    },
+    {
+      "source": "sabrina",
+      "target": "olivia",
+      "label": "trending with"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Sabrina Carpenter's Super Bowl Debut",
+      "whatHappened": "Sabrina Carpenter stars in Pringles' Super Bowl ad debut airing February 8, 2026.",
+      "whyKidsCare": "Super Bowl ads are a big deal, and seeing a favorite artist can make it more exciting.",
+      "thingsTheyMightBeTalkingAbout": [
+        "What do you think of the ad?",
+        "Have you seen any sneak peeks?",
+        "Who else do you think will be in the Super Bowl ads?"
+      ],
+      "easyConvoStarters": [
+        "What's your favorite Super Bowl ad?",
+        "Do you like Sabrina Carpenter's music?"
+      ]
+    },
+    {
+      "title": "Pop Music Trends",
+      "whatHappened": "No recent albums or tours reported for major pop artists as of March 2026.",
+      "whyKidsCare": "Staying up-to-date with their favorite artists helps them connect with friends and trends.",
+      "thingsTheyMightBeTalkingAbout": [
+        "What new songs are you listening to?",
+        "Who do you think will release new music next?",
+        "Have you heard any TikTok trends lately?"
+      ],
+      "easyConvoStarters": [
+        "Who's your favorite pop artist right now?",
+        "What song do you have on repeat?"
+      ]
+    },
+    {
+      "title": "Ad Campaigns and Music",
+      "whatHappened": "Sabrina Carpenter's involvement in a major ad campaign highlights the intersection of music and advertising.",
+      "whyKidsCare": "They might be interested in how their favorite artists are represented in media.",
+      "thingsTheyMightBeTalkingAbout": [
+        "Do you think ads can be entertaining?",
+        "What makes a good ad?",
+        "Have you seen any cool collaborations lately?"
+      ],
+      "easyConvoStarters": [
+        "What was the last ad that caught your attention?",
+        "Do you think music makes ads better?"
+      ]
+    }
+  ],
+  "updatedAt": "2026-03-22T13:35:03.322Z"
+}

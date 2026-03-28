@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}HESTIA VERSE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0f1419',
+            surface: '#1a2332',
+            'surface-hover': '#243044',
+            muted: '#8b98a5',
+            accent: '#1d9bf0',
+            warning: '#ff6b35',
+            border: '#2f3542',
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            mono: ['Fragment Mono', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-bg text-[#e7e9ea] leading-relaxed min-h-screen scroll-smooth">
+  <header class="bg-gradient-to-b from-surface to-bg border-b border-border py-8 px-6 pb-12 text-center">
+    <nav class="mb-4 flex items-center justify-center gap-6" aria-label="Main">
+      {% for item in site.nav %}
+      <a href="{{ item.url }}" class="text-[1rem] font-semibold tracking-tight no-underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded {% if page.url == item.url %}text-accent{% else %}text-[#e7e9ea]{% endif %}">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+    <h1 class="text-2xl sm:text-[clamp(1.5rem,4vw,2rem)] font-bold mb-2 tracking-tight">
+      HESTIA VERSE
+    </h1>
+    <p class="text-muted text-[0.95rem] max-w-[42ch] mx-auto tagline">
+      Helping parents stay ahead of the online world their children live in.
+    </p>
+  </header>
+
+  <main class="max-w-4xl mx-auto py-8 px-6 pb-16">
+    {{ content | safe }}
+  </main>
+
+  <footer class="text-center py-8 px-6 border-t border-border text-muted text-[0.85rem]">
+    <p>For crisis or reporting: <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">NCMEC CyberTipline</a>. This page is informational only and not affiliated with any organization.</p>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

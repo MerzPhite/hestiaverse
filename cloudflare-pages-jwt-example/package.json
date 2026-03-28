@@ -1,0 +1,17 @@
+{
+  "name": "cloudflare-pages-jwt-example",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev . --compatibility-date=2024-09-01",
+    "build": "tsc -p tsconfig.app.json",
+    "deploy": "npm run build && wrangler pages deploy . --project-name=your-project-name",
+    "types": "wrangler types --path='./functions/types.d.ts'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "jose": "^5.2.0"
+  }
+}

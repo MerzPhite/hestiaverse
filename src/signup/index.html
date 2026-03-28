@@ -1,0 +1,52 @@
+---
+layout: base.njk
+title: Sign up
+permalink: /signup/
+---
+
+<div id="signup-page" class="max-w-xl mx-auto py-8">
+  <h2 class="text-2xl font-bold mb-3 text-[#e7e9ea] text-center">Stay ahead of the apps your kids use</h2>
+  <p class="text-muted text-center mb-8">Get clear, parent-friendly updates on new apps, trends, and risks—so you can talk with confidence instead of playing catch-up.</p>
+
+  <div class="bg-surface rounded-xl border border-border p-6 mb-6">
+    <p class="text-sm text-muted mb-4">Join the list for early access and updates:</p>
+    <form name="signup" method="POST" data-netlify="true" action="/signup-success/" netlify-honeypot="bot-field" class="space-y-4">
+      <input type="hidden" name="form-name" value="signup" />
+      <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <div>
+        <label for="signup-email" class="block text-sm font-medium text-[#e7e9ea] mb-2">Email</label>
+        <input
+          type="email"
+          id="signup-email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+        />
+      </div>
+      <button type="submit" class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">
+        Sign up
+      </button>
+    </form>
+    <p class="text-muted text-xs mt-4">We'll only send useful updates. No spam, unsubscribe anytime.</p>
+  </div>
+
+  <ul class="space-y-3 list-none p-0 m-0 text-muted text-sm">
+    <li class="flex items-start gap-2">
+      <span class="text-accent">✓</span>
+      <span>New app alerts and what parents should know</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <span class="text-accent">✓</span>
+      <span>Trending topics—challenges, slang, risks</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <span class="text-accent">✓</span>
+      <span>Conversation starters and practical tips</span>
+    </li>
+  </ul>
+
+  <p class="mt-8 text-center">
+    <a href="/" class="text-accent no-underline hover:underline text-sm">← Back to home</a>
+  </p>
+</div>

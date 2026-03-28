@@ -1,0 +1,487 @@
+---
+layout: base.njk
+title: Connection 2 (Pop girl music)
+permalink: /connection-2/
+---
+
+<div id="connection-2-page" class="max-w-3xl mx-auto">
+  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea]">Connection 2</h2>
+  <p class="text-muted mb-6">Stay in the loop with Pop girl music — Sabrina Carpenter, Chappell Roan, Dua Lipa, and more. Explore nodes and connections, then use the talking points below.</p>
+
+  <div id="graph-container" class="relative w-full rounded-xl border border-border overflow-hidden mb-8 shadow-lg">
+    <div id="nodini-canvas" class="nodini-canvas relative w-full min-h-[420px] overflow-x-auto">
+      <div id="nodini-inner" class="relative mx-auto isolate" style="min-width: min(100%, 720px);">
+        <svg id="nodini-edges-svg" class="nodini-edges-svg pointer-events-none" aria-hidden="true"></svg>
+        <div id="nodini-nodes" class="relative z-[1]"></div>
+      </div>
+    </div>
+    <div id="graph-loading" class="absolute inset-0 flex items-center justify-center bg-[#e8eef2]/95 z-[2]">
+      <p class="text-slate-600 text-sm font-medium">Loading Pop girl music connections…</p>
+    </div>
+    <div id="graph-error" class="absolute inset-0 hidden items-center justify-center bg-[#e8eef2]/95 z-[2]">
+      <p class="text-amber-800 text-center px-4 text-sm">Couldn't reach the API. Run: npm run fetch-connection-pop-girls (for fallback) or netlify dev (for live API).</p>
+    </div>
+  </div>
+
+  <style>
+    .nodini-canvas {
+      background-color: #e8eef2;
+      background-image: radial-gradient(circle, rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+      background-size: 14px 14px;
+    }
+    .nodini-edges-svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: visible;
+      z-index: 0;
+    }
+    .nodini-card {
+      position: absolute;
+      width: 220px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+      border: 1px solid rgb(226 232 240);
+      cursor: pointer;
+      transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .nodini-card:hover {
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.06);
+      transform: translateY(-1px);
+    }
+    .nodini-card--active {
+      border-color: #1d9bf0;
+      box-shadow: 0 0 0 2px #1d9bf0, 0 4px 6px -1px rgb(0 0 0 / 0.08);
+    }
+    .nodini-card__anchor {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #0f172a;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px rgb(0 0 0 / 0.15);
+      z-index: 2;
+    }
+    .nodini-card__anchor--top { top: -4px; }
+    .nodini-card__anchor--bottom { bottom: -4px; }
+    .nodini-card__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 12px 12px 8px;
+      border-bottom: 1px solid rgb(241 245 249);
+    }
+    .nodini-card__icon {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgb(241 245 249);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .nodini-card__title-wrap { flex: 1; min-width: 0; }
+    .nodini-card__title {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #0f172a;
+      margin: 0;
+    }
+    .nodini-card__pin {
+      flex-shrink: 0;
+      color: #fbbf24;
+      font-size: 14px;
+      line-height: 1;
+    }
+    .nodini-card__body { padding: 10px 12px 14px; }
+    .nodini-card__q-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 0 0 4px;
+    }
+    .nodini-card__q-text {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      color: #334155;
+      margin: 0 0 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .nodini-card__a-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 0 0 4px;
+    }
+    .nodini-card__a-text {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      color: #475569;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+
+  <div id="topics-section" class="space-y-6 hidden">
+    <h3 class="text-lg font-semibold text-[#e7e9ea]">Talking points</h3>
+    <div id="topics-list" class="space-y-6"></div>
+  </div>
+
+  <div id="no-topics" class="hidden py-6 px-4 rounded-xl bg-surface border border-border text-muted text-center">
+    No talking points yet. Run <code class="text-xs bg-border px-1 rounded">npm run fetch-connection-pop-girls</code> to generate, or set API keys in Netlify.
+  </div>
+</div>
+
+<script>
+(function () {
+  const API_URL = '/.netlify/functions/connection-topics?topic=pop-girl-music';
+  /** Fallback after `npm run fetch-connection-pop-girls` — served as static JSON (no rebuild required). */
+  const FALLBACK_JSON_URL = '/assets/connectionTopicsPopGirls.json';
+
+  function $(sel, ctx = document) {
+    return ctx.querySelector(sel);
+  }
+
+  const CARD_W = 220;
+  const CARD_H = 148;
+  const ROW_GAP = 56;
+  const COL_GAP = 20;
+  const CANVAS_PAD = 28;
+
+  function typeIcon(type) {
+    const t = (type || '').toLowerCase();
+    if (t === 'artist') return '🎤';
+    if (t === 'event') return '📅';
+    if (t === 'trend') return '✨';
+    if (t === 'release') return '💿';
+    return '◇';
+  }
+
+  function typeLabel(type) {
+    const t = (type || '').toLowerCase();
+    if (t === 'artist') return 'Artist';
+    if (t === 'event') return 'Event';
+    if (t === 'trend') return 'Trend';
+    if (t === 'release') return 'Release';
+    return 'Topic';
+  }
+
+  function pickRoot(nodes, edges) {
+    const degree = {};
+    nodes.forEach((n) => { degree[n.id] = 0; });
+    edges.forEach((e) => {
+      if (degree[e.source] !== undefined) degree[e.source]++;
+      if (degree[e.target] !== undefined) degree[e.target]++;
+    });
+    const events = nodes.filter((n) => (n.type || '').toLowerCase() === 'event');
+    const pool = events.length ? events : nodes;
+    return pool.sort((a, b) => (degree[b.id] || 0) - (degree[a.id] || 0))[0].id;
+  }
+
+  function buildLevels(nodes, edges, rootId) {
+    const adj = {};
+    nodes.forEach((n) => { adj[n.id] = []; });
+    edges.forEach((e) => {
+      if (adj[e.source] && adj[e.target]) {
+        adj[e.source].push(e.target);
+        adj[e.target].push(e.source);
+      }
+    });
+    const levels = [];
+    const visited = new Set();
+    const parent = {};
+    let frontier = [rootId];
+    visited.add(rootId);
+    while (frontier.length) {
+      levels.push([...frontier]);
+      const next = [];
+      for (const id of frontier) {
+        for (const nb of adj[id] || []) {
+          if (!visited.has(nb)) {
+            visited.add(nb);
+            parent[nb] = id;
+            next.push(nb);
+          }
+        }
+      }
+      frontier = next;
+    }
+    nodes.forEach((n) => {
+      if (!visited.has(n.id)) {
+        levels.push([n.id]);
+        visited.add(n.id);
+      }
+    });
+    return { levels, parent };
+  }
+
+  function edgeSummary(nodeId, edges, nodes) {
+    const parts = [];
+    edges.forEach((e) => {
+      let other = null;
+      let lbl = e.label || '';
+      if (e.source === nodeId) other = e.target;
+      else if (e.target === nodeId) other = e.source;
+      if (other) {
+        const n = nodes.find((x) => x.id === other);
+        const name = n ? n.label : other;
+        parts.push(lbl ? `${lbl} → ${name}` : name);
+      }
+    });
+    return parts.slice(0, 4).join(' · ') || 'Tap to highlight connections.';
+  }
+
+  function isTreeEdge(e, parent) {
+    return parent[e.target] === e.source || parent[e.source] === e.target;
+  }
+
+  function renderGraph(nodes, edges) {
+    const inner = $('#nodini-inner');
+    const wrap = $('#nodini-nodes');
+    const svg = $('#nodini-edges-svg');
+    if (!inner || !wrap || !svg) return;
+
+    wrap.innerHTML = '';
+    svg.innerHTML = '';
+
+    if (!nodes.length) return;
+
+    const rootId = pickRoot(nodes, edges);
+    const { levels, parent } = buildLevels(nodes, edges, rootId);
+    const nodeById = {};
+    nodes.forEach((n) => { nodeById[n.id] = n; });
+
+    const maxRow = Math.max(...levels.map((r) => r.length), 1);
+    const innerW = Math.max(720, maxRow * CARD_W + Math.max(0, maxRow - 1) * COL_GAP + CANVAS_PAD * 2);
+    const innerH = levels.length * CARD_H + Math.max(0, levels.length - 1) * ROW_GAP + CANVAS_PAD * 2;
+    inner.style.width = innerW + 'px';
+    inner.style.height = innerH + 'px';
+
+    const pos = {};
+    levels.forEach((row, li) => {
+      const y = CANVAS_PAD + li * (CARD_H + ROW_GAP);
+      const rowW = row.length * CARD_W + (row.length - 1) * COL_GAP;
+      let x0 = (innerW - rowW) / 2;
+      row.forEach((id, ri) => {
+        const x = x0 + ri * (CARD_W + COL_GAP);
+        pos[id] = { x, y };
+      });
+    });
+
+    nodes.forEach((n) => {
+      const p = pos[n.id];
+      if (!p) return;
+      const card = document.createElement('div');
+      card.className = 'nodini-card';
+      card.dataset.nodeId = n.id;
+      card.style.left = p.x + 'px';
+      card.style.top = p.y + 'px';
+      const summary = edgeSummary(n.id, edges, nodes);
+      card.innerHTML =
+        '<div class="nodini-card__anchor nodini-card__anchor--top" data-anchor="top"></div>' +
+        '<div class="nodini-card__header">' +
+        '<span class="nodini-card__icon" aria-hidden="true">' + typeIcon(n.type) + '</span>' +
+        '<div class="nodini-card__title-wrap"><h4 class="nodini-card__title">' + escapeHtml(n.label) + '</h4></div>' +
+        '<span class="nodini-card__pin" title="Pinned topic">★</span></div>' +
+        '<div class="nodini-card__body">' +
+        '<p class="nodini-card__q-label">Type</p>' +
+        '<p class="nodini-card__q-text">' + escapeHtml(typeLabel(n.type)) + '</p>' +
+        '<p class="nodini-card__a-label">Connections</p>' +
+        '<p class="nodini-card__a-text">' + escapeHtml(summary) + '</p></div>' +
+        '<div class="nodini-card__anchor nodini-card__anchor--bottom" data-anchor="bottom"></div>';
+      wrap.appendChild(card);
+    });
+
+    function findCard(nodeId) {
+      return Array.from(wrap.querySelectorAll('.nodini-card')).find((c) => c.dataset.nodeId === nodeId);
+    }
+
+    function anchorInInner(cardEl, which) {
+      const dot = cardEl.querySelector('[data-anchor="' + which + '"]');
+      if (!dot || !inner) return null;
+      const ir = inner.getBoundingClientRect();
+      const dr = dot.getBoundingClientRect();
+      return {
+        x: dr.left + dr.width / 2 - ir.left,
+        y: dr.top + dr.height / 2 - ir.top,
+      };
+    }
+
+    function drawEdges() {
+      if (!inner) return;
+      svg.innerHTML = '';
+      const svgNS = 'http://www.w3.org/2000/svg';
+      svg.setAttribute('width', String(innerW));
+      svg.setAttribute('height', String(innerH));
+      svg.setAttribute('viewBox', '0 0 ' + innerW + ' ' + innerH);
+
+      edges.forEach((e, i) => {
+        const cardS = findCard(e.source);
+        const cardT = findCard(e.target);
+        if (!cardS || !cardT) return;
+        const a = anchorInInner(cardS, 'bottom');
+        const b = anchorInInner(cardT, 'top');
+        if (!a || !b) return;
+        const tree = isTreeEdge(e, parent);
+        const midY = (a.y + b.y) / 2;
+        const dOrth = 'M ' + a.x + ' ' + a.y + ' L ' + a.x + ' ' + midY + ' L ' + b.x + ' ' + midY + ' L ' + b.x + ' ' + b.y;
+        const path = document.createElementNS(svgNS, 'path');
+        path.setAttribute('fill', 'none');
+        if (tree) {
+          path.setAttribute('d', dOrth);
+          path.setAttribute('stroke', '#14b8a6');
+          path.setAttribute('stroke-width', '2');
+        } else {
+          const cx = (a.x + b.x) / 2;
+          const cy = Math.min(a.y, b.y) - 40 - (i % 3) * 12;
+          path.setAttribute('d', 'M ' + a.x + ' ' + a.y + ' Q ' + cx + ' ' + cy + ' ' + b.x + ' ' + b.y);
+          path.setAttribute('stroke', '#a855f7');
+          path.setAttribute('stroke-width', '2');
+          path.setAttribute('stroke-dasharray', '6 4');
+        }
+        path.setAttribute('stroke-linecap', 'round');
+        svg.appendChild(path);
+      });
+    }
+
+    let active = null;
+    wrap.querySelectorAll('.nodini-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        if (active) active.classList.remove('nodini-card--active');
+        card.classList.add('nodini-card--active');
+        active = card;
+      });
+    });
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(drawEdges);
+    });
+    const canvasEl = $('#nodini-canvas');
+    const ro = new ResizeObserver(() => drawEdges());
+    if (canvasEl) ro.observe(canvasEl);
+    window.addEventListener('resize', drawEdges);
+    if (canvasEl) canvasEl.addEventListener('scroll', drawEdges, { passive: true });
+  }
+
+  function renderTopics(topics) {
+    const list = $('#topics-list');
+    const section = $('#topics-section');
+    if (!list || !section) return;
+    list.innerHTML = '';
+    topics.forEach((t) => {
+      const art = document.createElement('article');
+      art.className = 'p-5 rounded-xl bg-surface border border-border';
+      art.innerHTML = `
+        <h4 class="text-lg font-semibold text-[#e7e9ea] mb-3">${escapeHtml(t.title || 'Topic')}</h4>
+        ${t.whatHappened ? `<p class="text-xs font-medium text-muted uppercase tracking-wider mb-1">What happened</p><p class="text-muted text-sm mb-4">${escapeHtml(t.whatHappened)}</p>` : ''}
+        ${t.whyKidsCare ? `<p class="text-xs font-medium text-muted uppercase tracking-wider mb-1">Why kids care</p><p class="text-muted text-sm mb-4">${escapeHtml(t.whyKidsCare)}</p>` : ''}
+        ${(t.thingsTheyMightBeTalkingAbout?.length) ? `<p class="text-xs font-medium text-muted uppercase tracking-wider mb-1">3 things they might be talking about</p><ul class="list-none pl-0 space-y-1.5 mb-4">${t.thingsTheyMightBeTalkingAbout.map(i => `<li class="text-[#e7e9ea] text-sm pl-4 border-l-2 border-border">${escapeHtml(i)}</li>`).join('')}</ul>` : ''}
+        ${(t.easyConvoStarters?.length) ? `<p class="text-xs font-medium text-muted uppercase tracking-wider mb-1">Easy convo starters</p><ul class="list-none pl-0 space-y-2">${t.easyConvoStarters.map(s => `<li class="text-accent text-sm pl-4 border-l-2 border-accent">${escapeHtml(s)}</li>`).join('')}</ul>` : ''}
+      `;
+      list.appendChild(art);
+    });
+    section.classList.remove('hidden');
+  }
+
+  function escapeHtml(s) {
+    if (!s) return '';
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  async function loadFallbackFromFile() {
+    try {
+      const r = await fetch(FALLBACK_JSON_URL, { cache: 'no-store' });
+      if (!r.ok) return null;
+      return await r.json();
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function applyPayload(data) {
+    const noTopics = $('#no-topics');
+    const topicsSection = $('#topics-section');
+    const nodes = data.nodes || [];
+    const edges = data.edges || [];
+    const topics = data.topics || [];
+    if (nodes.length > 0) renderGraph(nodes, edges);
+    if (topics.length > 0) renderTopics(topics);
+    else {
+      if (noTopics) noTopics.classList.remove('hidden');
+      if (topicsSection) topicsSection.classList.add('hidden');
+    }
+  }
+
+  async function load() {
+    const loading = $('#graph-loading');
+    const errorEl = $('#graph-error');
+
+    try {
+      const res = await fetch(API_URL);
+      let data = null;
+      try {
+        data = await res.json();
+      } catch (_) {
+        data = null;
+      }
+
+      if (loading) loading.classList.add('hidden');
+      if (errorEl) errorEl.classList.add('hidden');
+
+      if (!data || data.error) {
+        const fallback = await loadFallbackFromFile();
+        if (fallback && (fallback.nodes?.length || fallback.topics?.length)) {
+          applyPayload(fallback);
+          return;
+        }
+        if (errorEl) {
+          errorEl.querySelector('p').textContent =
+            data?.error ||
+            "Couldn't load. Run npm run fetch-connection-pop-girls, then refresh (or use netlify dev for live API).";
+          errorEl.classList.remove('hidden');
+          errorEl.classList.add('flex');
+        }
+        return;
+      }
+
+      applyPayload(data);
+    } catch (err) {
+      const fallback = await loadFallbackFromFile();
+      if (fallback && (fallback.nodes?.length || fallback.topics?.length)) {
+        if (loading) loading.classList.add('hidden');
+        if (errorEl) errorEl.classList.add('hidden');
+        applyPayload(fallback);
+        return;
+      }
+      if (loading) loading.classList.add('hidden');
+      if (errorEl) {
+        errorEl.querySelector('p').textContent =
+          "Couldn't reach the API. Run npm run fetch-connection-pop-girls, then refresh (or use netlify dev).";
+        errorEl.classList.remove('hidden');
+        errorEl.classList.add('flex');
+      }
+    }
+  }
+
+  load();
+})();
+</script>

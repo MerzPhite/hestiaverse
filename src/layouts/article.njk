@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ article.title }} | HESTIA VERSE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0f1419',
+            surface: '#1a2332',
+            'surface-hover': '#243044',
+            muted: '#8b98a5',
+            accent: '#1d9bf0',
+            warning: '#ff6b35',
+            border: '#2f3542',
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            mono: ['Fragment Mono', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-bg text-[#e7e9ea] leading-relaxed min-h-screen scroll-smooth">
+  <header class="bg-gradient-to-b from-surface to-bg border-b border-border py-6 px-6 pb-8">
+    <nav class="flex items-center justify-between max-w-4xl mx-auto" aria-label="Main">
+      <a href="/" class="text-lg font-bold text-[#e7e9ea] no-underline hover:text-accent">HESTIA VERSE</a>
+      <a href="/#section-platforms" class="text-sm text-muted no-underline hover:text-accent">← All articles</a>
+    </nav>
+  </header>
+
+  <main class="max-w-2xl mx-auto py-8 px-6 pb-16">
+    <article class="mb-10">
+      {% if article.image %}
+      <img src="{{ article.image }}" alt="App icon" class="w-24 h-24 rounded-2xl object-contain mb-6 bg-surface border border-border p-2" />
+      {% endif %}
+      <h1 class="text-2xl font-bold mb-4 text-[#e7e9ea]">{{ article.title }}</h1>
+      <div class="flex flex-wrap gap-2 mb-4">
+        {% for label in article.labels %}
+        <span class="label font-mono text-xs py-1 px-2 rounded bg-border text-muted">{{ label | labelToTitle }}</span>
+        {% endfor %}
+        {% if article.platformTags and article.platformTags.length %}
+        {% for tag in article.platformTags %}
+        <span class="font-mono text-xs py-1 px-2 rounded bg-surface border border-border text-accent">{{ tag }}</span>
+        {% endfor %}
+        {% endif %}
+      </div>
+      {% if article.severity %}
+      <p class="mb-6 text-sm">
+        <span class="text-muted">Severity:</span>
+        <span class="font-semibold {% if article.severity == 'High' %}text-warning{% elif article.severity == 'Medium' %}text-accent{% else %}text-muted{% endif %}">{{ article.severity }}</span>
+      </p>
+      {% endif %}
+      {% if article.whatItIs %}
+      <div class="space-y-6 prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline">
+        <section>
+          <h2 class="text-base font-semibold text-[#e7e9ea] mb-2">What it is</h2>
+          <p>{{ article.whatItIs }}</p>
+        </section>
+        <section>
+          <h2 class="text-base font-semibold text-[#e7e9ea] mb-2">Why it's dangerous</h2>
+          <p>{{ article.whyDangerous }}</p>
+        </section>
+        <section>
+          <h2 class="text-base font-semibold text-[#e7e9ea] mb-2">Which kids are affected</h2>
+          <p>{{ article.whoAffected }}</p>
+        </section>
+        <section>
+          <h2 class="text-base font-semibold text-[#e7e9ea] mb-2">What parents should do today</h2>
+          <ul class="list-disc pl-5 space-y-1">
+            {% for step in article.parentActions %}
+            <li>{{ step }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% if article.sourceUrl or article.sourceTitle %}
+        <section>
+          <h2 class="text-base font-semibold text-[#e7e9ea] mb-2">Source</h2>
+          <p class="text-sm text-muted">
+            {% if article.sourceUrl and article.sourceTitle %}
+            <a href="{{ article.sourceUrl }}" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">{{ article.sourceTitle }}</a>
+            {% elif article.sourceUrl %}
+            <a href="{{ article.sourceUrl }}" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">View source</a>
+            {% else %}
+            {{ article.sourceTitle }}
+            {% endif %}
+          </p>
+        </section>
+        {% endif %}
+        {% if article.content %}
+        <div>{{ article.content | safe }}</div>
+        {% endif %}
+      </div>
+      {% else %}
+      {% if article.slug == 'online-lingo-words-phrases' %}
+      <div class="mb-6 p-4 rounded-xl border border-border bg-surface">
+        <label for="lingo-search" class="block text-sm font-semibold text-[#e7e9ea] mb-2">Search terms</label>
+        <input
+          id="lingo-search"
+          type="search"
+          placeholder="Search lingo (e.g. crash out, rug pull, no cap)"
+          class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent"
+        />
+        <p id="lingo-search-count" class="text-xs text-muted mt-2 mb-0">Showing all terms</p>
+      </div>
+      {% endif %}
+      <div id="{% if article.slug == 'online-lingo-words-phrases' %}lingo-glossary{% endif %}" class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline">
+        {{ article.content | safe }}
+      </div>
+      {% endif %}
+    </article>
+
+    {% set related = articles | related(article) %}
+    {% if related.length > 0 %}
+    <aside class="py-8 px-6 bg-surface rounded-xl border border-border" aria-label="Related articles">
+      <h2 class="text-base font-semibold mb-4 text-[#e7e9ea]">Related articles</h2>
+      <p class="text-muted text-sm mb-4">These cover similar topics. Worth reading next.</p>
+      <ul class="space-y-3 list-none p-0 m-0">
+        {% for r in related %}
+        <li>
+          <a href="/articles/{{ r.slug }}/" class="block py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] no-underline hover:bg-surface-hover hover:border-[#3d4654] transition-colors">
+            <span class="font-semibold block">{{ r.title }}</span>
+            <span class="text-muted text-xs">{{ r.excerpt }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+    {% endif %}
+  </main>
+
+  <footer class="text-center py-8 px-6 border-t border-border text-muted text-sm">
+    <p>For crisis or reporting: <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">NCMEC CyberTipline</a>. This page is informational only and not affiliated with any organization.</p>
+  </footer>
+  {% if article.slug == 'online-lingo-words-phrases' %}
+  <script>
+    (() => {
+      const root = document.getElementById("lingo-glossary");
+      const input = document.getElementById("lingo-search");
+      const count = document.getElementById("lingo-search-count");
+      if (!root || !input || !count) return;
+
+      const headings = Array.from(root.querySelectorAll("h3"));
+      if (!headings.length) return;
+
+      const list = document.createElement("div");
+      list.className = "not-prose space-y-3 mt-4";
+      list.id = "lingo-glossary-list";
+
+      const terms = [];
+
+      headings.forEach((h3) => {
+        const next = h3.nextElementSibling;
+        if (!next || next.tagName !== "P") return;
+
+        const label = (h3.textContent || "").trim();
+        const bodyText = (next.textContent || "").trim().toLowerCase();
+        const termId = h3.id || label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+        const item = document.createElement("div");
+        item.className = "rounded-xl border border-border bg-surface overflow-hidden";
+        item.dataset.term = label.toLowerCase();
+        item.dataset.body = bodyText;
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "w-full text-left px-4 py-3 text-[#e7e9ea] hover:bg-surface-hover focus:outline-none focus:ring-2 focus:ring-accent";
+        button.setAttribute("aria-expanded", "false");
+        button.id = `term-${termId}`;
+        button.innerHTML = `<span class="font-semibold">${label}</span>`;
+
+        const panel = document.createElement("div");
+        panel.className = "hidden px-4 pb-4 text-sm text-muted border-t border-border";
+        panel.id = termId;
+        panel.innerHTML = next.innerHTML;
+
+        const openPanel = () => {
+          panel.classList.remove("hidden");
+          button.setAttribute("aria-expanded", "true");
+        };
+        const closePanel = () => {
+          if (item.dataset.locked === "true") return;
+          panel.classList.add("hidden");
+          button.setAttribute("aria-expanded", "false");
+        };
+
+        button.addEventListener("click", () => {
+          const isOpen = item.dataset.locked === "true";
+          if (isOpen) {
+            item.dataset.locked = "false";
+            panel.classList.add("hidden");
+            button.setAttribute("aria-expanded", "false");
+          } else {
+            item.dataset.locked = "true";
+            openPanel();
+          }
+        });
+
+        item.addEventListener("mouseenter", openPanel);
+        item.addEventListener("mouseleave", closePanel);
+        item.addEventListener("focusin", openPanel);
+        item.addEventListener("focusout", () => {
+          window.setTimeout(() => {
+            if (!item.contains(document.activeElement)) closePanel();
+          }, 0);
+        });
+
+        item.appendChild(button);
+        item.appendChild(panel);
+        terms.push({ label, item });
+
+        h3.remove();
+        next.remove();
+      });
+
+      terms
+        .sort((a, b) => a.label.localeCompare(b.label, undefined, { sensitivity: "base" }))
+        .forEach(({ item }) => {
+          list.appendChild(item);
+        });
+
+      root.appendChild(list);
+
+      const items = terms.map((t) => t.item);
+
+      const updateSearch = () => {
+        const q = input.value.trim().toLowerCase();
+        let visible = 0;
+        items.forEach((item) => {
+          const term = item.dataset.term || "";
+          const body = item.dataset.body || "";
+          const show = !q || term.includes(q) || body.includes(q);
+          item.style.display = show ? "" : "none";
+          if (show) visible += 1;
+        });
+        count.textContent = q ? `Showing ${visible} matching term${visible === 1 ? "" : "s"}` : "Showing all terms";
+      };
+
+      input.addEventListener("input", updateSearch);
+      updateSearch();
+
+      if (window.location.hash) {
+        const hash = window.location.hash.slice(1);
+        const target = document.getElementById(hash);
+        if (target) {
+          const item = target.closest("div.rounded-xl");
+          if (item) {
+            item.dataset.locked = "true";
+            target.classList.remove("hidden");
+            const trigger = item.querySelector("button");
+            if (trigger) trigger.setAttribute("aria-expanded", "true");
+          }
+        }
+      }
+    })();
+  </script>
+  {% endif %}
+</body>
+</html>

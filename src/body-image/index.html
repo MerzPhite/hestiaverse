@@ -1,0 +1,79 @@
+---
+layout: base.njk
+title: Body image online
+permalink: /body-image/
+---
+
+<section class="max-w-3xl mx-auto py-8">
+  <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted">
+    <span class="text-accent">●</span>
+    Master topic · Body image
+  </div>
+
+  <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-[#e7e9ea]">
+    Body image &amp; appearance online
+  </h1>
+  <p class="text-muted text-base sm:text-lg mb-8 max-w-2xl">
+    Social feeds, creators, and algorithms push ideals about how bodies “should” look. Young people often compare themselves to edited photos, workout content, weight-loss trends, and narrow beauty standards — usually without saying how stressed or ashamed they feel. Male-presenting teens may also encounter <strong class="text-[#e7e9ea]">looksmaxxing</strong> culture (jawline memes, harsh comparison, extreme tips). For a dedicated explainer, see <a href="/articles/looksmaxxing/" class="text-accent font-semibold no-underline hover:underline">Looksmaxxing: what it means and why it matters for parents</a>. This page explains <strong class="text-[#e7e9ea]">why that matters</strong>, then splits the conversation into <strong class="text-[#e7e9ea]">boys and men</strong> and <strong class="text-[#e7e9ea]">girls and women</strong> (knowing many young people don’t fit those boxes — use what fits your child).
+  </p>
+
+  <div class="mb-10 prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] py-5 px-6 rounded-xl bg-surface border border-border">
+    <h2 class="text-[#e7e9ea] text-lg font-semibold mt-0 mb-3 not-prose">What parents should know</h2>
+    <p>
+      Body image isn’t only “diet culture.” It includes muscle size, height, skin, facial features, hair, and what counts as “masculine” or “feminine” in their feed. Pressure can show up as skipping meals, over-exercising, hiding their body, bullying others, or seeking risky shortcuts (including meds or supplements they saw online).
+    </p>
+    <p class="mb-0">
+      The articles below are tagged for this topic. We group the narrative by common social pressures for <strong>male-presenting</strong> and <strong>female-presenting</strong> teens — overlap is normal, and your child’s experience may be mixed or different.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="p-6 rounded-xl bg-surface border border-border border-t-4 border-t-[#38bdf8]">
+      <h2 class="text-lg font-semibold text-[#e7e9ea] mb-3">Male body image</h2>
+      <p class="text-sm text-muted mb-4">
+        Many boys and young men see a flood of content about <strong class="text-[#e7e9ea]">muscle, leanness, jawlines, height, and “looksmaxxing”</strong> culture. Fitness influencers, memes, and before/after posts can make normal teen bodies feel “wrong.” Some feel they should be bigger, more defined, or taller — or hide parts of themselves. That can fuel over-training, secret supplement use, disordered eating, or shame about not matching the ideal.
+      </p>
+      <p class="text-sm text-muted mb-3">
+        <strong class="text-[#e7e9ea]">What helps:</strong> Talk about how images are edited and selected; that strength and health aren’t the same as looking like a creator’s feed; and that it’s okay to step back from content that makes them feel worse about themselves.
+      </p>
+      <div class="text-sm text-muted flex flex-col gap-2 mb-0">
+        <a href="/articles/looksmaxxing/" class="text-accent no-underline hover:underline">Looksmaxxing culture (words, risks, streaming context) →</a>
+        <a href="/articles/height-pressure-young-men/" class="text-accent no-underline hover:underline">Height pressure online (and when surgery gets mentioned) →</a>
+      </div>
+    </div>
+    <div class="p-6 rounded-xl bg-surface border border-border border-t-4 border-t-[#f472b6]">
+      <h2 class="text-lg font-semibold text-[#e7e9ea] mb-3">Female body image</h2>
+      <p class="text-sm text-muted mb-4">
+        Many girls and young women face intense pressure around <strong class="text-[#e7e9ea]">thinness, curves, skin, and “clean” beauty</strong> trends — often alongside viral weight-loss and cosmetic content. Comparison, filters, and comment culture can feed anxiety, restriction, or chasing risky trends (including prescription weight-loss hype on social apps).
+      </p>
+      <p class="text-sm text-muted mb-0">
+        <strong class="text-[#e7e9ea]">What helps:</strong> Name the pressure without blaming; focus on health and energy over appearance; involve a clinician if you’re worried about eating, meds, or rapid weight change — not social media advice.
+      </p>
+    </div>
+  </div>
+
+  <p class="text-muted text-sm mb-6">
+    <a href="/#section-body-image" class="text-accent no-underline hover:underline">See the same articles from the home page</a> under “Body image and appearance,” or browse below.
+  </p>
+
+  <h2 class="text-[1.1rem] font-semibold mb-4 text-[#e7e9ea]">Articles on body image and related risks</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {% set bodyItems = articles | bodyImageHubArticles %}
+    {% for article in bodyItems %}
+    <article class="card bg-surface border border-border rounded-[10px] py-4 px-5 transition-colors duration-200 hover:bg-surface-hover hover:border-[#3d4654] border-l-4 border-l-[#f472b6]">
+      <a href="/articles/{{ article.slug }}/" class="block no-underline group">
+        <h3 class="text-base font-semibold mb-1.5 text-[#e7e9ea] group-hover:text-accent transition-colors">{{ article.title }}</h3>
+        <p class="text-[0.9rem] text-muted">{{ article.excerpt }}</p>
+        <span class="text-accent text-xs mt-2 inline-block">Read full article →</span>
+      </a>
+      <div class="labels flex flex-wrap gap-1.5 mt-3" role="list" aria-label="Topics">
+        {% for label in article.labels %}
+        <span class="label font-mono text-[0.7rem] py-1 px-2 rounded bg-border text-muted">{{ label | labelToTitle }}</span>
+        {% endfor %}
+      </div>
+    </article>
+    {% else %}
+    <p class="text-muted text-sm col-span-full">No articles in this category yet.</p>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,7 @@
+# Cloudflare Pages project. Configure project name in dashboard or via --project-name on deploy.
+name = "pages-jwt-example"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "."
+
+# Secrets (set via wrangler secret put JWT_SECRET):
+# JWT_SECRET - used to sign/verify JWTs. Use a long random string in production.

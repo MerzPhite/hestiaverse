@@ -1,0 +1,10 @@
+{
+  "nav": [
+    { "url": "/", "label": "Home" },
+    { "url": "/connection/", "label": "Connection" },
+    { "url": "/connection-2/", "label": "Connection 2" },
+    { "url": "/assessment/", "label": "Assessment" },
+    { "url": "/signup/", "label": "Sign up" },
+    { "url": "/about/", "label": "About" }
+  ]
+}
