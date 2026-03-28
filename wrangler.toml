@@ -1,7 +1,17 @@
-# Used only if you run `wrangler deploy` (Workers Static Assets).
-# For Cloudflare Pages (Git): set build output to `dist` and leave "Deploy command" EMPTY.
+# Deploy: npm run build && npx wrangler deploy
+# Secrets (not in git): wrangler secret put STRIPE_SECRET_KEY (and others below)
 name = "hestiaverse"
+main = "worker/index.ts"
 compatibility_date = "2025-09-27"
 
 [assets]
 directory = "./dist"
+binding = "ASSETS"
+
+# Optional: set here or override in the dashboard / wrangler vars
+# [vars]
+# SITE_URL = "https://your-domain.workers.dev"
+# STRIPE_PRICE_MONTHLY = "price_xxx"
+# STRIPE_PRICE_YEARLY = "price_yyy"
+# SUPABASE_URL = "https://xxx.supabase.co"
+# SUPABASE_ANON_KEY = "eyJ..."

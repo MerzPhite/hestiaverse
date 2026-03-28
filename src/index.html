@@ -179,7 +179,7 @@ permalink: /
 ] %}
 
 {% for sec in sections %}
-{% set items = articles | where('section', sec.id) %}
+{% set items = articles | where('section', sec.id) | sortArticlesByDate(articles) %}
 <section id="{{ sec.sectionId }}" class="mb-8 content-section scroll-mt-6">
   <h2 class="text-[1.1rem] font-semibold mb-4 flex items-center gap-2">
     {{ sec.title }}

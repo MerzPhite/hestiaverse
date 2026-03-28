@@ -6,7 +6,7 @@ permalink: /assessment/paywall/
 
 <div id="assessment-paywall" class="max-w-md mx-auto py-8">
   <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea] text-center">Unlock your personalised report</h2>
-  <p class="text-muted text-center mb-8">Get your family's risk summary and what to do next. Subscribe to access the report and future updates.</p>
+  <p class="text-muted text-center mb-8">Get your family's risk summary and what to do next. Subscribe with Stripe (you will stay signed in with your Hestiaverse account).</p>
 
   <div class="bg-surface rounded-xl border border-border p-6 mb-6">
     <h3 class="text-lg font-semibold mb-4 text-[#e7e9ea]">Choose a plan</h3>
@@ -20,15 +20,30 @@ permalink: /assessment/paywall/
         <span class="font-mono text-accent">$79/year</span>
       </li>
     </ul>
-    <p class="text-muted text-xs mt-4">Cancel anytime. Your report is available as long as you're subscribed.</p>
+    <p class="text-muted text-xs mt-4">Cancel anytime. Your report unlocks after payment when your account shows an active subscription.</p>
   </div>
 
-  <button type="button" id="paywall-subscribe" class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">
-    Subscribe and view report
-  </button>
+  <div class="space-y-3">
+    <button
+      type="button"
+      id="paywall-monthly"
+      class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+      data-checkout-price="{{ env.stripePriceMonthly }}"
+    >
+      Subscribe monthly
+    </button>
+    <button
+      type="button"
+      id="paywall-yearly"
+      class="w-full py-3 px-6 rounded-lg bg-surface-hover text-[#e7e9ea] font-semibold border border-border hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+      data-checkout-price="{{ env.stripePriceYearly }}"
+    >
+      Subscribe yearly
+    </button>
+  </div>
 
-  <p id="paywall-integration-note" class="text-muted text-xs mt-4 text-center">
-    Payment integration (e.g. Stripe) can be connected here. For now, use the button above to simulate subscription and view your report.
+  <p id="paywall-config-hint" class="text-warning text-xs mt-4 text-center hidden" role="status">
+    Add STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY to your build environment, rebuild, and deploy the Worker so checkout can start.
   </p>
 </div>
 

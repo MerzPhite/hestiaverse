@@ -29,8 +29,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+  {% include "partials/hvs-gate-css.njk" %}
+  {% set supabaseConfig = { url: env.supabaseUrl, anonKey: env.supabaseAnonKey } %}
+  <script type="application/json" id="supabase-config">{{ supabaseConfig | json | safe }}</script>
 </head>
 <body class="font-sans bg-bg text-[#e7e9ea] leading-relaxed min-h-screen scroll-smooth">
+  {% include "partials/hvs-gate-body-open.njk" %}
   <header class="bg-gradient-to-b from-surface to-bg border-b border-border py-6 px-6 pb-8">
     <nav class="flex items-center justify-between max-w-4xl mx-auto" aria-label="Main">
       <a href="/" class="text-lg font-bold text-[#e7e9ea] no-underline hover:text-accent">HESTIA VERSE</a>
@@ -39,6 +43,7 @@
   </header>
 
   <main class="max-w-2xl mx-auto py-8 px-6 pb-16">
+    {% include "partials/hvs-gate-main-shell-start.njk" %}
     <article class="mb-10">
       {% if article.image %}
       <img src="{{ article.image }}" alt="App icon" class="w-24 h-24 rounded-2xl object-contain mb-6 bg-surface border border-border p-2" />
@@ -136,11 +141,14 @@
       </ul>
     </aside>
     {% endif %}
+    {% include "partials/hvs-gate-main-shell-end.njk" %}
   </main>
 
   <footer class="text-center py-8 px-6 border-t border-border text-muted text-sm">
     <p>For crisis or reporting: <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">NCMEC CyberTipline</a>. This page is informational only and not affiliated with any organization.</p>
   </footer>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/site-gate.js"></script>
   {% if article.slug == 'online-lingo-words-phrases' %}
   <script>
     (() => {

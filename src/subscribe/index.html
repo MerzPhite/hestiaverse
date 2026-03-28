@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Subscribe
+permalink: /subscribe/
+---
+
+<div class="max-w-md mx-auto py-8" id="subscribe-page">
+  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea] text-center">Subscribe</h2>
+  <p class="text-muted text-center mb-8">Sign in is required. Checkout runs on Stripe's secure page, then you return here with access to subscriber content.</p>
+
+  <div class="bg-surface rounded-xl border border-border p-6 mb-6">
+    <h3 class="text-lg font-semibold mb-4 text-[#e7e9ea]">Plans</h3>
+    <ul class="space-y-3 list-none p-0 m-0 text-sm text-muted mb-6">
+      <li class="flex justify-between"><span class="text-[#e7e9ea]">Monthly</span><span class="font-mono text-accent">$9/mo</span></li>
+      <li class="flex justify-between"><span class="text-[#e7e9ea]">Yearly</span><span class="font-mono text-accent">$79/yr</span></li>
+    </ul>
+    <div class="space-y-3">
+      <button
+        type="button"
+        class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg disabled:opacity-40 disabled:cursor-not-allowed"
+        data-checkout-price="{{ env.stripePriceMonthly }}"
+      >
+        Checkout monthly
+      </button>
+      <button
+        type="button"
+        class="w-full py-3 px-6 rounded-lg bg-surface-hover text-[#e7e9ea] font-semibold border border-border hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg disabled:opacity-40 disabled:cursor-not-allowed"
+        data-checkout-price="{{ env.stripePriceYearly }}"
+      >
+        Checkout yearly
+      </button>
+    </div>
+  </div>
+
+  <p id="subscribe-config-hint" class="text-warning text-xs text-center hidden">
+    Configure STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY at build time, then deploy the Worker with Stripe secrets.
+  </p>
+
+  <p class="text-center">
+    <a href="/" class="text-accent text-sm no-underline hover:underline">← Home</a>
+  </p>
+</div>
+
+<script type="module" src="/js/subscribe-checkout.js"></script>

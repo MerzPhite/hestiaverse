@@ -10,4 +10,7 @@ module.exports = {
     process.env.SUPABASE_PUBLISHABLE_KEY ||
     ""
   ).trim(),
+  /** Stripe Price IDs (safe in HTML): subscription prices from Stripe Dashboard. */
+  stripePriceMonthly: (process.env.STRIPE_PRICE_MONTHLY || "").trim(),
+  stripePriceYearly: (process.env.STRIPE_PRICE_YEARLY || "").trim(),
 };

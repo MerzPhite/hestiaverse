@@ -1,0 +1,18 @@
+<div id="site-auth-checking" class="py-16 px-6 text-center text-muted text-sm" role="status">
+  Checking access…
+</div>
+<div id="site-auth-wall" class="max-w-4xl mx-auto" role="alert">
+  <div class="py-16 px-6 text-center">
+    <p id="site-auth-wall-missing" class="text-warning text-sm max-w-md mx-auto mb-4" hidden>
+      This build is missing Supabase keys. Add <code class="font-mono text-xs bg-border px-1 rounded">SUPABASE_URL</code> and <code class="font-mono text-xs bg-border px-1 rounded">SUPABASE_ANON_KEY</code> to the environment, then rebuild.
+    </p>
+    <div id="site-auth-wall-signin">
+      <h2 class="text-xl font-semibold text-[#e7e9ea] mb-2">Sign in to continue</h2>
+      <p class="text-muted text-sm mb-6 max-w-md mx-auto">
+        Log in to use guides, articles, and tools. The landing page and sign-up flow stay open without an account.
+      </p>
+      <a id="site-auth-wall-login-link" href="/login/" class="inline-block py-2.5 px-5 rounded-lg bg-accent text-bg font-medium no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">Log in or create an account</a>
+    </div>
+  </div>
+</div>
+<div id="site-main-content">

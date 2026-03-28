@@ -3,17 +3,13 @@
  */
 
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { readSupabaseConfigFromDom } from "./supabase-env";
 
-function readConfig(): { url: string; anonKey: string } | null {
-  const el = document.getElementById("supabase-config");
-  if (!el?.textContent?.trim()) return null;
-  try {
-    const j = JSON.parse(el.textContent) as { url?: string; anonKey?: string };
-    if (j.url && j.anonKey) return { url: j.url, anonKey: j.anonKey };
-  } catch {
-    /* ignore */
-  }
-  return null;
+function safeNextParam(): string | null {
+  const next = new URLSearchParams(location.search).get("next");
+  if (!next || !next.startsWith("/") || next.startsWith("//")) return null;
+  if (next.includes(":")) return null;
+  return next;
 }
 
 function show(el: HTMLElement | null, visible: boolean): void {
@@ -24,11 +20,11 @@ function setText(el: HTMLElement | null, text: string): void {
   if (el) el.textContent = text;
 }
 
-function init(): void {
+async function initAuth(): Promise<void> {
   const root = document.getElementById("login-page");
   if (!root) return;
 
-  const cfg = readConfig();
+  const cfg = readSupabaseConfigFromDom();
   const missingEl = document.getElementById("auth-missing-config");
   const signedOutEl = document.getElementById("auth-signed-out");
   const signedInEl = document.getElementById("auth-signed-in");
@@ -46,6 +42,13 @@ function init(): void {
   show(missingEl, false);
 
   const supabase: SupabaseClient = createClient(cfg.url, cfg.anonKey);
+
+  const { data: initial } = await supabase.auth.getSession();
+  const next = safeNextParam();
+  if (initial.session && next) {
+    location.replace(next);
+    return;
+  }
 
   function setError(msg: string): void {
     setText(errEl, msg);
@@ -85,6 +88,11 @@ function init(): void {
       setError(error.message);
       return;
     }
+    const n = safeNextParam();
+    if (n) {
+      location.assign(n);
+      return;
+    }
     setOk("You're signed in.");
     await refreshSession();
   });
@@ -121,4 +129,6 @@ function init(): void {
   void refreshSession();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", () => {
+  void initAuth();
+});

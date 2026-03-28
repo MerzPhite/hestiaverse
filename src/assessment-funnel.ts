@@ -1,7 +1,11 @@
 /**
  * Assessment funnel: quiz, complete, paywall, report.
- * Quiz stores answers and computed risk slugs; paywall sets subscription flag; report shows personalised cards.
+ * Paywall starts Stripe Checkout (Worker). Report unlocks from Supabase subscriptions (or legacy local flag).
  */
+
+import { createClient } from "@supabase/supabase-js";
+import { startSubscriptionCheckout } from "./checkout-start";
+import { readSupabaseConfigFromDom } from "./supabase-env";
 
 const STORAGE_ANSWERS = "assessment_answers";
 const STORAGE_RISKS = "assessment_flagged_risks";
@@ -153,18 +157,56 @@ function runQuiz(): void {
 }
 
 function runPaywall(): void {
-  const btn = document.getElementById("paywall-subscribe");
-  btn?.addEventListener("click", () => {
-    localStorage.setItem(STORAGE_SUBSCRIBED, "1");
-    window.location.href = "/assessment/report/";
+  const hint = document.getElementById("paywall-config-hint");
+  const monthlyBtn = document.getElementById("paywall-monthly") as HTMLButtonElement | null;
+  const yearlyBtn = document.getElementById("paywall-yearly") as HTMLButtonElement | null;
+  const pm = monthlyBtn?.dataset.checkoutPrice?.trim();
+  const py = yearlyBtn?.dataset.checkoutPrice?.trim();
+  if (!pm || !py) {
+    hint?.classList.remove("hidden");
+    if (monthlyBtn) monthlyBtn.disabled = true;
+    if (yearlyBtn) yearlyBtn.disabled = true;
+    return;
+  }
+  monthlyBtn?.addEventListener("click", () => {
+    void startSubscriptionCheckout(pm, {
+      successPath: "/assessment/report",
+      cancelPath: "/assessment/paywall",
+    });
+  });
+  yearlyBtn?.addEventListener("click", () => {
+    void startSubscriptionCheckout(py, {
+      successPath: "/assessment/report",
+      cancelPath: "/assessment/paywall",
+    });
   });
 }
 
-function runReport(): void {
+async function isAssessmentSubscriber(): Promise<boolean> {
+  const cfg = readSupabaseConfigFromDom();
+  if (!cfg?.url || !cfg?.anonKey) {
+    return localStorage.getItem(STORAGE_SUBSCRIBED) === "1";
+  }
+  const supabase = createClient(cfg.url, cfg.anonKey);
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  if (!session?.user) return false;
+  const { data, error } = await supabase
+    .from("subscriptions")
+    .select("status")
+    .eq("user_id", session.user.id)
+    .maybeSingle();
+  if (error) return false;
+  const s = data?.status;
+  return s === "active" || s === "trialing";
+}
+
+async function runReport(): Promise<void> {
   const paywallBlock = document.getElementById("report-paywall-block");
   const reportContent = document.getElementById("report-content");
   const reportCards = document.getElementById("report-cards");
-  const subscribed = localStorage.getItem(STORAGE_SUBSCRIBED) === "1";
+  const subscribed = await isAssessmentSubscriber();
   const risksJson = sessionStorage.getItem(STORAGE_RISKS);
   const flaggedSlugs = risksJson ? (JSON.parse(risksJson) as string[]) : [];
   const articles = getArticles();
@@ -195,6 +237,7 @@ function runReport(): void {
   if (deduped.length === 0) {
     reportCards.innerHTML =
       '<p class="text-muted">No specific risk areas were flagged. We still recommend browsing our <a href="/" class="text-accent no-underline hover:underline">articles</a> for general guidance.</p>';
+    runConversationStarters(subscribed);
     return;
   }
 
@@ -210,6 +253,7 @@ function runReport(): void {
         </article>`
     )
     .join("");
+  runConversationStarters(subscribed);
 }
 
 function escapeHtml(s: string): string {
@@ -233,13 +277,12 @@ function setPassions(list: string[]): void {
   localStorage.setItem(STORAGE_PASSIONS, JSON.stringify(list));
 }
 
-function runConversationStarters(): void {
+function runConversationStarters(subscribed: boolean): void {
   const section = document.getElementById("conversation-starters-section");
   const listEl = document.getElementById("passions-list");
   const inputEl = document.getElementById("passion-input") as HTMLInputElement | null;
   const addBtn = document.getElementById("passion-add");
   const contentEl = document.getElementById("conversation-starters-content");
-  const subscribed = localStorage.getItem(STORAGE_SUBSCRIBED) === "1";
   if (!subscribed || !section || !listEl || !contentEl) return;
   const list = listEl;
   const content = contentEl;
@@ -344,13 +387,12 @@ function runConversationStarters(): void {
   renderPassionsList();
 }
 
-function init(): void {
+async function init(): Promise<void> {
   if (document.getElementById("assessment-quiz")) runQuiz();
   if (document.getElementById("assessment-paywall")) runPaywall();
   if (document.getElementById("assessment-report")) {
-    runReport();
-    runConversationStarters();
+    await runReport();
   }
 }
 
-init();
+void init();

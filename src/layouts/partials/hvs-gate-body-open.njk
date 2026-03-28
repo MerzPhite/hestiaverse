@@ -1,0 +1,18 @@
+<script>
+(function () {
+  var p = location.pathname;
+  if (p.length > 1 && p.charAt(p.length - 1) === "/") p = p.slice(0, -1);
+  if (!p) p = "/";
+  var pub =
+    p === "/signup" ||
+    p === "/signup-success" ||
+    p === "/login" ||
+    p === "/subscribe/success" ||
+    p === "/subscribe/cancel" ||
+    p === "/landing" ||
+    p.indexOf("/landing/") === 0;
+  var r = document.documentElement;
+  r.classList.toggle("hvs-public", pub);
+  r.classList.toggle("hvs-needs-auth", !pub);
+})();
+</script>

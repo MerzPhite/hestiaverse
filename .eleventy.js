@@ -14,6 +14,27 @@ module.exports = function (eleventyConfig) {
     return (arr || []).filter((item) => item[key] === val);
   });
 
+  /**
+   * Home page sections: sort by `published` (ISO `YYYY-MM-DD`) when set, else by order in
+   * `_data/articles.js` (later in the file = newer). Newest first.
+   */
+  eleventyConfig.addFilter("sortArticlesByDate", function (sectionItems, allArticles) {
+    if (!Array.isArray(sectionItems) || !sectionItems.length) return sectionItems || [];
+    const master = Array.isArray(allArticles) ? allArticles : [];
+    const indexOf = (slug) => {
+      const i = master.findIndex((a) => a.slug === slug);
+      return i === -1 ? -1 : i;
+    };
+    const rank = (a) => {
+      if (a.published) {
+        const t = new Date(a.published).getTime();
+        return Number.isFinite(t) ? t : indexOf(a.slug);
+      }
+      return indexOf(a.slug);
+    };
+    return [...sectionItems].sort((a, b) => rank(b) - rank(a));
+  });
+
   /** Articles for the /finance/ hub: money-finance section or money-finance label. */
   eleventyConfig.addFilter("financeHubArticles", function (articles) {
     return (articles || []).filter(

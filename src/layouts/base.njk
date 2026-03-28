@@ -29,8 +29,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+  {% include "partials/hvs-gate-css.njk" %}
+  {% set supabaseConfig = { url: env.supabaseUrl, anonKey: env.supabaseAnonKey } %}
+  <script type="application/json" id="supabase-config">{{ supabaseConfig | json | safe }}</script>
 </head>
 <body class="font-sans bg-bg text-[#e7e9ea] leading-relaxed min-h-screen scroll-smooth">
+  {% include "partials/hvs-gate-body-open.njk" %}
   <header class="bg-gradient-to-b from-surface to-bg border-b border-border py-8 px-6 pb-12 text-center">
     <nav class="mb-4 flex items-center justify-center gap-6" aria-label="Main">
       {% for item in site.nav %}
@@ -46,7 +50,9 @@
   </header>
 
   <main class="max-w-4xl mx-auto py-8 px-6 pb-16">
+    {% include "partials/hvs-gate-main-shell-start.njk" %}
     {{ content | safe }}
+    {% include "partials/hvs-gate-main-shell-end.njk" %}
   </main>
 
   <footer class="text-center py-8 px-6 border-t border-border text-muted text-[0.85rem]">
@@ -54,5 +60,6 @@
   </footer>
 
   <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/site-gate.js"></script>
 </body>
 </html>
