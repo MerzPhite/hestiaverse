@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "eleventy && tsc",
+    "build": "eleventy && tsc && esbuild src/auth.ts --bundle --outfile=dist/js/auth.js --format=esm --platform=browser",
     "dev": "eleventy --serve",
     "dev:full": "npm run build && concurrently \"eleventy --serve --watch\" \"tsc --watch\"",
     "create-article": "node scripts/create-article.js",
@@ -17,9 +17,12 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "concurrently": "^8.2.2",
+    "esbuild": "^0.24.2",
     "typescript": "^5.3.0"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7",
     "google-trends-api": "^4.9.2"
   }
 }

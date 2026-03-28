@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: Log in
+permalink: /login/
+---
+
+{% set supabaseConfig = { url: env.supabaseUrl, anonKey: env.supabaseAnonKey } %}
+<script type="application/json" id="supabase-config">{{ supabaseConfig | json }}</script>
+
+<div id="login-page" class="max-w-xl mx-auto py-8">
+  <h2 class="text-2xl font-bold mb-3 text-[#e7e9ea] text-center">Account</h2>
+  <p class="text-muted text-center mb-8">Sign in or create an account with email and password.</p>
+
+  <p id="auth-missing-config" class="rounded-lg border border-warning/50 bg-surface p-4 text-sm text-warning mb-6" hidden>
+    Supabase is not configured for this build. Add <code class="font-mono text-[0.85em]">SUPABASE_URL</code> and <code class="font-mono text-[0.85em]">SUPABASE_ANON_KEY</code> to your environment, then rebuild.
+  </p>
+
+  <p id="auth-error" class="rounded-lg border border-red-500/40 bg-surface p-3 text-sm text-red-300 mb-4" hidden role="alert"></p>
+  <p id="auth-message" class="rounded-lg border border-accent/40 bg-surface p-3 text-sm text-accent mb-4" hidden></p>
+
+  <div id="auth-signed-in" class="bg-surface rounded-xl border border-border p-6 mb-6" hidden>
+    <p class="text-sm text-muted mb-2">Signed in as</p>
+    <p id="auth-user-email" class="font-medium text-[#e7e9ea] mb-6"></p>
+    <button type="button" id="auth-sign-out" class="w-full py-3 px-6 rounded-lg border border-border text-[#e7e9ea] font-semibold hover:bg-surface-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-colors">
+      Sign out
+    </button>
+  </div>
+
+  <div id="auth-signed-out" class="space-y-8">
+    <div class="bg-surface rounded-xl border border-border p-6">
+      <h3 class="text-lg font-semibold text-[#e7e9ea] mb-4">Sign in</h3>
+      <form id="form-sign-in" class="space-y-4">
+        <div>
+          <label for="signin-email" class="block text-sm font-medium text-[#e7e9ea] mb-2">Email</label>
+          <input
+            type="email"
+            id="signin-email"
+            required
+            autocomplete="email"
+            class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+            placeholder="you@example.com"
+          />
+        </div>
+        <div>
+          <label for="signin-password" class="block text-sm font-medium text-[#e7e9ea] mb-2">Password</label>
+          <input
+            type="password"
+            id="signin-password"
+            required
+            autocomplete="current-password"
+            class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+          />
+        </div>
+        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">
+          Sign in
+        </button>
+      </form>
+    </div>
+
+    <div class="bg-surface rounded-xl border border-border p-6">
+      <h3 class="text-lg font-semibold text-[#e7e9ea] mb-4">Create account</h3>
+      <form id="form-sign-up" class="space-y-4">
+        <div>
+          <label for="signup-email" class="block text-sm font-medium text-[#e7e9ea] mb-2">Email</label>
+          <input
+            type="email"
+            id="signup-email"
+            required
+            autocomplete="email"
+            class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+            placeholder="you@example.com"
+          />
+        </div>
+        <div>
+          <label for="signup-password" class="block text-sm font-medium text-[#e7e9ea] mb-2">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            required
+            minlength="6"
+            autocomplete="new-password"
+            class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+          />
+        </div>
+        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-surface-hover text-[#e7e9ea] font-semibold border border-border hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">
+          Sign up
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <p class="mt-8 text-center">
+    <a href="/" class="text-accent no-underline hover:underline text-sm">← Back to home</a>
+  </p>
+</div>
+
+<script type="module" src="/js/auth.js"></script>

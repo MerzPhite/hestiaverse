@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("related", function (articles, current) {
     if (!current?.labels?.length) return [];
