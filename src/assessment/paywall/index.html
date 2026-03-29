@@ -28,6 +28,7 @@ permalink: /assessment/paywall/
       type="button"
       id="paywall-monthly"
       class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+      data-checkout-interval="monthly"
       data-checkout-price="{{ env.stripePriceMonthly }}"
     >
       Subscribe monthly
@@ -36,6 +37,7 @@ permalink: /assessment/paywall/
       type="button"
       id="paywall-yearly"
       class="w-full py-3 px-6 rounded-lg bg-surface-hover text-[#e7e9ea] font-semibold border border-border hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+      data-checkout-interval="yearly"
       data-checkout-price="{{ env.stripePriceYearly }}"
     >
       Subscribe yearly
@@ -43,7 +45,7 @@ permalink: /assessment/paywall/
   </div>
 
   <p id="paywall-config-hint" class="text-warning text-xs mt-4 text-center hidden" role="status">
-    Add STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY to your build environment, rebuild, and deploy the Worker so checkout can start.
+    Set STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY on the Worker or in <code class="font-mono text-[0.65rem] bg-border px-1 rounded">.env</code> before build. The page can load them from <code class="font-mono text-[0.65rem] bg-border px-1 rounded">/api/public-config</code> when the Worker has them.
   </p>
 </div>
 

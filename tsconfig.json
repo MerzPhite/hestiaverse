@@ -20,6 +20,7 @@
     "src/subscribe-checkout.ts",
     "src/home-panels.ts",
     "src/subscription-access.ts",
-    "src/supabase-browser.ts"
+    "src/supabase-browser.ts",
+    "src/checkout-prices.ts"
   ]
 }

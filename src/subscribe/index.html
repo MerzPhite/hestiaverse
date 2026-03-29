@@ -18,6 +18,7 @@ permalink: /subscribe/
       <button
         type="button"
         class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg disabled:opacity-40 disabled:cursor-not-allowed"
+        data-checkout-interval="monthly"
         data-checkout-price="{{ env.stripePriceMonthly }}"
       >
         Checkout monthly
@@ -25,6 +26,7 @@ permalink: /subscribe/
       <button
         type="button"
         class="w-full py-3 px-6 rounded-lg bg-surface-hover text-[#e7e9ea] font-semibold border border-border hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg disabled:opacity-40 disabled:cursor-not-allowed"
+        data-checkout-interval="yearly"
         data-checkout-price="{{ env.stripePriceYearly }}"
       >
         Checkout yearly
@@ -33,7 +35,7 @@ permalink: /subscribe/
   </div>
 
   <p id="subscribe-config-hint" class="text-warning text-xs text-center hidden">
-    Configure STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY at build time, then deploy the Worker with Stripe secrets.
+    Add STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY to your Cloudflare Worker (vars or secrets) or to <code class="font-mono text-[0.65rem] bg-border px-1 rounded">.env</code> before build. The live site can load price IDs from the Worker via <code class="font-mono text-[0.65rem] bg-border px-1 rounded">/api/public-config</code>.
   </p>
 
   <p class="text-center">

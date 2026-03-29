@@ -3,6 +3,7 @@
  * Paywall starts Stripe Checkout (Worker). Report unlocks from Supabase subscriptions (or legacy local flag).
  */
 
+import { mergeCheckoutPricesFromWorker } from "./checkout-prices";
 import { createSupabaseBrowserClient } from "./supabase-browser";
 import { startSubscriptionCheckout } from "./checkout-start";
 import { resolveSupabaseConfig } from "./supabase-env";
@@ -156,7 +157,8 @@ function runQuiz(): void {
   renderQuestion(currentIndex);
 }
 
-function runPaywall(): void {
+async function runPaywall(): Promise<void> {
+  await mergeCheckoutPricesFromWorker();
   const hint = document.getElementById("paywall-config-hint");
   const monthlyBtn = document.getElementById("paywall-monthly") as HTMLButtonElement | null;
   const yearlyBtn = document.getElementById("paywall-yearly") as HTMLButtonElement | null;
@@ -389,7 +391,7 @@ function runConversationStarters(subscribed: boolean): void {
 
 async function init(): Promise<void> {
   if (document.getElementById("assessment-quiz")) runQuiz();
-  if (document.getElementById("assessment-paywall")) runPaywall();
+  if (document.getElementById("assessment-paywall")) await runPaywall();
   if (document.getElementById("assessment-report")) {
     await runReport();
   }

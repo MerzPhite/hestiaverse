@@ -16,7 +16,9 @@ export async function startSubscriptionCheckout(
 ): Promise<void> {
   const trimmed = priceId?.trim();
   if (!trimmed) {
-    alert("Subscription prices are not configured for this build. Add STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY to your environment and rebuild.");
+    alert(
+      "Subscription price IDs are missing. Add STRIPE_PRICE_MONTHLY and STRIPE_PRICE_YEARLY to your Cloudflare Worker (same as checkout validation) or to .env before build."
+    );
     return;
   }
 

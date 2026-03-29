@@ -247,11 +247,21 @@ function handlePublicConfig(request: Request, env: Env): Response {
   const urlStr = (env.SUPABASE_URL || "").trim();
   const anonKey = (env.SUPABASE_ANON_KEY || "").trim();
   const site = (env.SITE_URL || "").trim().replace(/\/+$/, "");
-  const payload: { url: string; anonKey: string; siteUrl?: string } = {
+  const monthly = env.STRIPE_PRICE_MONTHLY?.trim();
+  const yearly = env.STRIPE_PRICE_YEARLY?.trim();
+  const payload: {
+    url: string;
+    anonKey: string;
+    siteUrl?: string;
+    stripePriceMonthly?: string;
+    stripePriceYearly?: string;
+  } = {
     url: urlStr,
     anonKey,
   };
   if (site) payload.siteUrl = `${site}/`;
+  if (monthly) payload.stripePriceMonthly = monthly;
+  if (yearly) payload.stripePriceYearly = yearly;
   return new Response(JSON.stringify(payload), {
     status: 200,
     headers: {

@@ -2,9 +2,11 @@
  * /subscribe/ page: monthly and yearly Checkout buttons.
  */
 
+import { mergeCheckoutPricesFromWorker } from "./checkout-prices";
 import { startSubscriptionCheckout } from "./checkout-start";
 
-function init(): void {
+async function init(): Promise<void> {
+  await mergeCheckoutPricesFromWorker();
   const buttons = document.querySelectorAll<HTMLElement>("[data-checkout-price]");
   let anyPrice = false;
   buttons.forEach((btn) => {
@@ -26,4 +28,4 @@ function init(): void {
   }
 }
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", () => void init());
