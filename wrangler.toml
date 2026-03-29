@@ -9,6 +9,7 @@ directory = "./dist"
 binding = "ASSETS"
 
 # Optional: set here or override in the dashboard / wrangler vars
+# Do not set STRIPE_SECRET_KEY here as an empty string; use wrangler secret put only (or dashboard Secrets).
 # [vars]
 # SITE_URL = "https://hestiaverse.leolaker23.workers.dev"
 # STRIPE_PRICE_MONTHLY = "price_xxx"   # also exposed to the browser via GET /api/public-config

@@ -21,6 +21,13 @@ export interface Env {
 const ALLOWED_SUCCESS_PATHS = new Set(["/subscribe/success", "/assessment/report"]);
 const ALLOWED_CANCEL_PATHS = new Set(["/subscribe/cancel", "/assessment/paywall"]);
 
+/** Public site origin for Stripe redirects and CORS. Falls back to this request's host if SITE_URL is unset. */
+function effectiveSiteUrl(request: Request, env: Env): string {
+  const fromEnv = (env.SITE_URL || "").trim().replace(/\/$/, "");
+  if (fromEnv) return fromEnv;
+  return new URL(request.url).origin.replace(/\/$/, "");
+}
+
 function stripeClient(secret: string): Stripe {
   return new Stripe(secret, {
     httpClient: Stripe.createFetchHttpClient(),
@@ -46,10 +53,10 @@ function json(data: unknown, status = 200, extraHeaders?: HeadersInit): Response
 
 function corsFor(request: Request, env: Env): HeadersInit {
   const origin = request.headers.get("Origin") || "";
-  const site = (env.SITE_URL || "").replace(/\/$/, "");
+  const site = effectiveSiteUrl(request, env);
   const ok =
     !origin ||
-    (site && origin === site) ||
+    origin === site ||
     origin.startsWith("http://localhost:") ||
     origin.startsWith("http://127.0.0.1:");
   if (!ok) return {};
@@ -115,22 +122,20 @@ async function handleCreateCheckout(request: Request, env: Env): Promise<Respons
     return json({ error: "Method not allowed" }, 405, cors);
   }
 
-  const site = (env.SITE_URL || "").replace(/\/$/, "");
-  if (!site || !env.STRIPE_SECRET_KEY) {
-    const missing: string[] = [];
-    if (!site) missing.push("SITE_URL");
-    if (!env.STRIPE_SECRET_KEY) missing.push("STRIPE_SECRET_KEY");
+  if (!env.STRIPE_SECRET_KEY?.trim()) {
     return json(
       {
         error: "Server not configured",
         detail:
-          "Set SITE_URL (Worker variable) and STRIPE_SECRET_KEY (Worker secret) for this Worker. Example: wrangler secret put STRIPE_SECRET_KEY",
-        missing,
+          "Add STRIPE_SECRET_KEY to this Worker (for example wrangler secret put STRIPE_SECRET_KEY).",
+        missing: ["STRIPE_SECRET_KEY"],
       },
       503,
       cors
     );
   }
+
+  const site = effectiveSiteUrl(request, env);
 
   let body: { priceId?: string; successPath?: string; cancelPath?: string };
   try {
@@ -258,7 +263,8 @@ function handlePublicConfig(request: Request, env: Env): Response {
   }
   const urlStr = (env.SUPABASE_URL || "").trim();
   const anonKey = (env.SUPABASE_ANON_KEY || "").trim();
-  const site = (env.SITE_URL || "").trim().replace(/\/+$/, "");
+  const siteFromEnv = (env.SITE_URL || "").trim().replace(/\/+$/, "");
+  const site = siteFromEnv || new URL(request.url).origin.replace(/\/+$/, "");
   const monthly = env.STRIPE_PRICE_MONTHLY?.trim();
   const yearly = env.STRIPE_PRICE_YEARLY?.trim();
   const payload: {
@@ -267,9 +273,12 @@ function handlePublicConfig(request: Request, env: Env): Response {
     siteUrl?: string;
     stripePriceMonthly?: string;
     stripePriceYearly?: string;
+    /** True when this Worker has STRIPE_SECRET_KEY (same check as checkout). Open this URL in the browser to debug 503 on checkout. */
+    stripeSecretConfigured: boolean;
   } = {
     url: urlStr,
     anonKey,
+    stripeSecretConfigured: !!env.STRIPE_SECRET_KEY?.trim(),
   };
   if (site) payload.siteUrl = `${site}/`;
   if (monthly) payload.stripePriceMonthly = monthly;

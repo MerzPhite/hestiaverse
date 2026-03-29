@@ -60,9 +60,28 @@ export async function startSubscriptionCheckout(
     return;
   }
 
-  const data = (await res.json()) as { url?: string; error?: string };
+  let data: {
+    url?: string;
+    error?: string;
+    detail?: string;
+    missing?: string[];
+  };
+  try {
+    data = (await res.json()) as typeof data;
+  } catch {
+    alert(`Checkout failed (${res.status}). Check the Worker has STRIPE_SECRET_KEY set.`);
+    return;
+  }
   if (!res.ok) {
-    alert(data.error || "Could not start checkout");
+    const lines = [
+      data.error,
+      data.detail,
+      data.missing?.length ? `Missing on Worker: ${data.missing.join(", ")}` : "",
+      res.status === 503
+        ? "Debug: open /api/public-config in a new tab. If stripeSecretConfigured is false, this deployment’s Worker does not see STRIPE_SECRET_KEY (wrong worker, env, or an empty [vars] entry overriding the secret)."
+        : "",
+    ].filter(Boolean);
+    alert(lines.length ? lines.join("\n\n") : "Could not start checkout");
     return;
   }
   if (data.url) {

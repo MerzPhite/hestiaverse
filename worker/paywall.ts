@@ -46,6 +46,7 @@ function allowsWithoutSubscription(p: string): boolean {
 }
 
 export function edgePaywallApplies(path: string): boolean {
+  if (path.startsWith("/api/")) return false;
   if (isStaticAssetPath(path)) return false;
   if (isPublicPath(path)) return false;
   if (allowsWithoutSubscription(path)) return false;
