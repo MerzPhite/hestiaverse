@@ -33,7 +33,7 @@ export async function startSubscriptionCheckout(
 
   if (!session) {
     const next = encodeURIComponent(location.pathname + location.search);
-    location.href = `/login/?next=${next}`;
+    location.href = `/?next=${next}`;
     return;
   }
 

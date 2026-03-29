@@ -30,7 +30,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   {% include "partials/hvs-gate-css.njk" %}
+  {% if env.siteUrl %}
+  {% set supabaseConfig = { url: env.supabaseUrl, anonKey: env.supabaseAnonKey, siteUrl: env.siteUrl ~ "/" } %}
+  {% else %}
   {% set supabaseConfig = { url: env.supabaseUrl, anonKey: env.supabaseAnonKey } %}
+  {% endif %}
   <script type="application/json" id="supabase-config">{{ supabaseConfig | json | safe }}</script>
 </head>
 <body class="font-sans bg-bg text-[#e7e9ea] leading-relaxed min-h-screen scroll-smooth">

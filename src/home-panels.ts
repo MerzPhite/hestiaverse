@@ -3,6 +3,7 @@
  */
 
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { augmentAuthErrorMessage, supabaseEmailRedirectUrl } from "./auth-helpers";
 import { resolveSupabaseConfig } from "./supabase-env";
 
 function show(el: HTMLElement | null, visible: boolean): void {
@@ -40,6 +41,7 @@ async function initHomePanels(): Promise<void> {
 
   show(missingEl, false);
 
+  const emailRedirectTo = supabaseEmailRedirectUrl(cfg.siteUrl);
   const supabase: SupabaseClient = createClient(cfg.url, cfg.anonKey);
 
   const { data: initial } = await supabase.auth.getSession();
@@ -87,7 +89,7 @@ async function initHomePanels(): Promise<void> {
     const password = passEl.value;
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) {
-      setError(error.message);
+      setError(augmentAuthErrorMessage(error.message, emailRedirectTo));
       return;
     }
     const n = safeNextParam();
@@ -108,9 +110,15 @@ async function initHomePanels(): Promise<void> {
     if (!emailEl || !passEl) return;
     const email = emailEl.value.trim();
     const password = passEl.value;
-    const { error } = await supabase.auth.signUp({ email, password });
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        emailRedirectTo,
+      },
+    });
     if (error) {
-      setError(error.message);
+      setError(augmentAuthErrorMessage(error.message, emailRedirectTo));
       return;
     }
     setOk(

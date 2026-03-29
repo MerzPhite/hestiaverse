@@ -10,6 +10,11 @@ module.exports = {
     process.env.SUPABASE_PUBLISHABLE_KEY ||
     ""
   ).trim(),
+  /**
+   * Canonical public origin (no trailing slash in env). Used for Supabase emailRedirectTo so
+   * confirmation links match URL Configuration. Same value as Worker SITE_URL in production.
+   */
+  siteUrl: (process.env.SITE_URL || "").trim().replace(/\/+$/, ""),
   /** Stripe Price IDs (safe in HTML): subscription prices from Stripe Dashboard. */
   stripePriceMonthly: (process.env.STRIPE_PRICE_MONTHLY || "").trim(),
   stripePriceYearly: (process.env.STRIPE_PRICE_YEARLY || "").trim(),

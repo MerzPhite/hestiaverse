@@ -46,7 +46,7 @@ function setWallView(missingConfig: boolean): void {
   const link = document.getElementById("site-auth-wall-login-link") as HTMLAnchorElement | null;
   if (link && !missingConfig) {
     const next = location.pathname + location.search;
-    link.href = "/login/?next=" + encodeURIComponent(next);
+    link.href = "/?next=" + encodeURIComponent(next);
   }
 }
 

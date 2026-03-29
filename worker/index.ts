@@ -245,7 +245,13 @@ function handlePublicConfig(request: Request, env: Env): Response {
   }
   const urlStr = (env.SUPABASE_URL || "").trim();
   const anonKey = (env.SUPABASE_ANON_KEY || "").trim();
-  return new Response(JSON.stringify({ url: urlStr, anonKey }), {
+  const site = (env.SITE_URL || "").trim().replace(/\/+$/, "");
+  const payload: { url: string; anonKey: string; siteUrl?: string } = {
+    url: urlStr,
+    anonKey,
+  };
+  if (site) payload.siteUrl = `${site}/`;
+  return new Response(JSON.stringify(payload), {
     status: 200,
     headers: {
       "Content-Type": "application/json",

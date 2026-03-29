@@ -10,7 +10,7 @@ binding = "ASSETS"
 
 # Optional: set here or override in the dashboard / wrangler vars
 # [vars]
-# SITE_URL = "https://your-domain.workers.dev"
+# SITE_URL = "https://hestiaverse.leolaker23.workers.dev"
 # STRIPE_PRICE_MONTHLY = "price_xxx"
 # STRIPE_PRICE_YEARLY = "price_yyy"
 # SUPABASE_URL = "https://xxx.supabase.co"

@@ -3,6 +3,7 @@
  */
 
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { augmentAuthErrorMessage, supabaseEmailRedirectUrl } from "./auth-helpers";
 import { resolveSupabaseConfig } from "./supabase-env";
 
 function safeNextParam(): string | null {
@@ -41,6 +42,7 @@ async function initAuth(): Promise<void> {
 
   show(missingEl, false);
 
+  const emailRedirectTo = supabaseEmailRedirectUrl(cfg.siteUrl);
   const supabase: SupabaseClient = createClient(cfg.url, cfg.anonKey);
 
   const { data: initial } = await supabase.auth.getSession();
@@ -85,7 +87,7 @@ async function initAuth(): Promise<void> {
     const password = (document.getElementById("signin-password") as HTMLInputElement).value;
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) {
-      setError(error.message);
+      setError(augmentAuthErrorMessage(error.message, emailRedirectTo));
       return;
     }
     const n = safeNextParam();
@@ -103,9 +105,15 @@ async function initAuth(): Promise<void> {
     setError("");
     const email = (document.getElementById("signup-email") as HTMLInputElement).value.trim();
     const password = (document.getElementById("signup-password") as HTMLInputElement).value;
-    const { error } = await supabase.auth.signUp({ email, password });
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        emailRedirectTo,
+      },
+    });
     if (error) {
-      setError(error.message);
+      setError(augmentAuthErrorMessage(error.message, emailRedirectTo));
       return;
     }
     setOk(
