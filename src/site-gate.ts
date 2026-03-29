@@ -3,7 +3,7 @@
  */
 
 import { createClient, type Session } from "@supabase/supabase-js";
-import { readSupabaseConfigFromDom } from "./supabase-env";
+import { resolveSupabaseConfig } from "./supabase-env";
 
 const html = document.documentElement;
 
@@ -46,7 +46,7 @@ function setWallView(missingConfig: boolean): void {
   }
 }
 
-function init(): void {
+async function init(): Promise<void> {
   if (pathIsPublic()) {
     html.classList.add("hvs-public");
     html.classList.remove("hvs-needs-auth", "hvs-auth-ok", "hvs-auth-fail");
@@ -56,7 +56,7 @@ function init(): void {
   html.classList.remove("hvs-public");
   html.classList.add("hvs-needs-auth");
 
-  const cfg = readSupabaseConfigFromDom();
+  const cfg = await resolveSupabaseConfig();
   if (!cfg) {
     setWallView(true);
     return;
@@ -78,4 +78,4 @@ function init(): void {
   });
 }
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", () => void init());

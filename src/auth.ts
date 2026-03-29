@@ -3,7 +3,7 @@
  */
 
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-import { readSupabaseConfigFromDom } from "./supabase-env";
+import { resolveSupabaseConfig } from "./supabase-env";
 
 function safeNextParam(): string | null {
   const next = new URLSearchParams(location.search).get("next");
@@ -24,7 +24,7 @@ async function initAuth(): Promise<void> {
   const root = document.getElementById("login-page");
   if (!root) return;
 
-  const cfg = readSupabaseConfigFromDom();
+  const cfg = await resolveSupabaseConfig();
   const missingEl = document.getElementById("auth-missing-config");
   const signedOutEl = document.getElementById("auth-signed-out");
   const signedInEl = document.getElementById("auth-signed-in");

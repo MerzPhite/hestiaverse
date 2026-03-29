@@ -25,3 +25,21 @@ export function readSupabaseConfigFromDom(): { url: string; anonKey: string } | 
   if (j?.url && j?.anonKey) return { url: j.url, anonKey: j.anonKey };
   return null;
 }
+
+/**
+ * Prefer HTML from build (Eleventy + .env). If empty (e.g. CI built without env), ask the Worker
+ * for the same public values (SUPABASE_URL + SUPABASE_ANON_KEY in Worker secrets).
+ */
+export async function resolveSupabaseConfig(): Promise<{ url: string; anonKey: string } | null> {
+  const fromDom = readSupabaseConfigFromDom();
+  if (fromDom) return fromDom;
+  try {
+    const res = await fetch("/api/public-config", { credentials: "same-origin" });
+    if (!res.ok) return null;
+    const j = (await res.json()) as { url?: string; anonKey?: string };
+    if (j?.url && j?.anonKey) return { url: j.url, anonKey: j.anonKey };
+  } catch {
+    /* offline or static preview without Worker */
+  }
+  return null;
+}

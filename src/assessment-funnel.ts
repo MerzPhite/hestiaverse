@@ -5,7 +5,7 @@
 
 import { createClient } from "@supabase/supabase-js";
 import { startSubscriptionCheckout } from "./checkout-start";
-import { readSupabaseConfigFromDom } from "./supabase-env";
+import { resolveSupabaseConfig } from "./supabase-env";
 
 const STORAGE_ANSWERS = "assessment_answers";
 const STORAGE_RISKS = "assessment_flagged_risks";
@@ -183,7 +183,7 @@ function runPaywall(): void {
 }
 
 async function isAssessmentSubscriber(): Promise<boolean> {
-  const cfg = readSupabaseConfigFromDom();
+  const cfg = await resolveSupabaseConfig();
   if (!cfg?.url || !cfg?.anonKey) {
     return localStorage.getItem(STORAGE_SUBSCRIBED) === "1";
   }

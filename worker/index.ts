@@ -54,7 +54,7 @@ function corsFor(request: Request, env: Env): HeadersInit {
   if (!ok) return {};
   return {
     "Access-Control-Allow-Origin": origin || site || "*",
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Authorization, Content-Type",
     "Access-Control-Max-Age": "86400",
   };
@@ -234,10 +234,35 @@ async function handleWebhook(request: Request, env: Env): Promise<Response> {
   return json({ received: true });
 }
 
+/** Public client config (anon key is safe for browsers with RLS). Filled from Worker secrets when HTML build omitted them. */
+function handlePublicConfig(request: Request, env: Env): Response {
+  const cors = corsFor(request, env);
+  if (request.method === "OPTIONS") {
+    return new Response(null, { status: 204, headers: cors });
+  }
+  if (request.method !== "GET") {
+    return json({ error: "Method not allowed" }, 405, cors);
+  }
+  const urlStr = (env.SUPABASE_URL || "").trim();
+  const anonKey = (env.SUPABASE_ANON_KEY || "").trim();
+  return new Response(JSON.stringify({ url: urlStr, anonKey }), {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json",
+      "Cache-Control": "no-store",
+      ...cors,
+    },
+  });
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/$/, "") || "/";
+
+    if (path === "/api/public-config") {
+      return handlePublicConfig(request, env);
+    }
 
     if (path === "/api/create-checkout-session") {
       return handleCreateCheckout(request, env);

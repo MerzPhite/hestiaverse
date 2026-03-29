@@ -3,7 +3,7 @@
  */
 
 import { createClient } from "@supabase/supabase-js";
-import { readSupabaseConfigFromDom } from "./supabase-env";
+import { resolveSupabaseConfig } from "./supabase-env";
 
 export type CheckoutPaths = {
   successPath?: string;
@@ -20,7 +20,7 @@ export async function startSubscriptionCheckout(
     return;
   }
 
-  const cfg = readSupabaseConfigFromDom();
+  const cfg = await resolveSupabaseConfig();
   if (!cfg?.url || !cfg?.anonKey) {
     alert("Sign-in is not configured. Add Supabase keys and rebuild.");
     return;
