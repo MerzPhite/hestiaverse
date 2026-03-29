@@ -12,6 +12,10 @@ export function pathIsPublic(): boolean {
   let p = location.pathname;
   if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
   if (!p) p = "/";
+  if (p === "/") return true;
+  if (p === "/about") return true;
+  if (p === "/connection" || p.startsWith("/connection/")) return true;
+  if (p === "/connection-2" || p.startsWith("/connection-2/")) return true;
   if (
     p === "/signup" ||
     p === "/signup-success" ||

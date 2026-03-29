@@ -4,6 +4,51 @@ title: Home
 permalink: /
 ---
 
+<div id="home-guest-panel" class="max-w-xl mx-auto py-8 px-2">
+  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea] text-center">Sign in to browse</h2>
+  <p class="text-muted text-center mb-8">Use your email below to sign in or create an account. Then the full home library unlocks on this page.</p>
+  <p id="home-auth-missing-config" class="rounded-lg border border-warning/50 bg-surface p-4 text-sm text-warning mb-6" hidden>
+    Supabase is not configured for this build. Add <code class="font-mono text-xs bg-border px-1 rounded">SUPABASE_URL</code> and <code class="font-mono text-xs bg-border px-1 rounded">SUPABASE_ANON_KEY</code> to your environment or Worker, then rebuild or deploy.
+  </p>
+  <p id="home-auth-error" class="rounded-lg border border-red-500/40 bg-surface p-3 text-sm text-red-300 mb-4" hidden role="alert"></p>
+  <p id="home-auth-message" class="rounded-lg border border-accent/40 bg-surface p-3 text-sm text-accent mb-4" hidden></p>
+  <div class="space-y-8">
+    <div class="bg-surface rounded-xl border border-border p-6">
+      <h3 class="text-lg font-semibold text-[#e7e9ea] mb-4">Sign in</h3>
+      <form id="home-form-sign-in" class="space-y-4">
+        <div>
+          <label for="home-signin-email" class="block text-sm font-medium text-[#e7e9ea] mb-2">Email</label>
+          <input type="email" id="home-signin-email" required autocomplete="email" class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="home-signin-password" class="block text-sm font-medium text-[#e7e9ea] mb-2">Password</label>
+          <input type="password" id="home-signin-password" required autocomplete="current-password" class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+        </div>
+        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-accent text-bg font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">Sign in</button>
+      </form>
+    </div>
+    <div class="bg-surface rounded-xl border border-border p-6">
+      <h3 class="text-lg font-semibold text-[#e7e9ea] mb-4">Create account</h3>
+      <form id="home-form-sign-up" class="space-y-4">
+        <div>
+          <label for="home-signup-email" class="block text-sm font-medium text-[#e7e9ea] mb-2">Email</label>
+          <input type="email" id="home-signup-email" required autocomplete="email" class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="home-signup-password" class="block text-sm font-medium text-[#e7e9ea] mb-2">Password</label>
+          <input type="password" id="home-signup-password" required minlength="6" autocomplete="new-password" class="w-full py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+        </div>
+        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-surface-hover text-[#e7e9ea] font-semibold border border-border hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg transition-opacity">Create account</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="home-signed-in-panel" hidden>
+<div class="flex flex-wrap items-center justify-end gap-3 mb-6 text-sm">
+  <span id="home-session-email" class="text-muted"></span>
+  <button type="button" id="home-sign-out" class="text-accent font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Sign out</button>
+</div>
 <section class="mb-8 py-6 px-6 bg-accent/10 border-l-4 border-accent rounded-xl" aria-label="Start here">
   <h2 class="text-lg font-semibold mb-3 text-[#e7e9ea]">Start here</h2>
   <p class="text-muted text-sm mb-4">Three things you can do right now to help keep your child safer online.</p>
@@ -74,12 +119,6 @@ permalink: /
       </a>
     </div>
   </div>
-</section>
-
-<section class="mb-8 py-5 px-6 bg-surface rounded-xl border border-border text-center">
-  <p class="text-[#e7e9ea] font-semibold mb-2">Not sure where to start?</p>
-  <p class="text-muted text-sm mb-4">Take a short assessment and get a personalised report on the risk areas that may affect your family.</p>
-  <a href="/assessment/" class="inline-block py-2.5 px-5 rounded-lg bg-accent text-bg font-medium no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">Start the assessment</a>
 </section>
 
 {% if trends.datasets and trends.datasets.length > 0 and trends.labels and trends.labels.length > 0 %}
@@ -226,3 +265,6 @@ permalink: /
   {% endif %}
 </section>
 {% endfor %}
+</div>
+
+<script type="module" src="/js/home-panels.js"></script>

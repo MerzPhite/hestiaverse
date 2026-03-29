@@ -4,6 +4,12 @@
   if (p.length > 1 && p.charAt(p.length - 1) === "/") p = p.slice(0, -1);
   if (!p) p = "/";
   var pub =
+    p === "/" ||
+    p === "/about" ||
+    p === "/connection" ||
+    p.indexOf("/connection/") === 0 ||
+    p === "/connection-2" ||
+    p.indexOf("/connection-2/") === 0 ||
     p === "/signup" ||
     p === "/signup-success" ||
     p === "/login" ||

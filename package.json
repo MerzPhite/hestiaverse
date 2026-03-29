@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "eleventy && tsc && esbuild src/auth.ts --bundle --outfile=dist/js/auth.js --format=esm --platform=browser && esbuild src/site-gate.ts --bundle --outfile=dist/js/site-gate.js --format=esm --platform=browser && esbuild src/assessment-funnel.ts --bundle --outfile=dist/js/assessment-funnel.js --format=esm --platform=browser && esbuild src/subscribe-checkout.ts --bundle --outfile=dist/js/subscribe-checkout.js --format=esm --platform=browser",
+    "build": "eleventy && tsc && esbuild src/auth.ts --bundle --outfile=dist/js/auth.js --format=esm --platform=browser && esbuild src/site-gate.ts --bundle --outfile=dist/js/site-gate.js --format=esm --platform=browser && esbuild src/home-panels.ts --bundle --outfile=dist/js/home-panels.js --format=esm --platform=browser && esbuild src/assessment-funnel.ts --bundle --outfile=dist/js/assessment-funnel.js --format=esm --platform=browser && esbuild src/subscribe-checkout.ts --bundle --outfile=dist/js/subscribe-checkout.js --format=esm --platform=browser",
     "deploy": "npm run build && wrangler deploy",
     "dev": "eleventy --serve",
     "dev:full": "npm run build && concurrently \"eleventy --serve --watch\" \"tsc --watch\"",
