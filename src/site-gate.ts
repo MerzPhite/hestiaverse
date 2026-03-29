@@ -1,9 +1,12 @@
 /**
- * Require Supabase session on all pages except landing, signup (+ success), and login.
+ * Require Supabase session on protected pages; require active subscription for premium content.
+ * Keep path rules in sync with worker/paywall.ts (edge redirects before static HTML is served).
  */
 
-import { createClient, type Session } from "@supabase/supabase-js";
+import type { Session, SupabaseClient } from "@supabase/supabase-js";
+import { createSupabaseBrowserClient } from "./supabase-browser";
 import { resolveSupabaseConfig } from "./supabase-env";
+import { userHasActiveSubscription } from "./subscription-access";
 
 const html = document.documentElement;
 
@@ -29,13 +32,37 @@ export function pathIsPublic(): boolean {
   return false;
 }
 
+function normalizePath(): string {
+  let p = location.pathname;
+  if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
+  if (!p) p = "/";
+  return p;
+}
+
+/** Premium library: subscription required once signed in. Subscribe and assessment flows stay reachable. */
+function pathRequiresActiveSubscription(): boolean {
+  if (pathIsPublic()) return false;
+  const p = normalizePath();
+  if (p === "/subscribe") return false;
+  if (p === "/assessment" || p.startsWith("/assessment/")) return false;
+  return true;
+}
+
+function clearGateOutcomeClasses(): void {
+  html.classList.remove("hvs-auth-ok", "hvs-auth-fail", "hvs-sub-fail");
+}
+
+function setCheckingView(): void {
+  clearGateOutcomeClasses();
+}
+
 function setAuthedView(): void {
-  html.classList.remove("hvs-auth-fail");
+  clearGateOutcomeClasses();
   html.classList.add("hvs-auth-ok");
 }
 
 function setWallView(missingConfig: boolean): void {
-  html.classList.remove("hvs-auth-ok");
+  clearGateOutcomeClasses();
   html.classList.add("hvs-auth-fail");
   const wallMissing = document.getElementById("site-auth-wall-missing");
   const wallSignin = document.getElementById("site-auth-wall-signin");
@@ -50,15 +77,43 @@ function setWallView(missingConfig: boolean): void {
   }
 }
 
+function setSubWallView(): void {
+  clearGateOutcomeClasses();
+  html.classList.add("hvs-sub-fail");
+  const next = location.pathname + location.search;
+  const subLink = document.getElementById("site-sub-wall-subscribe-link") as HTMLAnchorElement | null;
+  if (subLink) subLink.href = "/subscribe/?next=" + encodeURIComponent(next);
+  const homeLink = document.getElementById("site-sub-wall-home-link") as HTMLAnchorElement | null;
+  if (homeLink) homeLink.href = "/";
+}
+
+async function applyAccess(
+  supabase: SupabaseClient,
+  session: Session | null
+): Promise<void> {
+  if (!session) {
+    setWallView(false);
+    return;
+  }
+  if (!pathRequiresActiveSubscription()) {
+    setAuthedView();
+    return;
+  }
+  const ok = await userHasActiveSubscription(supabase, session.user.id);
+  if (ok) setAuthedView();
+  else setSubWallView();
+}
+
 async function init(): Promise<void> {
   if (pathIsPublic()) {
     html.classList.add("hvs-public");
-    html.classList.remove("hvs-needs-auth", "hvs-auth-ok", "hvs-auth-fail");
+    html.classList.remove("hvs-needs-auth", "hvs-auth-ok", "hvs-auth-fail", "hvs-sub-fail");
     return;
   }
 
   html.classList.remove("hvs-public");
   html.classList.add("hvs-needs-auth");
+  setCheckingView();
 
   const cfg = await resolveSupabaseConfig();
   if (!cfg) {
@@ -66,19 +121,20 @@ async function init(): Promise<void> {
     return;
   }
 
-  const supabase = createClient(cfg.url, cfg.anonKey);
+  const supabase = createSupabaseBrowserClient(cfg.url, cfg.anonKey);
 
-  function applySession(session: Session | null): void {
-    if (session) setAuthedView();
-    else setWallView(false);
+  async function refreshFromSession(session: Session | null): Promise<void> {
+    setCheckingView();
+    await applyAccess(supabase, session);
   }
 
-  void supabase.auth.getSession().then(({ data }) => {
-    applySession(data.session);
-  });
+  const {
+    data: { session: initial },
+  } = await supabase.auth.getSession();
+  await refreshFromSession(initial);
 
   supabase.auth.onAuthStateChange((_event, session) => {
-    applySession(session);
+    void refreshFromSession(session);
   });
 }
 

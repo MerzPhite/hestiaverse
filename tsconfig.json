@@ -18,6 +18,8 @@
     "src/checkout-start.ts",
     "src/assessment-funnel.ts",
     "src/subscribe-checkout.ts",
-    "src/home-panels.ts"
+    "src/home-panels.ts",
+    "src/subscription-access.ts",
+    "src/supabase-browser.ts"
   ]
 }

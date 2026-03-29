@@ -1,15 +1,25 @@
 <style id="hvs-gate-styles">
 #site-auth-checking,
-#site-auth-wall { display: none; }
+#site-auth-wall,
+#site-sub-wall { display: none; }
 html.hvs-public #site-main-content { display: block !important; }
 html.hvs-public #site-auth-checking,
-html.hvs-public #site-auth-wall { display: none !important; }
-html.hvs-needs-auth:not(.hvs-auth-ok):not(.hvs-auth-fail) #site-main-content { display: none !important; }
-html.hvs-needs-auth:not(.hvs-auth-ok):not(.hvs-auth-fail) #site-auth-checking { display: block; }
+html.hvs-public #site-auth-wall,
+html.hvs-public #site-sub-wall { display: none !important; }
+html.hvs-needs-auth:not(.hvs-auth-ok):not(.hvs-auth-fail):not(.hvs-sub-fail) #site-main-content { display: none !important; }
+html.hvs-needs-auth:not(.hvs-auth-ok):not(.hvs-auth-fail):not(.hvs-sub-fail) #site-auth-checking { display: block; }
+html.hvs-needs-auth:not(.hvs-auth-ok):not(.hvs-auth-fail):not(.hvs-sub-fail) #site-auth-wall,
+html.hvs-needs-auth:not(.hvs-auth-ok):not(.hvs-auth-fail):not(.hvs-sub-fail) #site-sub-wall { display: none !important; }
 html.hvs-needs-auth.hvs-auth-ok #site-main-content { display: block; }
 html.hvs-needs-auth.hvs-auth-ok #site-auth-checking,
-html.hvs-needs-auth.hvs-auth-ok #site-auth-wall { display: none; }
+html.hvs-needs-auth.hvs-auth-ok #site-auth-wall,
+html.hvs-needs-auth.hvs-auth-ok #site-sub-wall { display: none; }
 html.hvs-needs-auth.hvs-auth-fail #site-main-content,
-html.hvs-needs-auth.hvs-auth-fail #site-auth-checking { display: none !important; }
+html.hvs-needs-auth.hvs-auth-fail #site-auth-checking,
+html.hvs-needs-auth.hvs-auth-fail #site-sub-wall { display: none !important; }
 html.hvs-needs-auth.hvs-auth-fail #site-auth-wall { display: block; }
+html.hvs-needs-auth.hvs-sub-fail #site-main-content,
+html.hvs-needs-auth.hvs-sub-fail #site-auth-checking,
+html.hvs-needs-auth.hvs-sub-fail #site-auth-wall { display: none !important; }
+html.hvs-needs-auth.hvs-sub-fail #site-sub-wall { display: block; }
 </style>

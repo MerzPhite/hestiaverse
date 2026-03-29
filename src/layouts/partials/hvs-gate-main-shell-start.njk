@@ -9,9 +9,21 @@
     <div id="site-auth-wall-signin">
       <h2 class="text-xl font-semibold text-[#e7e9ea] mb-2">Sign in to continue</h2>
       <p class="text-muted text-sm mb-6 max-w-md mx-auto">
-        Log in to use guides, articles, and tools. The landing page and sign-up flow stay open without an account.
+        Sign in to continue. Some pages stay open without an account (home, about, connection). Guides and articles need an account and an active subscription.
       </p>
-      <a id="site-auth-wall-login-link" href="/login/" class="inline-block py-2.5 px-5 rounded-lg bg-accent text-bg font-medium no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">Log in or create an account</a>
+      <a id="site-auth-wall-login-link" href="/" class="inline-block py-2.5 px-5 rounded-lg bg-accent text-bg font-medium no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">Log in or create an account</a>
+    </div>
+  </div>
+</div>
+<div id="site-sub-wall" class="max-w-4xl mx-auto" role="alert">
+  <div class="py-16 px-6 text-center">
+    <h2 class="text-xl font-semibold text-[#e7e9ea] mb-2">Subscription required</h2>
+    <p class="text-muted text-sm mb-6 max-w-md mx-auto">
+      You are signed in. Choose a plan to read guides and full articles. Checkout is handled by Stripe.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <a id="site-sub-wall-subscribe-link" href="/subscribe/" class="inline-block py-2.5 px-5 rounded-lg bg-accent text-bg font-medium no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">View plans and subscribe</a>
+      <a id="site-sub-wall-home-link" href="/" class="text-sm text-accent no-underline hover:underline">Home</a>
     </div>
   </div>
 </div>

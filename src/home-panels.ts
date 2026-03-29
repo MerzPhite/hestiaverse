@@ -1,10 +1,12 @@
 /**
- * Home page: show sign-in / sign-up when logged out; full library when logged in.
+ * Home page: guest sign-in/up, signed-in without subscription (subscribe CTA), or full library with subscription.
  */
 
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { augmentAuthErrorMessage, supabaseEmailRedirectUrl } from "./auth-helpers";
+import { createSupabaseBrowserClient } from "./supabase-browser";
 import { resolveSupabaseConfig } from "./supabase-env";
+import { userHasActiveSubscription } from "./subscription-access";
 
 function show(el: HTMLElement | null, visible: boolean): void {
   if (el) el.hidden = !visible;
@@ -23,18 +25,22 @@ function safeNextParam(): string | null {
 
 async function initHomePanels(): Promise<void> {
   const guest = document.getElementById("home-guest-panel");
+  const needsSub = document.getElementById("home-needs-sub-panel");
   const signed = document.getElementById("home-signed-in-panel");
-  if (!guest || !signed) return;
+  if (!guest || !needsSub || !signed) return;
 
   const missingEl = document.getElementById("home-auth-missing-config");
   const errEl = document.getElementById("home-auth-error");
   const okEl = document.getElementById("home-auth-message");
   const sessionEmailEl = document.getElementById("home-session-email");
+  const needsSubEmailEl = document.getElementById("home-needs-sub-email");
+  const subscribeCta = document.getElementById("home-subscribe-cta") as HTMLAnchorElement | null;
 
   const cfg = await resolveSupabaseConfig();
   if (!cfg) {
     show(missingEl, true);
     guest.hidden = false;
+    needsSub.hidden = true;
     signed.hidden = true;
     return;
   }
@@ -42,7 +48,7 @@ async function initHomePanels(): Promise<void> {
   show(missingEl, false);
 
   const emailRedirectTo = supabaseEmailRedirectUrl(cfg.siteUrl);
-  const supabase: SupabaseClient = createClient(cfg.url, cfg.anonKey);
+  const supabase: SupabaseClient = createSupabaseBrowserClient(cfg.url, cfg.anonKey);
 
   const { data: initial } = await supabase.auth.getSession();
   const next = safeNextParam();
@@ -68,13 +74,29 @@ async function initHomePanels(): Promise<void> {
   async function refreshPanels(): Promise<void> {
     const { data } = await supabase.auth.getSession();
     const session = data.session;
-    if (session?.user) {
-      setText(sessionEmailEl, session.user.email ?? "Signed in");
+    if (!session?.user) {
+      guest.hidden = false;
+      needsSub.hidden = true;
+      signed.hidden = true;
+      return;
+    }
+
+    const email = session.user.email ?? "Signed in";
+    setText(sessionEmailEl, email);
+    setText(needsSubEmailEl, email);
+
+    const sub = await userHasActiveSubscription(supabase, session.user.id);
+    if (sub) {
       guest.hidden = true;
+      needsSub.hidden = true;
       signed.hidden = false;
     } else {
-      guest.hidden = false;
+      guest.hidden = true;
+      needsSub.hidden = false;
       signed.hidden = true;
+      if (subscribeCta) {
+        subscribeCta.href = "/subscribe/?next=" + encodeURIComponent("/");
+      }
     }
   }
 
@@ -128,6 +150,13 @@ async function initHomePanels(): Promise<void> {
   });
 
   document.getElementById("home-sign-out")?.addEventListener("click", async () => {
+    setError("");
+    setOk("");
+    await supabase.auth.signOut();
+    await refreshPanels();
+  });
+
+  document.getElementById("home-needs-sub-sign-out")?.addEventListener("click", async () => {
     setError("");
     setOk("");
     await supabase.auth.signOut();

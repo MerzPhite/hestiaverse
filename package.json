@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "eleventy && tsc && esbuild src/auth.ts --bundle --outfile=dist/js/auth.js --format=esm --platform=browser && esbuild src/site-gate.ts --bundle --outfile=dist/js/site-gate.js --format=esm --platform=browser && esbuild src/home-panels.ts --bundle --outfile=dist/js/home-panels.js --format=esm --platform=browser && esbuild src/assessment-funnel.ts --bundle --outfile=dist/js/assessment-funnel.js --format=esm --platform=browser && esbuild src/subscribe-checkout.ts --bundle --outfile=dist/js/subscribe-checkout.js --format=esm --platform=browser",
+    "build": "eleventy && tsc && esbuild src/auth.ts src/site-gate.ts src/home-panels.ts src/assessment-funnel.ts src/subscribe-checkout.ts --bundle --splitting --format=esm --outdir=dist/js --platform=browser",
     "deploy": "npm run build && wrangler deploy",
     "dev": "eleventy --serve",
     "dev:full": "npm run build && concurrently \"eleventy --serve --watch\" \"tsc --watch\"",
@@ -24,7 +24,9 @@
     "wrangler": "^4.78.0"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.49.1",
+    "cookie": "^1.1.1",
     "dotenv": "^16.4.7",
     "google-trends-api": "^4.9.2",
     "stripe": "^21.0.1"

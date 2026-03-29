@@ -4,6 +4,7 @@
  */
 
 import Stripe from "stripe";
+import { edgePaywallResponse } from "./paywall";
 
 export interface Env {
   ASSETS: Fetcher;
@@ -275,6 +276,11 @@ export default {
     }
     if (path === "/api/stripe-webhook") {
       return handleWebhook(request, env);
+    }
+
+    const paywalled = await edgePaywallResponse(request, env);
+    if (paywalled) {
+      return paywalled;
     }
 
     return env.ASSETS.fetch(request);

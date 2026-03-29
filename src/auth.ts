@@ -2,8 +2,9 @@
  * Supabase auth: sign up, sign in, sign out (bundled for /login/).
  */
 
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { augmentAuthErrorMessage, supabaseEmailRedirectUrl } from "./auth-helpers";
+import { createSupabaseBrowserClient } from "./supabase-browser";
 import { resolveSupabaseConfig } from "./supabase-env";
 
 function safeNextParam(): string | null {
@@ -43,7 +44,7 @@ async function initAuth(): Promise<void> {
   show(missingEl, false);
 
   const emailRedirectTo = supabaseEmailRedirectUrl(cfg.siteUrl);
-  const supabase: SupabaseClient = createClient(cfg.url, cfg.anonKey);
+  const supabase: SupabaseClient = createSupabaseBrowserClient(cfg.url, cfg.anonKey);
 
   const { data: initial } = await supabase.auth.getSession();
   const next = safeNextParam();

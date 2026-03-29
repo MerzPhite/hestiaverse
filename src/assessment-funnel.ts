@@ -3,7 +3,7 @@
  * Paywall starts Stripe Checkout (Worker). Report unlocks from Supabase subscriptions (or legacy local flag).
  */
 
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowserClient } from "./supabase-browser";
 import { startSubscriptionCheckout } from "./checkout-start";
 import { resolveSupabaseConfig } from "./supabase-env";
 
@@ -187,7 +187,7 @@ async function isAssessmentSubscriber(): Promise<boolean> {
   if (!cfg?.url || !cfg?.anonKey) {
     return localStorage.getItem(STORAGE_SUBSCRIBED) === "1";
   }
-  const supabase = createClient(cfg.url, cfg.anonKey);
+  const supabase = createSupabaseBrowserClient(cfg.url, cfg.anonKey);
   const {
     data: { session },
   } = await supabase.auth.getSession();

@@ -5,8 +5,8 @@ permalink: /
 ---
 
 <div id="home-guest-panel" class="max-w-xl mx-auto py-8 px-2">
-  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea] text-center">Sign in to browse</h2>
-  <p class="text-muted text-center mb-8">Use your email below to sign in or create an account. Then the full home library unlocks on this page.</p>
+  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea] text-center">Sign in to get started</h2>
+  <p class="text-muted text-center mb-8">Create an account or sign in below. After you subscribe, the full article library unlocks on this page.</p>
   <p id="home-auth-missing-config" class="rounded-lg border border-warning/50 bg-surface p-4 text-sm text-warning mb-6" hidden>
     Supabase is not configured for this build. Add <code class="font-mono text-xs bg-border px-1 rounded">SUPABASE_URL</code> and <code class="font-mono text-xs bg-border px-1 rounded">SUPABASE_ANON_KEY</code> to your environment or Worker, then rebuild or deploy.
   </p>
@@ -42,6 +42,20 @@ permalink: /
       </form>
     </div>
   </div>
+</div>
+
+<div id="home-needs-sub-panel" class="max-w-xl mx-auto py-10 px-2 text-center" hidden>
+  <h2 class="text-2xl font-bold mb-2 text-[#e7e9ea]">Subscribe to read</h2>
+  <p class="text-muted mb-2">You are signed in. Choose a plan to unlock guides and every article.</p>
+  <p class="text-muted text-sm mb-8">Payments run on Stripe. You can sign out anytime from the link below.</p>
+  <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8">
+    <a id="home-subscribe-cta" href="/subscribe/" class="inline-block py-3 px-6 rounded-lg bg-accent text-bg font-semibold no-underline hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg">View plans and subscribe</a>
+  </div>
+  <p class="text-sm text-muted">
+    <span id="home-needs-sub-email" class="font-mono text-[#e7e9ea]"></span>
+    <span class="mx-2">·</span>
+    <button type="button" id="home-needs-sub-sign-out" class="text-accent font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded bg-transparent border-0 cursor-pointer p-0">Sign out</button>
+  </p>
 </div>
 
 <div id="home-signed-in-panel" hidden>

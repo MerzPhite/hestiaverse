@@ -2,7 +2,7 @@
  * Start Stripe Checkout (hosted) via Worker. Used by assessment paywall and /subscribe/.
  */
 
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowserClient } from "./supabase-browser";
 import { resolveSupabaseConfig } from "./supabase-env";
 
 export type CheckoutPaths = {
@@ -26,7 +26,7 @@ export async function startSubscriptionCheckout(
     return;
   }
 
-  const supabase = createClient(cfg.url, cfg.anonKey);
+  const supabase = createSupabaseBrowserClient(cfg.url, cfg.anonKey);
   const {
     data: { session },
   } = await supabase.auth.getSession();
