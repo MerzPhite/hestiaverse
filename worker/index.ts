@@ -117,7 +117,19 @@ async function handleCreateCheckout(request: Request, env: Env): Promise<Respons
 
   const site = (env.SITE_URL || "").replace(/\/$/, "");
   if (!site || !env.STRIPE_SECRET_KEY) {
-    return json({ error: "Server not configured" }, 503, cors);
+    const missing: string[] = [];
+    if (!site) missing.push("SITE_URL");
+    if (!env.STRIPE_SECRET_KEY) missing.push("STRIPE_SECRET_KEY");
+    return json(
+      {
+        error: "Server not configured",
+        detail:
+          "Set SITE_URL (Worker variable) and STRIPE_SECRET_KEY (Worker secret) for this Worker. Example: wrangler secret put STRIPE_SECRET_KEY",
+        missing,
+      },
+      503,
+      cors
+    );
   }
 
   let body: { priceId?: string; successPath?: string; cancelPath?: string };
