@@ -64,6 +64,9 @@ export async function startSubscriptionCheckout(
     url?: string;
     error?: string;
     detail?: string;
+    code?: string;
+    stripeType?: string;
+    hint?: string;
     missing?: string[];
   };
   try {
@@ -76,6 +79,9 @@ export async function startSubscriptionCheckout(
     const lines = [
       data.error,
       data.detail,
+      data.code ? `Stripe code: ${data.code}` : "",
+      data.stripeType ? `Stripe type: ${data.stripeType}` : "",
+      data.hint,
       data.missing?.length ? `Missing on Worker: ${data.missing.join(", ")}` : "",
       res.status === 503
         ? "Debug: open /api/public-config in a new tab. If stripeSecretConfigured is false, this deployment’s Worker does not see STRIPE_SECRET_KEY (wrong worker, env, or an empty [vars] entry overriding the secret)."

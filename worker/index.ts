@@ -51,6 +51,17 @@ function json(data: unknown, status = 200, extraHeaders?: HeadersInit): Response
   });
 }
 
+function stripeFailureBody(e: unknown): { detail: string; code?: string; stripeType?: string } {
+  if (e && typeof e === "object") {
+    const o = e as Record<string, unknown>;
+    const detail = typeof o.message === "string" ? o.message : JSON.stringify(e);
+    const code = typeof o.code === "string" ? o.code : undefined;
+    const stripeType = typeof o.type === "string" ? o.type : undefined;
+    return { detail, code, stripeType };
+  }
+  return { detail: String(e) };
+}
+
 function corsFor(request: Request, env: Env): HeadersInit {
   const origin = request.headers.get("Origin") || "";
   const site = effectiveSiteUrl(request, env);
@@ -182,8 +193,20 @@ async function handleCreateCheckout(request: Request, env: Env): Promise<Respons
     });
     return json({ url: session.url }, 200, cors);
   } catch (e) {
-    console.error(e);
-    return json({ error: "Stripe error" }, 502, cors);
+    console.error("Stripe checkout.sessions.create", e);
+    const { detail, code, stripeType } = stripeFailureBody(e);
+    return json(
+      {
+        error: "Stripe error",
+        detail,
+        code,
+        stripeType,
+        hint:
+          "Common fixes: use a secret key and price IDs from the same Stripe mode (test vs live), and use recurring prices for subscription checkout.",
+      },
+      502,
+      cors
+    );
   }
 }
 
