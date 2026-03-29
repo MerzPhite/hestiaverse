@@ -22,3 +22,8 @@ create policy "subscriptions_select_own"
 
 grant usage on schema public to authenticated;
 grant select on table public.subscriptions to authenticated;
+
+-- Stripe → Worker webhook: POST https://<your-worker-host>/api/stripe-webhook
+-- Dashboard: Developers → Webhooks → add endpoint, events including
+--   checkout.session.completed, customer.subscription.(created|updated|deleted)
+-- Worker secret STRIPE_WEBHOOK_SECRET must match the signing secret for that endpoint.

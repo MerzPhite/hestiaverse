@@ -121,7 +121,48 @@ async function upsertSubscription(
   if (!res.ok) {
     const t = await res.text();
     console.error("Supabase upsert failed", res.status, t);
+    throw new Error(`Supabase subscriptions upsert failed (${res.status}): ${t}`);
   }
+}
+
+/**
+ * One Stripe API read: subscription metadata often has supabase_user_id even if the session payload omits client_reference_id.
+ */
+async function checkoutSessionSubscriptionWriteContext(
+  stripe: Stripe,
+  session: Stripe.Checkout.Session
+): Promise<{ userId: string; sub: Stripe.Subscription } | null> {
+  if (session.mode !== "subscription" || !session.subscription) return null;
+  const subId =
+    typeof session.subscription === "string"
+      ? session.subscription
+      : session.subscription.id;
+  const sub = await stripe.subscriptions.retrieve(subId);
+  const userId =
+    session.client_reference_id?.trim() ||
+    session.metadata?.supabase_user_id?.trim() ||
+    sub.metadata?.supabase_user_id?.trim() ||
+    undefined;
+  if (!userId) return null;
+  return { userId, sub };
+}
+
+function applySubscriptionRowFromStripeSubscription(
+  sub: Stripe.Subscription
+): {
+  user_id: string;
+  stripe_customer_id: string | null;
+  stripe_subscription_id: string;
+  status: string;
+} | null {
+  const userId = sub.metadata?.supabase_user_id?.trim();
+  if (!userId) return null;
+  return {
+    user_id: userId,
+    stripe_customer_id: stripeCustomerId(sub.customer),
+    stripe_subscription_id: sub.id,
+    status: sub.status,
+  };
 }
 
 async function handleCreateCheckout(request: Request, env: Env): Promise<Response> {
@@ -231,45 +272,44 @@ async function handleWebhook(request: Request, env: Env): Promise<Response> {
   try {
     if (event.type === "checkout.session.completed") {
       const session = event.data.object as Stripe.Checkout.Session;
-      if (session.mode === "subscription" && session.subscription) {
-        const userId =
-          session.client_reference_id ||
-          session.metadata?.supabase_user_id ||
-          undefined;
-        const custId = stripeCustomerId(session.customer);
-        if (userId && custId) {
-          const subId =
-            typeof session.subscription === "string"
-              ? session.subscription
-              : session.subscription.id;
-          await upsertSubscription(env, {
-            user_id: userId,
-            stripe_customer_id: custId,
-            stripe_subscription_id: subId,
-            status: "active",
-          });
-        }
+      const ctx = await checkoutSessionSubscriptionWriteContext(stripe, session);
+      const custId = stripeCustomerId(session.customer);
+      if (!ctx) {
+        console.error(
+          "checkout.session.completed: could not resolve Supabase user id (set client_reference_id on Checkout or supabase_user_id on subscription metadata)",
+          session.id
+        );
+      } else if (!custId) {
+        console.error("checkout.session.completed: missing Stripe customer on session", session.id);
+      } else {
+        await upsertSubscription(env, {
+          user_id: ctx.userId,
+          stripe_customer_id: custId,
+          stripe_subscription_id: ctx.sub.id,
+          status: ctx.sub.status,
+        });
       }
     }
+
     if (
+      event.type === "customer.subscription.created" ||
       event.type === "customer.subscription.updated" ||
       event.type === "customer.subscription.deleted"
     ) {
       const sub = event.data.object as Stripe.Subscription;
-      const userId = sub.metadata?.supabase_user_id;
-      if (userId) {
-        const active = sub.status === "active" || sub.status === "trialing";
-        await upsertSubscription(env, {
-          user_id: userId,
-          stripe_customer_id: stripeCustomerId(sub.customer),
-          stripe_subscription_id: sub.id,
-          status: active ? sub.status : "canceled",
-        });
+      const row = applySubscriptionRowFromStripeSubscription(sub);
+      if (row) {
+        await upsertSubscription(env, row);
+      } else {
+        console.warn("subscription webhook skipped: missing metadata supabase_user_id", event.type, sub.id);
       }
     }
   } catch (e) {
     console.error("Webhook handler", e);
-    return json({ error: "Handler error" }, 500);
+    return json(
+      { error: "Handler error", detail: e instanceof Error ? e.message : String(e) },
+      500
+    );
   }
 
   return json({ received: true });
