@@ -96,6 +96,45 @@ async function getSupabaseUser(
   return { id: u.id, email: u.email };
 }
 
+async function getSubscriptionRowForUser(
+  env: Env,
+  userId: string
+): Promise<{
+  user_id: string;
+  stripe_customer_id: string | null;
+  stripe_subscription_id: string | null;
+  status: string;
+  updated_at?: string;
+} | null> {
+  const base = env.SUPABASE_URL.replace(/\/$/, "");
+  const res = await fetch(
+    `${base}/rest/v1/subscriptions?user_id=eq.${encodeURIComponent(
+      userId
+    )}&select=user_id,stripe_customer_id,stripe_subscription_id,status,updated_at`,
+    {
+      headers: {
+        apikey: env.SUPABASE_SERVICE_ROLE_KEY,
+        Authorization: `Bearer ${env.SUPABASE_SERVICE_ROLE_KEY}`,
+        Accept: "application/json",
+      },
+    }
+  );
+  if (!res.ok) {
+    const t = await res.text();
+    console.error("Supabase read failed", res.status, t);
+    throw new Error(`Supabase subscriptions read failed (${res.status}): ${t}`);
+  }
+  const rows = (await res.json()) as Array<{
+    user_id: string;
+    stripe_customer_id: string | null;
+    stripe_subscription_id: string | null;
+    status: string;
+    updated_at?: string;
+  }>;
+  if (!Array.isArray(rows) || rows.length === 0) return null;
+  return rows[0] ?? null;
+}
+
 async function upsertSubscription(
   env: Env,
   row: {
@@ -356,6 +395,56 @@ function handlePublicConfig(request: Request, env: Env): Response {
   });
 }
 
+async function handleGetSubscription(request: Request, env: Env): Promise<Response> {
+  const cors = corsFor(request, env);
+  if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
+  if (request.method !== "GET") return json({ error: "Method not allowed" }, 405, cors);
+
+  const user = await getSupabaseUser(env, request.headers.get("Authorization"));
+  if (!user) return json({ error: "Unauthorized" }, 401, cors);
+
+  const row = await getSubscriptionRowForUser(env, user.id);
+  if (!row) return json({ error: "Not found" }, 404, cors);
+  return json(row, 200, { ...cors, "Cache-Control": "no-store" });
+}
+
+async function handleCancelSubscription(request: Request, env: Env): Promise<Response> {
+  const cors = corsFor(request, env);
+  if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
+  if (request.method !== "POST") return json({ error: "Method not allowed" }, 405, cors);
+  if (!env.STRIPE_SECRET_KEY) return json({ error: "Not configured" }, 503, cors);
+
+  const user = await getSupabaseUser(env, request.headers.get("Authorization"));
+  if (!user) return json({ error: "Unauthorized" }, 401, cors);
+
+  const row = await getSubscriptionRowForUser(env, user.id);
+  if (!row?.stripe_subscription_id) return json({ error: "No active subscription" }, 409, cors);
+
+  const stripe = stripeClient(env.STRIPE_SECRET_KEY);
+  const updated = await stripe.subscriptions.update(row.stripe_subscription_id, {
+    cancel_at_period_end: true,
+  });
+
+  await upsertSubscription(env, {
+    user_id: user.id,
+    stripe_customer_id: row.stripe_customer_id ?? null,
+    stripe_subscription_id: updated.id,
+    status: updated.status,
+  });
+
+  return json(
+    {
+      ok: true,
+      stripe_subscription_id: updated.id,
+      status: updated.status,
+      cancel_at_period_end: updated.cancel_at_period_end,
+      current_period_end: updated.current_period_end,
+    },
+    200,
+    { ...cors, "Cache-Control": "no-store" }
+  );
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -370,6 +459,12 @@ export default {
     }
     if (path === "/api/stripe-webhook") {
       return handleWebhook(request, env);
+    }
+    if (path === "/api/subscription") {
+      return handleGetSubscription(request, env);
+    }
+    if (path === "/api/cancel-subscription") {
+      return handleCancelSubscription(request, env);
     }
 
     const paywalled = await edgePaywallResponse(request, env);
