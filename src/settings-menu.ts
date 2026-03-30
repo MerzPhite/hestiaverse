@@ -8,6 +8,14 @@ type SubscriptionSummary = {
   stripe_subscription_id: string | null;
   stripe_customer_id: string | null;
   updated_at?: string;
+  stripe?: {
+    unit_amount: number | null;
+    currency: string | null;
+    interval: string | null;
+    interval_count: number | null;
+    current_period_end: number | null;
+    cancel_at_period_end: boolean | null;
+  };
 };
 
 function show(el: HTMLElement | null, visible: boolean): void {
@@ -39,6 +47,29 @@ function statusLabel(status: string | undefined | null): string {
   const s = String(status || "").trim();
   if (!s) return "No subscription found";
   return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function moneyFromMinorUnits(unitAmount: number, currency: string): string {
+  const cur = currency.toUpperCase();
+  const major = unitAmount / 100;
+  try {
+    return new Intl.NumberFormat(undefined, { style: "currency", currency: cur }).format(major);
+  } catch {
+    return `${major.toFixed(2)} ${cur}`;
+  }
+}
+
+function fmtStripePeriodEnd(unixSeconds: number): string {
+  const ms = unixSeconds * 1000;
+  try {
+    return new Intl.DateTimeFormat(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+    }).format(new Date(ms));
+  } catch {
+    return new Date(ms).toISOString().slice(0, 10);
+  }
 }
 
 async function fetchSubscription(accessToken: string): Promise<SubscriptionSummary | null> {
@@ -139,6 +170,21 @@ async function renderForSession(
 
     setText(statusEl, statusLabel(sub.status));
     const parts: string[] = [];
+
+    const stripe = sub.stripe;
+    if (stripe?.unit_amount != null && stripe.currency) {
+      const interval = stripe.interval || "month";
+      const count = stripe.interval_count && stripe.interval_count > 1 ? stripe.interval_count : null;
+      const every = count ? `every ${count} ${interval}s` : `per ${interval}`;
+      parts.push(`${moneyFromMinorUnits(stripe.unit_amount, stripe.currency)} ${every}`);
+    }
+    if (stripe?.current_period_end) {
+      parts.push(`Renews ${fmtStripePeriodEnd(stripe.current_period_end)}`);
+    }
+    if (stripe?.cancel_at_period_end) {
+      parts.push("Canceling at period end");
+    }
+
     if (sub.stripe_subscription_id) parts.push(`ID ${sub.stripe_subscription_id}`);
     const updated = fmtUpdatedAt(sub.updated_at);
     if (updated) parts.push(`Updated ${updated}`);

@@ -405,6 +405,44 @@ async function handleGetSubscription(request: Request, env: Env): Promise<Respon
 
   const row = await getSubscriptionRowForUser(env, user.id);
   if (!row) return json({ error: "Not found" }, 404, cors);
+
+  if (env.STRIPE_SECRET_KEY?.trim() && row.stripe_subscription_id) {
+    const stripe = stripeClient(env.STRIPE_SECRET_KEY);
+    try {
+      const sub = await stripe.subscriptions.retrieve(row.stripe_subscription_id);
+      const firstItem = sub.items?.data?.[0];
+      const price = firstItem?.price;
+      const unitAmount = typeof price?.unit_amount === "number" ? price.unit_amount : null;
+      const currency = typeof price?.currency === "string" ? price.currency : null;
+      const interval = typeof price?.recurring?.interval === "string" ? price.recurring.interval : null;
+      const intervalCount =
+        typeof price?.recurring?.interval_count === "number" ? price.recurring.interval_count : null;
+      const currentPeriodEnd =
+        typeof sub.current_period_end === "number" ? sub.current_period_end : null;
+      const cancelAtPeriodEnd =
+        typeof sub.cancel_at_period_end === "boolean" ? sub.cancel_at_period_end : null;
+
+      return json(
+        {
+          ...row,
+          stripe: {
+            unit_amount: unitAmount,
+            currency,
+            interval,
+            interval_count: intervalCount,
+            current_period_end: currentPeriodEnd,
+            cancel_at_period_end: cancelAtPeriodEnd,
+          },
+        },
+        200,
+        { ...cors, "Cache-Control": "no-store" }
+      );
+    } catch (e) {
+      console.error("Stripe subscription retrieve failed", row.stripe_subscription_id, e);
+      // Fall back to DB row only if Stripe is temporarily unavailable.
+    }
+  }
+
   return json(row, 200, { ...cors, "Cache-Control": "no-store" });
 }
 
