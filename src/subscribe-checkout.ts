@@ -139,7 +139,7 @@ async function initManage(): Promise<void> {
 
     const s = String(sub.status || "").toLowerCase();
     const active = s === "active" || s === "trialing";
-    if (!active) return;
+    const canceled = s === "canceled";
 
     show(manage, true);
     setText(statusEl, statusLabel(sub.status));
@@ -154,11 +154,22 @@ async function initManage(): Promise<void> {
     }
     const renewalTs = parseUnixSeconds(stripe?.current_period_end);
     if (renewalTs) parts.push(`Renews ${fmtStripePeriodEnd(renewalTs)}`);
-    if (stripe?.cancel_at_period_end) parts.push("Canceling at period end");
-    if (sub.stripe_subscription_id) parts.push(`ID ${sub.stripe_subscription_id}`);
-    setText(detailEl, parts.join(" · "));
+    if (stripe?.cancel_at_period_end) parts.push("Canceled (ends at period end)");
+    if (canceled) parts.push("Subscription canceled");
+    setText(detailEl, parts.join("\n"));
 
-    cancelBtn.disabled = stripe?.cancel_at_period_end === true;
+    if (canceled) {
+      cancelBtn.disabled = true;
+      cancelBtn.textContent = "Subscription canceled";
+      return;
+    }
+    if (stripe?.cancel_at_period_end) {
+      cancelBtn.disabled = true;
+      cancelBtn.textContent = "Canceled at period end";
+      return;
+    }
+    cancelBtn.textContent = "Cancel subscription";
+    cancelBtn.disabled = !active;
     cancelBtn.onclick = async () => {
       const ok = confirm(
         "Cancel your subscription?\n\nYour access may continue until the end of the current billing period."
@@ -171,7 +182,7 @@ async function initManage(): Promise<void> {
         const fresh = data.session;
         if (!fresh?.access_token) throw new Error("Not signed in.");
         await cancelSubscription(fresh.access_token);
-        setText(detailEl, parts.concat(["Canceling at period end"]).join(" · "));
+        setText(detailEl, parts.concat(["Canceling at period end"]).join("\n"));
       } catch (e) {
         cancelBtn.disabled = false;
         show(errEl, true);

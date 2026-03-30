@@ -26,23 +26,6 @@ function setText(el: HTMLElement | null, text: string): void {
   if (el) el.textContent = text;
 }
 
-function fmtUpdatedAt(iso?: string): string {
-  if (!iso) return "";
-  const t = Date.parse(iso);
-  if (!Number.isFinite(t)) return "";
-  try {
-    return new Intl.DateTimeFormat(undefined, {
-      year: "numeric",
-      month: "short",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-    }).format(new Date(t));
-  } catch {
-    return "";
-  }
-}
-
 function statusLabel(status: string | undefined | null): string {
   const s = String(status || "").trim();
   if (!s) return "No subscription found";
@@ -178,6 +161,7 @@ async function renderForSession(
     }
 
     setText(statusEl, statusLabel(sub.status));
+    const s = String(sub.status || "").toLowerCase();
     const parts: string[] = [];
 
     const stripe = sub.stripe;
@@ -191,17 +175,21 @@ async function renderForSession(
     if (renewalTs) {
       parts.push(`Renews ${fmtStripePeriodEnd(renewalTs)}`);
     }
-    if (stripe?.cancel_at_period_end) {
-      parts.push("Canceling at period end");
+    if (stripe?.cancel_at_period_end) parts.push("Canceled (ends at period end)");
+    if (s === "canceled") parts.push("Subscription canceled");
+
+    setText(detailEl, parts.join("\n"));
+
+    if (s === "canceled") {
+      cancelBtn.disabled = true;
+      cancelBtn.textContent = "Subscription canceled";
+    } else if (stripe?.cancel_at_period_end) {
+      cancelBtn.disabled = true;
+      cancelBtn.textContent = "Canceled at period end";
+    } else {
+      cancelBtn.textContent = "Cancel";
+      cancelBtn.disabled = !(s === "active" || s === "trialing");
     }
-
-    if (sub.stripe_subscription_id) parts.push(`ID ${sub.stripe_subscription_id}`);
-    const updated = fmtUpdatedAt(sub.updated_at);
-    if (updated) parts.push(`Updated ${updated}`);
-    setText(detailEl, parts.join(" · "));
-
-    const s = String(sub.status || "").toLowerCase();
-    cancelBtn.disabled = !(s === "active" || s === "trialing");
   } catch (e) {
     setText(statusEl, "Could not load");
     setText(detailEl, "");
