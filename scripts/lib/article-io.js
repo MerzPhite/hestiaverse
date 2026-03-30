@@ -28,6 +28,7 @@ function formatArticleEntry(a) {
     "  {",
     `    slug: "${slug}",`,
     `    title: ${title},`,
+    `    createdAt: ${escapeJsString(a.createdAt || new Date().toISOString())},`,
     `    labels: [${labels.map((l) => `"${l}"`).join(", ")}],`,
     `    section: "${section}",`,
     `    excerpt: ${excerpt},`,

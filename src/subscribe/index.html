@@ -33,9 +33,16 @@ permalink: /subscribe/
   <div class="bg-surface rounded-xl border border-border p-6 mb-6">
     <h3 class="text-lg font-semibold mb-4 text-[#e7e9ea]">Plans</h3>
     <ul class="space-y-3 list-none p-0 m-0 text-sm text-muted mb-6">
-      <li class="flex justify-between"><span class="text-[#e7e9ea]">Monthly</span><span class="font-mono text-accent">$9/mo</span></li>
-      <li class="flex justify-between"><span class="text-[#e7e9ea]">Yearly</span><span class="font-mono text-accent">$79/yr</span></li>
+      <li class="flex justify-between"><span class="text-[#e7e9ea]">Monthly</span><span class="font-mono text-accent">£4/mo</span></li>
+      <li class="flex justify-between"><span class="text-[#e7e9ea]">Yearly</span><span class="font-mono text-accent">£35/yr</span></li>
     </ul>
+    <p class="text-xs text-muted mb-6">
+      Yearly saves <span class="text-[#e7e9ea] font-semibold">£13 per year (27%)</span> compared with paying monthly.
+    </p>
+    <p class="text-xs text-muted mb-6">
+      New information added in the last 30 days:
+      <span class="text-[#e7e9ea] font-semibold">{{ metrics.newInfoLast30Days }}</span>
+    </p>
     <div class="space-y-3">
       <button
         type="button"

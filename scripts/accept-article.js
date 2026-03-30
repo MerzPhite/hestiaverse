@@ -62,6 +62,7 @@ function acceptBySlug(slug) {
     process.exit(1);
   }
   const article = JSON.parse(fs.readFileSync(filepath, "utf8"));
+  article.createdAt = article.queuedAt || new Date().toISOString();
   delete article.queuedAt;
   appendToArticlesJs(article);
   appendToResearchOutputs(article);

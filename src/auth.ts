@@ -22,6 +22,36 @@ function setText(el: HTMLElement | null, text: string): void {
   if (el) el.textContent = text;
 }
 
+function showNoticeModal(message: string): void {
+  const modal = document.getElementById("auth-notice-modal");
+  const text = document.getElementById("auth-notice-text");
+  const closeBtn = document.getElementById("auth-notice-close");
+  if (!modal || !text || !closeBtn) return;
+
+  setText(text, message);
+  show(modal as HTMLElement, true);
+  modal.setAttribute("aria-hidden", "false");
+
+  const close = (): void => {
+    show(modal as HTMLElement, false);
+    modal.setAttribute("aria-hidden", "true");
+  };
+
+  closeBtn.onclick = close;
+
+  modal.onclick = (e: MouseEvent): void => {
+    if (e.target === modal) close();
+  };
+
+  document.addEventListener(
+    "keydown",
+    (e) => {
+      if (e.key === "Escape") close();
+    },
+    { once: true }
+  );
+}
+
 async function initAuth(): Promise<void> {
   const root = document.getElementById("login-page");
   if (!root) return;
@@ -118,6 +148,9 @@ async function initAuth(): Promise<void> {
       return;
     }
     setOk(
+      "Check your email to confirm your account if required. You can sign in after confirming."
+    );
+    showNoticeModal(
       "Check your email to confirm your account if required. You can sign in after confirming."
     );
     await refreshSession();
