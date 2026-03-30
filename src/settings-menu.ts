@@ -72,6 +72,15 @@ function fmtStripePeriodEnd(unixSeconds: number): string {
   }
 }
 
+function parseUnixSeconds(input: unknown): number | null {
+  if (typeof input === "number" && Number.isFinite(input) && input > 0) return input;
+  if (typeof input === "string") {
+    const n = Number(input);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+  return null;
+}
+
 async function fetchSubscription(accessToken: string): Promise<SubscriptionSummary | null> {
   const res = await fetch("/api/subscription", {
     method: "GET",
@@ -178,8 +187,9 @@ async function renderForSession(
       const every = count ? `every ${count} ${interval}s` : `per ${interval}`;
       parts.push(`${moneyFromMinorUnits(stripe.unit_amount, stripe.currency)} ${every}`);
     }
-    if (stripe?.current_period_end) {
-      parts.push(`Renews ${fmtStripePeriodEnd(stripe.current_period_end)}`);
+    const renewalTs = parseUnixSeconds(stripe?.current_period_end);
+    if (renewalTs) {
+      parts.push(`Renews ${fmtStripePeriodEnd(renewalTs)}`);
     }
     if (stripe?.cancel_at_period_end) {
       parts.push("Canceling at period end");

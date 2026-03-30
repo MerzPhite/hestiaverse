@@ -417,8 +417,13 @@ async function handleGetSubscription(request: Request, env: Env): Promise<Respon
       const interval = typeof price?.recurring?.interval === "string" ? price.recurring.interval : null;
       const intervalCount =
         typeof price?.recurring?.interval_count === "number" ? price.recurring.interval_count : null;
-      const currentPeriodEnd =
+      const itemPeriodEndRaw = (firstItem as unknown as { current_period_end?: unknown } | undefined)
+        ?.current_period_end;
+      const currentPeriodEndFromSub =
         typeof sub.current_period_end === "number" ? sub.current_period_end : null;
+      const currentPeriodEndFromItem =
+        typeof itemPeriodEndRaw === "number" ? itemPeriodEndRaw : null;
+      const currentPeriodEnd = currentPeriodEndFromSub ?? currentPeriodEndFromItem;
       const cancelAtPeriodEnd =
         typeof sub.cancel_at_period_end === "boolean" ? sub.cancel_at_period_end : null;
 
