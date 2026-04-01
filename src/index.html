@@ -59,93 +59,88 @@ permalink: /
 </div>
 
 <div id="home-signed-in-panel" hidden>
-<div class="flex flex-wrap items-center justify-end gap-3 mb-6 text-sm">
+<div class="flex flex-wrap items-center justify-end gap-3 mb-8 text-sm">
   <span id="home-session-email" class="text-muted"></span>
   <button type="button" id="home-sign-out" class="text-accent font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Sign out</button>
 </div>
-<section class="mb-8 py-6 px-6 bg-accent/10 border-l-4 border-accent rounded-xl" aria-label="Start here">
-  <h2 class="text-lg font-semibold mb-3 text-[#e7e9ea]">Start here</h2>
-  <p class="text-muted text-sm mb-4">Three things you can do right now to help keep your child safer online.</p>
+
+<div class="home-library space-y-10">
+  <header class="rounded-2xl border border-border bg-gradient-to-br from-surface via-[#1a2332] to-bg px-6 py-8 sm:px-8 sm:py-9 shadow-lg shadow-black/25 ring-1 ring-white/[0.04]">
+    <p class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-accent mb-2">Article library</p>
+    <h2 class="text-xl sm:text-2xl font-bold text-[#e7e9ea] tracking-tight mb-3">Find clarity on apps, money, and trends</h2>
+    <p class="text-muted text-sm sm:text-[0.95rem] max-w-2xl leading-relaxed">Use the topic hubs and jump links below, or search and filter. Each article opens with related reading so you can follow threads that matter to your family.</p>
+  </header>
+
+<section class="rounded-2xl border border-border bg-gradient-to-b from-accent/[0.08] to-transparent px-5 py-6 sm:px-7 sm:py-7 shadow-md shadow-black/15 ring-1 ring-accent/15" aria-label="Start here">
+  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-5">
+    <h2 class="text-lg font-semibold text-[#e7e9ea]">Start here</h2>
+    <p class="text-muted text-sm m-0">Three quick wins for safer online habits.</p>
+  </div>
   <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 list-none p-0 m-0">
-    <li class="flex items-start gap-3 py-3 px-4 bg-surface rounded-lg border border-border">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-mono text-sm font-bold">1</span>
+    <li class="flex items-start gap-3 py-4 px-4 rounded-xl bg-bg/50 border border-border/80 backdrop-blur-sm">
+      <span class="flex-shrink-0 w-9 h-9 rounded-full bg-accent/25 text-accent flex items-center justify-center font-mono text-sm font-bold">1</span>
       <div>
-        <strong class="text-[#e7e9ea] block mb-0.5">Talk regularly</strong>
-        <span class="text-muted text-[0.85rem]">Ask what apps they use and who they talk to. Keep it curious, not interrogating.</span>
+        <strong class="text-[#e7e9ea] block mb-1">Talk regularly</strong>
+        <span class="text-muted text-[0.85rem] leading-snug">Ask what apps they use and who they talk to. Keep it curious, not interrogating.</span>
       </div>
     </li>
-    <li class="flex items-start gap-3 py-3 px-4 bg-surface rounded-lg border border-border">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-mono text-sm font-bold">2</span>
+    <li class="flex items-start gap-3 py-4 px-4 rounded-xl bg-bg/50 border border-border/80 backdrop-blur-sm">
+      <span class="flex-shrink-0 w-9 h-9 rounded-full bg-accent/25 text-accent flex items-center justify-center font-mono text-sm font-bold">2</span>
       <div>
-        <strong class="text-[#e7e9ea] block mb-0.5">Check the apps</strong>
-        <span class="text-muted text-[0.85rem]">Search below for any app you're unsure about. Click any article for the full page and related topics.</span>
+        <strong class="text-[#e7e9ea] block mb-1">Check the apps</strong>
+        <span class="text-muted text-[0.85rem] leading-snug">Search below for any app you are unsure about. Open an article for the full page and related topics.</span>
       </div>
     </li>
-    <li class="flex items-start gap-3 py-3 px-4 bg-surface rounded-lg border border-border">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-mono text-sm font-bold">3</span>
+    <li class="flex items-start gap-3 py-4 px-4 rounded-xl bg-bg/50 border border-border/80 backdrop-blur-sm">
+      <span class="flex-shrink-0 w-9 h-9 rounded-full bg-accent/25 text-accent flex items-center justify-center font-mono text-sm font-bold">3</span>
       <div>
-        <strong class="text-[#e7e9ea] block mb-0.5">Know where to report</strong>
-        <span class="text-muted text-[0.85rem]">Bookmark the <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noopener" class="text-accent hover:underline">NCMEC CyberTipline</a> for exploitation or threats.</span>
+        <strong class="text-[#e7e9ea] block mb-1">Know where to report</strong>
+        <span class="text-muted text-[0.85rem] leading-snug">Bookmark the <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noopener" class="text-accent hover:underline">NCMEC CyberTipline</a> for exploitation or threats.</span>
       </div>
     </li>
   </ul>
 </section>
 
-<p class="text-muted mb-6 py-5 px-6 bg-surface rounded-xl border-l-4 border-accent intro">
-  This page summarizes types of online environments and emerging trends that caregivers and educators should be aware of. It is for awareness and conversation, not a complete or legal resource.
+<p class="text-muted text-sm mb-0 py-5 px-6 rounded-xl bg-surface/80 border border-border border-l-4 border-l-muted/60 intro leading-relaxed">
+  This page summarizes types of online environments and emerging trends caregivers and educators should know about. It supports awareness and conversation, not legal advice or a complete catalogue.
 </p>
 
-<section class="mb-8 py-6 px-6 bg-surface rounded-xl border border-border" aria-label="Browse by topic">
-  <h2 class="text-[1.1rem] font-semibold mb-2 text-[#e7e9ea]">Browse by topic</h2>
-  <p class="text-muted text-sm mb-6">Short guides grouped by theme — then scroll down for articles by section, or use search.</p>
+<section class="rounded-2xl border border-border bg-surface/90 px-5 py-6 sm:px-7 sm:py-8 shadow-md shadow-black/10" aria-label="Browse by topic">
+  <div class="mb-6">
+    <h2 class="text-lg font-semibold text-[#e7e9ea] mb-1">Browse by topic</h2>
+    <p class="text-muted text-sm m-0">Themed guides first, then article sections and search below.</p>
+  </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <div>
-      <h3 class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted mb-3">Money &amp; risk</h3>
-      <a href="/finance/" class="block p-4 rounded-xl border border-border bg-bg hover:border-accent hover:bg-surface-hover transition-colors no-underline group">
-        <strong class="text-[#e7e9ea] group-hover:text-accent block mb-1">Young people &amp; money</strong>
-        <span class="text-muted text-sm">From spending and subscriptions to betting, crypto, and scams — a spectrum overview plus linked articles.</span>
-        <span class="text-accent text-xs mt-2 inline-block">Open guide →</span>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    {% for hub in homePage.topicHubs %}
+    <div class="flex flex-col min-h-full">
+      <h3 class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted mb-2.5 pl-1">{{ hub.category }}</h3>
+      <a href="{{ hub.href }}" class="flex-1 flex flex-col p-5 rounded-xl border border-l-[3px] bg-bg/70 border-border {{ hub.accentClass }} hover:bg-surface-hover/80 transition-all duration-200 no-underline group shadow-sm shadow-black/10">
+        <span class="flex items-center gap-2 mb-2">
+          <span class="w-2 h-2 rounded-full shrink-0 {{ hub.dotClass }}" aria-hidden="true"></span>
+          <strong class="text-[#e7e9ea] group-hover:text-accent text-[1.05rem] leading-tight">{{ hub.title }}</strong>
+        </span>
+        <span class="text-muted text-sm leading-relaxed flex-1">{{ hub.description }}</span>
+        <span class="text-accent text-xs font-medium mt-3 inline-flex items-center gap-1">{{ hub.cta }}</span>
       </a>
     </div>
-    <div>
-      <h3 class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted mb-3">Technology &amp; AI</h3>
-      <a href="/ai/" class="block p-4 rounded-xl border border-border bg-bg hover:border-accent hover:bg-surface-hover transition-colors no-underline group">
-        <strong class="text-[#e7e9ea] group-hover:text-accent block mb-1">AI in apps</strong>
-        <span class="text-muted text-sm">What “AI” means in feeds, chatbots, and moderation — plain language for parents.</span>
-        <span class="text-accent text-xs mt-2 inline-block">Open guide →</span>
-      </a>
-    </div>
-    <div>
-      <h3 class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted mb-3">Connection &amp; conversation</h3>
-      <a href="/connection/" class="block p-4 rounded-xl border border-border bg-bg hover:border-accent hover:bg-surface-hover transition-colors no-underline group">
-        <strong class="text-[#e7e9ea] group-hover:text-accent block mb-1">Connection</strong>
-        <span class="text-muted text-sm">Talking points so you can stay in step with what your child cares about online.</span>
-        <span class="text-accent text-xs mt-2 inline-block">Open →</span>
-      </a>
-    </div>
-    <div>
-      <h3 class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted mb-3">Body image</h3>
-      <a href="/body-image/" class="block p-4 rounded-xl border border-border bg-bg hover:border-accent hover:bg-surface-hover transition-colors no-underline group">
-        <strong class="text-[#e7e9ea] group-hover:text-accent block mb-1">Appearance &amp; feeds</strong>
-        <span class="text-muted text-sm">How social apps shape ideals for boys and girls — and related health risks.</span>
-        <span class="text-accent text-xs mt-2 inline-block">Open guide →</span>
-      </a>
-    </div>
+    {% endfor %}
   </div>
 </section>
 
 {% set recentArticles = articles | articlesSortedNewestFirst | limit(12) %}
-<section id="section-recent" class="mb-8 content-section py-6 px-6 bg-surface rounded-xl border border-border scroll-mt-6" aria-label="Most recent articles">
-  <h2 class="text-[1.1rem] font-semibold mb-2 text-[#e7e9ea]">Most recent articles</h2>
-  <p class="text-muted text-sm mb-6">New and updated guides across every section, ordered by date added or published.</p>
+<section id="section-recent" class="content-section rounded-2xl border border-border bg-surface/90 px-5 py-6 sm:px-7 sm:py-8 shadow-md shadow-black/10 scroll-mt-24" aria-label="Most recent articles">
+  <div class="mb-6">
+    <h2 class="text-lg font-semibold text-[#e7e9ea] mb-1">Most recent articles</h2>
+    <p class="text-muted text-sm m-0">New and updated guides across every section, ordered by date added or published.</p>
+  </div>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 card-list">
     {% for article in recentArticles %}
-    <article class="card bg-surface border border-border rounded-[10px] py-4 px-5 transition-colors duration-200 hover:bg-surface-hover hover:border-[#3d4654]" data-labels="{{ article.labels | join(' ') }}">
+    <article class="card bg-bg/40 border border-border rounded-xl py-4 px-5 transition-colors duration-200 hover:bg-surface-hover hover:border-[#3d4654]" data-labels="{{ article.labels | join(' ') }}">
       <a href="/articles/{{ article.slug }}/" class="block no-underline group">
         <h3 class="text-base font-semibold mb-1.5 text-[#e7e9ea] group-hover:text-accent transition-colors">{{ article.title }}</h3>
         <p class="text-[0.9rem] text-muted">{{ article.excerpt }}</p>
-        <span class="text-accent text-xs mt-2 inline-block">Read full article →</span>
+        <span class="text-accent text-xs mt-2 inline-block font-medium">Read full article →</span>
       </a>
       <div class="labels flex flex-wrap gap-1.5 mt-3" role="list" aria-label="Filter labels">
         {% for label in article.labels %}
@@ -157,34 +152,32 @@ permalink: /
   </div>
 </section>
 
-<section class="mb-8 py-6 px-6 bg-surface rounded-xl border border-border" aria-label="Find and navigate">
-  <h2 class="text-[1.1rem] font-semibold mb-3">Find an app or topic</h2>
-  <p class="text-muted text-sm mb-4">Search by app name, website, or keyword (e.g. Wizz, Roblox, gaming, grooming). Click any article to read the full page with related topics linked automatically.</p>
+<section class="rounded-2xl border border-border bg-surface/90 px-5 py-6 sm:px-7 sm:py-8 shadow-md shadow-black/10 scroll-mt-24" aria-label="Find and navigate">
+  <div class="mb-5">
+    <h2 class="text-lg font-semibold text-[#e7e9ea] mb-1">Find an app or topic</h2>
+    <p class="text-muted text-sm m-0">Search by app name, site, or keyword. Open an article for the full page; related topics are linked on each page.</p>
+  </div>
   <label for="search-input" class="sr-only">Search articles by app name or topic</label>
   <input
     type="search"
     id="search-input"
     placeholder="e.g. Wizz, Monkey, Yubo, TikTok, Discord, Pump.fun, Roblox, gaming, crypto, money, crashout, lingo, sextortion…"
     autocomplete="off"
-    class="w-full mb-5 py-3 px-4 rounded-lg bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-sans"
+    class="w-full mb-5 py-3.5 px-4 rounded-xl bg-bg border border-border text-[#e7e9ea] placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-sans shadow-inner shadow-black/20"
   />
-  <nav class="mb-5 pb-5 border-b border-border" aria-label="Jump to section">
-    <span class="text-muted text-xs font-medium uppercase tracking-wider block mb-2">Jump to section</span>
-    <ul class="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-      <li><a href="#section-recent" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Most recent</a></li>
-      <li><a href="#section-platforms" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Specific platforms</a></li>
-      <li><a href="#section-emerging" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Emerging & new</a></li>
-      <li><a href="#section-ongoing" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Ongoing risks</a></li>
-      <li><a href="#section-money-finance" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Money and finance</a></li>
-      <li><a href="#section-body-image" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Body image</a></li>
-      <li><a href="#section-lingo" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Lingo and terms</a></li>
-      <li><a href="#section-ai" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">AI explained</a></li>
-      <li><a href="#section-advice" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">What you can do</a></li>
+  <nav class="mb-6 pb-6 border-b border-border/80" aria-label="Jump to section">
+    <span class="text-muted text-xs font-semibold uppercase tracking-wider block mb-3">Jump to section</span>
+    <ul class="flex flex-wrap items-center gap-x-1 gap-y-2 text-sm">
+      <li><a href="#section-recent" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded px-2 py-1 hover:bg-bg/80">Most recent</a></li>
+      {% for sec in homePage.articleSections %}
+      <li class="text-muted/40 select-none hidden sm:list-item" aria-hidden="true">·</li>
+      <li><a href="#{{ sec.sectionId }}" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded px-2 py-1 hover:bg-bg/80">{{ sec.jumpLabel }}</a></li>
+      {% endfor %}
     </ul>
   </nav>
   <div class="filter-section" aria-label="Filter by topic">
-    <span class="text-muted text-xs font-medium uppercase tracking-wider block mb-2">Filter by topic</span>
-    <p class="text-muted text-sm mb-3">Select one or more topics to narrow results. Works together with search.</p>
+    <span class="text-muted text-xs font-semibold uppercase tracking-wider block mb-2">Filter by topic</span>
+    <p class="text-muted text-sm mb-3">Narrow the lists below. Works together with search.</p>
     <div id="filter-chips" class="flex flex-wrap gap-2 mb-4"></div>
     <div class="flex items-center gap-4 flex-wrap">
       <button type="button" id="filter-clear" class="text-sm font-medium text-accent hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">
@@ -195,53 +188,26 @@ permalink: /
   </div>
 </section>
 
-{% set sections = [
-  { id: 'platforms', sectionId: 'section-platforms', title: 'In focus: specific platforms', badge: false, emerging: true },
-  { id: 'emerging', sectionId: 'section-emerging', title: 'Emerging & new', badge: 'watch', emerging: true },
-  { id: 'ongoing', sectionId: 'section-ongoing', title: 'Ongoing areas of risk', badge: false, emerging: false },
-  { id: 'money-finance', sectionId: 'section-money-finance', title: 'Money and finance', badge: false, emerging: false },
-  { id: 'body-image', sectionId: 'section-body-image', title: 'Body image and appearance', badge: false, emerging: false },
-  { id: 'lingo', sectionId: 'section-lingo', title: 'Lingo and terms to know', badge: false, emerging: false },
-  { id: 'ai', sectionId: 'section-ai', title: 'AI: what it really means', badge: false, emerging: false },
-  { id: 'advice', sectionId: 'section-advice', title: 'What you can do', badge: false, emerging: false }
-] %}
-
-{% for sec in sections %}
+{% for sec in homePage.articleSections %}
 {% set items = articles | where('section', sec.id) | sortArticlesByDate(articles) %}
-<section id="{{ sec.sectionId }}" class="mb-8 content-section scroll-mt-6">
-  <h2 class="text-[1.1rem] font-semibold mb-4 flex items-center gap-2">
-    {{ sec.title }}
-    {% if sec.badge and sec.badge != false %}
-    <span class="badge font-mono text-[0.7rem] font-normal py-1 px-2 rounded bg-warning text-bg">{{ sec.badge }}</span>
-    {% endif %}
-  </h2>
-  {% if sec.id == 'ai' %}
-  <div class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline py-4 px-5 rounded-xl bg-surface border border-border border-l-4 border-l-accent">
-    <p class="mb-4">When we say <strong>AI</strong> (artificial intelligence) in the context of apps and the online world your kids use, we usually mean software that has been trained on huge amounts of text, images, or other data so it can generate or predict new content. It doesn’t “think” or “understand” the way humans do; it finds patterns and repeats or remixes them.</p>
-    <p class="mb-4">In practice, that covers things like <strong>chatbots</strong> (e.g. ChatGPT, character-style bots) that reply in sentences, <strong>image generators</strong> that create or alter photos and art from a description, <strong>deepfakes</strong> (fake video or audio of real people), <strong>recommendation and feed algorithms</strong> that decide what shows up next, and <strong>moderation tools</strong> that try to detect harmful content. Many apps now plug in AI to answer questions, suggest replies, or change how content looks and sounds.</p>
-    <p class="mb-4">For parents, the important part is what that enables: more convincing fake content, personalised persuasion, and new ways to bully or mislead. Knowing that “AI” here really means “pattern-based, data-fed software that generates or recommends stuff” helps you ask the right questions when your child mentions a new feature or a weird thing they saw online.</p>
-    <p class="mb-0"><a href="/ai/">Read more on our dedicated page on AI</a>.</p>
-  </div>
-  {% else %}
-  {% if sec.id == 'money-finance' %}
-  <div class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline py-4 px-5 rounded-xl bg-surface border border-border border-l-4 border-l-accent mb-6">
-    <p class="mb-3"><strong>Money online</strong> for young people isn’t one thing — it runs from everyday spending and subscriptions to earning as a creator, betting and prediction markets, crypto trading, and scams. We’ve mapped that spectrum on a dedicated page so you can see how it fits together, then use the articles below for detail.</p>
-    <p class="mb-0"><a href="/finance/">Read the young people &amp; money overview →</a></p>
-  </div>
-  {% endif %}
-  {% if sec.id == 'body-image' %}
-  <div class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline py-4 px-5 rounded-xl bg-surface border border-border border-l-4 border-l-[#f472b6] mb-6">
-    <p class="mb-3"><strong>Body image</strong> pressure shows up differently in feeds aimed at boys and girls — muscle and “looks” culture, thin ideals, skin and beauty trends, and viral weight-loss content. We’ve split the topic into male and female angles on a dedicated page, then list related articles below.</p>
-    <p class="mb-0"><a href="/body-image/">Read the body image overview (male &amp; female) →</a></p>
-  </div>
-  {% endif %}
+<section id="{{ sec.sectionId }}" class="content-section scroll-mt-24 rounded-2xl border border-border bg-surface/90 px-5 py-6 sm:px-7 sm:py-8 shadow-md shadow-black/10">
+  <header class="mb-5 pb-4 border-b border-border/60">
+    <h2 class="text-lg font-semibold text-[#e7e9ea] flex flex-wrap items-center gap-2 gap-y-1 m-0">
+      {{ sec.title }}
+      {% if sec.badge and sec.badge != false %}
+      <span class="badge font-mono text-[0.7rem] font-normal py-1 px-2 rounded-md bg-warning text-bg">{{ sec.badge }}</span>
+      {% endif %}
+    </h2>
+  </header>
+  {% if sec.intro %}{% include "partials/home-section-intro.njk" %}{% endif %}
+  {% if sec.id != 'ai' %}
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 card-list">
     {% for article in items %}
-    <article class="card {{ 'emerging' if sec.emerging else '' }} bg-surface border border-border rounded-[10px] py-4 px-5 transition-colors duration-200 hover:bg-surface-hover hover:border-[#3d4654] {{ 'border-l-[3px] border-l-warning' if sec.emerging else '' }} {{ 'border-l-4 border-l-[#00ba7c]' if sec.id == 'advice' else '' }}{{ ' border-l-4 border-l-accent' if sec.id == 'money-finance' else '' }}{{ ' border-l-4 border-l-[#f472b6]' if sec.id == 'body-image' else '' }}{{ ' border-l-4 border-l-warning' if sec.id == 'lingo' else '' }}" data-labels="{{ article.labels | join(' ') }}">
+    <article class="card {{ 'emerging' if sec.emerging else '' }} bg-bg/40 border border-border rounded-xl py-4 px-5 transition-colors duration-200 hover:bg-surface-hover hover:border-[#3d4654] {{ 'border-l-[3px] border-l-warning' if sec.emerging else '' }} {{ 'border-l-4 border-l-[#00ba7c]' if sec.id == 'advice' else '' }}{{ ' border-l-4 border-l-accent' if sec.id == 'money-finance' else '' }}{{ ' border-l-4 border-l-[#f472b6]' if sec.id == 'body-image' else '' }}{{ ' border-l-4 border-l-warning' if sec.id == 'lingo' else '' }}" data-labels="{{ article.labels | join(' ') }}">
       <a href="/articles/{{ article.slug }}/" class="block no-underline group">
         <h3 class="text-base font-semibold mb-1.5 text-[#e7e9ea] group-hover:text-accent transition-colors">{{ article.title }}</h3>
         <p class="text-[0.9rem] text-muted">{{ article.excerpt }}</p>
-        <span class="text-accent text-xs mt-2 inline-block">Read full article →</span>
+        <span class="text-accent text-xs mt-2 inline-block font-medium">Read full article →</span>
       </a>
       <div class="labels flex flex-wrap gap-1.5 mt-3" role="list" aria-label="Filter labels">
         {% for label in article.labels %}
@@ -254,6 +220,7 @@ permalink: /
   {% endif %}
 </section>
 {% endfor %}
+</div>
 </div>
 
 <script type="module" src="/js/home-panels.js"></script>

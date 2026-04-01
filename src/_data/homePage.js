@@ -1,0 +1,121 @@
+/**
+ * Home page (signed-in library): topic hub cards + article section registry.
+ * Reorder rows in articleSections to change section order on the page.
+ * jumpLabel appears in "Jump to section"; keep sectionId stable (anchors + scroll).
+ */
+module.exports = {
+  topicHubs: [
+    {
+      category: "Money & risk",
+      href: "/finance/",
+      title: "Young people & money",
+      description:
+        "From spending and subscriptions to betting, crypto, and scams: a spectrum overview plus linked articles.",
+      cta: "Open guide →",
+      accentClass: "border-l-accent group-hover:border-accent",
+      dotClass: "bg-accent",
+    },
+    {
+      category: "Technology & AI",
+      href: "/ai/",
+      title: "AI in apps",
+      description: "What “AI” means in feeds, chatbots, and moderation, in plain language for parents.",
+      cta: "Open guide →",
+      accentClass: "border-l-violet-500/70 group-hover:border-violet-400",
+      dotClass: "bg-violet-500",
+    },
+    {
+      category: "Connection & conversation",
+      href: "/connection/",
+      title: "Connection",
+      description: "Talking points so you can stay in step with what your child cares about online.",
+      cta: "Open →",
+      accentClass: "border-l-teal-500/80 group-hover:border-teal-400",
+      dotClass: "bg-teal-500",
+    },
+    {
+      category: "Body image",
+      href: "/body-image/",
+      title: "Appearance & feeds",
+      description: "How social apps shape ideals for boys and girls, plus related health risks.",
+      cta: "Open guide →",
+      accentClass: "border-l-[#f472b6] group-hover:border-[#f472b6]",
+      dotClass: "bg-[#f472b6]",
+    },
+  ],
+
+  articleSections: [
+    {
+      id: "platforms",
+      sectionId: "section-platforms",
+      title: "In focus: specific platforms",
+      jumpLabel: "Specific platforms",
+      badge: false,
+      emerging: true,
+      intro: null,
+    },
+    {
+      id: "emerging",
+      sectionId: "section-emerging",
+      title: "Emerging & new",
+      jumpLabel: "Emerging & new",
+      badge: "watch",
+      emerging: true,
+      intro: null,
+    },
+    {
+      id: "ongoing",
+      sectionId: "section-ongoing",
+      title: "Ongoing areas of risk",
+      jumpLabel: "Ongoing risks",
+      badge: false,
+      emerging: false,
+      intro: null,
+    },
+    {
+      id: "money-finance",
+      sectionId: "section-money-finance",
+      title: "Money and finance",
+      jumpLabel: "Money and finance",
+      badge: false,
+      emerging: false,
+      intro: "money-finance",
+    },
+    {
+      id: "body-image",
+      sectionId: "section-body-image",
+      title: "Body image and appearance",
+      jumpLabel: "Body image",
+      badge: false,
+      emerging: false,
+      intro: "body-image",
+    },
+    {
+      id: "lingo",
+      sectionId: "section-lingo",
+      title: "Lingo and terms to know",
+      jumpLabel: "Lingo and terms",
+      badge: false,
+      emerging: false,
+      intro: null,
+    },
+    {
+      id: "ai",
+      sectionId: "section-ai",
+      title: "AI: what it really means",
+      jumpLabel: "AI explained",
+      badge: false,
+      emerging: false,
+      intro: "ai",
+    },
+    {
+      id: "advice",
+      sectionId: "section-advice",
+      title: "What you can do",
+      jumpLabel: "What you can do",
+      badge: false,
+      emerging: false,
+      intro: null,
+    },
+  ],
+};

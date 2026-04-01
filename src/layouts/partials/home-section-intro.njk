@@ -1,0 +1,19 @@
+{# Expects `sec` from homePage.articleSections #}
+{% if sec.intro == 'ai' %}
+<div class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline py-5 px-6 rounded-xl bg-bg/60 border border-border border-l-4 border-l-violet-500/80 mb-6">
+  <p class="mb-4">When we say <strong>AI</strong> (artificial intelligence) in the context of apps and the online world your kids use, we usually mean software that has been trained on huge amounts of text, images, or other data so it can generate or predict new content. It doesn’t “think” or “understand” the way humans do; it finds patterns and repeats or remixes them.</p>
+  <p class="mb-4">In practice, that covers things like <strong>chatbots</strong> (e.g. ChatGPT, character-style bots) that reply in sentences, <strong>image generators</strong> that create or alter photos and art from a description, <strong>deepfakes</strong> (fake video or audio of real people), <strong>recommendation and feed algorithms</strong> that decide what shows up next, and <strong>moderation tools</strong> that try to detect harmful content. Many apps now plug in AI to answer questions, suggest replies, or change how content looks and sounds.</p>
+  <p class="mb-4">For parents, the important part is what that enables: more convincing fake content, personalised persuasion, and new ways to bully or mislead. Knowing that “AI” here really means “pattern-based, data-fed software that generates or recommends stuff” helps you ask the right questions when your child mentions a new feature or a weird thing they saw online.</p>
+  <p class="mb-0"><a href="/ai/">Read more on our dedicated page on AI</a>.</p>
+</div>
+{% elif sec.intro == 'money-finance' %}
+<div class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline py-5 px-6 rounded-xl bg-bg/60 border border-border border-l-4 border-l-accent mb-6">
+  <p class="mb-3"><strong>Money online</strong> for young people isn’t one thing. It runs from everyday spending and subscriptions to earning as a creator, betting and prediction markets, crypto trading, and scams. We’ve mapped that spectrum on a dedicated page so you can see how it fits together, then use the articles below for detail.</p>
+  <p class="mb-0"><a href="/finance/">Read the young people &amp; money overview →</a></p>
+</div>
+{% elif sec.intro == 'body-image' %}
+<div class="prose prose-invert prose-sm max-w-none text-muted [&_strong]:text-[#e7e9ea] [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline py-5 px-6 rounded-xl bg-bg/60 border border-border border-l-4 border-l-[#f472b6] mb-6">
+  <p class="mb-3"><strong>Body image</strong> pressure shows up differently in feeds aimed at boys and girls: muscle and “looks” culture, thin ideals, skin and beauty trends, and viral weight-loss content. We’ve split the topic into male and female angles on a dedicated page, then list related articles below.</p>
+  <p class="mb-0"><a href="/body-image/">Read the body image overview (male &amp; female) →</a></p>
+</div>
+{% endif %}
