@@ -284,16 +284,16 @@ module.exports = [
     labels: ["live-streaming", "social-media", "content", "grooming", "emerging"],
     section: "ongoing",
     excerpt:
-      "Streaming is not one thing. Gaming, fitness, and IRL streams have different risks across Twitch, Kik, YouTube, TikTok, and Instagram.",
+      "Streaming is not one thing. Gaming, fitness, and IRL streams have different risks across Twitch, Kik, YouTube, TikTok, Instagram, Kick, and Rumble.",
     severity: "Medium",
-    platformTags: ["Twitch", "Kik", "YouTube", "TikTok", "Instagram", "Kick"],
+    platformTags: ["Twitch", "Kik", "YouTube", "TikTok", "Instagram", "Kick", "Rumble"],
     content: `<p class="text-muted text-sm mb-6">Informational only. Platform features, moderation tools, and age settings change over time.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Streamers as celebrities</h3>
 <p>For many young people, popular streamers fill a role like a new-age rock star: top names can earn very large amounts from subscriptions, ads, brand deals, and viewer gifts and tips. That income can come from many kinds of content, not only gaming, including fitness, IRL, lifestyle, and variety chat. There are hundreds of creators with major followings; this page only names a few as context. Examples include long-running gaming personalities (such as Ninja or Pokimane), high-profile variety or chat streamers (such as Kai Cenat or xQc), and IRL or lifestyle creators (such as <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular</a>). Who is big changes quickly, so treat these as illustrations, not a fixed ranking.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Main streaming platforms teens mention</h3>
-<p>Young people can watch or create live content on many apps, most commonly <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a>, <a href="/articles/youtube-live/" class="text-accent font-semibold">YouTube (including Live)</a>, <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok (including LIVE)</a>, <a href="/articles/instagram-live/" class="text-accent font-semibold">Instagram Live</a>, and <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a>. Some families still refer to <a href="/articles/kik-messaging/" class="text-accent font-semibold">Kik</a> in conversations about chat and live-style interaction, even though usage patterns vary by region and age group.</p>
+<p>Young people can watch or create live content on many apps, most commonly <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a>, <a href="/articles/youtube-live/" class="text-accent font-semibold">YouTube (including Live)</a>, <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok (including LIVE)</a>, <a href="/articles/instagram-live/" class="text-accent font-semibold">Instagram Live</a>, <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a>, and <a href="/articles/rumble/" class="text-accent font-semibold">Rumble</a>. Some families still refer to <a href="/articles/kik-messaging/" class="text-accent font-semibold">Kik</a> in conversations about chat and live-style interaction, even though usage patterns vary by region and age group.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">How streaming differs by type</h3>
 <ul class="list-disc pl-6 my-2 space-y-1 text-muted">
@@ -541,6 +541,42 @@ module.exports = [
 </ul>`,
   },
   {
+    slug: "rumble",
+    title: "Rumble: live streaming and video platform for parents",
+    labels: ["platforms", "live-streaming", "content", "social-media", "moderation", "emerging"],
+    section: "platforms",
+    excerpt:
+      "Rumble hosts on-demand video and live streams. Teens may find it through creators, clips, or political and sports content. Chat, tips, and channel culture need the same safeguards as Twitch or Kick.",
+    severity: "Medium",
+    platformTags: ["Rumble"],
+    published: "2026-03-31",
+    createdAt: "2026-03-31",
+    content: `<p class="text-muted text-sm mb-6">Informational only. Features, age rules, and moderation tools change over time. Check Rumble’s own help centre for the latest settings.</p>
+
+<p><strong>Rumble</strong> is a video hosting and live-streaming service where creators upload clips, go live, and build channels. It is often described as an alternative to larger platforms, so some audiences moved there for policy or monetization reasons. Content ranges widely: commentary and news-style shows, sports and combat-sport clips, gaming, podcasts, and general entertainment.</p>
+
+<p>Teens may land on Rumble from shared links, creator announcements (“watch me on Rumble”), short-form reposts elsewhere, or interest in a specific personality or league. The app and site include <strong>live chat</strong>, ways to support creators financially, and recommendations that can surface intense or adult-leaning material depending on what they already watch.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why parents notice it</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Live interaction:</strong> Same pattern as other streamers: real-time chat, hype moments, and pressure to react or donate.</li>
+  <li><strong class="text-[#e7e9ea]">Content mix:</strong> Political and opinion-heavy programming is easy to find; not all of it is written for young viewers, even if clips look like normal “internet news.”</li>
+  <li><strong class="text-[#e7e9ea]">Moderation expectations:</strong> Families sometimes assume “smaller platform” means safer. In practice, safety depends on the channel, chat norms, and how quickly harmful comments or raids are handled.</li>
+  <li><strong class="text-[#e7e9ea]">Off-platform contact:</strong> Chat and video descriptions can push Discord, Telegram, or other spaces where supervision is harder.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Ask if your child only watches clips or also uses live chat and account features.</li>
+  <li>Review which channels they follow and sample a few episodes so you know tone and topics.</li>
+  <li>Set rules for tips, subscriptions, or any in-app spending, same as on <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a> or <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a>.</li>
+  <li>Agree a short list of topics or creators that need a conversation first before binge-watching (strong politics, combat sports, uncensored language).</li>
+  <li>If they stream on Rumble themselves, apply the same no-share rules as in our <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">streaming overview</a>: no school name, address clues, or live location.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms (overview)</a> · <a href="/articles/youtube-live/" class="text-accent font-semibold">YouTube Live</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a></p>`,
+  },
+  {
     slug: "kik-messaging",
     title: "Kik messaging app: legacy risk app parents still hear about",
     labels: ["platforms", "dm", "stranger-chat", "grooming", "app"],
@@ -613,6 +649,9 @@ module.exports = [
 <ul class="list-disc pl-6 my-2 space-y-1 text-muted">
   <li><strong class="text-[#e7e9ea]">Fliff</strong> — “social sportsbook” that uses virtual currency and sweepstakes; has been reported to market to users under 18 and saw very high growth among young audiences. Teens can get into the habit of “placing bets” even when money is virtual.</li>
 </ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Offshore crypto casinos and streamer promotion</h3>
+<p>Some operators combine <strong>crypto deposits</strong> with casino-style games and spend heavily on <strong>live-stream partnerships</strong> (Kick, Twitch, YouTube, and clip culture on TikTok). They are often <strong>blocked or illegal in major markets</strong> but still visible as entertainment. See <a href="/articles/roobet/" class="text-accent no-underline hover:underline">Roobet</a> for a focused explanation of regional limits, sponsored gambling streams, and why on-screen losses may not match a normal player's risk.</p>
 
 <p class="mt-6">Experts warn that young people are more susceptible to gambling problems; exposure to these apps can prime them for real-money gambling later. If your child has any of these apps—<strong>DraftKings</strong>, <strong>FanDuel</strong>, <strong>PrizePicks</strong>, <strong>Underdog Fantasy</strong>, <strong>Sleeper</strong>, <strong>Fliff</strong>, <strong><a href="/articles/kalshi/" class="text-accent no-underline hover:underline">Kalshi</a></strong>, <strong>Polymarket</strong>, <strong>PredictIt</strong>, or other sportsbook/prediction apps—talk with them about the risks, check how they signed up (whose account, what age given), and set clear rules about money and screen time around gambling-style apps.</p>`,
   },
@@ -1172,5 +1211,287 @@ module.exports = [
     severity: "High",
     platformTags: ["Clubhouse"],
     content: ``,
+  },
+  {
+    slug: "live-deepfake-video-call",
+    title: "How to spot a live deepfake on a video call",
+    labels: ["deepfakes", "scams", "impersonation", "ai", "video-chat"],
+    section: "ongoing",
+    excerpt:
+      "Scammers can fake a face in real time on video calls. The three-finger test and a few other checks can help reveal glitches before you trust someone or send money.",
+    severity: "High",
+    content: `<p class="text-muted text-sm mb-6">Informational only. No test is perfect. If someone pressures you for money, photos, or secrecy during a suspicious call, treat it as a scam until you verify them another way (in person, or a number you already trust).</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why this matters now</h3>
+<p>Deepfake tools can alter how someone looks or sounds on a <strong>live</strong> video call, not only in pre-recorded clips. Fraud rings use that to seem trustworthy, impersonate a boss or relative, or run romance and investment scams. Parents and teens should know simple, low-tech ways to stress-test whether the video is real.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What is the three-finger test?</h3>
+<p>The <strong>three-finger test</strong> means you ask the person on the call to hold <strong>three fingers</strong> up <strong>directly in front of their face</strong>. That creates <strong>occlusion</strong>: the hand blocks part of the face. It also forces quick changes in how light falls on the scene and in <strong>spatial depth</strong> (hand closer than the face).</p>
+<p>For a real person, that movement is usually natural. Many real-time deepfake pipelines still struggle when face and hands must line up believably under occlusion. You may see fingers that <strong>merge, warp, or lose sharp edges</strong>, or the face overlay may <strong>slip or jitter</strong> around the hand. Those artefacts can appear in seconds.</p>
+<p>Coverage of a scammer failing this check on a call, and why the gesture is hard for some fakes to handle, is summarised in press reporting such as <a href="https://www.ibtimes.co.uk/three-finger-test-exposes-deepfake-scammer-1789451" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">IBTimes UK (March 2026)</a>.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Other signs on a live call</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Unnatural delay or lip sync:</strong> voice and mouth movement slightly out of step.</li>
+  <li><strong class="text-[#e7e9ea]">Weird edges or blur:</strong> around hair, jawline, or when they turn their head quickly.</li>
+  <li><strong class="text-[#e7e9ea]">Refusal to follow simple live requests:</strong> besides three fingers, you can ask them to turn side-on, wave slowly, or hold an object you name. A real person can usually comply; a rigid refusal plus urgency is a red flag.</li>
+  <li><strong class="text-[#e7e9ea]">Pressure for money or sensitive info:</strong> deepfake or not, that pattern is the core scam signal.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Limits parents should know</h3>
+<p>The three-finger test is <strong>not infallible</strong>. Better models may eventually handle occlusion and hands more convincingly. Use it as one layer of defence, not a guarantee. The safest habit is: verify high-stakes requests through a <strong>second channel</strong> you already trust, and never send money or intimate images because a video call “looked” like someone you know.</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/ai-generated-content/" class="text-accent font-semibold">AI-generated and synthetic content</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a></p>`,
+  },
+  {
+    slug: "sovereign-person-course-scams",
+    title: "Sovereign person and sovereign citizen course scams",
+    labels: ["scams", "money-finance", "emerging", "social-media", "content"],
+    section: "money-finance",
+    excerpt:
+      "Paid workshops and online courses sell “sovereign person” or “sovereign citizen” ideas: fake legal immunity, debt wipes, and secret government accounts. Courts reject this pseudo-law; followers risk prison, fines, and ruined finances.",
+    whatItIs:
+      "Promoters, often called gurus, sell workshops, video courses, and document templates for hundreds or thousands of dollars. They teach “pseudo-law”: a mix of conspiracy theories and twisted readings of statutes and forms, packaged as a secret system that beats courts, taxes, and debt. The same ideas show up under names like sovereign citizen, freeman on the land, or “redemption” and “straw man” theories. Content spreads on social feeds, messaging apps, and paid communities, sometimes next to other conspiracy or anti-government material.",
+    whyDangerous:
+      "None of these tactics work as advertised. Real judges and prosecutors treat many of these filings and courtroom stunts as obstruction, fraud, or “paper terrorism” (for example abusive liens or bogus instruments). People can face criminal charges, contempt, or longer sentences when they ignore real legal process. Financially, victims pay large fees for useless kits, then may pile on penalties, ruined credit, or lost housing when fake “remedies” fail. Young or desperate buyers are sold a story of a hidden shortcut; the outcome is often the opposite.",
+    whoAffected:
+      "Teens and young adults who are online constantly can run into this through algorithms, influencers, or group chats. Anyone under money stress (student debt, rent, fines, or family hardship) is a natural target. So are people who already distrust government or who follow overlapping conspiracy channels. Technically savvy users are not immune; the pitch is often framed as research, freedom, or “what they don’t teach you.”",
+    parentActions: [
+      "If your child mentions sovereign citizens, straw man names, commercial liens, 1099-OID, or refusing to use their “legal” name in court, treat it as a serious conversation opener, not a joke. Ask where they heard it and whether money changed hands.",
+      "Explain plainly: courts and police do not recognize these theories. Following online gurus’ paperwork can make a real legal problem much worse.",
+      "Set clear rules about paying for legal or financial “courses” from strangers online, and offer to involve a real lawyer or legal aid for any actual court or debt issue.",
+      "Pair this with other money scams you already discuss (see our articles on crypto scams and payment apps) so “too good to be true” is a familiar line.",
+    ],
+    severity: "High",
+    platformTags: ["TikTok", "YouTube", "Telegram", "Discord", "paid courses"],
+    published: "2026-03-31",
+    createdAt: "2026-03-31",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not legal advice. If someone you know is facing charges or court dates, they need qualified legal help, not social media templates.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What the scams sell</h3>
+<p><strong>Guru peddling:</strong> Sellers push workshops, memberships, and templates for high fees. The tone is often urgent and exclusive: “they” hide the real rules, and this course reveals them.</p>
+<p><strong>Bogus documents:</strong> Buyers may be told to make their own “passports,” driver licences, vehicle registrations, or to file aggressive liens against officials. These are not substitutes for real ID or lawful process.</p>
+<p><strong>The “redemption” myth:</strong> A common lie is that the government holds a secret account for every person and that filing certain forms (sometimes linked to tax forms such as 1099 variants) can “access” or “redeem” money to pay debts, mortgages, or taxes. That is false and can trigger fraud or tax-related enforcement.</p>
+<p><strong>The “all caps” name myth:</strong> Some teachings claim that a name in ALL CAPS refers to a corporate “straw man” and that the “living man or woman” is not bound by law. Courts have rejected this repeatedly; it is not a recognised defence.</p>
+<p>Researchers and journalists describe this cluster of ideas as <strong>pseudo-law</strong>: language that sounds legal but does not hold up in any serious court. For background on the movement and why these arguments fail, see for example <a href="https://www.bbc.co.uk/news/world-us-canada-53654318" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">BBC News on the sovereign citizen movement</a> and <a href="https://www.abc.net.au/news/2025-08-31/sovereign-citizen-sovcit-pseudolaw-porepunkah/105711958" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">ABC (Australia) on pseudo-law and sovereign citizen beliefs</a>. The <a href="https://publicintelligence.net/tag/sovereign-citizen/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Public Intelligence archive (sovereign citizen tag)</a> collects reference documents and analysis on how these ideas spread; the <a href="https://www.splcenter.org/resources/reports/intelligence-report-special-edition-sovereign-citizens/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Southern Poverty Law Center special report on sovereign citizens</a> summarises the US movement and common tactics.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Consequences in the real world</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Criminal and court risk:</strong> Using these methods can lead to charges or findings related to fraud, contempt, or abusive filings. Authorities and researchers have described patterns of “paper terrorism” where false liens or harassment through courts burdens individuals and the system.</li>
+  <li><strong class="text-[#e7e9ea]">Financial harm:</strong> Course fees are often sunk cost. Worse, following bad advice (fake instruments, ignored judgments, sham filings) can deepen debt, trigger penalties, and damage credit.</li>
+  <li><strong class="text-[#e7e9ea]">Harsher outcomes:</strong> When someone uses sovereign-style arguments to resist traffic stops, bail conditions, or hearings, judges and law enforcement may view it as deliberate obstruction, which can increase penalties compared with cooperating through normal channels.</li>
+</ul>
+<p>Academic and policy centres that study extremism and anti-government movements document how pseudo-law ideas spread and how they interact with real-world enforcement. Examples include analysis from the <a href="https://extremism.gwu.edu/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Program on Extremism (George Washington University)</a> and commentary on how online spaces accelerate fringe ideologies, such as work from the <a href="https://www.lowyinstitute.org/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Lowy Institute</a> on digital extremism and disinformation dynamics.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why young people can be vulnerable</h3>
+<p>Short video, livestreams, and private chat groups make sovereign-style content easy to find and share. It often overlaps with other conspiracy or “do your own research” communities that skew young and tech-comfortable. The hook is not only ideology: <strong>financial desperation</strong>, distrust of institutions, or shame about debt can make a promise of a “secret” fix very attractive. Experts warn that many gurus are chiefly motivated by profit, selling paperwork that does not deliver and moving on once fees are collected.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Normalize asking before paying for any online “legal” or “debt elimination” programme.</li>
+  <li>Offer a non-judgemental path to real advice (school counsellor, legal aid, family solicitor) if they are in trouble with money or the law.</li>
+  <li>Share one clear fact: <strong>if it worked, mainstream lawyers would use it</strong>. The reason you only see it in paid courses is that it does not survive in court.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/make-money-online-courses/" class="text-accent font-semibold">Make money online courses (red flags)</a> · <a href="/articles/crypto-scams/" class="text-accent font-semibold">Crypto scams</a> · <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money overview</a> · <a href="https://www.adl.org/resources/backgrounder/sovereign-citizen-movement" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">ADL backgrounder: sovereign citizen movement</a> (US-focused context)</p>`,
+  },
+  {
+    slug: "make-money-online-courses",
+    title: "Make money online courses: red flags, real value, and scams",
+    labels: ["money-finance", "scams", "emerging", "social-media", "content"],
+    section: "money-finance",
+    excerpt:
+      "Selling courses is a huge online business. Some sellers fabricate earnings or sell thin content you could find free. One sharp question: if the method prints money, why are they mainly selling courses? Not every course is bad, but teens need filters.",
+    whatItIs:
+      "Across TikTok, YouTube, Instagram, Discord, and email lists, influencers promote paid programmes that teach trading, dropshipping, Amazon FBA, content creation, property strategies, or “mindset.” Course sales, memberships, and upsells (coaching, masterminds, templates) are a major income stream for many creators, sometimes larger than the business they claim the course is about. Marketing often shows lifestyle shots, revenue dashboards, and testimonials. Some of that is real; some is exaggerated, staged, or unverifiable.",
+    whyDangerous:
+      "Young people with part-time wages, savings, or access to a parent’s card can spend hundreds or thousands before they see results. Low-value courses repackage blog posts, forum threads, or public documentation. The worst cases are outright scams tied to illegal or harmful advice. Even “soft” failures waste money and time and can push a teen toward shame and secrecy. The sovereign-style legal course niche is one extreme: it charges high fees for theories courts reject.",
+    whoAffected:
+      "Teens and young adults who want independence, side income, or a fast fix; anyone comparing themselves to creators who look successful online; and families who have not talked about how course businesses make money from enrolments, not only from the skill being taught.",
+    parentActions: [
+      "Teach the question: “If this strategy is so good, why is most of their energy on selling the course and the next launch?” It is not a gotcha, but it opens a useful conversation.",
+      "Before any paid programme, search for free reputable guidance on the same topic (government consumer pages, established educators, official platform docs). If the course only adds hype, skip it.",
+      "Agree a rule: no high-ticket purchases from strangers on social media without a calm check-in at home.",
+      "Walk through our article on sovereign person and sovereign citizen course scams together (linked in the sections above and under Related on this page) as a concrete example of dangerous paid legal content.",
+    ],
+    severity: "Medium",
+    platformTags: ["TikTok", "YouTube", "Instagram", "Discord", "paid courses"],
+    published: "2026-03-31",
+    createdAt: "2026-03-31",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not financial or legal advice. Legitimate training exists; this page is about spotting patterns that often disappoint or harm young buyers.</p>
+
+<p>One extreme example we cover in depth is <a href="/articles/sovereign-person-course-scams/" class="text-accent font-semibold">sovereign person and sovereign citizen course scams</a>: paid workshops and templates that sell pseudo-law, debt “cures,” and immunity fantasies that judges and prosecutors do not accept. Use it as a case study in how course marketing can wrap serious harm in the language of empowerment.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why “sell a course” is such a big business</h3>
+<p>Digital products scale. Record once, sell many seats, add live calls or a community for a higher tier. For some experts, teaching is the real job and the material is solid. For others, the <strong>course is the product</strong>, and the “business in a box” story is mainly marketing. Teens see the highlight reel (travel, cars, screenshots) and may not know how much revenue comes from enrolments versus from the activity being taught.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">The earnings question</h3>
+<p>If someone claims they built wealth with a specific method, ask calmly: <strong>why they spend so much time recruiting students, running ads, and opening new cohorts</strong> instead of compounding that method in private. There are honest answers (they like teaching, they hit capacity, they diversify income). There are also weak answers (the course pays better than the method, or the method is inconsistent). Fabricated or rented “success” props up some funnels, so treat flashy proof as something to verify, not to envy.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Not all courses are scams</h3>
+<p>Accredited education, vetted professional training, and well-reviewed skills courses can be worth paying for. The difference is often <strong>transparency</strong> (who teaches, what you get, refund rules), <strong>alignment</strong> with public information you can check, and <strong>outcomes</strong> that do not depend on recruiting your friends. Cheap intro classes can be a fair way to learn a tool or hobby if expectations stay realistic.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Patterns that deserve extra caution</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Guaranteed income or “secret” systems:</strong> especially in crypto, trading, or dropshipping (see <a href="/articles/crypto-scams/" class="text-accent font-semibold">crypto scams</a> and <a href="/articles/trade-sellers-broker-affiliates/" class="text-accent font-semibold">trade influencers and affiliates</a>).</li>
+  <li><strong class="text-[#e7e9ea]">Pressure and scarcity:</strong> “Cart closes tonight,” limited scholarships, or DMs that rush a card payment.</li>
+  <li><strong class="text-[#e7e9ea]">Repurposed free info:</strong> if a teenager could learn the same steps from official docs or a library book, the fee may be mostly motivation and branding.</li>
+  <li><strong class="text-[#e7e9ea]">Upsell ladders:</strong> cheap entry, then expensive tiers that promise the “real” strategy.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Normalize talking about money spent online without shame so problems surface early.</li>
+  <li>Pair scepticism with support: if they want a skill, help them find a credible path (school, library, known providers).</li>
+  <li>Revisit the <a href="/articles/sovereign-person-course-scams/" class="text-accent font-semibold">sovereign citizen course article</a> when “legal hacks” or debt erasure courses appear in their feed.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/sovereign-person-course-scams/" class="text-accent font-semibold">Sovereign person course scams</a> · <a href="/articles/crypto-scams/" class="text-accent font-semibold">Crypto scams</a> · <a href="/articles/trade-sellers-broker-affiliates/" class="text-accent font-semibold">Trade sellers and broker affiliates</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money overview</a></p>`,
+  },
+  {
+    slug: "vaping-lung-cancer-telegraph-research",
+    title: "Vaping, lung cancer risk, and what the Telegraph and new research report",
+    labels: ["health", "emerging", "social-media", "content"],
+    section: "ongoing",
+    excerpt:
+      "The Telegraph has covered youth vaping at levels compared to 1970s smoking. A March 2026 scientific review in Carcinogenesis concludes nicotine vapes are likely to contribute to lung and oral cancer. Here is what parents should know and how to talk about it.",
+    whatItIs:
+      "E-cigarettes heat a liquid into an aerosol that users inhale. Flavoured disposables and heavy social marketing have made vaping common among teenagers in many countries, including the UK. The Daily Telegraph reported in July 2025 on research warning that young people who vape are taking up cigarette-style habits at levels compared to the 1970s, with calls for politicians to treat youth vaping as a serious public health priority. Separately, cancer specialists led by UNSW Sydney published a major evidence review in March 2026 in the journal Carcinogenesis (peer-reviewed). That review weighs human biomarker studies, animal experiments, and laboratory work and concludes that nicotine-based vapes are likely to cause lung cancer and cancers of the oral cavity, not only act as a gateway to smoking.",
+    whyDangerous:
+      "Nicotine is addictive and can harm the developing brain. Inhaled aerosols carry particulates, volatile organic compounds, and metals from heating coils; the 2026 review links these exposures to DNA damage, inflammation, oxidative stress, and other changes on the pathway to cancer. Animal studies cited in the review reported more lung tumours in exposed mice than in controls, and clinicians have described case reports of oral cancer in people who vaped but never smoked tobacco. The authors stress their conclusion is qualitative: they do not yet put a number on how many people will get cancer, because modern vapes have only existed for about two decades and population studies need time. They argue regulators should not wait as long as it took to confirm smoking’s role in lung cancer. Dual use (vaping and smoking together) is also harmful: related commentary points to sharply higher lung cancer risk for people who do both.",
+    whoAffected:
+      "Teenagers and young adults, including non-smokers who start with flavoured devices; children exposed to marketing on short-form video and near schools; and families who were told vaping is harmless compared with cigarettes.",
+    parentActions: [
+      "Treat vaping as a health and addiction topic, not only a rule-breaking issue. Ask calmly whether your child or their friends vape and what they believe about risks.",
+      "Share that serious researchers now link vaping itself to cancer pathways, not only to later smoking. Point to trusted summaries (NHS, school nurse, or the UNSW and journal links on this page) rather than comment threads.",
+      "If your child vapes and wants to stop, ask a GP, pharmacist, or stop-smoking service about evidence-based support. Avoid turning the conversation into a lecture that shuts down honesty.",
+      "Keep devices and refill liquids out of reach of younger siblings; nicotine poisoning and burns from faulty devices are real risks.",
+    ],
+    severity: "High",
+    platformTags: ["TikTok", "Instagram", "disposable vapes", "schools"],
+    published: "2026-03-31",
+    createdAt: "2026-03-31",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not medical advice. For quitting support or symptoms, speak with a clinician or your national stop-smoking service.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What the Telegraph reported (2025)</h3>
+<p>In <strong>July 2025</strong>, <a href="https://www.telegraph.co.uk/news/2025/07/30/vaping-children-similar-1970s-smoking-cigarettes/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">The Telegraph reported</a> on analysis comparing children’s vaping to cigarette smoking levels last seen in the <strong>1970s</strong>, and on pressure for MPs to focus on cutting youth e-cigarette use. That story is mainly about <strong>uptake, addiction, and the slide toward tobacco</strong>, not the full cancer review below, but it helps explain why UK newspapers have kept vaping on the front page.</p>
+<p>The Telegraph and other outlets have also covered wider harms, for example <a href="https://www.telegraph.co.uk/news/2024/03/20/rishi-sunak-vow-stop-kids-hooked-nicotine-study-vaping-harm/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">political pledges and studies on nicotine and youth</a> (2024) and <a href="https://www.telegraph.co.uk/news/2024/04/02/vaping-causes-substantial-increase-risk-heart-failure/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">research on heart failure risk</a> (2024). Together they paint a picture that vaping is <strong>not a harmless habit</strong>, even when marketing still sounds light and fruity.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Lung cancer and oral cancer: March 2026 review</h3>
+<p>In <strong>March 2026</strong>, researchers led by UNSW Sydney published a systematic assessment in <em>Carcinogenesis</em> (<a href="https://doi.org/10.1093/carcin/bgag015" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">DOI 10.1093/carcin/bgag015</a>). The university’s <a href="https://www.unsw.edu.au/newsroom/news/2026/03/vaping-likely-to-cause-cancer-new-findings" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">news summary</a> explains their conclusion: taken together, clinical, animal, and lab evidence indicates that <strong>nicotine-based e-cigarettes are likely to cause lung cancer and oral cavity cancer</strong>, independent of whether the user ever smokes tobacco.</p>
+<p>Important limits, in the authors’ own words: the work is a <strong>qualitative</strong> judgement of carcinogenicity, not a calculator of how many cancers will occur. E-cigarettes are young as a product; precise population risk may take many more years to measure. They explicitly compare the situation to cigarettes, where formal recognition of lung cancer causation followed a long lag after early clues.</p>
+<p>UK families may see this study reported in <strong>national newspapers and broadcasters</strong> as well as specialist science sites. When your teen says “it’s just water vapour” or “it’s safer than smoking,” you can answer: independent cancer scientists now treat vaping as a probable direct cause of serious disease, not only a stepping stone to cigarettes.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why young people still underestimate risk</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Flavours and design:</strong> sweet or ice flavours feel far removed from “cancer” messaging built around old cigarette packs.</li>
+  <li><strong class="text-[#e7e9ea]">Peer normalisation:</strong> if many at school vape, risk feels average, not optional.</li>
+  <li><strong class="text-[#e7e9ea]">Algorithm feeds:</strong> short videos can glamorise tricks and clouds without showing addiction or withdrawal.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Practical steps</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Use the same “delay and breathe” approach as other hard topics: listen first, then add facts from sources like this page or NHS guidance.</li>
+  <li>If you smoke or vape yourself, be honest that quitting is difficult; double standards undermine trust.</li>
+  <li>Report illegal sales to minors through your local authority if you see them; policy is part of prevention, not only family rules.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Sources: <a href="https://www.telegraph.co.uk/news/2025/07/30/vaping-children-similar-1970s-smoking-cigarettes/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">The Telegraph (July 2025)</a> · <a href="https://doi.org/10.1093/carcin/bgag015" target="_blank" rel="noopener" class="text-accent no-underline hover:underline"><em>Carcinogenesis</em> (2026)</a> · <a href="https://www.unsw.edu.au/newsroom/news/2026/03/vaping-likely-to-cause-cancer-new-findings" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">UNSW Sydney (2026)</a></p>`,
+  },
+  {
+    slug: "digital-tracking-airtags-location",
+    title: "Digital tracking today: how common it is and Apple AirTag-style devices",
+    labels: ["privacy", "emerging", "app", "content", "social-media"],
+    section: "ongoing",
+    excerpt:
+      "Location tracking is woven into phones, apps, social media, and cheap Bluetooth tags. Apple AirTag and similar trackers help people find keys and bags, but the same tech appears in stalking and coercion. Here is how prevalence shows up for families.",
+    whatItIs:
+      "Tracking today is rarely one hidden wiretap. It is a stack of everyday tools: phones that share location with friends or family, ride and delivery apps that need GPS, fitness watches, school or employer device policies, social posts that tag places, shared albums, and small battery-powered tags that use crowdsourced Bluetooth networks. Apple’s AirTag and other Find My network accessories are marketed to recover lost items. They ping nearby Apple devices so the owner can see an approximate location on a map. The same class of gadget includes Tile’s range, Samsung Galaxy SmartTag, Chipolo, Motorola Moto Tag, Eufy SmartTrack, and other brands, each with its own app or network (some piggyback on Apple Find My or Google’s finder network). When someone slips a tag into another person’s bag or car without consent, the same feature set becomes a stalking risk. Apple has added alerts (for example notifications that an unknown AirTag may be moving with you) and Android has scanner apps for the same purpose, but misuse still appears regularly in news and police guidance.",
+    whyDangerous:
+      "Young people may be tracked by controlling partners or exes, by peers as a prank that stops feeling funny, or by strangers after a chance encounter. Constant location awareness can enable harassment, showing up uninvited, or pressure to prove where you are. Tags are small and easy to hide. Separately, always-on location for social apps normalises oversharing: stories, Snap Map, and live features can broadcast routines to wider circles than a teen intends. Parents sometimes use location sharing for safety; when it is one-sided, secret, or punitive, it can damage trust or mirror the dynamics of abuse.",
+    whoAffected:
+      "Teens and young adults who date, share devices, or travel alone; children whose parents track them without clear agreement; and anyone who loses sight of how many apps have location permission. iPhone users see AirTag-related alerts most directly; Android users may need to install tracking-detection tools and check Bluetooth.",
+    parentActions: [
+      "Talk about consent: sharing live location should be a conscious choice, revocable anytime, not something a partner or friend demands to “prove” loyalty.",
+      "On iPhone, review Find My and the Safety (or item safety) settings together; on Android, use official guidance from Google and Apple for detecting unknown trackers.",
+      "If your child gets an alert about an unknown AirTag or similar device, treat it seriously: help them locate and remove it if safe, document, and involve school or police if someone may have placed it deliberately.",
+      "Audit location permissions app by app; turn off “always” unless there is a clear need, and discuss what “precise location” means for favourite hangouts and home.",
+      "If you use parental location tracking, say so openly, agree when it applies, and revisit as they get older so it does not become surveillance they have to hide from.",
+    ],
+    severity: "High",
+    platformTags: ["AirTag", "Tile", "SmartTag", "Chipolo", "Find My", "iPhone", "Android", "Snapchat", "Instagram"],
+    published: "2026-03-31",
+    createdAt: "2026-03-31",
+    content: `<p class="text-muted text-sm mb-6">Informational only. If you believe someone is stalking or threatening you or your child, contact local police and use your national domestic abuse or helpline routes. Remove unknown trackers only when it is safe to do so.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why tracking feels “everywhere” now</h3>
+<p>Most smartphones ship with <strong>location services</strong> on by default for maps, weather, cameras, and dozens of third-party apps. Social platforms add <strong>check-ins</strong>, <strong>tagged photos</strong>, and <strong>live</strong> broadcasts. Wearables log runs and sleep with GPS. That is before anyone buys a dedicated tracker.</p>
+<p>The result is a <strong>high baseline of surveillance</strong>: not always malicious, but easy to forget until a teen realises a former friend, ex, or stranger can piece together school, work, and home patterns from public posts and shared accounts.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Apple AirTag and the Find My network</h3>
+<p><strong>AirTag</strong> is Apple’s coin-sized tag. Paired with an Apple ID, it uses Bluetooth and the global <strong>Find My</strong> network (other iPhones, iPads, and Macs passing nearby) to update its location for the owner. Apple and third parties also sell <strong>Find My compatible</strong> luggage tags and bike mounts.</p>
+<p>Legitimate uses include keys, wallets, bikes, and checked luggage. The same design means a tag hidden in a coat pocket or car can relay where someone goes. Apple has iterated <strong>anti-stalking features</strong>: sounds, notifications that an unknown accessory is with you, and guidance to disable or locate the tag. Features evolve, so use <a href="https://www.apple.com/airtag/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Apple’s current AirTag support pages</a> for steps on your OS version. Google offers <strong>unknown tracker alerts</strong> on compatible Android devices; third-party scanner apps also exist because the ecosystem is not only Apple.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Other trackers families often run into</h3>
+<p>These products are sold as <strong>lost-item finders</strong>. Names and features change with new models, but the ideas repeat. All of them can be misused the same way as an AirTag if someone hides one on you.</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Tile (e.g. Pro, Mate, Slim):</strong> Uses Tile’s own app and a wide user network. Different shapes suit keys, bags, or a <strong>thin wallet slot</strong>. The sturdier, key-ring style models are often marketed for <strong>longer Bluetooth reach</strong> and rough daily use than the smallest discs.</li>
+  <li><strong class="text-[#e7e9ea]">Samsung Galaxy SmartTag 2:</strong> Built for people already in the <strong>Galaxy</strong> world. Where the phone supports it, <strong>ultra-wideband (UWB)</strong> can give more precise “which direction / how far” prompts than Bluetooth alone. It also plugs into <strong>SmartThings</strong>, so tags can sit alongside lights, sensors, and other smart-home automations.</li>
+  <li><strong class="text-[#e7e9ea]">Chipolo (including One, Spot, Card):</strong> Some models pair only with <strong>Apple’s Find My</strong> network, like a third-party AirTag. The brand is often noted for <strong>loud ringing</strong> when you ping the tag nearby. The <strong>card-shaped</strong> versions target slipping into a wallet or pass holder.</li>
+  <li><strong class="text-[#e7e9ea]">Motorola Moto Tag:</strong> Tied to <strong>Google’s Find My Device</strong> crowd, so lost items can be updated when other Android devices pass by. On hardware that supports it, <strong>UWB</strong> again helps with close-up, directional finding inside a room.</li>
+  <li><strong class="text-[#e7e9ea]">Eufy SmartTrack Link (and similar Eufy trackers):</strong> Often pitched as a <strong>budget-friendly</strong> option that can still join <strong>Apple Find My</strong> for iPhone households, while Eufy’s own app handles setup and extras. Versatile shapes (fob, card-style) show up depending on the exact model.</li>
+</ul>
+<p class="text-sm text-muted">Independent labs compare range, volume, and accuracy across brands; in the UK, <a href="https://www.which.co.uk/reviews/mobile-phones/article/best-bluetooth-trackers-a8Kyd7O5ZXSb" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Which? has published Bluetooth tracker round-ups</a> (detailed scores may sit behind membership).</p>
+<p>Whatever the logo on the plastic, the pattern for parents is the same: <strong>small gadget, big network, fast location updates</strong>. That is helpful for keys; it is dangerous in the wrong hands.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Beyond tags: what else to review</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Share My Location</strong> and family groups in Messages, Google Maps, or Life360-style apps: who is in the circle and can they see you 24/7?</li>
+  <li><strong class="text-[#e7e9ea]">Snap Map, Instagram activity, Strava heatmaps:</strong> default visibility and ghost mode settings.</li>
+  <li><strong class="text-[#e7e9ea]">Old posts</strong> that name a school, bus route, or workplace.</li>
+  <li><strong class="text-[#e7e9ea]">Wearables and laptops</strong> signed into a shared account someone else controls.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Normalise “who can see my dot on the map?” as a regular privacy check, like clearing old DMs.</li>
+  <li>Role-play refusing to share live location under pressure from a partner or new online friend.</li>
+  <li>If your teen drives or uses transit alone, agree <strong>one</strong> safety practice you both trust (check-in time, trusted contact) rather than secret always-on tracking.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/meta-glasses-meta-ai/" class="text-accent font-semibold">Meta Ray-Ban glasses and recording</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/articles/encrypted-ephemeral/" class="text-accent font-semibold">Encrypted and ephemeral spaces</a></p>`,
+  },
+  {
+    slug: "roobet",
+    title: "Roobet: crypto casino, regional blocks, and gambling live streams",
+    labels: ["money-finance", "gambling", "streaming", "crypto", "emerging", "weak-age-verification"],
+    section: "money-finance",
+    excerpt:
+      "Roobet is a crypto-friendly online casino brand that is only available in some countries. Teens often see it through sponsored live streams where big wins and losses may not reflect a normal player's risk.",
+    createdAt: "2026-03-31",
+    whatItIs:
+      "Roobet is an online gambling operator (casino-style games and related betting products) that emphasizes cryptocurrency deposits and withdrawals. It markets heavily through creator and esports partnerships. Access depends on where you live: the site uses licensing, geoblocking, and provider rules, so it is not offered in many large markets (including the United States and United Kingdom for typical play). Individual game studios can add extra country blocks on top of the platform's own list.",
+    whyDangerous:
+      "Young people discover Roobet less through app stores and more through entertainment: long live streams where influencers gamble, react, and chat. That content can normalize betting and big swings of money. Sponsored streams are commercial deals. Reporters, creators, and viewers have repeatedly raised questions about how much of the balance on screen is the streamer's own cash versus promotional credit, house funds, or other arrangements negotiated with the gambling brand. Losses can be real for viewers who copy the hype, even when the performer's incentives and bankroll are opaque. VPNs and weak age checks also mean some minors may try to register from blocked regions, which is risky legally and financially.",
+    whoAffected:
+      "Mostly teens and young adults (roughly 14–24) who watch gaming, IRL, or gambling-adjacent streams on Kick, Twitch, YouTube, or clips on TikTok; also families where teens have access to crypto wallets, cards, or shared devices.",
+    parentActions: [
+      "Name the pattern: if a creator is always on the same casino site, assume paid promotion unless they clearly say otherwise, and treat big losses on stream as entertainment, not proof of how gambling usually ends.",
+      "Check whether real-money gambling sites are legal where you live. Explain that bypassing blocks with a VPN does not make underage or illegal play okay, and can mean lost deposits with no consumer protection.",
+      "Use device or network filters for gambling domains where it helps, and watch for new crypto wallets, gift cards, or unexplained card charges tied to gaming nights.",
+      "If betting is taking hold, contact the National Council on Problem Gambling (US: 1-800-522-4700) or your country's equivalent helpline.",
+    ],
+    severity: "Medium",
+    platformTags: ["Kick", "Twitch", "YouTube", "TikTok"],
+    sourceTitle: "Roobet Help: Regional restrictions by game provider",
+    sourceUrl: "https://help.roobet.com/en/articles/6610575-regional-restrictions-by-game-provider",
+    content: `<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Regional availability (why \"sometimes you can't sign up\")</h3>
+<p class="text-muted">Roobet and similar offshore brands maintain <strong>allowed and blocked country lists</strong> that change with regulation and payment rules. The platform's help centre describes <strong>regional restrictions by game provider</strong>, meaning even if the homepage loads, some games may be turned off in your location. Parents do not need every country name memorised: the takeaway is that <strong>legality and access vary by jurisdiction</strong>, and what a teen sees on a foreign stream may not be something they can or should use at home.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Live streams: wins, losses, and sponsorship</h3>
+<p class="text-muted">High-profile streamers have run long sessions gambling online while audiences watch in real time. Sessions often highlight <strong>large wins or dramatic losses</strong>. Those moments are easy to clip and share, so they reach teens even if they never visit the casino site.</p>
+<p class="text-muted">Industry reporting and community scrutiny have stressed that <strong>many gambling streams are sponsored</strong> (see for example <a href="https://www.pastemagazine.com/games/twitch/twitch-online-casino-streamers/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Paste on Twitch casino streamers and sponsor risk</a>): the creator is paid or otherwise incentivised to play on a specific site. That does not prove every bet is \"fake,\" but it does mean the stream is <strong>marketing</strong>, not a neutral tutorial. There has been <strong>public suspicion and ongoing debate</strong> about whether some creators gamble entirely with their own money, or use <strong>credit, rebates, or funds supplied or topped up by the gambling company</strong> as part of the deal. Terms are usually private, so viewers cannot verify the bankroll. The risk for families is emotional: young fans may believe they are watching a peer take real personal risk, when the economic reality behind the camera can be different.</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/crypto-scams/" class="text-accent font-semibold">Crypto scams</a></p>`,
   },
 ];

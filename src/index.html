@@ -135,53 +135,27 @@ permalink: /
   </div>
 </section>
 
-{% if trends.datasets and trends.datasets.length > 0 and trends.labels and trends.labels.length > 0 %}
-<section class="mb-8 py-6 px-6 bg-surface rounded-xl border border-border" aria-label="Search interest over time">
-  <h2 class="text-[1.1rem] font-semibold mb-2 text-[#e7e9ea]">Search interest over time</h2>
-  <p class="text-muted text-sm mb-4">How often people in the UK search for these terms (Google Trends). Run <code class="text-xs bg-border px-1 rounded">npm run fetch-trends</code> to update.</p>
-  <div class="overflow-x-auto">
-    <canvas id="trends-chart" width="800" height="320" role="img" aria-label="Line chart of search interest over time"></canvas>
+{% set recentArticles = articles | articlesSortedNewestFirst | limit(12) %}
+<section id="section-recent" class="mb-8 content-section py-6 px-6 bg-surface rounded-xl border border-border scroll-mt-6" aria-label="Most recent articles">
+  <h2 class="text-[1.1rem] font-semibold mb-2 text-[#e7e9ea]">Most recent articles</h2>
+  <p class="text-muted text-sm mb-6">New and updated guides across every section, ordered by date added or published.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 card-list">
+    {% for article in recentArticles %}
+    <article class="card bg-surface border border-border rounded-[10px] py-4 px-5 transition-colors duration-200 hover:bg-surface-hover hover:border-[#3d4654]" data-labels="{{ article.labels | join(' ') }}">
+      <a href="/articles/{{ article.slug }}/" class="block no-underline group">
+        <h3 class="text-base font-semibold mb-1.5 text-[#e7e9ea] group-hover:text-accent transition-colors">{{ article.title }}</h3>
+        <p class="text-[0.9rem] text-muted">{{ article.excerpt }}</p>
+        <span class="text-accent text-xs mt-2 inline-block">Read full article →</span>
+      </a>
+      <div class="labels flex flex-wrap gap-1.5 mt-3" role="list" aria-label="Filter labels">
+        {% for label in article.labels %}
+        <span class="label font-mono text-[0.7rem] py-1 px-2 rounded bg-border text-muted" data-label="{{ label }}">{{ label | labelToTitle }}</span>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
   </div>
-  {% if trends.updatedAt %}<p class="text-muted text-xs mt-3">Data updated: {{ trends.updatedAt }}</p>{% endif %}
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
-  <script>
-    (function() {
-      var data = {{ trends | json | safe }};
-      if (!data.datasets || !data.labels.length) return;
-      var ctx = document.getElementById('trends-chart');
-      if (!ctx) return;
-      var colors = ['#1d9bf0', '#ff6b35', '#00ba7c', '#e7e9ea'];
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: data.labels,
-          datasets: data.datasets.map(function(d, i) {
-            return {
-              label: d.label,
-              data: d.data,
-              borderColor: colors[i % colors.length],
-              backgroundColor: colors[i % colors.length] + '20',
-              fill: false,
-              tension: 0.2
-            };
-          })
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          plugins: {
-            legend: { labels: { color: '#8b98a5' } }
-          },
-          scales: {
-            x: { ticks: { color: '#8b98a5', maxRotation: 45 }, grid: { color: '#2f3542' } },
-            y: { min: 0, max: 100, ticks: { color: '#8b98a5' }, grid: { color: '#2f3542' } }
-          }
-        }
-      });
-    })();
-  </script>
 </section>
-{% endif %}
 
 <section class="mb-8 py-6 px-6 bg-surface rounded-xl border border-border" aria-label="Find and navigate">
   <h2 class="text-[1.1rem] font-semibold mb-3">Find an app or topic</h2>
@@ -197,6 +171,7 @@ permalink: /
   <nav class="mb-5 pb-5 border-b border-border" aria-label="Jump to section">
     <span class="text-muted text-xs font-medium uppercase tracking-wider block mb-2">Jump to section</span>
     <ul class="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+      <li><a href="#section-recent" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Most recent</a></li>
       <li><a href="#section-platforms" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Specific platforms</a></li>
       <li><a href="#section-emerging" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Emerging & new</a></li>
       <li><a href="#section-ongoing" class="text-accent no-underline hover:underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded">Ongoing risks</a></li>

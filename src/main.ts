@@ -15,6 +15,13 @@ function getCardLabels(card: Element): string[] {
   return raw.trim().split(/\s+/);
 }
 
+function getArticleSlugFromCard(card: Element): string {
+  const a = card.querySelector('a[href*="/articles/"]');
+  const href = a?.getAttribute('href') ?? '';
+  const m = href.match(/\/articles\/([^/]+)/);
+  return m?.[1] ?? '';
+}
+
 /** Build searchable text from card: title + body + labels (space-separated, lowercased). */
 function getCardSearchText(card: Element): string {
   const parts: string[] = [];
@@ -40,7 +47,14 @@ function initFilters(): void {
   const sortedLabels = Array.from(allLabels).sort();
 
   const selected = new Set<string>();
-  const totalCount = cards.length;
+  const totalUnique = (() => {
+    const slugs = new Set<string>();
+    cards.forEach((card) => {
+      const s = getArticleSlugFromCard(card);
+      if (s) slugs.add(s);
+    });
+    return slugs.size || cards.length;
+  })();
 
   function getSearchQuery(): string {
     return (searchInput?.value ?? '').trim().toLowerCase();
@@ -50,7 +64,7 @@ function initFilters(): void {
     const searchQuery = getSearchQuery();
     const hasSearch = searchQuery.length > 0;
     const hasTopicFilter = selected.size > 0;
-    let visibleCount = 0;
+    const visibleSlugs = new Set<string>();
 
     cards.forEach((card) => {
       const cardLabels = getCardLabels(card);
@@ -58,8 +72,12 @@ function initFilters(): void {
       const matchesSearch = !hasSearch || getCardSearchText(card).includes(searchQuery);
       const visible = matchesTopic && matchesSearch;
       (card as HTMLElement).hidden = !visible;
-      if (visible) visibleCount++;
+      if (visible) {
+        const slug = getArticleSlugFromCard(card);
+        if (slug) visibleSlugs.add(slug);
+      }
     });
+    const visibleUnique = visibleSlugs.size;
 
     document.querySelectorAll('.content-section').forEach((section) => {
       const list = section.querySelector('.card-list');
@@ -69,7 +87,7 @@ function initFilters(): void {
     });
 
     if (hasSearch || hasTopicFilter) {
-      countEl!.textContent = `Showing ${visibleCount} of ${totalCount} articles`;
+      countEl!.textContent = `Showing ${visibleUnique} of ${totalUnique} articles`;
     } else {
       countEl!.textContent = 'Showing all articles';
     }

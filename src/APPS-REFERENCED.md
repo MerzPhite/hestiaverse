@@ -16,6 +16,7 @@
 | mobile | Home | In focus: specific platforms | 2026-03 |
 | TikTok | Home | In focus: specific platforms | 2026-03 |
 | Clubhouse | Home | In focus: specific platforms | 2026-03 |
+| Roobet | <code>/articles/roobet/</code>, gambling hub | Money / streaming | 2026-03 |
 ---
 
 ## How to use

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "eleventy && tsc && esbuild src/auth.ts src/site-gate.ts src/home-panels.ts src/assessment-funnel.ts src/subscribe-checkout.ts src/settings-menu.ts --bundle --splitting --format=esm --outdir=dist/js --platform=browser",
+    "build": "eleventy && tsc && esbuild src/auth.ts src/site-gate.ts src/home-panels.ts src/assessment-funnel.ts src/subscribe-checkout.ts src/settings-menu.ts src/landing-signup.ts --bundle --splitting --format=esm --outdir=dist/js --platform=browser",
     "deploy": "npm run build && wrangler deploy",
     "dev": "eleventy --serve",
     "dev:full": "npm run build && concurrently \"eleventy --serve --watch\" \"tsc --watch\"",

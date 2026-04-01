@@ -1,106 +1,102 @@
 {
-  "nodes": [
+  "hubTitle": "Catching up on Rihanna",
+  "hubSubtitle": "",
+  "clouds": [
     {
-      "id": "sabrina",
-      "label": "Sabrina Carpenter",
-      "type": "artist"
-    },
-    {
-      "id": "chappell",
-      "label": "Chappell Roan",
-      "type": "artist"
-    },
-    {
-      "id": "dua",
-      "label": "Dua Lipa",
-      "type": "artist"
-    },
-    {
-      "id": "olivia",
-      "label": "Olivia Rodrigo",
-      "type": "artist"
-    },
-    {
-      "id": "superbowl",
-      "label": "Super Bowl LX",
-      "type": "event"
-    },
-    {
-      "id": "pringles",
-      "label": "Pringles Ad Campaign",
-      "type": "event"
-    }
-  ],
-  "edges": [
-    {
-      "source": "sabrina",
-      "target": "superbowl",
-      "label": "stars in"
-    },
-    {
-      "source": "superbowl",
-      "target": "pringles",
-      "label": "part of"
-    },
-    {
-      "source": "sabrina",
-      "target": "chappell",
-      "label": "trending with"
-    },
-    {
-      "source": "sabrina",
-      "target": "dua",
-      "label": "trending with"
-    },
-    {
-      "source": "sabrina",
-      "target": "olivia",
-      "label": "trending with"
-    }
-  ],
-  "topics": [
-    {
-      "title": "Sabrina Carpenter's Super Bowl Debut",
-      "whatHappened": "Sabrina Carpenter stars in Pringles' Super Bowl ad debut airing February 8, 2026.",
-      "whyKidsCare": "Super Bowl ads are a big deal, and seeing a favorite artist can make it more exciting.",
-      "thingsTheyMightBeTalkingAbout": [
-        "What do you think of the ad?",
-        "Have you seen any sneak peeks?",
-        "Who else do you think will be in the Super Bowl ads?"
-      ],
-      "easyConvoStarters": [
-        "What's your favorite Super Bowl ad?",
-        "Do you like Sabrina Carpenter's music?"
+      "id": "music",
+      "title": "Music & live shows",
+      "teaser": "Rihanna is working on her ninth album, R9, with no release date confirmed yet.",
+      "points": [
+        {
+          "headline": "Upcoming Album",
+          "detail": "Rihanna is actively working on her ninth studio album, R9, with no confirmed release date as of March 2026."
+        },
+        {
+          "headline": "Studio Sessions",
+          "detail": "Recent studio sessions took place in New York City in January 2026, as she continues to develop R9."
+        },
+        {
+          "headline": "Rediscovery Phase",
+          "detail": "In 2024, Rihanna planned a phase of 'rediscovery' to revisit tracks with a fresh perspective."
+        }
       ]
     },
     {
-      "title": "Pop Music Trends",
-      "whatHappened": "No recent albums or tours reported for major pop artists as of March 2026.",
-      "whyKidsCare": "Staying up-to-date with their favorite artists helps them connect with friends and trends.",
-      "thingsTheyMightBeTalkingAbout": [
-        "What new songs are you listening to?",
-        "Who do you think will release new music next?",
-        "Have you heard any TikTok trends lately?"
-      ],
-      "easyConvoStarters": [
-        "Who's your favorite pop artist right now?",
-        "What song do you have on repeat?"
+      "id": "films",
+      "title": "Films & TV",
+      "teaser": "Explore Rihanna's connections to movies and TV shows.",
+      "points": [
+        {
+          "headline": "No New Projects",
+          "detail": "There are currently no reports of new film or TV projects tied to Rihanna."
+        },
+        {
+          "headline": "Older Contributions",
+          "detail": "Rihanna has older soundtrack contributions, such as 'Friend Of Mine' from The Smurfs Movie, but no new ties."
+        },
+        {
+          "headline": "Fan Compilations",
+          "detail": "Fan-made compilations include older songs, but there are no recent official releases."
+        }
       ]
     },
     {
-      "title": "Ad Campaigns and Music",
-      "whatHappened": "Sabrina Carpenter's involvement in a major ad campaign highlights the intersection of music and advertising.",
-      "whyKidsCare": "They might be interested in how their favorite artists are represented in media.",
-      "thingsTheyMightBeTalkingAbout": [
-        "Do you think ads can be entertaining?",
-        "What makes a good ad?",
-        "Have you seen any cool collaborations lately?"
-      ],
-      "easyConvoStarters": [
-        "What was the last ad that caught your attention?",
-        "Do you think music makes ads better?"
+      "id": "passions",
+      "title": "Passions & causes",
+      "teaser": "What does Rihanna care about outside of music?",
+      "points": [
+        {
+          "headline": "Limited Information",
+          "detail": "The source lacks specific details about Rihanna's personal passions or causes she supports."
+        },
+        {
+          "headline": "Open-Ended Questions",
+          "detail": "Parents might ask what causes or hobbies Rihanna is known for beyond her music career."
+        },
+        {
+          "headline": "Activism and Sports",
+          "detail": "No recent updates on Rihanna's involvement in activism or sports are available."
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "title": "Fashion & beauty",
+      "teaser": "Discover Rihanna's influence in fashion and beauty.",
+      "points": [
+        {
+          "headline": "Fenty Empire",
+          "detail": "Rihanna continues to lead her Fenty empire, including Fenty Beauty and Savage X Fenty."
+        },
+        {
+          "headline": "No New Launches",
+          "detail": "There are no specific 2026 launches or expansions reported for her brands."
+        },
+        {
+          "headline": "Fashion Influence",
+          "detail": "Rihanna is known for her fashion influence, but recent details are not available."
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social media & trends",
+      "teaser": "How is Rihanna talked about online?",
+      "points": [
+        {
+          "headline": "Fan Content",
+          "detail": "Fan-made YouTube videos and Spotify playlists are circulating, but they are unofficial and AI-generated."
+        },
+        {
+          "headline": "No Viral Moments",
+          "detail": "There are no recent reports of viral social moments or controversies involving Rihanna."
+        },
+        {
+          "headline": "Online Discussions",
+          "detail": "Parents might explore how fans discuss Rihanna online, but specific trends are not detailed."
+        }
       ]
     }
   ],
-  "updatedAt": "2026-03-22T13:35:03.322Z"
+  "updatedAt": "2026-04-01T07:47:30.988Z"
 }

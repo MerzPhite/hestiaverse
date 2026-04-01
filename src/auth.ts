@@ -156,6 +156,13 @@ async function initAuth(): Promise<void> {
     await refreshSession();
   });
 
+  // If landing page provided an email, prefill the sign-up form to reduce friction.
+  const prefillEmail = new URLSearchParams(location.search).get("email");
+  if (prefillEmail) {
+    const signupEmail = document.getElementById("signup-email") as HTMLInputElement | null;
+    if (signupEmail && !signupEmail.value) signupEmail.value = prefillEmail;
+  }
+
   document.getElementById("auth-sign-out")?.addEventListener("click", async () => {
     setError("");
     setOk("");
