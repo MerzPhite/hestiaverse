@@ -127,6 +127,13 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  /** Articles for the /gaming/ hub: gaming section or gaming label. */
+  eleventyConfig.addFilter("gamingHubArticles", function (articles) {
+    return (articles || []).filter(
+      (a) => a.section === "gaming" || (a.labels || []).includes("gaming")
+    );
+  });
+
   eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addFilter("json", (obj) => JSON.stringify(obj));

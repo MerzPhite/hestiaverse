@@ -17,6 +17,12 @@
 | TikTok | Home | In focus: specific platforms | 2026-03 |
 | Clubhouse | Home | In focus: specific platforms | 2026-03 |
 | Roobet | <code>/articles/roobet/</code>, gambling hub | Money / streaming | 2026-03 |
+| Marketplaces (overview) | <code>/articles/online-marketplaces/</code> | In focus: specific platforms | 2026-03 |
+| Valve / Steam | <code>/articles/valve-steam/</code>, <code>/gaming/</code> | Gaming | 2026-03 |
+| Live shopping (overview) | <code>/articles/live-shopping/</code> | Emerging &amp; new | 2026-03 |
+| Whatnot | <code>/articles/whatnot/</code> | In focus: specific platforms | 2026-03 |
+| Creator content marketplaces | <code>/articles/creator-content-marketplaces/</code> | In focus: specific platforms | 2026-03 |
+| OnlyFans | <code>/articles/onlyfans/</code> | In focus: specific platforms | 2026-03 |
 ---
 
 ## How to use

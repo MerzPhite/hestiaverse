@@ -1015,7 +1015,7 @@ module.exports = [
     slug: "gaming-voice-chat",
     title: "Gaming and voice chat",
     labels: ["gaming", "voice-chat", "grooming"],
-    section: "ongoing",
+    section: "gaming",
     excerpt: "In-game voice and text with unknown players: harassment and grooming risks.",
     content: `<p>In-game and in-app voice/text with unknown players: harassment, grooming, and exposure to adult language or topics.</p>`,
   },
@@ -1023,7 +1023,7 @@ module.exports = [
     slug: "roblox",
     title: "Roblox — in-game messaging and friend requests",
     labels: ["gaming", "platforms", "impersonation"],
-    section: "ongoing",
+    section: "gaming",
     excerpt: "Adults sometimes pose as kids to groom children via in-game chat.",
     content: `<p>Users can message and send friend requests to other players. Adults sometimes pose as children to befriend and groom kids. In-game chat and private messages are common vectors for inappropriate contact.</p>
 
@@ -1031,6 +1031,44 @@ module.exports = [
 <p>In March 2026, a New Orleans man (Jamie Borne, 30) was arrested by Homeland Security for possessing child pornography and importing a child sex doll. During police questioning he said he was a "programmer for Roblox." Roblox quickly clarified that he was <strong>not</strong> and had never been an employee—he was one of over 2 million independent creators who build experiences on the platform. The company deactivated his experiences and banned his accounts under its off-platform behavior policy.</p>
 <p>Why this matters for parents: Roblox relies on millions of unvetted creators. The platform has community standards and can ban users for off-platform conduct, but it does not employ or background-check creators. Louisiana's Attorney General had already sued Roblox in 2025, alleging it fails to protect children from predators. This case illustrates both the speed of Roblox's response when harm is reported and the reality that anyone can create content on the platform.</p>
 <p class="text-sm text-muted mt-2"><a href="https://www.yahoo.com/news/articles/roblox-programmer-arrested-orleans-possession-203408885.html" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Source: Yahoo News / WWL Louisiana (March 2026)</a></p>`,
+  },
+  {
+    slug: "valve-steam",
+    title: "Valve and Steam: PC gaming’s main store and social layer",
+    labels: ["gaming", "platforms", "in-app-purchases", "weak-age-verification", "dm"],
+    section: "gaming",
+    excerpt:
+      "Steam is where many teens buy PC games, chat with friends, and join communities. Here is how Valve’s platform works and what parents should check (wallet, Family View, friends, and chat).",
+    severity: "Medium",
+    platformTags: ["Steam", "Valve", "Steam Deck"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Product names and policies change; check <a href="https://store.steampowered.com" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Steam</a> and <a href="https://www.valvesoftware.com" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Valve</a> for current rules in your region.</p>
+
+<p><strong>Valve Corporation</strong> is the US game company behind titles such as <strong>Half-Life</strong>, <strong>Portal</strong>, <strong>Counter-Strike</strong>, and <strong>Dota 2</strong>, and behind the <strong>Steam</strong> platform. For many families, “Steam” matters more than any single Valve game: it is the software teens use to download games, patch them, talk to friends, and often spend money.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What Steam is</h3>
+<p><strong>Steam</strong> is a free client for PC (and available in other forms) that combines a <strong>game store</strong>, a <strong>library</strong> of purchased titles, downloads and updates, and <strong>social features</strong>: friends lists, text and voice chat, groups, profiles, screenshots, and community spaces such as guides and workshop content for supported games. Many non-Valve publishers sell only or mainly through Steam, so the catalog is huge.</p>
+<p>Valve also makes <strong>Steam Deck</strong>, a handheld PC that runs Steam games. Account, friends, and spending are still tied to the same Steam ecosystem parents may already see on a laptop.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Money: Wallet, sales, and gifts</h3>
+<p>Players can add funds to a <strong>Steam Wallet</strong> (often by card or gift card), buy games and in-game items, and send games or Wallet gifts to others. Steam is famous for <strong>deep seasonal sales</strong>, which can nudge impulse buys. Gift cards are widely sold in shops; a teen can redeem one without a parent seeing a card charge if you are not tracking the account.</p>
+<p>If your child earns money or gets gifts, treat Steam spending like any other online money habit: agree limits, watch for <strong>peer pressure</strong> around cosmetics or battle passes in popular multiplayer games, and talk about refunds (they exist in some cases but are not unlimited).</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Account safety and “Family View”</h3>
+<p>Steam accounts are valuable: they hold games worth real money and friend networks. <strong>Steam Guard</strong> (email or app confirmation) reduces account theft; scams that trick users into trading items or logging into fake sites still exist, especially around rare items or “free game” offers.</p>
+<p>Steam offers <strong>Family View</strong> (sometimes discussed alongside family options): a way to PIN-lock access to the store, community, or friends, depending on how you configure it. It is not a full parental control system for everything on the PC, but it can limit casual browsing or buying from the Steam client when you set it up on a shared machine.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Friends, chat, and strangers</h3>
+<p>Like other gaming platforms, Steam connects players to <strong>friends</strong> and to <strong>people met in games</strong>. Invites and DMs can come from strangers. Voice and text chat in games may be moderated differently depending on the game. Risk overlaps with our <a href="/articles/gaming-voice-chat/" class="text-accent font-semibold no-underline hover:underline">gaming and voice chat</a> article: harassment, adult language, grooming, or pressure to move to Discord or other apps.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Know the <strong>Steam username</strong> and whether <strong>Family View</strong> or OS-level controls are on shared PCs.</li>
+  <li>Discuss <strong>friend requests</strong> from people they have not met in real life, and what not to share (school name, address, photos).</li>
+  <li>Track <strong>Wallet</strong> top-ups and gift cards the same way you track other digital spending (see <a href="/finance/" class="text-accent font-semibold no-underline hover:underline">Young people &amp; money</a>).</li>
+  <li>Keep games at the <strong>age rating</strong> you are comfortable with; Steam pages show ratings and content descriptors for many titles.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/gaming/" class="text-accent font-semibold">Gaming hub</a> · <a href="/articles/roblox/" class="text-accent font-semibold">Roblox</a> · <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps (G7)</a></p>`,
   },
   {
     slug: "unfiltered-search",
@@ -1098,6 +1136,12 @@ module.exports = [
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Slay</h3>
 <p>To do really well at something. "She slayed that test" or "slay" on its own as praise. Generally positive.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]" id="put-fries-in-the-bag">Put the fries in the bag</h3>
+<p><strong class="text-[#e7e9ea]">Meaning and usage.</strong> The line is closer to <strong>“shut up and do your job”</strong> than to praise. People use it (often as <strong>“put the fries in the bag, bro”</strong>) to tell influencers, creators, or anyone rambling online to <strong>stop overcomplicating things or airing hot takes</strong> and instead stick to the simple role others expect of them. It can read as: stop performing, stop lecturing, and just deliver the basic thing you are “supposed” to be doing.</p>
+<p><strong class="text-[#e7e9ea]">Dismissal and condescension.</strong> A lot of uses are <strong>put-downs</strong>. The speaker implies the other person is <strong>lower status</strong> or “beneath” them, sometimes by framing them like a <strong>fast-food worker</strong> who should stay quiet and complete a trivial task. That makes it feel insulting, not playful, even when it is meant as a joke.</p>
+<p><strong class="text-[#e7e9ea]">“Sir, this is a Wendy’s” energy.</strong> It overlaps with memes like <strong>Sir, this is a Wendy’s</strong>: someone is <strong>oversharing</strong>, complaining too much, or derailing with personal drama, and the reply is basically <strong>“I do not care about your story; do the small job I came here for.”</strong></p>
+<p><strong class="text-[#e7e9ea]">Origin.</strong> The joke spread from around <strong>November 2022</strong> on Facebook in a form like <strong>“put the ketchup in the bag, bro,”</strong> then shifted toward <strong>fries</strong> and blew up on <strong>TikTok</strong> and <strong>X (Twitter)</strong> in <strong>2023-2024</strong>. It often shows up as <strong>comment spam</strong> under posts from people viewers see as <strong>failing</strong> or <strong>acting arrogant</strong> while having a “normal” or service-type job. In short, it is a rude way to say <strong>“I do not care about your story; just do what I expected.”</strong> If your teen uses it or gets called it, the sting is often about <strong>status and disrespect</strong>, not food.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Mid</h3>
 <p>Means average or mediocre. "That movie was mid" = it was okay, nothing special. Used to downplay or dismiss something.</p>
@@ -1493,5 +1537,254 @@ module.exports = [
 <p class="text-muted">Industry reporting and community scrutiny have stressed that <strong>many gambling streams are sponsored</strong> (see for example <a href="https://www.pastemagazine.com/games/twitch/twitch-online-casino-streamers/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Paste on Twitch casino streamers and sponsor risk</a>): the creator is paid or otherwise incentivised to play on a specific site. That does not prove every bet is \"fake,\" but it does mean the stream is <strong>marketing</strong>, not a neutral tutorial. There has been <strong>public suspicion and ongoing debate</strong> about whether some creators gamble entirely with their own money, or use <strong>credit, rebates, or funds supplied or topped up by the gambling company</strong> as part of the deal. Terms are usually private, so viewers cannot verify the bankroll. The risk for families is emotional: young fans may believe they are watching a peer take real personal risk, when the economic reality behind the camera can be different.</p>
 
 <p class="mt-8 text-sm text-muted">Related: <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/crypto-scams/" class="text-accent font-semibold">Crypto scams</a></p>`,
+  },
+  {
+    slug: "online-marketplaces",
+    title: "Online marketplaces: buying, selling, and meeting strangers",
+    labels: ["platforms", "scams", "stranger-chat", "money-finance", "weak-age-verification", "dm"],
+    section: "platforms",
+    excerpt:
+      "Peer-to-peer marketplaces are everywhere: resale apps, local pickup, and global listings. Here are the big names parents hear about, plus why teens need clear rules around payments and meetups.",
+    severity: "Medium",
+    platformTags: [
+      "Amazon",
+      "eBay",
+      "Facebook Marketplace",
+      "Etsy",
+      "Craigslist",
+      "Depop",
+      "Vinted",
+      "Poshmark",
+      "Mercari",
+      "Grailed",
+      "StockX",
+      "GOAT",
+      "OfferUp",
+      "Gumtree",
+      "Nextdoor",
+      "Carousell",
+    ],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Names and features change; always check the app’s own terms and age rules in your country.</p>
+
+<p><strong>Online marketplaces</strong> are sites and apps where people list items or services for sale, often directly to other people (peer to peer). Some are built for local pickup; others ship nationwide or worldwide. Teens may use them to buy clothes, electronics, collectibles, or to sell their own stuff. The same features that make trading easy also enable <strong>scams</strong>, <strong>fake goods</strong>, pressure to move chat or payment <strong>off-platform</strong>, and <strong>in-person meetings</strong> with strangers.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Well-known general and hybrid marketplaces</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Amazon</strong>: huge catalog; many listings are from third-party <strong>Marketplace</strong> sellers, not Amazon itself. Reviews, return rules, and who you are dealing with can vary by seller.</li>
+  <li><strong class="text-[#e7e9ea]">eBay</strong>: auctions and fixed-price listings; strong in used goods and collectibles. Buyers and sellers are rated; disputes go through eBay flows.</li>
+  <li><strong class="text-[#e7e9ea]">Facebook Marketplace</strong> (Meta): local and shipped listings tied to Facebook profiles; chat often stays in Messenger. Very visible in many regions.</li>
+  <li><strong class="text-[#e7e9ea]">Craigslist</strong>: simple classifieds, especially strong in the US; many categories are local cash or meetup deals with minimal built-in buyer protection.</li>
+  <li><strong class="text-[#e7e9ea]">OfferUp</strong>: US-focused buying and selling app (historically related to the former Letgo audience).</li>
+  <li><strong class="text-[#e7e9ea]">Nextdoor</strong>: neighborhood network; many areas have active <strong>for sale / free</strong> posts with local pickup.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Fashion, streetwear, and resale</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Depop</strong>: social, image-heavy resale (often Gen Z fashion); now part of the Etsy family of brands.</li>
+  <li><strong class="text-[#e7e9ea]">Vinted</strong>: popular in Europe and other regions for second-hand clothes and accessories.</li>
+  <li><strong class="text-[#e7e9ea]">Poshmark</strong>: US-heavy fashion resale with sharing and parties as part of the model.</li>
+  <li><strong class="text-[#e7e9ea]">Mercari</strong>: broad second-hand marketplace (Japan origin; also used in the US and elsewhere).</li>
+  <li><strong class="text-[#e7e9ea]">Grailed</strong>: menswear, sneakers, and designer resale with a community feel.</li>
+  <li><strong class="text-[#e7e9ea]">StockX</strong> and <strong class="text-[#e7e9ea]">GOAT</strong>: authenticated sneakers and streetwear; prices move like a market.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Handmade, vintage, and crafts</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Etsy</strong>: independent sellers for handmade, vintage, craft supplies, and digital goods. Not only individuals; many small businesses run Etsy shops.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Regional names you may hear (not exhaustive)</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Gumtree</strong>: classifieds in the UK, Australia, and other markets.</li>
+  <li><strong class="text-[#e7e9ea]">Leboncoin</strong> (France), <strong class="text-[#e7e9ea]">Kleinanzeigen</strong> (Germany), <strong class="text-[#e7e9ea]">Marktplaats</strong> (Netherlands): large local classifieds in those countries.</li>
+  <li><strong class="text-[#e7e9ea]">Carousell</strong>: popular for peer-to-peer selling in parts of Southeast Asia and beyond.</li>
+  <li><strong class="text-[#e7e9ea]">Taobao</strong>, <strong class="text-[#e7e9ea]">JD.com</strong>, and similar (China): massive commerce ecosystems; cross-border shopping has its own customs and scam patterns.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why parents should care</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Age limits:</strong> apps often require users to be 18, or 13+ with rules teens may skip by entering a false birthday.</li>
+  <li><strong class="text-[#e7e9ea]">Stranger contact:</strong> buyers and sellers message each other; pickup means meeting someone in person unless you strictly use shipping.</li>
+  <li><strong class="text-[#e7e9ea]">Payments:</strong> wiring money, gift cards, or “pay outside the app” requests are common scam patterns.</li>
+  <li><strong class="text-[#e7e9ea]">Counterfeits and empty boxes:</strong> especially for hype sneakers, electronics, and branded goods.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask which apps they use to buy or sell, and whether meetups are involved.</li>
+  <li>Agree rules: no solo first-time pickups with strangers, no home address in public listings, no payment off-platform for strangers.</li>
+  <li>Use official in-app payment and tracking when shipping; keep chat on-platform until you trust the pattern of the deal.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator content marketplaces</a> (memberships &amp; tips, not only goods) · <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps (G7)</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
+  },
+  {
+    slug: "live-shopping",
+    title: "Live shopping: streams, impulse buys, and pressure to spend",
+    labels: ["emerging", "live-streaming", "social-commerce", "money-finance", "scams", "weak-age-verification"],
+    section: "emerging",
+    excerpt:
+      "Buying during a live video is now normal on social apps and dedicated marketplaces. Here is how live shopping works, where teens see it, and why the format speeds up spending and scams.",
+    severity: "Medium",
+    platformTags: ["TikTok", "Instagram", "Facebook", "Amazon Live"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Features and age rules vary by app and country.</p>
+
+<p><strong>Live shopping</strong> (or <strong>livestream commerce</strong>) means you buy while watching a <strong>live video</strong>: a host shows products, answers chat, and often runs <strong>limited-time</strong> or <strong>drop</strong> style offers. It blends entertainment, parasocial trust in creators, and one-tap checkout. Growth has been strong on <strong>social platforms</strong> and on <strong>dedicated shopping apps</strong> built around auctions or shows.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Where it shows up</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Short video and social:</strong> integrated shops and live sessions (for example TikTok Shop-style flows, Instagram Live shopping features where available, Facebook Live sales in groups or pages).</li>
+  <li><strong class="text-[#e7e9ea]">Retail streams:</strong> Amazon and other large retailers run live demos with links to buy during the stream.</li>
+  <li><strong class="text-[#e7e9ea]">Dedicated apps:</strong> platforms built around live <strong>auctions</strong> or <strong>shows</strong>, often for collectibles, resale, or hype categories. One well-known example in the US is <a href="/articles/whatnot/" class="text-accent font-semibold no-underline hover:underline">Whatnot</a>, covered in its own article.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why it is different from a normal online cart</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Urgency:</strong> countdowns, “only a few left,” and chat hype mimic event shopping and reduce pause before purchase.</li>
+  <li><strong class="text-[#e7e9ea]">Parasocial trust:</strong> viewers feel they “know” the host; that can lower skepticism about quality, shipping, or whether an offer is fair.</li>
+  <li><strong class="text-[#e7e9ea]">Impulse and repetition:</strong> sessions can run for hours; returning viewers may spend more than they planned across many small charges.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Risks for teens and families</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Age rules:</strong> checkout and seller rules are not always aligned with who actually holds the phone; stored cards and digital wallets make spending fast.</li>
+  <li><strong class="text-[#e7e9ea]">Counterfeits and misleading demos:</strong> lighting and editing can hide flaws; “too good” pricing still happens.</li>
+  <li><strong class="text-[#e7e9ea]">Scams:</strong> fake shops, phishing links in chat, and pressure to pay <strong>off-platform</strong> (bank transfer, gift cards, crypto) show up wherever commerce meets live chat. See <a href="/articles/online-marketplaces/" class="text-accent font-semibold no-underline hover:underline">online marketplaces</a> for general patterns.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask whether they watch <strong>buy-now livestreams</strong> and which apps save a payment method.</li>
+  <li>Agree a rule to <strong>wait one hour</strong> (or a day) before non-essential live purchases, or cap monthly “fun” spend on card or Wallet.</li>
+  <li>Teach <strong>off-platform payment</strong> as a red flag, and use official checkout and support routes.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/whatnot/" class="text-accent font-semibold">Whatnot</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok LIVE</a> · <a href="/articles/online-marketplaces/" class="text-accent font-semibold">Online marketplaces</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a></p>`,
+  },
+  {
+    slug: "whatnot",
+    title: "Whatnot: live auctions and collectibles shopping",
+    labels: ["platforms", "live-streaming", "social-commerce", "money-finance", "scams", "weak-age-verification"],
+    section: "platforms",
+    excerpt:
+      "Whatnot runs live video auctions and fixed-price drops for cards, sneakers, collectibles, and more. Here is how it works and what parents should know about age rules, spending, and chat.",
+    severity: "Medium",
+    platformTags: ["Whatnot"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Whatnot’s product categories, fees, and terms of service change; read the official site for your region before relying on any rule stated here.</p>
+
+<p><strong>Whatnot</strong> is a US-headquartered <strong>live-shopping</strong> marketplace best known for <strong>live video shows</strong> where sellers auction or list items in real time, often in categories like <strong>trading cards</strong>, <strong>sneakers</strong>, <strong>collectibles</strong>, <strong>streetwear</strong>, and similar hobby niches. Buyers watch, bid or buy in chat, and pay through the platform. The format overlaps with general <a href="/articles/live-shopping/" class="text-accent font-semibold no-underline hover:underline">live shopping</a> trends: urgency, entertainment, and strong creator or seller followings.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How it tends to work (high level)</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Live shows:</strong> sellers schedule streams; viewers join, place bids or claim items, and interact in chat.</li>
+  <li><strong class="text-[#e7e9ea]">Payments and shipping:</strong> transactions usually run in-app; shipping and fees depend on listing and seller settings.</li>
+  <li><strong class="text-[#e7e9ea]">Community:</strong> repeat viewers and “follows” matter, similar to other live commerce apps. That can increase time-on-app and repeat spending.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Age and eligibility</h3>
+<p class="text-muted">Marketplaces with auctions and payouts often restrict <strong>buying, selling, or cashing out</strong> to <strong>adults</strong> (commonly <strong>18+</strong> in the US), or require parental involvement for minors. Rules can differ for watching versus buying. Teens may still browse clips on other sites or use shared payment methods, so parental controls and card visibility matter as much as the written age gate.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents should watch for</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Auction adrenaline:</strong> bidding wars feel like a game; losses and “just one more” bids add up.</li>
+  <li><strong class="text-[#e7e9ea]">Resale and condition:</strong> grading, authenticity, and returns are not automatic; disputes depend on platform policies and proof.</li>
+  <li><strong class="text-[#e7e9ea]">Chat and sellers:</strong> public chat is still a social space; scams or off-platform payment requests can appear. Keep the same skepticism as on <a href="/articles/online-marketplaces/" class="text-accent font-semibold no-underline hover:underline">any marketplace</a>.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Practical steps</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>If your teen sells or buys, walk through <strong>fees, shipping, and return rules</strong> together using Whatnot’s current help pages.</li>
+  <li>Use <strong>spending limits</strong> or a dedicated small-balance card for hobby purchases if you allow them.</li>
+  <li>Connect this to bigger habits: <a href="/articles/live-shopping/" class="text-accent font-semibold no-underline hover:underline">live shopping</a> in general, and <a href="/finance/" class="text-accent font-semibold no-underline hover:underline">young people &amp; money</a>.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/live-shopping/" class="text-accent font-semibold">Live shopping (overview)</a> · <a href="/articles/online-marketplaces/" class="text-accent font-semibold">Online marketplaces</a> · <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps (G7)</a></p>`,
+  },
+  {
+    slug: "onlyfans",
+    title: "OnlyFans: subscription creator platform and what parents should know",
+    labels: ["platforms", "money-finance", "weak-age-verification", "dm", "sextortion", "emerging"],
+    section: "platforms",
+    excerpt:
+      "OnlyFans lets creators charge subscribers for posts, messages, and extras. It is widely associated with adult content but hosts other niches too. Here is how it works and why age, money, and reputation matter for families.",
+    severity: "Medium",
+    platformTags: ["OnlyFans"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. OnlyFans’ rules and features change; use <a href="https://onlyfans.com/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">onlyfans.com</a> help and terms for your region.</p>
+
+<p><strong>OnlyFans</strong> is a subscription-based platform where <strong>creators</strong> set a monthly price (and can sell pay-per-view posts, tips, and paid messages). It launched in 2016 and became a household name largely because many creators use it for <strong>adult or sexual content</strong>, but the site also hosts creators in fitness, music, coaching, and other categories. Parents often hear the name in jokes, memes, or news, so it helps to separate <strong>what the product is</strong> from <strong>what any one creator posts</strong>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Age and who may use it</h3>
+<p class="text-muted">OnlyFans requires users to be <strong>18 or older</strong> to create content or to be a “fan” (subscriber) in line with its terms. <strong>Underage use is not allowed</strong>; identity and payment checks are part of how the platform tries to enforce that. If a minor appears in content or someone underage tries to earn or subscribe, that is a serious legal and safety issue, not a policy detail.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Money and visibility</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Subscriptions and tips</strong> are usually card-based; fans may also use wallet-style flows depending on region. Small charges can stack across many creators.</li>
+  <li><strong class="text-[#e7e9ea]">Chargebacks, refunds, and scams</strong> (“send me gift cards,” fake verification, phishing links) appear around any high-cash platform. Teens with access to a parent’s card may subscribe without permission.</li>
+  <li><strong class="text-[#e7e9ea]">Tax and identity:</strong> creators receive payouts under their verified identity; that is a conversation for any young adult thinking about signing up, not only for adult niches.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Safety, coercion, and reputation</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Intimate content</strong> can be recorded, shared without consent, or used for <strong>sextortion</strong>. See <a href="/articles/social-media-dm/" class="text-accent font-semibold no-underline hover:underline">social media and DMs</a> and reporting routes if something goes wrong.</li>
+  <li><strong class="text-[#e7e9ea]">Screenshots and leaks</strong> break trust and can affect school, work, and relationships even when the original post was “behind a paywall.”</li>
+  <li><strong class="text-[#e7e9ea]">Parasocial fans</strong> may push boundaries in DMs or off-platform. Creators can face harassment; subscribers can face grooming or fraud from people pretending to be creators or “managers.”</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How this fits the wider creator economy</h3>
+<p class="text-muted">OnlyFans is one example of a <strong>paywalled creator</strong> model. For Patreon-style memberships, other adult-adjacent apps, and tips on streaming, see our overview: <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold no-underline hover:underline">Creator content marketplaces</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Use calm, factual language so teens can ask questions without shame.</li>
+  <li>Agree rules on <strong>payment methods</strong>, <strong>subscriptions</strong>, and what to do if someone asks for images or money.</li>
+  <li>If a young adult creates content anywhere, discuss <strong>contracts</strong>, <strong>taxes</strong>, and <strong>long-term digital footprint</strong> with appropriate professional help if needed.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator content marketplaces (overview)</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
+  },
+  {
+    slug: "creator-content-marketplaces",
+    title: "Creator content marketplaces: memberships, tips, and subscription platforms",
+    labels: ["platforms", "money-finance", "emerging", "weak-age-verification", "dm", "sextortion"],
+    section: "platforms",
+    excerpt:
+      "Fans pay creators directly through memberships, tips, and paywalled posts. Most of that economy is not adult content: think podcasts, art, and games. Here is how the landscape splits, with a dedicated article on OnlyFans linked inside.",
+    severity: "Medium",
+    platformTags: ["Patreon", "Ko-fi", "Substack", "OnlyFans", "Fansly", "Gumroad"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Company policies and laws vary by country; check official sites for age rules and terms.</p>
+
+<p>A <strong>creator content marketplace</strong> (or <strong>creator economy</strong> platform) is anywhere <strong>fans pay a person or small team</strong> for ongoing content or perks: monthly memberships, one-off tips, paywalled posts, or digital downloads. It is easy to assume it is all the same thing as “adult subscription sites.” It is not. The same broad idea covers <strong>podcasters</strong>, <strong>artists</strong>, <strong>game devs</strong>, and <strong>streamers</strong>, as well as platforms strongly associated with adult material. Parents benefit from knowing <strong>which bucket</strong> a teen is talking about.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Types that are usually not adult-first</h3>
+<p class="text-muted mb-3">Millions of creators earn without selling sexual images. Typical patterns include:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Memberships and patronage:</strong> <strong>Patreon</strong>-style tiers, <strong>Ko-fi</strong> memberships or goals, paid newsletters on <strong>Substack</strong>, or channel memberships on <strong>YouTube</strong>. Supporters might get bonus episodes, source files, Discord roles, or early access.</li>
+  <li><strong class="text-[#e7e9ea]">Digital goods:</strong> <strong>Gumroad</strong>, <strong>Itch.io</strong>, or similar shops for PDFs, music, templates, and indie games.</li>
+  <li><strong class="text-[#e7e9ea]">Tips and live monetization:</strong> <strong>Twitch</strong>, <strong>YouTube</strong>, or <strong>TikTok</strong> gifts and subs (we cover streaming elsewhere). Same “direct support” idea, different product shape.</li>
+</ul>
+<p class="text-muted">Risks here are still real: <strong>overspending</strong>, <strong>parasocial</strong> attachment to creators, <strong>scams</strong> (“send crypto for access”), and <strong>time</strong> sunk into communities. But the content model is often hobbies, education, or entertainment, not adult paywalled galleries.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]"><a href="/articles/onlyfans/" class="text-[#e7e9ea] underline decoration-accent/70 underline-offset-2 hover:text-accent">OnlyFans</a>, Fansly, and similar subscription platforms</h3>
+<p class="text-muted mb-3">Some platforms are built so creators can charge subscribers for posts, DMs, and live sessions. <a href="/articles/onlyfans/" class="text-accent font-semibold no-underline hover:underline">OnlyFans</a> and <strong>Fansly</strong> are the names parents hear most often. Others in the same family include services like <strong>Just For Fans</strong> and various smaller competitors; names change with mergers and policy shifts.</p>
+<p class="text-muted mb-3"><strong>Public perception</strong> ties these brands to adult and sexual content, and a large share of revenue on some of them comes from that category. It is still accurate that <strong>not every creator there posts nudity</strong>: you will find fitness, coaching, music, or other niches. Even so, <strong>age rules</strong>, <strong>bank and app-store policies</strong>, and <strong>reputation risk</strong> (school, jobs, partners) often treat the whole category as sensitive. Teens may joke about them or reference creators without understanding contracts, taxes, or permanence of digital content.</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Age:</strong> Creating and selling on these platforms is generally restricted to <strong>adults</strong> (commonly <strong>18+</strong>). Underage participation is illegal and unsafe; platforms remove accounts when they can verify violations.</li>
+  <li><strong class="text-[#e7e9ea]">Money:</strong> Subscriptions, pay-per-view posts, and tips hit cards or wallets; chargebacks and “creator payout” scams exist. Hidden spending on a family card is a common parent discovery path.</li>
+  <li><strong class="text-[#e7e9ea]">Coercion and leaks:</strong> Any intimate content can feed <strong>sextortion</strong>, <strong>non-consensual sharing</strong>, or pressure from “managers” and strangers. See <a href="/articles/social-media-dm/" class="text-accent font-semibold no-underline hover:underline">social media and DMs</a> and our reporting guidance if harm appears.</li>
+  <li><strong class="text-[#e7e9ea]">Parasocial fans:</strong> Subscribers may feel entitled to attention or offline contact; creators (including young adults) can face harassment or stalking across apps.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How this differs from “normal” shopping marketplaces</h3>
+<p class="text-muted">Our <a href="/articles/online-marketplaces/" class="text-accent font-semibold no-underline hover:underline">online marketplaces</a> article focuses on <strong>buying and selling objects</strong> (resale, auctions, local pickup). Creator marketplaces are about <strong>ongoing relationships</strong>, <strong>identity</strong>, and often <strong>recurring charges</strong>. The budgeting conversation is closer to <a href="/finance/" class="text-accent font-semibold no-underline hover:underline">young people &amp; money</a> and subscription hygiene than to one-off used-phone deals.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask which <strong>creators</strong> they support and on <strong>which apps</strong>, without assuming it is adult content.</li>
+  <li>Explain that <strong>memberships add up</strong>: review recurring charges together on bank and app store statements.</li>
+  <li>If a teen talks about <strong>becoming</strong> a creator on paywalled platforms, discuss <strong>age law</strong>, permanence of uploads, and who can see their real name or payout details.</li>
+  <li>Keep <strong>lines open</strong> if they see coercion, “leaks,” or pressure to subscribe or send money. Use school or national helplines where appropriate.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/onlyfans/" class="text-accent font-semibold">OnlyFans</a> · <a href="/articles/online-marketplaces/" class="text-accent font-semibold">Online marketplaces (goods)</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Streaming platforms</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
   },
 ];

@@ -42,6 +42,15 @@ module.exports = {
       accentClass: "border-l-[#f472b6] group-hover:border-[#f472b6]",
       dotClass: "bg-[#f472b6]",
     },
+    {
+      category: "Gaming",
+      href: "/gaming/",
+      title: "Games, platforms & chat",
+      description: "PC and console stores, in-game spending, voice chat, and where kids meet strangers online.",
+      cta: "Open guide →",
+      accentClass: "border-l-emerald-500/80 group-hover:border-emerald-400",
+      dotClass: "bg-emerald-500",
+    },
   ],
 
   articleSections: [
@@ -68,6 +77,15 @@ module.exports = {
       sectionId: "section-ongoing",
       title: "Ongoing areas of risk",
       jumpLabel: "Ongoing risks",
+      badge: false,
+      emerging: false,
+      intro: null,
+    },
+    {
+      id: "gaming",
+      sectionId: "section-gaming",
+      title: "Gaming",
+      jumpLabel: "Gaming",
       badge: false,
       emerging: false,
       intro: null,
