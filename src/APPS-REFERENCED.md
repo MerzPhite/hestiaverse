@@ -23,6 +23,9 @@
 | Whatnot | <code>/articles/whatnot/</code> | In focus: specific platforms | 2026-03 |
 | Creator content marketplaces | <code>/articles/creator-content-marketplaces/</code> | In focus: specific platforms | 2026-03 |
 | OnlyFans | <code>/articles/onlyfans/</code> | In focus: specific platforms | 2026-03 |
+| Stake | <code>/articles/stake/</code>, gambling hub | Money / streaming | 2026-03 |
+| Rainbow Bet | <code>/articles/rainbow-bet/</code>, gambling hub | Money / streaming | 2026-03 |
+| Telegram (Brazil suspension case) | <code>/articles/brazil-telegram-suspension/</code> | In focus: specific platforms | 2026-03 |
 ---
 
 ## How to use

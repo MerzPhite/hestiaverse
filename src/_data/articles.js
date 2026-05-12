@@ -118,6 +118,7 @@ module.exports = [
 <p>Investigations in 2024 and reporting from outlets including the <em>Washington Post</em> and <em>WIRED</em> have described how organised groups use Telegram alongside other platforms to groom children, coerce them with blackmail, and escalate abuse in private or encrypted spaces. The FBI has warned about such activity targeting young users. The same pattern applies elsewhere: contact may start on a public feed or game chat, then shift to Telegram where parents and moderators see less.</p>
 
 <p>For risks specific to <strong>Discord</strong> servers and community chat, see <a href="/articles/discord/" class="text-accent font-semibold">our Discord article</a>.</p>
+<p>For a country-level enforcement example, see <a href="/articles/brazil-telegram-suspension/" class="text-accent font-semibold">Brazil's Telegram suspension in a neo-Nazi probe</a>.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
 <ul class="list-disc pl-6 my-2 space-y-1 text-muted">
@@ -125,6 +126,38 @@ module.exports = [
   <li>Discuss <strong>stranger contact</strong> and why someone might ask to move a chat to a “more private” app.</li>
   <li>Combine this with our general guidance on <a href="/articles/encrypted-ephemeral/" class="text-accent">encrypted or ephemeral spaces</a> (disappearing messages and oversight).</li>
 </ul>`,
+  },
+  {
+    slug: "brazil-telegram-suspension",
+    title: "Brazil suspended Telegram in a neo-Nazi probe: what parents should know",
+    labels: ["platforms", "telegram", "extremism", "ongoing", "dm", "encrypted"],
+    section: "platforms",
+    excerpt:
+      "In 2023, a Brazilian federal judge ordered a temporary Telegram suspension after non-compliance in a neo-Nazi investigation. The case shows how private group features can intersect with real-world harm.",
+    severity: "High",
+    platformTags: ["Telegram", "Brazil"],
+    sourceTitle: "DW: Brazil court orders temporary suspension of Telegram over neo-Nazi probe (2023)",
+    sourceUrl: "https://www.dw.com/en/brazil-court-orders-temporary-suspension-of-telegram-over-neo-nazi-probe/a-65446224",
+    content: `<p class="text-muted text-sm mb-6">Informational only. This article summarizes a specific 2023 legal action in Brazil and is not legal advice.</p>
+
+<p>In April 2023, a federal judge in Brazil ordered a <strong>temporary suspension of <a href="/articles/telegram/" class="text-accent font-semibold no-underline hover:underline">Telegram</a></strong> after authorities said the platform did not fully comply with data requests in a neo-Nazi investigation. Public reporting described requests tied to extremist groups and alleged links to violent planning content. The order also targeted app distribution and access while compliance issues were reviewed.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why this matters beyond Brazil</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Private groups can scale quickly:</strong> large channels and invite-only chats can spread extreme content faster than many parents expect.</li>
+  <li><strong class="text-[#e7e9ea]">Jurisdictions respond differently:</strong> one country may suspend or restrict access while another relies on fines or targeted takedowns.</li>
+  <li><strong class="text-[#e7e9ea]">Access is not the same as safety:</strong> even if an app is available, harmful communities can still exist inside it.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do now</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Ask whether your teen uses Telegram for school, gaming, fandom, or private groups, and what those groups discuss.</li>
+  <li>Watch for sudden language shifts toward conspiracy, race hate, or violent "jokes" presented as irony.</li>
+  <li>Treat unknown invite links and private extremist meme channels as a safeguarding issue, not a normal internet argument.</li>
+  <li>If you see credible threat content, report it quickly to platform tools and local authorities.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/telegram/" class="text-accent font-semibold">Telegram</a> · <a href="/articles/discord/" class="text-accent font-semibold">Discord</a> · <a href="/articles/encrypted-ephemeral/" class="text-accent font-semibold">Encrypted and ephemeral spaces</a></p>`,
   },
   {
     slug: "pumpfun",
@@ -651,9 +684,9 @@ module.exports = [
 </ul>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Offshore crypto casinos and streamer promotion</h3>
-<p>Some operators combine <strong>crypto deposits</strong> with casino-style games and spend heavily on <strong>live-stream partnerships</strong> (Kick, Twitch, YouTube, and clip culture on TikTok). They are often <strong>blocked or illegal in major markets</strong> but still visible as entertainment. See <a href="/articles/roobet/" class="text-accent no-underline hover:underline">Roobet</a> for a focused explanation of regional limits, sponsored gambling streams, and why on-screen losses may not match a normal player's risk.</p>
+<p>Some operators combine <strong>crypto deposits</strong> with casino-style games and spend heavily on <strong>live-stream partnerships</strong> (Kick, Twitch, YouTube, and clip culture on TikTok). They are often <strong>blocked or illegal in major markets</strong> but still visible as entertainment. See <a href="/articles/roobet/" class="text-accent no-underline hover:underline">Roobet</a>, <a href="/articles/stake/" class="text-accent no-underline hover:underline">Stake</a>, and <a href="/articles/rainbow-bet/" class="text-accent no-underline hover:underline">Rainbow Bet</a> for focused explainers on regional limits, creator promotion, and why on-screen losses may not match a normal player's risk.</p>
 
-<p class="mt-6">Experts warn that young people are more susceptible to gambling problems; exposure to these apps can prime them for real-money gambling later. If your child has any of these apps—<strong>DraftKings</strong>, <strong>FanDuel</strong>, <strong>PrizePicks</strong>, <strong>Underdog Fantasy</strong>, <strong>Sleeper</strong>, <strong>Fliff</strong>, <strong><a href="/articles/kalshi/" class="text-accent no-underline hover:underline">Kalshi</a></strong>, <strong>Polymarket</strong>, <strong>PredictIt</strong>, or other sportsbook/prediction apps—talk with them about the risks, check how they signed up (whose account, what age given), and set clear rules about money and screen time around gambling-style apps.</p>`,
+<p class="mt-6">Experts warn that young people are more susceptible to gambling problems; exposure to these apps can prime them for real-money gambling later. If your child has any of these apps, including <strong>DraftKings</strong>, <strong>FanDuel</strong>, <strong>PrizePicks</strong>, <strong>Underdog Fantasy</strong>, <strong>Sleeper</strong>, <strong>Fliff</strong>, <strong><a href="/articles/kalshi/" class="text-accent no-underline hover:underline">Kalshi</a></strong>, <strong><a href="/articles/stake/" class="text-accent no-underline hover:underline">Stake</a></strong>, <strong><a href="/articles/rainbow-bet/" class="text-accent no-underline hover:underline">Rainbow Bet</a></strong>, <strong>Polymarket</strong>, <strong>PredictIt</strong>, or other sportsbook and prediction apps, talk with them about the risks, check how they signed up (whose account, what age given), and set clear rules about money and screen time around gambling-style apps.</p>`,
   },
   {
     slug: "kalshi",
@@ -1542,6 +1575,69 @@ module.exports = [
 <p class="mt-8 text-sm text-muted">Related: <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/crypto-scams/" class="text-accent font-semibold">Crypto scams</a></p>`,
   },
   {
+    slug: "stake",
+    title: "Stake: crypto casino, sponsorships, and regional blocks",
+    labels: ["money-finance", "gambling", "streaming", "crypto", "emerging", "weak-age-verification"],
+    section: "money-finance",
+    excerpt:
+      "Stake is a high-visibility online gambling brand linked to creator marketing and livestream culture. Access and legality vary by country, and teens often see it through clips before they understand the risk.",
+    createdAt: "2026-03-31",
+    severity: "Medium",
+    platformTags: ["Kick", "Twitch", "YouTube", "TikTok"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Laws and access differ by country and state.</p>
+
+<p><strong>Stake</strong> is an online gambling brand associated with casino-style products and heavy creator marketing. Like similar operators, it can be visible in clips and streams even where direct access is blocked or restricted. That gap between <strong>visibility</strong> and <strong>legal access</strong> is one reason teens can be exposed early to gambling-style content.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Regional availability and legality</h3>
+<p>Stake access is not universal. Licensing and geoblocking rules differ by jurisdiction, and there may be separate products or mirrors in different markets. Families should treat any offshore gambling site as <strong>location-sensitive</strong>: what a streamer shows may not be legal, available, or consumer-protected where your child lives.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why parents should pay attention</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Teens may discover Stake through livestream clips rather than direct app store installs.</li>
+  <li>Sponsored creator sessions can normalize high-risk betting behavior.</li>
+  <li>Crypto framing and fast deposits can hide the true speed of losses.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Ask directly if they watch gambling streams and which sites are named.</li>
+  <li>Set rules on cards, wallets, and gift cards to reduce impulse deposits.</li>
+  <li>Explain that creator deals are marketing, not neutral advice.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/roobet/" class="text-accent font-semibold">Roobet</a> · <a href="/articles/rainbow-bet/" class="text-accent font-semibold">Rainbow Bet</a> · <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a></p>`,
+  },
+  {
+    slug: "rainbow-bet",
+    title: "Rainbow Bet: what to check before treating it as a normal betting app",
+    labels: ["money-finance", "gambling", "streaming", "crypto", "emerging", "weak-age-verification"],
+    section: "money-finance",
+    excerpt:
+      "Rainbow Bet appears in gambling and creator circles, but parents should verify jurisdiction, age gates, and payment protections before assuming it works like a regulated local sportsbook.",
+    createdAt: "2026-03-31",
+    severity: "Medium",
+    platformTags: ["Kick", "Twitch", "YouTube", "TikTok"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. This is a fast-moving brand category and details can change quickly.</p>
+
+<p><strong>Rainbow Bet</strong> is mentioned in some gambling and creator-promoted ecosystems. As with many lesser-known betting brands, the key issue for families is <strong>verification</strong>: where it is licensed, who can legally access it, what protections exist, and whether creators are paid to promote it.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why this category is risky for teens</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Brand names spread through clips and chat faster than legal context.</li>
+  <li>Age checks can feel easy to bypass when peers share sign-up tips.</li>
+  <li>If a platform is offshore or lightly regulated, dispute and refund paths may be weak.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Parent checklist</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Confirm whether access is legal where you live.</li>
+  <li>Treat any creator promo code as advertising, not proof of safety.</li>
+  <li>Watch for hidden spending patterns: small repeated deposits, card charges, wallet transfers.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/stake/" class="text-accent font-semibold">Stake</a> · <a href="/articles/roobet/" class="text-accent font-semibold">Roobet</a> · <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a></p>`,
+  },
+  {
     slug: "online-marketplaces",
     title: "Online marketplaces: buying, selling, and meeting strangers",
     labels: ["platforms", "scams", "stranger-chat", "money-finance", "weak-age-verification", "dm"],
@@ -1824,5 +1920,323 @@ module.exports = [
 </ul>
 
 <p class="mt-8 text-sm text-muted">Related: <a href="/body-image/" class="text-accent font-semibold">Body image hub</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/online-lingo-words-phrases/" class="text-accent font-semibold">Lingo library</a></p>`,
+  },
+  {
+    slug: "thc-gummies",
+    title: "THC gummies: what parents should know",
+    labels: ["ongoing", "drugs", "mental-health", "emerging"],
+    section: "ongoing",
+    excerpt:
+      "Edible cannabis products can look like normal sweets. Delayed effects and high potency make THC gummies risky for teens, and accidental overuse is common.",
+    severity: "High",
+    platformTags: ["TikTok", "Instagram", "Snapchat"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Laws vary by country and state, but health risks for minors are the core concern everywhere.</p>
+
+<p><strong>THC gummies</strong> are edible cannabis products that contain tetrahydrocannabinol (THC), the psychoactive part of cannabis. They often look like ordinary candy and can be sold in bright packaging with sweet flavors. For teenagers, the main risk is not only legality. It is that edibles are easy to underestimate, easy to overuse, and hard to dose safely.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why gummies can be riskier than expected</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Delayed effects:</strong> gummies can take 30 minutes to 2 hours to fully hit. Teens may take more before the first dose peaks.</li>
+  <li><strong class="text-[#e7e9ea]">High potency:</strong> some products contain much more THC than a first-time or young user can tolerate.</li>
+  <li><strong class="text-[#e7e9ea]">Candy-like format:</strong> easier to hide, share at school or parties, and accidentally ingest by younger siblings.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents may see</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Vape and edible talk mixed together in group chats, often framed as harmless or "just chill."</li>
+  <li>Packaging or wrappers that resemble sweets, vitamins, or wellness gummies.</li>
+  <li>Mood shifts, drowsiness, anxiety, panic, poor concentration, or unusual appetite after social events.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Potential harms in teens</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Acute intoxication, panic episodes, confusion, vomiting, and ER visits after overconsumption.</li>
+  <li>Impaired judgment around driving, bikes, scooters, and risky social situations.</li>
+  <li>Worsening anxiety, low mood, motivation problems, and school impact with repeated use.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Use direct language: ask specifically about <strong>edibles</strong> and <strong>gummies</strong>, not only "drugs."</li>
+  <li>Explain delayed onset clearly so they understand why "taking more" can escalate quickly.</li>
+  <li>Keep any adult cannabis products locked away and out of reach of children.</li>
+  <li>If severe symptoms appear (chest pain, extreme confusion, repeated vomiting, fainting), seek urgent medical care.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a> · <a href="/articles/online-lingo-words-phrases/" class="text-accent font-semibold">Lingo library</a></p>`,
+  },
+  {
+    slug: "vape-spice",
+    title: "Vape spice: synthetic cannabinoid vapes and acute health risks",
+    labels: ["ongoing", "drugs", "mental-health", "emerging", "scams"],
+    section: "ongoing",
+    excerpt:
+      "“Spice” vapes can contain synthetic cannabinoids with unpredictable strength. Effects can be severe and fast, including panic, psychosis-like episodes, seizures, and collapse.",
+    severity: "High",
+    platformTags: ["TikTok", "Snapchat", "Telegram"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. If someone has chest pain, severe confusion, seizures, trouble breathing, or collapse after vaping, call emergency services immediately.</p>
+
+<p><strong>Vape spice</strong> usually means a vape liquid or device containing <strong>synthetic cannabinoids</strong> (often called Spice, K2, or “synthetic weed”), not standard nicotine liquid and not regulated cannabis products. These chemicals can be much more unpredictable than expected, especially when sold through informal channels.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why this is high risk</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Unknown ingredients:</strong> products can be mislabeled, mixed, or contaminated.</li>
+  <li><strong class="text-[#e7e9ea]">Unpredictable potency:</strong> small amounts can trigger severe reactions.</li>
+  <li><strong class="text-[#e7e9ea]">Fast escalation:</strong> panic, agitation, vomiting, confusion, and loss of consciousness can happen quickly.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents may notice</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>New disposable vapes with unusual branding, no trusted retail packaging, or unknown QR links.</li>
+  <li>Sudden intense anxiety, paranoia, disorientation, aggression, or very unusual behavior after vaping.</li>
+  <li>Nausea, shaking, fainting, chest discomfort, or blackouts.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How this spreads</h3>
+<p class="text-muted">Teens may hear about “strong carts” or “legal highs” through group chats, clips, or peer resale. Labels and slang change fast, and sellers can present synthetic products as normal THC or nicotine vapes. That mismatch is part of the danger.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask specific questions about <strong>what</strong> is in the device, not only “do you vape?”</li>
+  <li>Explain that unknown or counterfeit cartridges can carry severe, immediate health risks.</li>
+  <li>Set a clear safety rule: no unverified carts or liquids from friends, DMs, or informal sellers.</li>
+  <li>If concerning symptoms appear, treat it as a medical event, not a discipline-only moment.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/thc-gummies/" class="text-accent font-semibold">THC gummies</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+  },
+  {
+    slug: "balloons-nitrous-oxide",
+    title: "Balloons and nitrous oxide: what parents should know",
+    labels: ["ongoing", "drugs", "mental-health", "emerging"],
+    section: "ongoing",
+    excerpt:
+      "Using balloons to inhale nitrous oxide can look low risk but still causes acute danger, especially with repeated use. Here is what it is and why parents should pay attention.",
+    severity: "High",
+    platformTags: ["TikTok", "Snapchat", "Telegram"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. If someone collapses, has trouble breathing, or is confused after inhalation, seek urgent medical help immediately.</p>
+
+<p>In many teen and party contexts, <strong>“balloons”</strong> usually means inhaling <strong>nitrous oxide</strong> from canisters into a balloon and then breathing it in. Because it is short-acting, some young people describe it as harmless fun. That is misleading. Even one session can be dangerous, and repeated use can lead to serious health problems.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Immediate risks</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Falls, accidents, and blackouts due to dizziness and reduced coordination.</li>
+  <li>Risk from oxygen deprivation when used unsafely or repeatedly in a short period.</li>
+  <li>Panic, disorientation, or risky behavior while intoxicated.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Longer-term concern with repeated use</h3>
+<p class="text-muted">Frequent nitrous use has been linked to nerve injury and neurological symptoms. Families should treat repeated use as a safeguarding and health issue, not as a minor phase.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Separate guides</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><a href="/articles/nitrous-addiction-risk/" class="text-accent font-semibold">Nitrous and addiction risk</a></li>
+  <li><a href="/articles/nitrous-paralysis-risk/" class="text-accent font-semibold">Nitrous and paralysis risk</a></li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/nitrous-addiction-risk/" class="text-accent font-semibold">Nitrous and addiction risk</a> · <a href="/articles/nitrous-paralysis-risk/" class="text-accent font-semibold">Nitrous and paralysis risk</a> · <a href="/articles/drugs-overview/" class="text-accent font-semibold">Drugs overview</a></p>`,
+  },
+  {
+    slug: "nitrous-addiction-risk",
+    title: "Nitrous and addiction risk: when “just balloons” becomes a pattern",
+    labels: ["ongoing", "drugs", "addiction", "mental-health"],
+    section: "ongoing",
+    excerpt:
+      "Nitrous oxide can become a repeated coping habit. This guide helps parents spot escalation and respond early.",
+    severity: "High",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not a diagnosis tool. If you think use is escalating, involve a clinician or youth substance service early.</p>
+
+<p>Some teens describe balloons as occasional and social, but repeated nitrous use can turn into a <strong>habit loop</strong>: stress, use, brief relief, then repeat. That pattern can disrupt school, sleep, mood, and relationships.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Possible warning signs</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>More frequent use and larger spend on canisters or related supplies.</li>
+  <li>Secrecy, lying about whereabouts, or defensive reactions to simple questions.</li>
+  <li>Drop in motivation, attendance, concentration, or self-care.</li>
+  <li>Using alone rather than only at social events.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps families</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Use calm language focused on safety and health, not labels.</li>
+  <li>Track behavior changes over time rather than one incident.</li>
+  <li>Get professional support early if use is frequent or hard to stop.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/balloons-nitrous-oxide/" class="text-accent font-semibold">Balloons and nitrous oxide</a> · <a href="/articles/nitrous-paralysis-risk/" class="text-accent font-semibold">Nitrous and paralysis risk</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+  },
+  {
+    slug: "nitrous-paralysis-risk",
+    title: "Nitrous and paralysis risk: nerve injury warning signs",
+    labels: ["ongoing", "drugs", "mental-health", "self-harm"],
+    section: "ongoing",
+    excerpt:
+      "Repeated nitrous oxide use has been linked to nerve damage and severe neurological symptoms, including weakness and mobility problems.",
+    severity: "High",
+    content: `<p class="text-muted text-sm mb-6">Informational only. New numbness, weakness, balance problems, or difficulty walking after nitrous use needs urgent medical assessment.</p>
+
+<p>One of the most serious risks from repeated nitrous use is <strong>neurological injury</strong>. Families often first notice tingling, numbness, leg weakness, balance problems, or unusual walking. In severe cases, loss of mobility can escalate quickly.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Red-flag symptoms</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Numbness or pins-and-needles in hands or feet that does not settle.</li>
+  <li>Leg weakness, stumbling, poor coordination, or falls.</li>
+  <li>Trouble standing, climbing stairs, or walking normally.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What to do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Do not wait to “see if it passes.” Seek urgent medical review.</li>
+  <li>Tell clinicians about nitrous exposure clearly and early.</li>
+  <li>Treat this as a health emergency, alongside support for stopping use.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/balloons-nitrous-oxide/" class="text-accent font-semibold">Balloons and nitrous oxide</a> · <a href="/articles/nitrous-addiction-risk/" class="text-accent font-semibold">Nitrous and addiction risk</a> · <a href="/articles/drugs-overview/" class="text-accent font-semibold">Drugs overview</a></p>`,
+  },
+  {
+    slug: "drugs-overview",
+    title: "Drugs online: a parent overview",
+    labels: ["ongoing", "drugs", "mental-health"],
+    section: "ongoing",
+    excerpt:
+      "A master guide to drug-related risks teens can encounter through social media, messaging, and peer sharing. Start here, then open specific linked articles.",
+    severity: "High",
+    content: `<p class="text-muted text-sm mb-6">Informational only. If someone is unresponsive, struggling to breathe, seizing, or has severe chest pain, call emergency services immediately.</p>
+
+<p>This is the <strong>master overview</strong> for drug-related online and social risks. We will build this out with specific guides so parents can go from broad awareness to practical, topic-level action.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Start here: key topics (linked guides)</h3>
+<ul class="list-disc pl-6 my-3 space-y-3 text-muted text-base">
+  <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/balloons-nitrous-oxide/" class="text-accent no-underline hover:underline">Balloons and nitrous oxide</a></strong><br><span class="text-sm">What balloons are in teen slang, plus immediate and long-term risk.</span></li>
+  <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/nitrous-addiction-risk/" class="text-accent no-underline hover:underline">Nitrous and addiction risk</a></strong><br><span class="text-sm">How occasional use can become a repeating pattern.</span></li>
+  <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/nitrous-paralysis-risk/" class="text-accent no-underline hover:underline">Nitrous and paralysis risk</a></strong><br><span class="text-sm">Warning signs of neurological injury that need urgent assessment.</span></li>
+  <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/vape-spice/" class="text-accent no-underline hover:underline">Vape spice (synthetic cannabinoid vapes)</a></strong><br><span class="text-sm">High-risk products often sold as normal vapes, with unpredictable potency and severe reactions.</span></li>
+  <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/energy-drinks-addiction-health-impact/" class="text-accent no-underline hover:underline">Energy drink addiction and health impact</a></strong><br><span class="text-sm">How high-caffeine routines escalate and the warning signs families should not ignore.</span></li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How to use this page</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Use this page as your index for drug-related topics.</li>
+  <li>Open the linked article that matches what you are seeing at home or school.</li>
+  <li>Return here as new guides are added.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related now: <a href="/articles/balloons-nitrous-oxide/" class="text-accent font-semibold">Balloons and nitrous oxide</a> · <a href="/articles/vape-spice/" class="text-accent font-semibold">Vape spice</a> · <a href="/articles/thc-gummies/" class="text-accent font-semibold">THC gummies</a> · <a href="/articles/energy-drinks-addiction-health-impact/" class="text-accent font-semibold">Energy drinks and health impact</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+  },
+  {
+    slug: "energy-drinks-addiction-health-impact",
+    title: "Energy drink addiction and health impact in teens",
+    labels: ["ongoing", "drugs", "mental-health", "health", "emerging"],
+    section: "ongoing",
+    excerpt:
+      "Energy drinks can look normal in school and sport settings, but high-caffeine patterns can escalate into dependence, sleep disruption, anxiety, and cardiac risk.",
+    severity: "High",
+    sourceTitle: "NBC Washington: family says energy drink played role in teen's fatal heart condition (Larissa Rodriguez case)",
+    sourceUrl: "https://www.nbcwashington.com/news/national-international/texas-teen-death-linked-caffeine-alani-nu-energy-drink-family-alleges/4088833/",
+    content: `<p class="text-muted text-sm mb-6">Informational only. If someone has chest pain, fainting, severe palpitations, confusion, or collapse, call emergency services immediately.</p>
+
+<p><strong>Energy drinks</strong> are widely normalized in teen culture, from exams to gaming to sport practice. That makes risk easier to miss. A high-caffeine routine can become a dependence pattern: fatigue leads to another can, sleep worsens, and daily intake climbs.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why this matters</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Dose stacking:</strong> teens may combine energy drinks with coffee, pre-workout powders, or sleep loss.</li>
+  <li><strong class="text-[#e7e9ea]">Dependence pattern:</strong> headaches, irritability, and low mood without caffeine can push repeated use.</li>
+  <li><strong class="text-[#e7e9ea]">Body stress:</strong> higher heart rate, blood pressure spikes, panic symptoms, and poor sleep recovery.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Case reference parents ask about</h3>
+<p class="text-muted">You may have seen reports about the death of 17-year-old <strong>Larissa Rodriguez</strong> in Texas, often discussed online as an <strong>Alani Nu</strong> case. Public reporting and lawsuit filings described alleged excessive caffeine exposure and raised warning-label questions. Legal outcomes are separate from the key parent takeaway: high-caffeine routines in teens can carry serious risk and should not be dismissed as harmless.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Warning signs at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Daily use, often multiple cans, and anxiety if supplies run out.</li>
+  <li>Sleep shift: staying up late, morning crashes, then more caffeine.</li>
+  <li>Headaches, shakiness, palpitations, stomach upset, or panic-like episodes.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Track all caffeine sources for one week, including coffees and powders.</li>
+  <li>Reduce gradually rather than sudden stop if intake is high.</li>
+  <li>Replace late-day caffeine with sleep-protective habits and hydration.</li>
+  <li>Seek medical review for chest symptoms, fainting, or persistent palpitations.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/drugs-overview/" class="text-accent font-semibold">Drugs overview</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a> · <a href="/articles/thc-gummies/" class="text-accent font-semibold">THC gummies</a></p>`,
+  },
+  {
+    slug: "tren-twins",
+    title: "Tren Twins and male body image pressure",
+    labels: ["body-image", "mental-health", "social-media", "emerging"],
+    section: "body-image",
+    excerpt:
+      "The label “Tren Twins” is tren-coded language. In gym culture, audiences read that name as a direct association with tren use, which can normalize steroid talk for teen boys.",
+    severity: "Medium",
+    platformTags: ["YouTube", "TikTok", "Instagram"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. This article is about online influence and body-image pressure, not a judgment of any specific creator as a person.</p>
+
+<p>The <strong>Tren Twins</strong> are high-visibility fitness creators in male lifting culture. The key point for parents is the <strong>name itself</strong>: in online gym slang, “tren” is shorthand for <strong>trenbolone</strong>. So “Tren Twins” is commonly read as steroid-coded branding and is often interpreted by young audiences as a direct association with tren use. For many teens, this kind of content is motivating. For others, it intensifies pressure to get bigger, leaner, and more aggressive fast.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why this content can hit hard</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Name-level normalization:</strong> repeating “tren” in a creator identity can make steroid language feel normal and low-risk to younger viewers.</li>
+  <li><strong class="text-[#e7e9ea]">Constant comparison:</strong> algorithm feeds show highly edited physiques and highlight-reel progress.</li>
+  <li><strong class="text-[#e7e9ea]">Identity pressure:</strong> boys can absorb a message that “real man” status requires a certain look.</li>
+  <li><strong class="text-[#e7e9ea]">Shortcut culture:</strong> comments and side content often normalize extreme dieting, overtraining, and drug talk.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">When concern is rising</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Body-checking, mirror obsession, or panic over normal fluctuations.</li>
+  <li>Harsh self-talk: “small,” “not man enough,” “behind everyone.”</li>
+  <li>Sudden interest in steroid slang, including <a href="/articles/tren-explained/" class="text-accent font-semibold no-underline hover:underline">tren</a>.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How parents can respond</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Do not mock the creators your teen follows; it closes the conversation.</li>
+  <li>Separate <strong>healthy training</strong> from <strong>appearance obsession</strong>.</li>
+  <li>Ask what they like about the content, then discuss what is edited, selective, or unsustainable.</li>
+  <li>If mood, food, sleep, or school is being affected, involve a clinician experienced in adolescent mental health.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/height-pressure-young-men/" class="text-accent font-semibold">Height pressure in young men</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular</a> · <a href="/articles/tren-explained/" class="text-accent font-semibold">What is tren?</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a></p>`,
+  },
+  {
+    slug: "tren-explained",
+    title: "What is tren? (Trenbolone explained for parents)",
+    labels: ["body-image", "drugs", "mental-health", "emerging"],
+    section: "body-image",
+    excerpt:
+      "“Tren” usually means trenbolone, a powerful anabolic steroid discussed in gym and social media culture. It carries serious physical and mental health risks, especially for teens.",
+    severity: "High",
+    platformTags: ["TikTok", "YouTube", "Reddit"],
+    content: `<p class="text-muted text-sm mb-6">Informational only, not medical advice. Non-prescribed steroid use in teens is high risk and should be treated as a health and safeguarding issue.</p>
+
+<p><strong>Tren</strong> is slang for <strong>trenbolone</strong>, a potent anabolic-androgenic steroid. Online, “tren” can be framed as a shortcut to rapid muscle gain and extreme physique changes. In reality, it is one of the higher-risk compounds discussed in steroid culture, with significant side-effect potential.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why teens encounter it</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Gym and transformation content that rewards dramatic before/after visuals.</li>
+  <li>Comment sections and private chats where use is normalized as “just part of progress.”</li>
+  <li>Pressure from body-image trends (looksmaxxing, male comparison feeds).</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Major health concerns</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Cardiovascular risk:</strong> blood pressure, lipids, and heart strain can worsen.</li>
+  <li><strong class="text-[#e7e9ea]">Hormonal disruption:</strong> natural testosterone suppression and fertility issues.</li>
+  <li><strong class="text-[#e7e9ea]">Mental health effects:</strong> anxiety, irritability, mood instability, sleep disruption.</li>
+  <li><strong class="text-[#e7e9ea]">Unknown product quality:</strong> black-market compounds may be mislabeled or contaminated.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask directly what “tren” means in your teen's social circle and where the information comes from.</li>
+  <li>Keep the focus on health outcomes, not shame.</li>
+  <li>If use is suspected, seek medical support quickly and discuss mental health, sleep, and body-image distress together.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/tren-twins/" class="text-accent font-semibold">Tren Twins and body image pressure</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/drugs-overview/" class="text-accent font-semibold">Drugs overview</a></p>`,
   },
 ];
