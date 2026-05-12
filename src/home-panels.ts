@@ -8,6 +8,9 @@ import { createSupabaseBrowserClient } from "./supabase-browser";
 import { resolveSupabaseConfig } from "./supabase-env";
 import { userHasActiveSubscription } from "./subscription-access";
 
+const isLocalDevHost =
+  location.hostname === "localhost" || location.hostname === "127.0.0.1";
+
 function show(el: HTMLElement | null, visible: boolean): void {
   if (el) el.hidden = !visible;
 }
@@ -72,6 +75,15 @@ async function initHomePanels(): Promise<void> {
   }
 
   async function refreshPanels(): Promise<void> {
+    if (isLocalDevHost) {
+      setText(sessionEmailEl, "Local dev");
+      setText(needsSubEmailEl, "Local dev");
+      guest.hidden = true;
+      needsSub.hidden = true;
+      signed.hidden = false;
+      return;
+    }
+
     const { data } = await supabase.auth.getSession();
     const session = data.session;
     if (!session?.user) {

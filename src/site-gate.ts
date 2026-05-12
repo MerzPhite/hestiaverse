@@ -9,6 +9,8 @@ import { resolveSupabaseConfig } from "./supabase-env";
 import { userHasActiveSubscription } from "./subscription-access";
 
 const html = document.documentElement;
+const isLocalDevHost =
+  location.hostname === "localhost" || location.hostname === "127.0.0.1";
 
 /** Match inline script in layouts (keep in sync). */
 export function pathIsPublic(): boolean {
@@ -105,6 +107,12 @@ async function applyAccess(
 }
 
 async function init(): Promise<void> {
+  if (isLocalDevHost) {
+    html.classList.remove("hvs-public", "hvs-needs-auth", "hvs-auth-fail", "hvs-sub-fail");
+    html.classList.add("hvs-auth-ok");
+    return;
+  }
+
   if (pathIsPublic()) {
     html.classList.add("hvs-public");
     html.classList.remove("hvs-needs-auth", "hvs-auth-ok", "hvs-auth-fail", "hvs-sub-fail");

@@ -1122,6 +1122,9 @@ module.exports = [
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Crash out</h3>
 <p>To "crash out" means to lose control emotionally or physically: a sudden outburst, meltdown, or reckless reaction when someone is overwhelmed, stressed, or anxious. It can be used lightly ("I'm about to crash out over this homework") or for more serious distress. The term spread from social media and music. If your teen says they or a friend "crashed out" often, or you see it in their messages, it can be worth checking in. It can sometimes point to burnout, anxiety, or needing support, not just a bad moment.</p>
 
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]" id="do-a-madness">Do a madness</h3>
+<p>UK slang meaning to do something wild, bold, or extreme, often for attention, impact, or hype. It can be positive ("he did a madness in that match") or risky ("they're about to do a madness on stream"). Context matters: in some clips it just means high energy; in others it can signal impulsive behavior or poor decisions under social pressure.</p>
+
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Bussin</h3>
 <p>Means something is really good, especially food. "This is bussin" means "this is great." Generally positive and casual.</p>
 

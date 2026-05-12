@@ -11,16 +11,11 @@ function boolFromEnv(value) {
   return null;
 }
 
-const nodeEnv = (process.env.NODE_ENV || "").trim().toLowerCase();
-const siteUrlRaw = (process.env.SITE_URL || "").trim();
 const explicitShowConnectionNav = boolFromEnv(process.env.SHOW_CONNECTION_NAV);
-const isLocalSiteUrl =
-  !siteUrlRaw ||
-  /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(siteUrlRaw);
-const showConnectionNav =
-  explicitShowConnectionNav == null
-    ? (nodeEnv !== "production" && isLocalSiteUrl)
-    : explicitShowConnectionNav;
+const siteUrlRaw = (process.env.SITE_URL || "").trim();
+// Keep connection pages hidden by default in all environments.
+// To show them locally, set SHOW_CONNECTION_NAV=true in .env.
+const showConnectionNav = explicitShowConnectionNav === true;
 
 /** Injected at build time. Set SUPABASE_URL and SUPABASE_ANON_KEY in .env (local) or CI. */
 module.exports = {
@@ -38,6 +33,6 @@ module.exports = {
   /** Stripe Price IDs (safe in HTML): subscription prices from Stripe Dashboard. */
   stripePriceMonthly: (process.env.STRIPE_PRICE_MONTHLY || "").trim(),
   stripePriceYearly: (process.env.STRIPE_PRICE_YEARLY || "").trim(),
-  /** Header nav: hide Connection links in production unless SHOW_CONNECTION_NAV=true. */
+  /** Header nav: hidden by default. Set SHOW_CONNECTION_NAV=true to show links. */
   showConnectionNav,
 };
