@@ -69,22 +69,14 @@ module.exports = function (eleventyConfig) {
   });
 
   /**
-   * Home page sections: sort by `published` (ISO `YYYY-MM-DD`) when set, else by order in
-   * `_data/articles.js` (later in the file = newer). Newest first.
+   * Recency rank for sorting (higher = newer). Uses position in `_data/articles.js` only:
+   * later in the array = newer. Optional `published` / `createdAt` are not used here,
+   * because ISO timestamps are far larger than array indices and would incorrectly pin
+   * older dated entries above brand-new articles that only have array order.
    */
-  /** Newest first: createdAt, then published, then position in master list. */
   function articleRecencyRank(a, master) {
-    const indexOf = (slug) => {
-      const i = master.findIndex((x) => x.slug === slug);
-      return i === -1 ? -1 : i;
-    };
-    for (const key of ["createdAt", "published"]) {
-      const v = a[key];
-      if (!v) continue;
-      const t = new Date(v).getTime();
-      if (Number.isFinite(t)) return t;
-    }
-    return indexOf(a.slug);
+    const i = master.findIndex((x) => x.slug === a.slug);
+    return i === -1 ? -1 : i;
   }
 
   eleventyConfig.addFilter("sortArticlesByDate", function (sectionItems, allArticles) {

@@ -351,7 +351,7 @@ module.exports = [
   <li>If your child streams, agree a no-share list: school name, routine, address clues, and real-time location.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular (looksmaxxing streamer)</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and direct messaging</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clippers and clipping</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular (looksmaxxing streamer)</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and direct messaging</a></p>`,
   },
   {
     slug: "clavicular",
@@ -666,6 +666,7 @@ module.exports = [
   <li><strong class="text-[#e7e9ea]">Sleeper</strong> — fantasy sports and community; includes betting-style gameplay.</li>
   <li><strong class="text-[#e7e9ea]">Bet365</strong>, <strong class="text-[#e7e9ea]">Betway</strong>, <strong class="text-[#e7e9ea]">William Hill</strong>, <strong class="text-[#e7e9ea]">Caesars</strong>, <strong class="text-[#e7e9ea]">PointsBet</strong> — other major sportsbooks with mobile apps.</li>
 </ul>
+<p class="text-sm text-muted mt-3 mb-0">Population context: see <a href="/articles/sports-betting-adoption-siena-2026/" class="text-accent no-underline hover:underline">our Siena April 2026 note on online sports-betting adoption</a>.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Prediction markets</h3>
 <p>These platforms let users trade contracts on whether something will happen (e.g. who wins an election, a game, or an event). They can attract younger users because age restrictions are sometimes looser than for traditional gambling:</p>
@@ -718,6 +719,32 @@ module.exports = [
   <li>If you see signs of problem gambling (hiding use, chasing losses, mood changes, money issues), reach out to a counselor or a resource like the National Council on Problem Gambling (1-800-522-4700).</li>
 </ul>
 <p class="mt-4">Kalshi is one of several prediction markets (along with Polymarket, PredictIt, and others) that parents may hear about. Knowing what it is, how old users must be, and why teens might still encounter it can help you have clearer conversations at home.</p>`,
+  },
+  {
+    slug: "sports-betting-adoption-siena-2026",
+    title: "Sports betting adoption snapshot (Siena, April 2026)",
+    labels: ["money-finance", "gambling", "emerging", "ongoing"],
+    section: "money-finance",
+    excerpt:
+      "A Siena Research Institute release in April 2026 reported that more than a quarter of Americans had an active online sports-betting account, showing how normalized betting apps have become.",
+    severity: "Medium",
+    sourceTitle: "Siena Research Institute (Apr 13, 2026): online sports betting adoption snapshot",
+    sourceUrl: "https://sri.siena.edu/2026/04/13",
+    content: `<p class="text-muted text-sm mb-6">Informational only. Survey definitions and sample methods matter; read the source page for full methodology.</p>
+
+<p>A Siena Research Institute publication dated <strong>April 13, 2026</strong> reported that <strong>more than a quarter of Americans</strong> had an active online sports-betting account. Even allowing for normal polling caveats, that headline matters for parents: betting is no longer a niche corner of the internet. It is increasingly a mainstream digital habit that teens are likely to see around them.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why this matters at home</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Normalization effect: if adults around them use betting apps, teens may see it as routine money behavior.</li>
+  <li>Social spillover: sports talk, creator sponsorships, and promo codes blend betting into everyday content.</li>
+  <li>Risk perception drops: high adoption can make losses and dependency risks look less serious than they are.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Practical parent takeaway</h3>
+<p class="text-muted">Treat sports betting the same way you treat other high-risk money products: clear age boundaries, card and wallet visibility, and direct conversations about losses, odds, and pressure from peers or streamers.</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/articles/stake/" class="text-accent font-semibold">Stake</a> · <a href="/articles/roobet/" class="text-accent font-semibold">Roobet</a></p>`,
   },
   {
     slug: "trade-sellers-broker-affiliates",
@@ -989,6 +1016,12 @@ module.exports = [
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">March 2026: reporting on influencer Elena Jessica</h3>
 <p>In March 2026, <a href="https://people.com/socialite-elena-jessica-dies-after-reported-brazilian-butt-lift-surgery-11924164" target="_blank" rel="noopener" class="text-accent font-semibold"><em>People</em> reported</a> that influencer <strong>Elena Jessica</strong> had died after reportedly undergoing Brazilian butt lift surgery. According to that coverage, her sister publicly blamed a plastic surgery clinic; the piece also noted that the clinic had firmly denied those claims. Early news reports may not reflect a full investigation, so treat any single story as a prompt to discuss <strong>real surgical risk</strong> and <strong>verified medical sources</strong>, not as a final legal finding.</p>
 <p class="text-sm text-muted">Source: Luke Chinman, <a href="https://people.com/socialite-elena-jessica-dies-after-reported-brazilian-butt-lift-surgery-11924164" target="_blank" rel="noopener" class="text-accent">“Influencer Elena Jessica Dies After Reportedly Undergoing Brazilian Butt Lift Surgery”</a>, <em>People</em>, published March 11, 2026.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">UK inquest (2026): Diarra Akua Eunice Brown, 28, after BBL in Turkey</h3>
+<p><strong>Diarra Akua Eunice Brown</strong>, a <strong>28-year-old lawyer</strong> from Wolverhampton, England, died in <strong>October 2021</strong> days after cosmetic surgery in <strong>Turkey</strong> that included a <strong>Brazilian butt lift</strong>, <strong>liposuction</strong>, and an <strong>arm lift</strong>, according to reporting on a later inquest. Coverage of the hearing described a <strong>four-hour operation on 22 October 2021</strong> at <strong>Private Memorial Hospital</strong> in Bahcelievler, Istanbul, and said she had taken out a loan on the order of <strong>£10,000</strong> for the trip and procedures. Her family told the court she had felt pressure to look slim in the legal profession and had been teased about her weight at work.</p>
+<p>News reports on the inquest said that within hours of surgery she was in <strong>severe pain</strong>, with swelling and difficulty walking, but was told symptoms were normal; her condition worsened over the following days and she died on <strong>26 October 2021</strong>. In <strong>April 2026</strong>, <a href="https://www.birminghammail.co.uk/black-country/wolverhampton-lawyer-who-died-after-33772929" target="_blank" rel="noopener" class="text-accent font-semibold">Birmingham Live</a> reported that Black Country Coroner's Court recorded the medical cause of death as <strong>cardiac arrest</strong> due to <strong>sepsis and septic shock</strong>, with the <strong>liposuction, gluteal fat transfer (BBL), and brachioplasty</strong> recorded as contributing factors. The coroner was quoted as not being satisfied on the evidence whether sepsis came from bacteria at surgery or from a rapid urinary tract infection, but that surgery <strong>materially contributed</strong> to the sequence leading to death.</p>
+<p class="text-sm text-muted">This case is a stark illustration of why “abroad for less” BBL stories matter at home: combined major surgery, limited transparency, and symptoms dismissed as routine can delay urgent care. It is a news and inquest summary, not a verdict on any individual clinician.</p>
+<p class="text-sm text-muted">Source: Annabal Bagdi, <a href="https://www.birminghammail.co.uk/black-country/wolverhampton-lawyer-who-died-after-33772929" target="_blank" rel="noopener" class="text-accent">“Wolverhampton lawyer who died after BBL and liposuction in Turkey was 'teased at work over weight'”</a>, <em>Birmingham Live</em> (<em>Reach plc</em>), published April 15, 2026.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Teens and elective body surgery</h3>
 <p>Cosmetic surgery on minors is a serious ethical and legal topic. Many reputable surgeons will not perform purely cosmetic BBL on patients who are still growing or who lack maturity to consent; laws vary by region. If a teen is fixated on changing their body, <strong>mental health support</strong> and realistic expectations may matter as much as any procedure.</p>
@@ -2238,5 +2271,56 @@ module.exports = [
 </ul>
 
 <p class="mt-8 text-sm text-muted">Related: <a href="/articles/tren-twins/" class="text-accent font-semibold">Tren Twins and body image pressure</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/drugs-overview/" class="text-accent font-semibold">Drugs overview</a></p>`,
+  },
+  {
+    slug: "stream-clippers-and-clipping",
+    title: "Stream clippers and clipping: what parents should know",
+    labels: ["live-streaming", "social-media", "content", "money-finance", "emerging"],
+    section: "ongoing",
+    excerpt:
+      "Short viral cuts from long streams are big business. Many teens try clipping for cash and followers, but clips can strip context and spread a false idea of what someone really said.",
+    severity: "Medium",
+    platformTags: ["Twitch", "Kick", "YouTube", "TikTok"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Platform rules on reuse, copyright, and monetization change. This page is about the culture and risks around short-form clips taken from longer live or recorded streams.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What “clipping” means here</h3>
+<p>In streaming culture, <strong>clipping</strong> usually means cutting a <strong>short segment</strong> (often seconds to a couple of minutes) from a much longer <strong>live broadcast or VOD</strong> on platforms such as <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a>, <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a>, <a href="/articles/youtube-live/" class="text-accent font-semibold">YouTube</a>, or other live apps. A <strong>clipper</strong> is someone who runs accounts that post those cuts, often to <strong>TikTok</strong>, <strong>YouTube Shorts</strong>, <strong>Instagram Reels</strong>, or similar feeds.</p>
+<p>Some clippers work with permission or formal deals. Many operate in a grey zone: they rely on platform tools, “fair use” beliefs, or speed, and hope the original creator does not issue a takedown.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why it is big business now</h3>
+<p>Long streams are hard to discover. Short vertical video is easy to scroll and share. That mismatch created a whole <strong>secondary market</strong>: clip channels can pull <strong>millions of views</strong> off someone else’s moments, then monetize through <strong>ad revenue splits</strong>, <strong>sponsorships</strong>, <strong>donation links</strong>, or selling <strong>clip services</strong> to smaller streamers who want growth.</p>
+<p>Top creators sometimes employ clippers or license “official” clip networks. At the same time, streamers may complain that outsiders are <strong>profiting from their likeness and jokes</strong> without consent. Either way, the economic incentive is strong: attention is currency, and clips are a cheap way to mint it.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Teens and “easy money” narratives</h3>
+<p>Your child might not call themselves a clipper. They might say they are <strong>“running a fan page,” “editing for the algorithm,”</strong> or <strong>“posting funny moments.”</strong> Social posts and tutorials often sell clipping as a <strong>side hustle</strong> with low startup cost: screen recording, basic edits, a burner or themed account, and persistence.</p>
+<p>Parents should know the <strong>trade-offs</strong>:</p>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Terms and copyright:</strong> platforms can remove videos, strike accounts, or ban repeat infringers even if the teen thought it was “just promotion.”</li>
+  <li><strong class="text-[#e7e9ea]">Time and obsession:</strong> chasing viral spikes can mean late nights, neglected schoolwork, and emotional investment in metrics.</li>
+  <li><strong class="text-[#e7e9ea]">Parasocial drama:</strong> clipper communities often pick sides in creator feuds; your child can get dragged into harassment piles or “stan” wars.</li>
+  <li><strong class="text-[#e7e9ea]">Reputation:</strong> a clip account tied to a real name or school email can follow them if content ages badly.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">How clips can misrepresent what was said</h3>
+<p>Not every misleading clip is a deliberate lie. Some are <strong>careless</strong>. Others are <strong>optimized for outrage or laughs</strong> because that drives shares. Common patterns:</p>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Missing setup or punchline:</strong> the speaker’s full point may sit minutes away; the clip shows only the shock line.</li>
+  <li><strong class="text-[#e7e9ea]">Sarcasm read as sincerity:</strong> tone collapses in a silent caption. A joke can look like a confession or a threat.</li>
+  <li><strong class="text-[#e7e9ea]">Cut before the correction:</strong> someone walks back a hot take, but the clip ends early.</li>
+  <li><strong class="text-[#e7e9ea]">Misleading on-screen text:</strong> captions or arrows can <strong>reframe</strong> a neutral clip into an accusation.</li>
+  <li><strong class="text-[#e7e9ea]">Reaction bait:</strong> “Streamer destroys…” or “You won’t believe…” titles prime viewers to hear conflict even when the original moment was mild.</li>
+</ul>
+<p>Teens who consume clips may <strong>believe they saw the whole story</strong>. Teens who make clips may feel pressure to <strong>stretch moments</strong> for views. Both deserve a conversation about <strong>context, charity, and checking primary sources</strong> (the full stream or a transcript) before judging a real person.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li>Ask openly if they run or follow clip accounts, and which creators they clip or watch.</li>
+  <li>Separate <strong>entertainment</strong> from <strong>evidence</strong>: “This clip is not a court transcript.”</li>
+  <li>If they earn money from clips, talk about <strong>tax, privacy, and school rules</strong> on side businesses, not only creativity.</li>
+  <li>Set expectations on <strong>harassment</strong>: no piling on targets, no deceptive edits for clout, no doxxing.</li>
+  <li>Point them to the wider streaming landscape in <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">online streaming platforms</a> so clipping sits inside a bigger picture of monetization and parasocial ties.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money overview</a></p>`,
   },
 ];

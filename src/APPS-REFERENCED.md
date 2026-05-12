@@ -26,6 +26,7 @@
 | Stake | <code>/articles/stake/</code>, gambling hub | Money / streaming | 2026-03 |
 | Rainbow Bet | <code>/articles/rainbow-bet/</code>, gambling hub | Money / streaming | 2026-03 |
 | Telegram (Brazil suspension case) | <code>/articles/brazil-telegram-suspension/</code> | In focus: specific platforms | 2026-03 |
+| Stream clipping / clip accounts | <code>/articles/stream-clippers-and-clipping/</code> | Ongoing areas of risk | 2026-05 |
 ---
 
 ## How to use
