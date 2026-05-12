@@ -12,9 +12,15 @@ function boolFromEnv(value) {
 }
 
 const nodeEnv = (process.env.NODE_ENV || "").trim().toLowerCase();
+const siteUrlRaw = (process.env.SITE_URL || "").trim();
 const explicitShowConnectionNav = boolFromEnv(process.env.SHOW_CONNECTION_NAV);
+const isLocalSiteUrl =
+  !siteUrlRaw ||
+  /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(siteUrlRaw);
 const showConnectionNav =
-  explicitShowConnectionNav == null ? nodeEnv !== "production" : explicitShowConnectionNav;
+  explicitShowConnectionNav == null
+    ? (nodeEnv !== "production" && isLocalSiteUrl)
+    : explicitShowConnectionNav;
 
 /** Injected at build time. Set SUPABASE_URL and SUPABASE_ANON_KEY in .env (local) or CI. */
 module.exports = {
@@ -28,7 +34,7 @@ module.exports = {
    * Canonical public origin (no trailing slash in env). Used for Supabase emailRedirectTo so
    * confirmation links match URL Configuration. Same value as Worker SITE_URL in production.
    */
-  siteUrl: (process.env.SITE_URL || "").trim().replace(/\/+$/, ""),
+  siteUrl: siteUrlRaw.replace(/\/+$/, ""),
   /** Stripe Price IDs (safe in HTML): subscription prices from Stripe Dashboard. */
   stripePriceMonthly: (process.env.STRIPE_PRICE_MONTHLY || "").trim(),
   stripePriceYearly: (process.env.STRIPE_PRICE_YEARLY || "").trim(),

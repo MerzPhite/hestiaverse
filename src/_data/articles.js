@@ -1787,4 +1787,39 @@ module.exports = [
 
 <p class="mt-8 text-sm text-muted">Related: <a href="/articles/onlyfans/" class="text-accent font-semibold">OnlyFans</a> · <a href="/articles/online-marketplaces/" class="text-accent font-semibold">Online marketplaces (goods)</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Streaming platforms</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
   },
+  {
+    slug: "ballsmaxxing",
+    title: "Ballsmaxxing: extreme male-body trend and medical risk warnings",
+    labels: ["body-image", "looksmaxxing", "emerging", "self-harm", "mental-health"],
+    section: "body-image",
+    excerpt:
+      "A recent fringe trend in male looksmaxxing communities claims testicle enlargement can improve status or masculinity. Medical experts quoted in recent reports warn of serious harm.",
+    severity: "High",
+    platformTags: ["TikTok", "Reddit", "Looksmaxxing forums"],
+    sourceTitle: "Daily Star (2026): men warned against viral ballmaxxing trend",
+    sourceUrl: "https://www.dailystar.co.uk/news/latest-news/men-warned-against-viral-ballmaxxing-37140090",
+    content: `<p class="text-muted text-sm mb-6">Informational only. This topic includes explicit body-modification behavior and potential injury risk.</p>
+
+<p><strong>Ballsmaxxing</strong> is a fringe term in some male image and looksmaxxing spaces. Posts typically frame testicle size as a status marker and discuss ways to make the scrotum look larger. Recent media coverage in 2026 describes users sharing risky methods (including home saline inflation) and treating it like a challenge or fetish-adjacent hack.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents should know first</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">It sits inside looksmaxxing culture:</strong> teens may encounter it next to other male-body terms like <a href="/articles/online-lingo-words-phrases/#looksmaxxing" class="text-accent">looksmaxxing</a> and <a href="/articles/online-lingo-words-phrases/#hardmaxxing" class="text-accent">hardmaxxing</a>.</li>
+  <li><strong class="text-[#e7e9ea]">Content quality is low and sensational:</strong> many clips or threads are shock content, bait, or fetish content, not medical guidance.</li>
+  <li><strong class="text-[#e7e9ea]">Copycat risk is the concern:</strong> even if many users are joking, one teen trying a dangerous method can lead to lasting injury.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Medical warning pattern</h3>
+<p class="text-muted">Recent reports quoting doctors warn that injection or forced swelling methods can cause tissue damage, infection, blood-flow problems, and in severe cases permanent reproductive harm. Because the trend is new and fringe, strong peer-reviewed evidence about prevalence is still thin, but the underlying injury mechanisms are well understood by clinicians: puncture, contamination, pressure, and delayed treatment can escalate fast.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How to respond at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Keep tone calm. Lead with health and safety, not shame.</li>
+  <li>Ask where they saw it (TikTok, Reddit, private chats), and whether they or friends are trying anything physical.</li>
+  <li>Name the rule clearly: no injections, no home procedures, no experimentation with intimate body areas.</li>
+  <li>If there is pain, swelling, discoloration, fever, or injury concern, seek urgent medical care immediately.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/body-image/" class="text-accent font-semibold">Body image hub</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/online-lingo-words-phrases/" class="text-accent font-semibold">Lingo library</a></p>`,
+  },
 ];
