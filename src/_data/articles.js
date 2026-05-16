@@ -845,7 +845,7 @@ module.exports = [
 <p>Teens may use these for <strong>allowance</strong>, <strong>gig or casual work</strong>, <strong>buying from people they know</strong>, <strong>gaming or in-app purchases</strong>, or because a <strong>stranger on social media</strong> asked for money (that last one is where scams spike).</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why this matters for safety</h3>
-<p>Transfers are often <strong>fast and hard to reverse</strong>. That is convenient until someone sends money to the wrong person, falls for a fake “refund” or “investment” chat, or shares screenshots of linked accounts. Pair this topic with <a href="/articles/crypto-scams/" class="text-accent font-semibold">crypto scams</a> and the <a href="/finance/" class="text-accent font-semibold">young people &amp; money overview</a> for a fuller picture.</p>
+<p>Transfers are often <strong>fast and hard to reverse</strong>. That is convenient until someone sends money to the wrong person, falls for a fake “refund” or “investment” chat, or shares screenshots of linked accounts. Pair this topic with <a href="/articles/spend-and-subscribe/" class="text-accent font-semibold no-underline hover:underline">spend and subscribe</a> (in-app and store charges), <a href="/articles/crypto-scams/" class="text-accent font-semibold">crypto scams</a>, and the <a href="/finance/" class="text-accent font-semibold">young people &amp; money overview</a> for a fuller picture.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Commonly used names by G7 country (broad strokes)</h3>
 <p>The G7 is Canada, France, Germany, Italy, Japan, the United Kingdom, and the United States. Below are <strong>widely recognised</strong> payment or transfer methods in each; your child’s school or city may lean harder on one or two.</p>
@@ -2971,5 +2971,137 @@ module.exports = [
 </ul>
 
 <p class="mt-8 text-sm text-muted">Related: <a href="/articles/telegram/" class="text-accent font-semibold">Telegram</a> · <a href="/articles/encrypted-ephemeral/" class="text-accent font-semibold">Encrypted and ephemeral spaces</a> · <a href="/articles/onlyfans/" class="text-accent font-semibold">OnlyFans</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/articles/dating-apps/" class="text-accent font-semibold">Dating apps</a> · <a href="/articles/know-where-to-report/" class="text-accent font-semibold">Know where to report</a></p>`,
+  },
+  {
+    slug: "spend-and-subscribe",
+    title: "Spend and subscribe: in-app purchases and subscriptions",
+    labels: ["money-finance", "app", "in-app-purchases", "emerging"],
+    section: "money-finance",
+    excerpt:
+      "Small charges for skins, battle passes, and monthly app fees can stack fast. Here is how in-app spending works, where teens feel pressure to pay, and what parents can set up at home.",
+    severity: "Medium",
+    platformTags: ["Apple App Store", "Google Play", "Steam", "TikTok", "Roblox"],
+    content: `<p class="text-muted text-sm mb-6">Informational only, not financial advice. Prices, parental controls, and refund rules vary by platform and country.</p>
+
+<p>On the <a href="/finance/" class="text-accent font-semibold no-underline hover:underline">young people &amp; money</a> spectrum, <strong>spend &amp; subscribe</strong> is the everyday band: money leaves an account for something digital, often in small amounts that repeat. It is not gambling in the legal sense, but it can still train <strong>impulse spending</strong> and hide real totals until a card statement arrives.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What it includes</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">In-app purchases (IAP):</strong> one-off buys inside a game or app (cosmetics, coins, boosts, extra lives).</li>
+  <li><strong class="text-[#e7e9ea]">Subscriptions:</strong> weekly or monthly fees for premium features, ad-free modes, or creator access.</li>
+  <li><strong class="text-[#e7e9ea]">Battle passes and season passes:</strong> time-limited reward tracks that pressure play-and-pay cycles.</li>
+  <li><strong class="text-[#e7e9ea]"><a href="/articles/loot-boxes/" class="text-accent font-semibold no-underline hover:underline">Loot boxes</a> and random rewards:</strong> pay for uncertain items; regulation varies (some countries treat certain mechanics as gambling-like).</li>
+  <li><strong class="text-[#e7e9ea]">Platform wallets:</strong> stored balance on <a href="/articles/valve-steam/" class="text-accent font-semibold no-underline hover:underline">Steam</a>, console stores, or in-game currency that obscures real cost.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Where teens spend (and why it adds up)</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Mobile games:</strong> free-to-play titles with constant “limited time” offers.</li>
+  <li><strong class="text-[#e7e9ea]">Social and live apps:</strong> gifts and boosts on <a href="/articles/tiktok-live/" class="text-accent font-semibold no-underline hover:underline">TikTok Live</a>, dating-app boosts on <a href="/articles/dating-apps/" class="text-accent font-semibold no-underline hover:underline">dating apps</a>.</li>
+  <li><strong class="text-[#e7e9ea]">PC and console:</strong> <a href="/articles/roblox/" class="text-accent font-semibold no-underline hover:underline">Roblox</a> Robux, Fortnite-style cosmetics, Steam wallet top-ups.</li>
+  <li><strong class="text-[#e7e9ea]">Creator subscriptions:</strong> monthly fan payments on <a href="/articles/onlyfans/" class="text-accent font-semibold no-underline hover:underline">OnlyFans</a> or <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold no-underline hover:underline">other creator platforms</a> (usually 18+ in terms, but underage sign-ups still happen).</li>
+  <li><strong class="text-[#e7e9ea]">“Utility” apps:</strong> photo editors, study helpers, or fitness apps with aggressive free trials that auto-renew.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Behavioural nudges parents miss</h3>
+<p class="text-muted">Apps are designed to make spending feel normal: countdown timers, streaks, “you almost unlocked it,” and social proof (“your friends bought this”). Some products use <strong>personalised offers</strong> based on how someone scrolls or plays. See <a href="/articles/new-app-behavioral-targeting/" class="text-accent font-semibold no-underline hover:underline">behavioral targeting and teen spending</a> for that angle.</p>
+<p class="text-muted">Teens may not connect a £2.99 tap with a £90 month because charges route through <strong>Apple ID</strong>, <strong>Google Play</strong>, a family card, or gift cards bought with cash.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Warning signs at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Surprise card notifications or many small charges from Apple, Google, PayPal, or a game publisher.</li>
+  <li>Secretive phone use when a purchase confirmation appears.</li>
+  <li>Stress about missing a “season” ending or losing status in a game.</li>
+  <li>Selling items or doing chores only to fund digital goods.</li>
+  <li>Borrowing a sibling’s or parent’s account password to bypass limits.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Use store controls:</strong> Apple <strong>Ask to Buy</strong> / Screen Time purchase settings; Google Play <strong>purchase approval</strong> and Family Link; console and Steam family limits where available.</li>
+  <li><strong class="text-[#e7e9ea]">Agree a monthly digital budget</strong> in plain language (e.g. one battle pass per season, no <a href="/articles/loot-boxes/" class="text-accent font-semibold no-underline hover:underline">loot boxes</a>).</li>
+  <li><strong class="text-[#e7e9ea]">Review subscriptions quarterly:</strong> Settings → subscriptions on the phone; cancel trials before renewal dates.</li>
+  <li><strong class="text-[#e7e9ea]">Prefer gift cards or prepaid amounts</strong> over an open family card for younger teens.</li>
+  <li><strong class="text-[#e7e9ea]">Talk about FOMO</strong> without mocking: “Limited offer” is marketing, not an emergency.</li>
+  <li>If money also moves peer-to-peer, read <a href="/articles/payment-apps-g7/" class="text-accent font-semibold no-underline hover:underline">payment apps (G7 overview)</a>.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Refunds and disputes</h3>
+<p class="text-muted">Refunds are sometimes possible through Apple, Google, or the publisher, especially for accidental purchases by younger children, but policies are strict and not guaranteed. Document dates, amounts, and screenshots if you appeal. This is separate from scam recovery (see <a href="/articles/crypto-scams/" class="text-accent font-semibold no-underline hover:underline">crypto scams</a>).</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/loot-boxes/" class="text-accent font-semibold">Loot boxes</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money (overview)</a> · <a href="/articles/payment-apps-g7/" class="text-accent font-semibold">Payment apps</a> · <a href="/articles/valve-steam/" class="text-accent font-semibold">Valve / Steam</a> · <a href="/articles/roblox/" class="text-accent font-semibold">Roblox</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator marketplaces</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+  },
+  {
+    slug: "loot-boxes",
+    title: "Loot boxes: random in-game purchases and what parents should know",
+    labels: ["money-finance", "gaming", "in-app-purchases", "emerging"],
+    section: "money-finance",
+    excerpt:
+      "Loot boxes charge real money for random virtual items. UK policy treats many as outside gambling law, but research links them to overspending and habits that feel like betting. Here is how they work and how to respond at home.",
+    severity: "High",
+    platformTags: ["Roblox", "FIFA", "Fortnite", "Steam", "Mobile games"],
+    sourceTitle: "GOV.UK: Loot boxes in video games (industry protections update)",
+    sourceUrl: "https://www.gov.uk/guidance/loot-boxes-in-video-games-update-on-improvements-to-industry-led-protections",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not legal or financial advice. Game mechanics and UK rules change; check official guidance for your region.</p>
+
+<p>A <strong>loot box</strong> (also called a <strong>crate</strong>, <strong>pack</strong>, <strong>capsule</strong>, or <strong>gacha pull</strong>) is a purchase where you pay real money (or premium in-game currency bought with money) for a <strong>random</strong> virtual reward: a skin, card, weapon, character, or boost. You know the price; you do <strong>not</strong> know exactly what you will get until after you pay.</p>
+<p>That uncertainty is why parents hear loot boxes discussed next to <strong>gambling</strong>, even in games rated for younger teens. They sit inside the wider <a href="/articles/spend-and-subscribe/" class="text-accent font-semibold no-underline hover:underline">spend and subscribe</a> pattern on our <a href="/finance/" class="text-accent font-semibold no-underline hover:underline">young people &amp; money</a> page.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How loot boxes show up in games teens play</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Sports titles:</strong> card packs and player packs (historically heavy in football games) where better cards change online performance.</li>
+  <li><strong class="text-[#e7e9ea]">Shooters and battle royales:</strong> cosmetic crates and “spin” style shops where rare skins are highlighted in trailers.</li>
+  <li><strong class="text-[#e7e9ea]">Mobile gacha:</strong> anime-style games with pity timers, limited banners, and daily login pressure.</li>
+  <li><strong class="text-[#e7e9ea]"><a href="/articles/roblox/" class="text-accent font-semibold no-underline hover:underline">Roblox</a> and UGC platforms:</strong> random item rolls in experiences; money often flows through Robux.</li>
+  <li><strong class="text-[#e7e9ea]">PC stores:</strong> keys and cases on <a href="/articles/valve-steam/" class="text-accent font-semibold no-underline hover:underline">Steam</a> and similar marketplaces, sometimes tradable for real-world cash on third-party sites (extra scam risk).</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why they are risky for young people</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Variable rewards:</strong> the same psychology as slot machines: occasional big wins keep people opening more.</li>
+  <li><strong class="text-[#e7e9ea]">Sunk cost:</strong> “I have spent £40 already; one more pack might get the item.”</li>
+  <li><strong class="text-[#e7e9ea]">Social status:</strong> rare cosmetics signal rank in school friendship groups and streams.</li>
+  <li><strong class="text-[#e7e9ea]">Near misses:</strong> animations that look like you almost won encourage another try.</li>
+  <li><strong class="text-[#e7e9ea]">Hidden totals:</strong> in-game currency (V-Bucks, FC Points, Robux) makes real spend harder to feel.</li>
+</ul>
+<p class="text-muted">UK government evidence reviews have found an <strong>association</strong> between loot box spending and problem gambling behaviours, even where a direct causal link is hard to prove. The <a href="https://www.gamblingcommission.gov.uk/" target="_blank" rel="noopener" class="text-accent font-semibold">Gambling Commission</a> has highlighted cases of children spending large sums without parents knowing.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">UK rules (plain language)</h3>
+<p class="text-muted">As of recent UK policy:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Most loot boxes are <strong>not regulated as gambling</strong> under the Gambling Act 2005 if items cannot be cashed out for money within the game (rules are technical and can change).</li>
+  <li>The government has still pushed the industry toward <strong>parental controls</strong>, <strong>spending limits</strong>, and <strong>transparency</strong> so children cannot buy loot boxes without a guardian enabling it. See <a href="https://www.gov.uk/guidance/loot-boxes-in-video-games-update-on-improvements-to-industry-led-protections" target="_blank" rel="noopener" class="text-accent font-semibold">GOV.UK loot box guidance</a>.</li>
+  <li><strong class="text-[#e7e9ea]">Age ratings</strong> (PEGI, etc.) warn about in-game purchases but do not stop spending by themselves.</li>
+  <li>Some countries have banned or restricted certain loot box sales; UK families may still see them in global games and online stores.</li>
+</ul>
+<p class="text-muted">Loot boxes are different from regulated <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold no-underline hover:underline">betting and prediction apps</a>, but the <strong>habits</strong> can overlap. If a teen moves from packs to skin betting sites, treat that as a serious escalation.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Signs a child is struggling</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Repeated charges from Apple, Google, Microsoft, Sony, Nintendo, or a game publisher.</li>
+  <li>Anger or panic when told they cannot buy “just one more” pack.</li>
+  <li>Lying about gift cards, borrowing cards, or using a sibling’s account.</li>
+  <li>Watching pack-opening videos for hours (YouTube, TikTok, Kick) and copying streamer spending.</li>
+  <li>Selling belongings or skipping meals/sleep during a limited-time banner event.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask which games use <strong>random paid rewards</strong>, not only whether they play “FIFA” or “Fortnite.”</li>
+  <li>Set a clear family rule: <strong>no paid random rolls</strong>; cosmetics are OK only if price is fixed and agreed (see <a href="/articles/spend-and-subscribe/" class="text-accent font-semibold no-underline hover:underline">spend and subscribe</a>).</li>
+  <li>Turn on <strong>Ask to Buy</strong> (Apple) or purchase approvals (Google, consoles); disable stored payment on child profiles.</li>
+  <li>Use spending caps and check email receipts weekly.</li>
+  <li>Explain <strong>odds disclosures</strong> where the game shows percentages; rare items are rare for a reason.</li>
+  <li>If spending feels out of control, contact the platform for refunds where possible and speak to your GP or gambling support charities (e.g. <a href="https://www.begambleaware.org/" target="_blank" rel="noopener" class="text-accent font-semibold">BeGambleAware</a>) for behaviour that mirrors addiction.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Conversation starters</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>“What’s the best thing you ever got from a pack, and how much did it cost in real money?”</li>
+  <li>“Would you buy a mystery bag on the high street for £10 if you didn’t know what was inside?”</li>
+  <li>“If your friend got a rare skin, would you feel you had to keep spending to match them?”</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/spend-and-subscribe/" class="text-accent font-semibold">Spend and subscribe</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/gaming/" class="text-accent font-semibold">Gaming hub</a> · <a href="/articles/roblox/" class="text-accent font-semibold">Roblox</a> · <a href="/articles/valve-steam/" class="text-accent font-semibold">Valve / Steam</a> · <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/articles/gaming-voice-chat/" class="text-accent font-semibold">Gaming voice chat</a></p>`,
   },
 ];

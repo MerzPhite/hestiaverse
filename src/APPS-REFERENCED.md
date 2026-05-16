@@ -41,6 +41,8 @@
 | Drug mules (young travellers) | <code>/articles/drug-mules-young-travellers/</code> | Ongoing / drugs | 2026-05 |
 | Elva (silicone face injections, TikTok) | <code>/articles/elva-silicone-face-injections/</code> | Body image | 2026-05 |
 | Motherless (shutdown, Zzz / sleep content) | <code>/articles/motherless-shutdown-zzz-content/</code> | Platforms | 2026-05 |
+| Loot boxes (in-game random purchases) | <code>/articles/loot-boxes/</code> | Money / gaming | 2026-05 |
+| Spend and subscribe (IAP overview) | <code>/articles/spend-and-subscribe/</code> | Money | 2026-05 |
 ---
 
 ## How to use
