@@ -117,6 +117,8 @@ module.exports = [
 
 <p>Investigations in 2024 and reporting from outlets including the <em>Washington Post</em> and <em>WIRED</em> have described how organised groups use Telegram alongside other platforms to groom children, coerce them with blackmail, and escalate abuse in private or encrypted spaces. The FBI has warned about such activity targeting young users. The same pattern applies elsewhere: contact may start on a public feed or game chat, then shift to Telegram where parents and moderators see less.</p>
 
+<p>In <strong>May 2026</strong>, Dutch prosecutors took the adult site <strong>Motherless</strong> offline after broadcasters and CNN-linked reporting tied it to thousands of <strong>“sleep”</strong> abuse videos and a private Telegram group called <strong>Zzz</strong>. That case is a reminder that Telegram is not only used for teen chat: it can host invite-only groups linked to serious crime. See <a href="/articles/motherless-shutdown-zzz-content/" class="text-accent font-semibold no-underline hover:underline">Motherless shutdown and Zzz content</a>.</p>
+
 <p>For risks specific to <strong>Discord</strong> servers and community chat, see <a href="/articles/discord/" class="text-accent font-semibold">our Discord article</a>.</p>
 <p>For a country-level enforcement example, see <a href="/articles/brazil-telegram-suspension/" class="text-accent font-semibold">Brazil's Telegram suspension in a neo-Nazi probe</a>.</p>
 
@@ -270,7 +272,12 @@ module.exports = [
 <p>YouTube, TikTok, and Instagram are full of content showing creators using Ray-Ban Meta glasses to film interactions with strangers, go on \"POV\" dates, or use the AI to get conversation starters, puns, or pick-up lines in the moment (e.g. \"Hey Meta, give me a line\"). Live translation is also demonstrated for talking to people in other languages. The discreet design—no phone in hand—makes it easy to record in public. Some of this content has been described as troubling or cringe, especially when those being filmed don't clearly consent or don't realise they're on camera.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Features that make covert recording possible</h3>
-<p>The glasses have a small recording indicator light that is easy to overlook. Voice commands like \"Hey Meta, start recording\" or \"Hey Meta, tell me what you see\" let the wearer start filming or ask the AI to analyse a situation without looking at a screen. \"Conversation Focus\" boosts one person's voice in noisy settings. As of 2026, there is significant backlash: reports indicate that some users obscure the recording light to secretly record people, and that certain footage may be reviewed by contractors—raising serious consent and privacy questions for anyone in range of the glasses.</p>`,
+<p>The glasses have a small recording indicator light that is easy to overlook. Voice commands like \"Hey Meta, start recording\" or \"Hey Meta, tell me what you see\" let the wearer start filming or ask the AI to analyse a situation without looking at a screen. \"Conversation Focus\" boosts one person's voice in noisy settings. As of 2026, there is significant backlash: reports indicate that some users obscure the recording light to secretly record people, and that certain footage may be reviewed by contractors—raising serious consent and privacy questions for anyone in range of the glasses.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Stealth mode and policy amendments</h3>
+<p>Parents may hear <strong>stealth mode</strong> in two ways: <strong>official changes</strong> to how Meta runs camera and voice features, and <strong>unofficial tricks</strong> (tape, stickers, or angles) to hide the white recording LED. Meta has also been reported as <strong>weighing whether the front LED could stay off during Live AI</strong> on future glasses, which critics describe as stealthier sensing. For a focused guide on those amendments and what changed in 2025-2026, see <a href="/articles/meta-glasses-stealth-mode-amendments/" class="text-accent font-semibold no-underline hover:underline">Meta glasses stealth mode and policy amendments</a>.</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/meta-glasses-stealth-mode-amendments/" class="text-accent font-semibold">Stealth mode and policy amendments</a> · <a href="/articles/ai-generated-content/" class="text-accent font-semibold">AI-generated and synthetic content</a> · <a href="/ai/" class="text-accent font-semibold">AI overview for parents</a> · <a href="/articles/concert-photos-asking-strangers/" class="text-accent font-semibold">Asking strangers to film</a></p>`,
   },
   {
     slug: "anthropic-claude",
@@ -323,7 +330,7 @@ module.exports = [
     content: `<p class="text-muted text-sm mb-6">Informational only. Platform features, moderation tools, and age settings change over time.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Streamers as celebrities</h3>
-<p>For many young people, popular streamers fill a role like a new-age rock star: top names can earn very large amounts from subscriptions, ads, brand deals, and viewer gifts and tips. That income can come from many kinds of content, not only gaming, including fitness, IRL, lifestyle, and variety chat. There are hundreds of creators with major followings; this page only names a few as context. Examples include long-running gaming personalities (such as Ninja or Pokimane), high-profile variety or chat streamers (such as Kai Cenat or xQc), and IRL or lifestyle creators (such as <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular</a>). Who is big changes quickly, so treat these as illustrations, not a fixed ranking.</p>
+<p>For many young people, popular streamers fill a role like a new-age rock star: top names can earn very large amounts from subscriptions, ads, brand deals, and viewer gifts and tips. That income can come from many kinds of content, not only gaming, including fitness, IRL, lifestyle, and variety chat. There are hundreds of creators with major followings; this page only names a few as context. Examples include long-running gaming personalities (such as Ninja or Pokimane), high-profile variety or chat streamers (such as Kai Cenat or xQc), IRL or lifestyle creators (such as <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular</a>), and confrontational IRL names such as <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder</a>. Who is big changes quickly, so treat these as illustrations, not a fixed ranking.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Main streaming platforms teens mention</h3>
 <p>Young people can watch or create live content on many apps, most commonly <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a>, <a href="/articles/youtube-live/" class="text-accent font-semibold">YouTube (including Live)</a>, <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok (including LIVE)</a>, <a href="/articles/instagram-live/" class="text-accent font-semibold">Instagram Live</a>, <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a>, and <a href="/articles/rumble/" class="text-accent font-semibold">Rumble</a>. Some families still refer to <a href="/articles/kik-messaging/" class="text-accent font-semibold">Kik</a> in conversations about chat and live-style interaction, even though usage patterns vary by region and age group.</p>
@@ -351,7 +358,7 @@ module.exports = [
   <li>If your child streams, agree a no-share list: school name, routine, address clues, and real-time location.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clippers and clipping</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular (looksmaxxing streamer)</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and direct messaging</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder (IRL streamer)</a> · <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clippers and clipping</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular (looksmaxxing streamer)</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and direct messaging</a></p>`,
   },
   {
     slug: "clavicular",
@@ -406,7 +413,7 @@ module.exports = [
   <li>If you see self-harm, sudden weight or mood changes, or drug seeking, involve a GP or school counsellor promptly.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing (overview)</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing (looksmaxxing danger)</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a> · <a href="/articles/height-pressure-young-men/" class="text-accent font-semibold">Height pressure (young men)</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing (overview)</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing (looksmaxxing danger)</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a> · <a href="/articles/height-pressure-young-men/" class="text-accent font-semibold">Height pressure (young men)</a></p>`,
   },
   {
     slug: "looksmaxxing",
@@ -451,7 +458,7 @@ module.exports = [
   <li>If comparison is constant or they describe self-harm or drug use, involve your GP or a counsellor.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/body-image/" class="text-accent font-semibold">Body image &amp; appearance hub</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/online-lingo-words-phrases/" class="text-accent font-semibold">Full lingo library</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/elva-silicone-face-injections/" class="text-accent font-semibold">Elva (silicone face injections)</a> · <a href="/body-image/" class="text-accent font-semibold">Body image &amp; appearance hub</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/online-lingo-words-phrases/" class="text-accent font-semibold">Full lingo library</a></p>`,
   },
   {
     slug: "bone-smashing",
@@ -491,7 +498,7 @@ module.exports = [
   <li>If your child has already tried this or hides facial pain, seek medical assessment and consider counselling for body image.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular (looksmaxxing streamer)</a> · <a href="/articles/height-pressure-young-men/" class="text-accent font-semibold">Height pressure (young men)</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/elva-silicone-face-injections/" class="text-accent font-semibold">Elva (DIY injectables)</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular (looksmaxxing streamer)</a> · <a href="/articles/height-pressure-young-men/" class="text-accent font-semibold">Height pressure (young men)</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a></p>`,
   },
   {
     slug: "twitch",
@@ -511,7 +518,9 @@ module.exports = [
   <li>Ask which channels your child watches and whether they chat live or only watch.</li>
   <li>Set expectations for tips, subscriptions, and gift spending.</li>
   <li>Review privacy and whisper settings together, and talk about stranger DMs.</li>
-</ul>`,
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Streaming platforms overview</a> · <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clipping</a></p>`,
   },
   {
     slug: "youtube-live",
@@ -564,14 +573,16 @@ module.exports = [
     platformTags: ["Kick"],
     content: `<p><strong>Kick</strong> is a livestreaming platform that gained attention through creator migration and monetization debates. Teens may encounter it through clips, creator announcements, or gaming communities.</p>
 
-<p>Parent concern is often moderation consistency. Like any live platform, risk depends on channel culture, creator behavior, and how quickly harmful content is addressed when reported.</p>
+<p>Parent concern is often moderation consistency. Like any live platform, risk depends on channel culture, creator behavior, and how quickly harmful content is addressed when reported. Controversial IRL creators such as <a href="/articles/chud-the-builder/" class="text-accent font-semibold no-underline hover:underline">Chud the Builder</a> have drawn press attention for public confrontations, platform bans, and legal incidents after streaming on Kick.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
 <ul class="list-disc pl-6 my-2 space-y-1 text-muted">
   <li>Ask which creators your teen follows across Twitch, YouTube, and Kick.</li>
   <li>Treat platform hopping as normal and check where streams moved.</li>
   <li>Set boundaries for paid interactions and private follow-up chats.</li>
-</ul>`,
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Streaming platforms overview</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular</a> · <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clipping</a></p>`,
   },
   {
     slug: "rumble",
@@ -658,8 +669,8 @@ module.exports = [
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Sports betting and daily fantasy (real money)</h3>
 <p>These apps are legally restricted to adults (usually 18+ or 21+ depending on state), but underage sign-ups are common. Names to be aware of:</p>
 <ul class="list-disc pl-6 my-2 space-y-1 text-muted">
-  <li><strong class="text-[#e7e9ea]">DraftKings</strong> — sportsbook and daily fantasy; one of the most downloaded betting apps.</li>
-  <li><strong class="text-[#e7e9ea]">FanDuel</strong> — sportsbook and fantasy; widely advertised and frequently named in underage-betting reports.</li>
+  <li><strong class="text-[#e7e9ea]"><a href="/articles/draftkings/" class="text-accent no-underline hover:underline">DraftKings</a></strong> — sportsbook and daily fantasy; one of the most downloaded betting apps.</li>
+  <li><strong class="text-[#e7e9ea]"><a href="/articles/fanduel/" class="text-accent no-underline hover:underline">FanDuel</a></strong> — sportsbook and fantasy; widely advertised and frequently named in underage-betting reports.</li>
   <li><strong class="text-[#e7e9ea]">BetMGM</strong> — sports and casino-style betting.</li>
   <li><strong class="text-[#e7e9ea]">PrizePicks</strong> — “pick more or less” on player stats and outcomes; often described as America’s #1 sports picks app; available in all 50 states.</li>
   <li><strong class="text-[#e7e9ea]">Underdog Fantasy</strong> — fantasy sports and picks; ranks among the top sports apps by downloads.</li>
@@ -687,7 +698,9 @@ module.exports = [
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Offshore crypto casinos and streamer promotion</h3>
 <p>Some operators combine <strong>crypto deposits</strong> with casino-style games and spend heavily on <strong>live-stream partnerships</strong> (Kick, Twitch, YouTube, and clip culture on TikTok). They are often <strong>blocked or illegal in major markets</strong> but still visible as entertainment. See <a href="/articles/roobet/" class="text-accent no-underline hover:underline">Roobet</a>, <a href="/articles/stake/" class="text-accent no-underline hover:underline">Stake</a>, and <a href="/articles/rainbow-bet/" class="text-accent no-underline hover:underline">Rainbow Bet</a> for focused explainers on regional limits, creator promotion, and why on-screen losses may not match a normal player's risk.</p>
 
-<p class="mt-6">Experts warn that young people are more susceptible to gambling problems; exposure to these apps can prime them for real-money gambling later. If your child has any of these apps, including <strong>DraftKings</strong>, <strong>FanDuel</strong>, <strong>PrizePicks</strong>, <strong>Underdog Fantasy</strong>, <strong>Sleeper</strong>, <strong>Fliff</strong>, <strong><a href="/articles/kalshi/" class="text-accent no-underline hover:underline">Kalshi</a></strong>, <strong><a href="/articles/stake/" class="text-accent no-underline hover:underline">Stake</a></strong>, <strong><a href="/articles/rainbow-bet/" class="text-accent no-underline hover:underline">Rainbow Bet</a></strong>, <strong>Polymarket</strong>, <strong>PredictIt</strong>, or other sportsbook and prediction apps, talk with them about the risks, check how they signed up (whose account, what age given), and set clear rules about money and screen time around gambling-style apps.</p>`,
+<p class="mt-6">Experts warn that young people are more susceptible to gambling problems; exposure to these apps can prime them for real-money gambling later. If your child has any of these apps, including <strong><a href="/articles/draftkings/" class="text-accent no-underline hover:underline">DraftKings</a></strong>, <strong><a href="/articles/fanduel/" class="text-accent no-underline hover:underline">FanDuel</a></strong>, <strong>PrizePicks</strong>, <strong>Underdog Fantasy</strong>, <strong>Sleeper</strong>, <strong>Fliff</strong>, <strong><a href="/articles/kalshi/" class="text-accent no-underline hover:underline">Kalshi</a></strong>, <strong><a href="/articles/stake/" class="text-accent no-underline hover:underline">Stake</a></strong>, <strong><a href="/articles/rainbow-bet/" class="text-accent no-underline hover:underline">Rainbow Bet</a></strong>, <strong>Polymarket</strong>, <strong>PredictIt</strong>, or other sportsbook and prediction apps, talk with them about the risks, check how they signed up (whose account, what age given), and set clear rules about money and screen time around gambling-style apps.</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/fanduel/" class="text-accent font-semibold">FanDuel</a> · <a href="/articles/draftkings/" class="text-accent font-semibold">DraftKings</a> · <a href="/articles/sports-betting-adoption-siena-2026/" class="text-accent font-semibold">Sports betting adoption</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a></p>`,
   },
   {
     slug: "kalshi",
@@ -744,7 +757,7 @@ module.exports = [
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Practical parent takeaway</h3>
 <p class="text-muted">Treat sports betting the same way you treat other high-risk money products: clear age boundaries, card and wallet visibility, and direct conversations about losses, odds, and pressure from peers or streamers.</p>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/articles/stake/" class="text-accent font-semibold">Stake</a> · <a href="/articles/roobet/" class="text-accent font-semibold">Roobet</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/articles/fanduel/" class="text-accent font-semibold">FanDuel</a> · <a href="/articles/draftkings/" class="text-accent font-semibold">DraftKings</a> · <a href="/articles/kalshi/" class="text-accent font-semibold">Kalshi</a></p>`,
   },
   {
     slug: "trade-sellers-broker-affiliates",
@@ -874,7 +887,17 @@ module.exports = [
     ],
     severity: "Medium",
     platformTags: ["TikTok", "Instagram", "YouTube", "Ozempic", "Wegovy", "Mounjaro", "Zepbound"],
-    content: ``,
+    content: `<p class="text-muted text-sm mb-6">Informational only, not medical advice. Prescribing rules and brand names vary by country.</p>
+
+<p>This overview covers the <strong>GLP-1 weight-loss injection trend</strong> on social media. For a drug-specific parent guide on the name teens hear most often alongside Ozempic, see <a href="/articles/mounjaro/" class="text-accent font-semibold no-underline hover:underline">Mounjaro (tirzepatide)</a>.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Names you may hear</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]"><a href="/articles/mounjaro/" class="text-accent no-underline hover:underline">Mounjaro</a></strong> (tirzepatide, often discussed with <strong>Zepbound</strong> for weight)</li>
+  <li><strong class="text-[#e7e9ea]">Ozempic</strong> and <strong>Wegovy</strong> (semaglutide family)</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/elva-silicone-face-injections/" class="text-accent font-semibold">Elva (cosmetic harm on TikTok)</a> · <a href="/articles/mounjaro/" class="text-accent font-semibold">Mounjaro</a> · <a href="/articles/brazilian-butt-lift-bbl/" class="text-accent font-semibold">BBL and body-image pressure</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a></p>`,
   },
   {
     slug: "height-pressure-young-men",
@@ -1012,6 +1035,7 @@ module.exports = [
 <p>BBL has been associated with a <strong>higher rate of serious complications</strong> than many other cosmetic procedures when fat is injected in ways that can enter blood vessels, for example <strong>fat embolism</strong> (fat travelling in the bloodstream to the lungs or elsewhere), which can be life-threatening. Professional societies and health agencies in several countries have issued guidance to reduce risk (including how and where fat is placed).</p>
 <p>Other risks can include infection, contour irregularities, asymmetry, fluid collection, blood clots, scarring from liposuction, and outcomes that need <strong>revision surgery</strong>. “Cheap” offers or surgery abroad without clear follow-up care can make complications harder to manage.</p>
 <p class="text-sm text-muted">If your child is researching surgery online, encourage them to use sources aimed at patients from <strong>licensed plastic surgery societies</strong> or national health services, not comment sections or unverified before/after accounts.</p>
+<p class="text-sm text-muted mt-3">Separate from licensed surgery: <strong>illegal liquid silicone</strong> sold as cheap “fillers” or done at home can cause disfigurement, infection, and embolism risk. A viral 2025–2026 case involving Polish TikToker <strong>Elva</strong> is covered in <a href="/articles/elva-silicone-face-injections/" class="text-accent font-semibold no-underline hover:underline">Elva and DIY silicone face injections</a>.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">March 2026: reporting on influencer Elena Jessica</h3>
 <p>In March 2026, <a href="https://people.com/socialite-elena-jessica-dies-after-reported-brazilian-butt-lift-surgery-11924164" target="_blank" rel="noopener" class="text-accent font-semibold"><em>People</em> reported</a> that influencer <strong>Elena Jessica</strong> had died after reportedly undergoing Brazilian butt lift surgery. According to that coverage, her sister publicly blamed a plastic surgery clinic; the piece also noted that the clinic had firmly denied those claims. Early news reports may not reflect a full investigation, so treat any single story as a prompt to discuss <strong>real surgical risk</strong> and <strong>verified medical sources</strong>, not as a final legal finding.</p>
@@ -1035,7 +1059,7 @@ module.exports = [
   <li><strong class="text-[#e7e9ea]">Professional help:</strong> A GP, school nurse, or counsellor can support body-image struggles; for eating or obsessive behaviours, ask about specialist services.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/weight-loss-glp1/" class="text-accent font-semibold">Weight-loss and GLP-1 meds (body-image pressure) →</a> · <a href="/articles/limb-lengthening-surgery/" class="text-accent font-semibold">Limb lengthening surgery (cosmetic trend) →</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/elva-silicone-face-injections/" class="text-accent font-semibold">Elva and illegal silicone injections</a> · <a href="/articles/weight-loss-glp1/" class="text-accent font-semibold">Weight-loss and GLP-1 meds (body-image pressure) →</a> · <a href="/articles/limb-lengthening-surgery/" class="text-accent font-semibold">Limb lengthening surgery (cosmetic trend) →</a></p>`,
   },
   {
     slug: "unmoderated-apps",
@@ -1211,6 +1235,9 @@ module.exports = [
 <p><strong class="text-[#e7e9ea]">Dismissal and condescension.</strong> A lot of uses are <strong>put-downs</strong>. The speaker implies the other person is <strong>lower status</strong> or “beneath” them, sometimes by framing them like a <strong>fast-food worker</strong> who should stay quiet and complete a trivial task. That makes it feel insulting, not playful, even when it is meant as a joke.</p>
 <p><strong class="text-[#e7e9ea]">“Sir, this is a Wendy’s” energy.</strong> It overlaps with memes like <strong>Sir, this is a Wendy’s</strong>: someone is <strong>oversharing</strong>, complaining too much, or derailing with personal drama, and the reply is basically <strong>“I do not care about your story; do the small job I came here for.”</strong></p>
 <p><strong class="text-[#e7e9ea]">Origin.</strong> The joke spread from around <strong>November 2022</strong> on Facebook in a form like <strong>“put the ketchup in the bag, bro,”</strong> then shifted toward <strong>fries</strong> and blew up on <strong>TikTok</strong> and <strong>X (Twitter)</strong> in <strong>2023-2024</strong>. It often shows up as <strong>comment spam</strong> under posts from people viewers see as <strong>failing</strong> or <strong>acting arrogant</strong> while having a “normal” or service-type job. In short, it is a rude way to say <strong>“I do not care about your story; just do what I expected.”</strong> If your teen uses it or gets called it, the sting is often about <strong>status and disrespect</strong>, not food.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Gen Z stare</h3>
+<p>A <strong>blank, deadpan facial expression</strong> that became a TikTok meme and generational argument (often about work, greetings, or “soft skills”). Teens may use it ironically online or get labelled with it in jobs and family settings. For a fuller parent guide, see <a href="/articles/gen-z-stare/" class="text-accent font-semibold no-underline hover:underline">The Gen Z stare</a>.</p>
 
 <h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Mid</h3>
 <p>Means average or mediocre. "That movie was mid" = it was okay, nothing special. Used to downplay or dismiss something.</p>
@@ -1872,7 +1899,7 @@ module.exports = [
   <li>If a young adult creates content anywhere, discuss <strong>contracts</strong>, <strong>taxes</strong>, and <strong>long-term digital footprint</strong> with appropriate professional help if needed.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator content marketplaces (overview)</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/motherless-shutdown-zzz-content/" class="text-accent font-semibold">Motherless shutdown (illegal abuse content)</a> · <a href="/articles/onlyfans-agencies/" class="text-accent font-semibold">OnlyFans agencies and management</a> · <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator content marketplaces (overview)</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
   },
   {
     slug: "creator-content-marketplaces",
@@ -1902,7 +1929,7 @@ module.exports = [
 <ul class="list-disc pl-6 my-3 space-y-2 text-muted">
   <li><strong class="text-[#e7e9ea]">Age:</strong> Creating and selling on these platforms is generally restricted to <strong>adults</strong> (commonly <strong>18+</strong>). Underage participation is illegal and unsafe; platforms remove accounts when they can verify violations.</li>
   <li><strong class="text-[#e7e9ea]">Money:</strong> Subscriptions, pay-per-view posts, and tips hit cards or wallets; chargebacks and “creator payout” scams exist. Hidden spending on a family card is a common parent discovery path.</li>
-  <li><strong class="text-[#e7e9ea]">Coercion and leaks:</strong> Any intimate content can feed <strong>sextortion</strong>, <strong>non-consensual sharing</strong>, or pressure from “managers” and strangers. See <a href="/articles/social-media-dm/" class="text-accent font-semibold no-underline hover:underline">social media and DMs</a> and our reporting guidance if harm appears.</li>
+  <li><strong class="text-[#e7e9ea]">Coercion and leaks:</strong> Any intimate content can feed <strong>sextortion</strong>, <strong>non-consensual sharing</strong>, or pressure from “managers” and strangers. See <a href="/articles/onlyfans-agencies/" class="text-accent font-semibold no-underline hover:underline">OnlyFans agencies and management</a> and <a href="/articles/social-media-dm/" class="text-accent font-semibold no-underline hover:underline">social media and DMs</a> if harm appears.</li>
   <li><strong class="text-[#e7e9ea]">Parasocial fans:</strong> Subscribers may feel entitled to attention or offline contact; creators (including young adults) can face harassment or stalking across apps.</li>
 </ul>
 
@@ -2145,6 +2172,7 @@ module.exports = [
   <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/nitrous-paralysis-risk/" class="text-accent no-underline hover:underline">Nitrous and paralysis risk</a></strong><br><span class="text-sm">Warning signs of neurological injury that need urgent assessment.</span></li>
   <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/vape-spice/" class="text-accent no-underline hover:underline">Vape spice (synthetic cannabinoid vapes)</a></strong><br><span class="text-sm">High-risk products often sold as normal vapes, with unpredictable potency and severe reactions.</span></li>
   <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/energy-drinks-addiction-health-impact/" class="text-accent no-underline hover:underline">Energy drink addiction and health impact</a></strong><br><span class="text-sm">How high-caffeine routines escalate and the warning signs families should not ignore.</span></li>
+  <li><strong class="text-[#e7e9ea] text-lg"><a href="/articles/drug-mules-young-travellers/" class="text-accent no-underline hover:underline">Drug mules and young travellers</a></strong><br><span class="text-sm">Recent UK cases in Jamaica and Turkey show how holidays and “easy money” offers can end in airport arrests and long prison terms abroad.</span></li>
 </ul>
 
 <h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How to use this page</h3>
@@ -2154,7 +2182,7 @@ module.exports = [
   <li>Return here as new guides are added.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related now: <a href="/articles/balloons-nitrous-oxide/" class="text-accent font-semibold">Balloons and nitrous oxide</a> · <a href="/articles/vape-spice/" class="text-accent font-semibold">Vape spice</a> · <a href="/articles/thc-gummies/" class="text-accent font-semibold">THC gummies</a> · <a href="/articles/energy-drinks-addiction-health-impact/" class="text-accent font-semibold">Energy drinks and health impact</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+<p class="mt-8 text-sm text-muted">Related now: <a href="/articles/drug-mules-young-travellers/" class="text-accent font-semibold">Drug mules</a> · <a href="/articles/balloons-nitrous-oxide/" class="text-accent font-semibold">Balloons and nitrous oxide</a> · <a href="/articles/vape-spice/" class="text-accent font-semibold">Vape spice</a> · <a href="/articles/thc-gummies/" class="text-accent font-semibold">THC gummies</a> · <a href="/articles/energy-drinks-addiction-health-impact/" class="text-accent font-semibold">Energy drinks and health impact</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
   },
   {
     slug: "energy-drinks-addiction-health-impact",
@@ -2321,6 +2349,627 @@ module.exports = [
   <li>Point them to the wider streaming landscape in <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">online streaming platforms</a> so clipping sits inside a bigger picture of monetization and parasocial ties.</li>
 </ul>
 
-<p class="mt-8 text-sm text-muted">Related: <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money overview</a></p>`,
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money overview</a></p>`,
+  },
+  {
+    slug: "scientology-speed-runs-youth",
+    title: "Scientology “speed runs” and the TikTok trend: what parents should know",
+    labels: ["emerging", "social-media", "content", "platforms"],
+    section: "emerging",
+    excerpt:
+      "Young people film themselves rushing through Scientology-linked buildings for viral “speedrun” content. Press coverage ties the trend to trespass, injuries, police investigations, and copycat behaviour.",
+    severity: "High",
+    platformTags: ["TikTok", "Instagram", "YouTube"],
+    sourceTitle: "Associated Press (via ABC News): Inside Scientology speedruns, viral trend prompting church to bolster security",
+    sourceUrl: "https://abcnews.go.com/Technology/wireStory/inside-scientology-speedruns-viral-trend-prompting-church-bolster-132547181",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not legal advice. Laws, charges, and platform rules change. This page summarises mainstream reporting on a short-form video trend so families can discuss safety, legality, and what “just a joke” can still cost in real life.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What people mean by “Scientology speed run”</h3>
+<p>The phrase borrows <strong>video game slang</strong>: a “speedrun” is finishing a task as fast as possible. In this trend, groups (often <strong>teenagers and young adults</strong>) film themselves <strong>entering Church of Scientology properties or information centres</strong>, moving quickly through lobbies or rooms, and posting the footage to <strong>TikTok</strong> and other short-form apps. Some videos show <strong>costumes or masks</strong>, chaotic energy, and large crowds. Witnesses quoted in wire coverage described participants who looked like <strong>middle school or high school age</strong>.</p>
+<p>Reporting from the <strong>Associated Press</strong>, carried by outlets such as <a href="https://abcnews.go.com/Technology/wireStory/inside-scientology-speedruns-viral-trend-prompting-church-bolster-132547181" target="_blank" rel="noopener" class="text-accent font-semibold">ABC News</a> and <a href="https://www.ctvnews.ca/world/article/inside-scientology-speedruns-the-viral-trend-prompting-the-church-to-bolster-security/" target="_blank" rel="noopener" class="text-accent font-semibold">CTV News</a>, described the activity as spreading on TikTok over roughly a month from <strong>early April 2026</strong>, with a hotspot on <strong>Hollywood Boulevard</strong> in Los Angeles. Coverage also linked similar attempts to <strong>Vancouver</strong> and police warnings there (<a href="https://www.ctvnews.ca/vancouver/article/scientology-speedrunning-attempt-prompts-warning-from-vancouver-police/" target="_blank" rel="noopener" class="text-accent font-semibold">CTV Vancouver</a>).</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why it is not harmless prank content</h3>
+<p>Even when viewers treat clips as absurd or satirical, the <strong>offline behaviour</strong> can carry serious consequences:</p>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Trespass and disruption:</strong> a church spokesperson told AP that turning facilities into “targets for viral stunts” amounts to <strong>trespass, harassment, and disruption of religious facilities</strong>, not legitimate protest or journalism on its own.</li>
+  <li><strong class="text-[#e7e9ea]">Injury and escalation:</strong> the same statement said a <strong>staff member was injured</strong> in one incident and needed medical attention. Large groups, costumes, and rushing staff can tip quickly into <strong>assault or property damage</strong> risk.</li>
+  <li><strong class="text-[#e7e9ea]">Police scrutiny:</strong> the <strong>Los Angeles Police Department</strong> confirmed multiple responses; at least one incident was investigated as a <strong>potential hate crime</strong>, according to AP. That label does not mean every participant will be charged, but it signals how seriously authorities may treat organised incursions.</li>
+  <li><strong class="text-[#e7e9ea]">Security backlash:</strong> reporters noted the church <strong>removed external door handles</strong> on some Hollywood Boulevard properties, illustrating how real-world safety measures follow online-driven crowds.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why young people join in</h3>
+<p>Press accounts stress that motives are <strong>mixed and unclear</strong>: some participants treat it like <strong>“brain rot”</strong> humour (random, meme-first content where the joke is the chaos), others chase <strong>views, duets, and clout</strong>. Comments and side videos sometimes reference <strong>celebrity association</strong> with Scientology as part of the meme layer. None of that removes <strong>legal and personal risk</strong> for a teen who shows up in person.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can say and do</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Separate watching from doing:</strong> scrolling clips is one thing; <strong>travelling to a building as part of a crowd stunt</strong> is another. Be direct about arrests, school discipline, and injury.</li>
+  <li><strong class="text-[#e7e9ea]">Name the pattern:</strong> this belongs in the same family as other <strong>“do it for the TikTok”</strong> escalations: real locations, real staff, real cameras, permanent records.</li>
+  <li><strong class="text-[#e7e9ea]">Peer pressure:</strong> ask whether a group chat or older influencer is <strong>organising rides or meetups</strong>. Offer an exit line (“my parents said no”) they can reuse.</li>
+  <li><strong class="text-[#e7e9ea]">If they already went:</strong> stay calm, get the full story, and consider legal advice if police or the school contact you. Preserve facts, not shame.</li>
+</ul>
+
+<p class="text-sm text-muted mt-6">Source wire: Krysta Fauria and Kaitlyn Huamani, <a href="https://abcnews.go.com/Technology/wireStory/inside-scientology-speedruns-viral-trend-prompting-church-bolster-132547181" target="_blank" rel="noopener" class="text-accent">“Inside Scientology speedruns, the viral trend prompting the church to bolster security”</a>, Associated Press via ABC News, April 30, 2026.</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/articles/new-app-tik-tok-teen-dance-challenges/" class="text-accent font-semibold">TikTok challenges (parent context)</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/know-where-to-report/" class="text-accent font-semibold">Know where to report</a></p>`,
+  },
+  {
+    slug: "bop-house",
+    title: "BOP House: OnlyFans creator collective and what parents should know",
+    labels: ["platforms", "money-finance", "social-media", "emerging", "weak-age-verification"],
+    section: "platforms",
+    excerpt:
+      "BOP House is a high-profile group of young adult OnlyFans creators living together in Florida, cross-promoting on TikTok and Instagram. Press coverage highlights huge revenue, PG social feeds, and controversy over how the brand is marketed.",
+    severity: "Medium",
+    platformTags: ["OnlyFans", "TikTok", "Instagram"],
+    sourceTitle: "Fast Company: Meet the Bop House, the internet's divisive new OnlyFans hype house",
+    sourceUrl: "https://www.fastcompany.com/91277825/meet-the-bop-house-the-internets-divisive-new-onlyfans-hype-house",
+    content: `<p class="text-muted text-sm mb-6">Informational only. Membership, locations, and earnings figures in press reports change. This page summarises what families may hear about <strong>BOP House</strong> (also written <strong>Bop House</strong>) so you can separate meme culture from adult-platform business models.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What BOP House is</h3>
+<p><strong>BOP House</strong> is a <strong>creator collective</strong> (sometimes called an <strong>OnlyFans hype house</strong>): several <strong>adult OnlyFans creators</strong> living in a shared property, filming lifestyle and challenge content for <strong>TikTok</strong> and <strong>Instagram</strong>, and cross-promoting each other's paid pages on <a href="/articles/onlyfans/" class="text-accent font-semibold no-underline hover:underline">OnlyFans</a>. It launched in <strong>late 2024</strong>, with reporting placing early operations in <strong>Florida</strong> (Fort Lauderdale area, later Miami-area properties in some accounts).</p>
+<p>Mainstream outlets such as <a href="https://www.fastcompany.com/91277825/meet-the-bop-house-the-internets-divisive-new-onlyfans-hype-house" target="_blank" rel="noopener" class="text-accent font-semibold">Fast Company</a>, <a href="https://www.vice.com/en/article/the-bop-house-is-an-onlyfans-paradise-that-pulls-millions-per-month/" target="_blank" rel="noopener" class="text-accent font-semibold">Vice</a>, and summaries on <a href="https://en.wikipedia.org/wiki/Bop_House" target="_blank" rel="noopener" class="text-accent font-semibold">Wikipedia</a> describe it as a <strong>business-minded content house</strong>, not a casual friend group. Public-facing social posts are often <strong>PG or “influencer” style</strong> (dances, reviews, house tours), while revenue is tied to <strong>adult subscriptions</strong> off-platform.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why teens hear the name</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Algorithm spillover:</strong> TikTok and Reels can surface house members even when a teen does not follow OnlyFans.</li>
+  <li><strong class="text-[#e7e9ea]">Parasocial “house” drama:</strong> cast changes, feuds, and mansion tours read like reality TV, which lowers guardrails.</li>
+  <li><strong class="text-[#e7e9ea]">Money mythology:</strong> headlines about <strong>millions per month</strong> can make adult-platform work look like an easy creator career path.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Controversies parents should understand</h3>
+<p class="text-muted">Reporting has focused on the <strong>gap between youthful social feeds and adult monetisation</strong>: critics argue the brand can normalise sexualised careers for very young audiences who mainly see the TikTok side. Defenders sometimes frame it as adult women running a legal business. For parents, the practical point is that <strong>the funnel exists</strong>: safe-looking clips can still lead curious teens toward paywalled adult content or toward DMs offering “management” and growth help.</p>
+<p class="text-muted">Press also noted <strong>member turnover</strong> (founders and creators leaving) and internal conflict. Treat viral numbers as <strong>marketing snapshots</strong>, not guarantees for anyone who copies the format.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">BOP House vs a typical OnlyFans agency</h3>
+<p class="text-muted">BOP House is <strong>not the same</strong> as every <strong>OnlyFans management agency</strong> (companies that take a cut for chatters, marketing, or “growth”). It is a <strong>shared-living creator brand</strong> in the same cultural bucket. For how agencies recruit, contract, and pressure creators, see <a href="/articles/onlyfans-agencies/" class="text-accent font-semibold no-underline hover:underline">OnlyFans agencies and management</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What helps at home</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask what they think BOP House <strong>sells</strong> (entertainment, lifestyle, or subscriptions).</li>
+  <li>State clearly that <strong>OnlyFans creation is 18+</strong> and that “house” content can still expose minors to adult funnels.</li>
+  <li>Watch for DMs offering <strong>representation, collabs, or management</strong> after they engage with this niche.</li>
+  <li>If a young adult is approached to join a collective, discuss <strong>contracts, splits, and exit clauses</strong> with a solicitor before signing.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/onlyfans-agencies/" class="text-accent font-semibold">OnlyFans agencies</a> · <a href="/articles/onlyfans/" class="text-accent font-semibold">OnlyFans (platform)</a> · <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator content marketplaces</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a></p>`,
+  },
+  {
+    slug: "onlyfans-agencies",
+    title: "OnlyFans agencies and management: what parents should know",
+    labels: ["platforms", "money-finance", "emerging", "weak-age-verification", "dm", "sextortion"],
+    section: "platforms",
+    excerpt:
+      "Agencies and “managers” promise growth, chatters, and marketing for OnlyFans creators, often for a large revenue cut. Teens may see recruitment pitches in DMs; high-profile collectives such as BOP House sit in the same conversation.",
+    severity: "High",
+    platformTags: ["OnlyFans", "TikTok", "Instagram"],
+    content: `<p class="text-muted text-sm mb-6">Informational only, not legal advice. Agency names, contracts, and platform rules change. This page is for parents decoding <strong>OnlyFans agencies</strong>, <strong>management companies</strong>, and influencer-style <strong>creator houses</strong> teens see online.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What an OnlyFans agency usually does</h3>
+<p>An <strong>OnlyFans agency</strong> (also called <strong>management</strong>, <strong>OFM</strong>, or a <strong>creator management firm</strong>) is a business that works with adult creators on <a href="/articles/onlyfans/" class="text-accent font-semibold no-underline hover:underline">OnlyFans</a> and similar sites. Services often include:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Marketing and traffic:</strong> scheduling posts, running promo accounts, buying ads, or coordinating shout-outs.</li>
+  <li><strong class="text-[#e7e9ea]">Chatters:</strong> staff who reply to subscribers in DMs as if they were the creator (sometimes 24/7).</li>
+  <li><strong class="text-[#e7e9ea]">Production help:</strong> photographers, editors, or “content plans.”</li>
+  <li><strong class="text-[#e7e9ea]">Revenue share:</strong> agencies commonly take a <strong>percentage</strong> of earnings (reported splits vary widely and can be harsh for new creators).</li>
+</ul>
+<p class="text-muted">Some operations are registered companies with contracts. Others are informal Telegram or Discord groups. Both can contact young people who have never posted adult content.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">High-profile example: <a href="/articles/bop-house/" class="text-[#e7e9ea] underline decoration-accent/70 underline-offset-2 hover:text-accent">BOP House</a></h3>
+<p class="text-muted">Parents may hear <strong><a href="/articles/bop-house/" class="text-accent font-semibold no-underline hover:underline">BOP House</a></strong> in the same breath as agencies. It is best understood as a <strong>creator collective / hype house</strong>: young adult OnlyFans creators living together, posting lifestyle content on TikTok and Instagram, and cross-promoting paid pages. It is heavily covered in business and culture press and is often cited for <strong>very large monthly revenue</strong> and for debate about <strong>PG social feeds</strong> versus <strong>adult subscriptions</strong>.</p>
+<p class="text-muted">Read the dedicated article for names, controversy, and how the brand reaches teen feeds: <a href="/articles/bop-house/" class="text-accent font-semibold no-underline hover:underline">BOP House (OnlyFans collective) →</a></p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Risks for teens and young adults</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Recruitment in DMs:</strong> “We will 10x your income,” “join our roster,” or “free coaching” messages on Instagram, TikTok, Snapchat, or Discord. See <a href="/articles/social-media-dm/" class="text-accent font-semibold no-underline hover:underline">social media and DMs</a>.</li>
+  <li><strong class="text-[#e7e9ea]">Age and law:</strong> creating or selling sexual content as a minor is illegal. Agencies that knowingly involve minors are a safeguarding emergency, not a career discussion.</li>
+  <li><strong class="text-[#e7e9ea]">Pressure and coercion:</strong> push to produce more explicit material, share accounts, or hand over login credentials.</li>
+  <li><strong class="text-[#e7e9ea]">Financial traps:</strong> unclear splits, chargebacks, clawbacks, or debts for “promo” the agency claims it spent.</li>
+  <li><strong class="text-[#e7e9ea]">Identity and leaks:</strong> chatters, editors, or partners may have copies of content; non-consensual sharing and <strong>sextortion</strong> risk rises when many people touch an account.</li>
+  <li><strong class="text-[#e7e9ea]">Reputation:</strong> even legal adult work can affect university, visas, and future jobs if real names or faces link across platforms.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Red flags in “management” pitches</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Requests for <strong>passwords</strong>, bank logins, or “we will run everything.”</li>
+  <li>Guaranteed income claims with no written contract.</li>
+  <li>Pressure to start before <strong>18</strong> or to use someone else’s verification.</li>
+  <li>Isolation from friends or family (“don’t tell anyone our strategy”).</li>
+  <li>Threats to leak content if the creator leaves.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Define that <strong>agency DMs are commercial recruitment</strong>, not fan mail.</li>
+  <li>If a young adult is considering management, insist on <strong>independent legal review</strong>, clear termination terms, and who owns the content library.</li>
+  <li>Keep conversation shame-free so teens report scary offers instead of hiding them.</li>
+  <li>Use platform block/report tools and national helplines if coercion or underage involvement appears.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/bop-house/" class="text-accent font-semibold">BOP House</a> · <a href="/articles/onlyfans/" class="text-accent font-semibold">OnlyFans</a> · <a href="/articles/creator-content-marketplaces/" class="text-accent font-semibold">Creator content marketplaces</a> · <a href="/finance/" class="text-accent font-semibold">Young people &amp; money</a> · <a href="/articles/know-where-to-report/" class="text-accent font-semibold">Know where to report</a></p>`,
+  },
+  {
+    slug: "gen-z-stare",
+    title: "The Gen Z stare: what parents should know",
+    labels: ["lingo", "conversation", "social-media", "emerging", "mental-health"],
+    section: "lingo",
+    excerpt:
+      "A blank, deadpan look that went viral on TikTok as a generational joke. Teens may use it online or in real life; adults often read it as rude, while young people may mean anxiety, burnout, or “no comment.”",
+    severity: "Low",
+    platformTags: ["TikTok", "Instagram"],
+    sourceTitle: "People: What Is the Gen Z Stare?",
+    sourceUrl: "https://people.com/what-is-the-gen-z-stare-all-about-the-latest-term-dividing-the-internet-11772963",
+    content: `<p class="text-muted text-sm mb-6">Informational only. This page explains a meme and social habit, not a medical diagnosis. If your teen seems withdrawn, anxious, or unable to function at school or work, talk to a GP or counsellor.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What people mean by the “Gen Z stare”</h3>
+<p>The <strong>Gen Z stare</strong> is a <strong>blank, expressionless, deadpan look</strong>: eyes forward, little smile, minimal reaction. On <strong>TikTok</strong> and other apps it became a <strong>generational meme</strong>, often tied to retail, hospitality, or first jobs (“why doesn’t the young worker greet me?”). Clips spread from mid-2024 onward, with outlets such as <a href="https://people.com/what-is-the-gen-z-stare-all-about-the-latest-term-dividing-the-internet-11772963" target="_blank" rel="noopener" class="text-accent font-semibold">People</a> and others describing it as a lighthearted but sharp <strong>Gen Z vs millennial/boomer</strong> debate.</p>
+<p>Offline, the same label gets applied when a teen or young adult <strong>does not perform cheerful small talk</strong> on cue. Parents, managers, and customers may call it <strong>rude or disengaged</strong>. Many young people push back and say it is <strong>neutral</strong>, <strong>protective</strong>, or simply <strong>“I have nothing to add.”</strong></p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">Why teens use it (or get accused of it)</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Meme defence:</strong> quoting the stare online is often ironic, not a life philosophy.</li>
+  <li><strong class="text-[#e7e9ea]">Social exhaustion:</strong> after long days on screens or in noisy environments, minimal expression can be a <strong>shutdown</strong>, not hostility.</li>
+  <li><strong class="text-[#e7e9ea]">Anxiety or awkwardness:</strong> some young people freeze when put on the spot by strangers (customers, relatives, interviews).</li>
+  <li><strong class="text-[#e7e9ea]">Pushback on “fake” politeness:</strong> a few describe skipping scripted greetings as honesty; adults may still experience it as cold.</li>
+  <li><strong class="text-[#e7e9ea]">Workplace culture clash:</strong> press coverage has linked the meme to debates about <strong>soft skills</strong>, service jobs, and what “professional” looks like in 2025 and 2026.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">When it is more than a joke</h3>
+<p class="text-muted">A flat face in one TikTok is different from a pattern at home. Watch for <strong>withdrawal</strong>, <strong>irritability</strong>, <strong>sleep change</strong>, or <strong>avoiding school, work, or friends</strong>. The stare can be a mask for depression, social anxiety, or burnout, especially after stressful school years or heavy online use. Shaming (“fix your face”) usually makes disclosure harder.</p>
+
+<h3 class="text-base font-semibold mt-6 mb-2 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-2 space-y-1 text-muted">
+  <li><strong class="text-[#e7e9ea]">Ask, don’t lecture:</strong> “Is the Gen Z stare a joke for you, or how you cope when you’re drained?”</li>
+  <li><strong class="text-[#e7e9ea]">Separate meme from manners:</strong> agree that <strong>basic courtesy</strong> (eye contact, a short hello at work) still matters for safety and references, without forcing performative cheer.</li>
+  <li><strong class="text-[#e7e9ea]">Role-play low-stakes lines:</strong> “Hi, finding everything okay?” can be practised like any other skill before a first shift.</li>
+  <li><strong class="text-[#e7e9ea]">If work conflicts repeat:</strong> help them talk to a manager about sensory overload or anxiety accommodations where appropriate.</li>
+  <li><strong class="text-[#e7e9ea]">Model curiosity:</strong> share how your generation had its own “rude teen” stereotypes so the conversation stays bilateral.</li>
+</ul>
+
+<p class="text-sm text-muted mt-6">Background: <a href="https://people.com/what-is-the-gen-z-stare-all-about-the-latest-term-dividing-the-internet-11772963" target="_blank" rel="noopener" class="text-accent">People, “What Is the Gen Z Stare?”</a> (2024-2025 coverage of the TikTok term).</p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/online-lingo-words-phrases/" class="text-accent font-semibold">Lingo and words to know</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/connection/" class="text-accent font-semibold">Connection hub</a></p>`,
+  },
+  {
+    slug: "meta-glasses-stealth-mode-amendments",
+    title: "Meta glasses stealth mode and policy amendments: what parents should know",
+    labels: ["ai", "wearables", "privacy", "emerging", "platforms"],
+    section: "emerging",
+    excerpt:
+      "Policy updates, longer Live AI sessions, and debate over turning off the recording LED have raised “stealth” fears around Ray-Ban Meta glasses. Here is what changed and why bystanders may not know they are on camera or mic.",
+    severity: "High",
+    platformTags: ["Meta", "Ray-Ban", "Meta AI"],
+    sourceTitle: "The Verge: Meta tightens privacy policy around Ray-Ban glasses",
+    sourceUrl: "https://www.theverge.com/news/658602/meta-ray-ban-privacy-policy-ai-training-voice-recordings",
+    content: `<p class="text-muted text-sm mb-6">Informational only. Meta product settings, policies, and hardware plans change. For device behaviour and privacy controls, use official <a href="https://www.meta.com/help/ai-glasses/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">Meta AI glasses help</a> and the Meta View app on the wearer’s phone.</p>
+
+<p><strong>Stealth mode</strong> is not always an official Meta product name. Parents and press use it for anything that makes <strong>Ray-Ban Meta glasses</strong> harder to notice in use: <strong>policy amendments</strong>, <strong>rumoured or planned LED changes</strong>, and <strong>DIY tricks</strong> to hide the white recording light. This page sits alongside our overview of the glasses themselves: <a href="/articles/meta-glasses-meta-ai/" class="text-accent font-semibold no-underline hover:underline">Meta Ray-Ban glasses with Meta AI</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">April 2025: privacy policy amendments (official)</h3>
+<p>In late April 2025, Meta emailed Ray-Ban Meta owners about <strong>policy changes</strong>, reported by <a href="https://www.theverge.com/news/658602/meta-ray-ban-privacy-policy-ai-training-voice-recordings" target="_blank" rel="noopener" class="text-accent font-semibold">The Verge</a> and others. Key points families should know:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Camera-linked Meta AI:</strong> Meta stated that <strong>Meta AI with camera use stays enabled</strong> on the glasses unless the user turns off <strong>“Hey Meta”</strong> voice wake. That shifts default behaviour toward always-ready sensing when voice is on.</li>
+  <li><strong class="text-[#e7e9ea]">Voice recordings in the cloud:</strong> owners could <strong>no longer opt out</strong> of storing voice recordings in the cloud for product improvement (with deletion still possible in settings). Meta’s notice described transcripts and audio kept for up to about <strong>one year</strong> in many cases.</li>
+  <li><strong class="text-[#e7e9ea]">Training narrative:</strong> coverage framed the move as feeding <strong>AI training and improvement</strong>, similar to debates on smart speakers and other assistants.</li>
+</ul>
+<p class="text-muted text-sm">Meta told reporters that photos and videos saved to the phone’s camera roll are not used for training unless shared into other Meta or third-party services, where those products’ policies apply. Still, the combination of <strong>always-on voice</strong> and <strong>camera AI defaults</strong> is what parents mean when they say the glasses feel less “opt-in.”</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">2026 reporting: LED, Live AI, and “stealth” hardware debate</h3>
+<p>On current Ray-Ban Meta models, a <strong>white front LED</strong> typically shows when the camera is active for capture or Meta AI use. Reporting on <strong>next-generation glasses planned for 2026</strong> (often discussed under codenames such as Aperol and Bellini) has raised a separate “stealth” worry:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Longer Live AI:</strong> “Super sensing” or extended <strong>Live AI</strong> could run in the background for <strong>hours</strong> instead of short sessions, per outlets summarising <em>The Information</em>, including <a href="https://www.uploadvr.com/next-gen-ray-ban-meta-2026-super-sensing-facial-recognition-live-ai/" target="_blank" rel="noopener" class="text-accent font-semibold">UploadVR</a>.</li>
+  <li><strong class="text-[#e7e9ea]">LED off in Live AI?</strong> the same reporting said Mark Zuckerberg had <strong>questioned whether the LED could stay off during Live AI</strong>, and that Meta was <strong>weighing</strong> that idea. Nothing in public reporting guarantees shipping without a visible indicator, but the discussion matters for consent.</li>
+  <li><strong class="text-[#e7e9ea]">Facial recognition exploration:</strong> press also described Meta as <strong>exploring</strong> face-related features (for example name reminders). That amplifies concern in schools and among minors who did not agree to be scanned.</li>
+</ul>
+<p class="text-muted">Treat roadmap claims as <strong>reporting, not promises</strong>. The parent takeaway is directional: Meta is pushing <strong>more continuous sensing</strong> while privacy teams reportedly have <strong>less veto power</strong> over product ideas.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Unofficial “stealth”: hiding the recording light</h3>
+<p>Separate from corporate policy, viral posts and backlash in 2025-2026 described wearers <strong>covering or obscuring the LED</strong> while still recording. That is not a Meta feature; it is a <strong>consent and safeguarding</strong> problem. Schools, venues, and friendships may treat secret recording as bullying, harassment, or a breach of rules even when the hardware allows capture.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why this matters for teens</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Wearers:</strong> defaults and cloud voice storage are easy to miss in setup screens; teens may not read amendment emails.</li>
+  <li><strong class="text-[#e7e9ea]">Bystanders:</strong> classmates in locker rooms, buses, or parties may not see a phone and still be on camera or mic.</li>
+  <li><strong class="text-[#e7e9ea]">Viewers of prank content:</strong> “stealth” framing can normalise filming strangers for clips. See <a href="/articles/meta-glasses-meta-ai/" class="text-accent font-semibold no-underline hover:underline">the main Meta glasses article</a> for POV and prank trends.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>If your household owns the glasses, open <strong>Meta View</strong> together: Hey Meta on/off, deletion of voice history, and who may use the device.</li>
+  <li>Agree a <strong>no secret recording</strong> rule for friends, school, and family, including never blocking the LED.</li>
+  <li>Teach bystander skills: it is okay to ask “are those recording?” and to leave or report if someone refuses to answer.</li>
+  <li>Watch for school or local rules on wearables in class, exams, and changing areas.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/meta-glasses-meta-ai/" class="text-accent font-semibold">Meta Ray-Ban glasses (overview)</a> · <a href="/articles/ai-generated-content/" class="text-accent font-semibold">AI-generated content</a> · <a href="/ai/" class="text-accent font-semibold">AI hub</a> · <a href="/articles/concert-photos-asking-strangers/" class="text-accent font-semibold">Filming strangers</a></p>`,
+  },
+  {
+    slug: "mounjaro",
+    title: "Mounjaro (tirzepatide): what parents should know",
+    labels: ["body-image", "health", "social-media", "emerging", "drugs"],
+    section: "body-image",
+    excerpt:
+      "Mounjaro is a prescription injection teens see on TikTok as a quick weight-loss fix. It is not a diet hack: misuse, borrowed pens, and online sellers carry serious medical and body-image risks.",
+    severity: "High",
+    platformTags: ["TikTok", "Instagram", "YouTube", "Mounjaro", "Zepbound"],
+    sourceTitle: "The Pharmaceutical Journal: Weight-loss drugs and social media promotion to teenagers",
+    sourceUrl: "https://pharmaceutical-journal.com/article/feature/weight-loss-drugs-is-social-media-promotion-to-teenagers-still-a-problem",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not medical advice. Only a qualified clinician should prescribe or adjust these medicines. Laws and brand names differ by country.</p>
+
+<p><strong>Mounjaro</strong> is the brand name for <strong>tirzepatide</strong>, a <strong>prescription injectable medicine</strong> made by Eli Lilly. In many regions it is approved under medical supervision for <strong>type 2 diabetes</strong>. A related brand, <strong>Zepbound</strong>, is used for <strong>weight management</strong> in adults in some markets (including the United States). Teens often lump the names together because both refer to the same drug class and similar pens on social media.</p>
+<p>For the wider GLP-1 trend (Ozempic, Wegovy, comparison content), see <a href="/articles/weight-loss-glp1/" class="text-accent font-semibold no-underline hover:underline">Weight-loss and GLP-1 meds (overview)</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why Mounjaro shows up in teen feeds</h3>
+<p>Short-form video rewards <strong>before-and-after bodies</strong>, “what I eat in a day,” and “week one on Mounjaro” diaries. Investigations such as <a href="https://pharmaceutical-journal.com/article/feature/weight-loss-drugs-is-social-media-promotion-to-teenagers-still-a-problem" target="_blank" rel="noopener" class="text-accent font-semibold">The Pharmaceutical Journal (2025)</a> found weight-loss drugs still appear in teen-accessible content, sometimes as promotion and sometimes as personal experience posts that still normalise use. <strong>Mounjaro</strong> is among the names that recur in top diet-pill or weight-loss hashtags.</p>
+<p>Your child may hear it called a <strong>“skinny jab,”</strong> compare friends’ results, or see adults in the family using a pen and assume it is safe for them too.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Medical reality (plain language)</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Prescription only:</strong> dosing, monitoring, and stopping rules belong with a doctor, not a TikTok comment.</li>
+  <li><strong class="text-[#e7e9ea]">Side effects:</strong> common issues reported include nausea, vomiting, diarrhoea, and dehydration; rarer complications need urgent care.</li>
+  <li><strong class="text-[#e7e9ea]">Not studied like adults for every teen use:</strong> clinicians have raised concern that <strong>long-term data in adolescents</strong> is limited for some GLP-1 class drugs; off-label or online use bypasses that safety net.</li>
+  <li><strong class="text-[#e7e9ea]">Different condition, different plan:</strong> diabetes care and cosmetic weight pressure are not the same conversation, even when the molecule name sounds identical online.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Risks when teens access it outside proper care</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Borrowing a family member’s pen</strong> or sharing doses.</li>
+  <li><strong class="text-[#e7e9ea]">Buying online</strong> without identity checks, prescriptions, or genuine product (counterfeit pens have been seized in rising numbers in several countries).</li>
+  <li><strong class="text-[#e7e9ea]">Body-image harm:</strong> tying self-worth to a drug, hiding food, or chasing numbers on the scale.</li>
+  <li><strong class="text-[#e7e9ea]">Eating-disorder crossover:</strong> rapid weight change plus secrecy can signal need for specialist support, not more content.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask what they have seen about <strong>Mounjaro or Zepbound</strong> without shaming curiosity.</li>
+  <li>Store household prescriptions <strong>locked or out of reach</strong>; never share injectables.</li>
+  <li>If weight or health is a concern, book a <strong>GP or pediatrician</strong> path, not social media dosing tips.</li>
+  <li>Watch for vomiting, fainting, extreme restriction, or obsession with injection “schedules.”</li>
+  <li>Link body talk to health and function, not only appearance; use <a href="/body-image/" class="text-accent font-semibold no-underline hover:underline">body image hub</a> articles if pressure is building.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/weight-loss-glp1/" class="text-accent font-semibold">GLP-1 meds overview (Ozempic, Wegovy, Zepbound)</a> · <a href="/articles/brazilian-butt-lift-bbl/" class="text-accent font-semibold">BBL and body-image pressure</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+  },
+  {
+    slug: "draftkings",
+    title: "DraftKings: sportsbook and daily fantasy — what parents should know",
+    labels: ["money-finance", "gambling", "app", "weak-age-verification", "emerging"],
+    section: "money-finance",
+    excerpt:
+      "DraftKings is one of the biggest US sports-betting and daily fantasy apps. Teens see it in ads, streams, and on family phones; underage sign-ups and shared accounts are a recurring concern.",
+    severity: "High",
+    platformTags: ["DraftKings", "TikTok", "YouTube"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Gambling laws, minimum ages, and which products are legal vary by US state and country. Check DraftKings’ own terms and your local rules.</p>
+
+<p><strong>DraftKings</strong> is a major <strong>online sports betting and daily fantasy sports (DFS)</strong> brand in the United States. Most parents encounter it as a phone app for <strong>wagering on games</strong>, <strong>player props</strong>, and <strong>fantasy lineups</strong>, often promoted alongside live sport on TV, podcasts, and creator sponsorships. It sits in the same bucket as <a href="/articles/fanduel/" class="text-accent font-semibold no-underline hover:underline">FanDuel</a>, the other headline US sportsbook name teens hear.</p>
+<p>For the full landscape (prediction markets, crypto casinos, and more), see <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold no-underline hover:underline">Gambling and prediction apps</a>. For how common online sports betting has become among adults, see <a href="/articles/sports-betting-adoption-siena-2026/" class="text-accent font-semibold no-underline hover:underline">Sports betting adoption (Siena, 2026)</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What the app offers (plain language)</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Sportsbook:</strong> bets on match results, spreads, totals, and in-play markets during games.</li>
+  <li><strong class="text-[#e7e9ea]">Daily fantasy:</strong> pick players under a salary cap; winnings depend on real-world stats (a different product shape, still real money in many states).</li>
+  <li><strong class="text-[#e7e9ea]">Casino-style products:</strong> in some jurisdictions DraftKings also offers online casino games under the same brand umbrella.</li>
+  <li><strong class="text-[#e7e9ea]">Promos:</strong> free-bet offers and deposit matches are designed to pull new users in; teens may see codes in group chats or streams.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Age rules and how underage access still happens</h3>
+<p class="text-muted">Legal minimum age is usually <strong>21+ for sports betting</strong> in US states that allow it, with <strong>18+</strong> sometimes applying to fantasy products depending on state law. DraftKings uses identity checks, but researchers and regulators repeatedly report that <strong>minors still get on</strong> via false birthdates, borrowed IDs, or a parent’s logged-in account left open on a shared device.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why parents should pay attention</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Normalization:</strong> betting UI sits next to sports content your child already watches.</li>
+  <li><strong class="text-[#e7e9ea]">Micro-bets and parlays:</strong> small stakes can compound; “one more leg” thinking is common.</li>
+  <li><strong class="text-[#e7e9ea]">Payment rails:</strong> cards, bank links, and in-app wallets can drain money quickly.</li>
+  <li><strong class="text-[#e7e9ea]">Young adult vulnerability:</strong> even legal 18-20 use (where fantasy is allowed) can start habits that overlap with problem gambling.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Search the home screen for <strong>DraftKings</strong> and check browser logins on shared tablets.</li>
+  <li>Ask calmly how they signed up and whether any account uses a <strong>parent’s identity or card</strong>.</li>
+  <li>Turn off saved payment methods on family accounts; use app-store purchase controls where possible.</li>
+  <li>Discuss losses and odds without moral panic; link to <a href="/finance/" class="text-accent font-semibold no-underline hover:underline">young people &amp; money</a> habits.</li>
+  <li>If use is secretive or money is missing, contact a problem-gambling helpline in your country.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/fanduel/" class="text-accent font-semibold">FanDuel</a> · <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/articles/kalshi/" class="text-accent font-semibold">Kalshi</a> · <a href="/articles/sports-betting-adoption-siena-2026/" class="text-accent font-semibold">Sports betting adoption</a> · <a href="/finance/" class="text-accent font-semibold">Money overview</a></p>`,
+  },
+  {
+    slug: "fanduel",
+    title: "FanDuel: sportsbook and fantasy — what parents should know",
+    labels: ["money-finance", "gambling", "app", "weak-age-verification", "emerging"],
+    section: "money-finance",
+    excerpt:
+      "FanDuel is heavily advertised and often named in underage sports-betting reports. It mixes sportsbook bets, parlays, and fantasy-style games in one familiar app.",
+    severity: "High",
+    platformTags: ["FanDuel", "TikTok", "YouTube"],
+    content: `<p class="text-muted text-sm mb-6">Informational only. Legal age, available products, and state access change. Use FanDuel’s official help pages and local law for your household.</p>
+
+<p><strong>FanDuel</strong> is one of the largest <strong>US sports betting and fantasy</strong> apps. It is everywhere in sports media: stadium ads, podcast readouts, and influencer promo codes. Teens may not have an account but still know the name from <strong>memes, parlay screenshots</strong>, and friends discussing weekend bets.</p>
+<p>It is the main peer to <a href="/articles/draftkings/" class="text-accent font-semibold no-underline hover:underline">DraftKings</a> in parent conversations about sports gambling on phones. Broader context lives in <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold no-underline hover:underline">Gambling and prediction apps</a> and <a href="/articles/sports-betting-adoption-siena-2026/" class="text-accent font-semibold no-underline hover:underline">Sports betting adoption (Siena, 2026)</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What FanDuel includes</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Sportsbook:</strong> moneyline, spread, totals, same-game parlays, and live in-play betting.</li>
+  <li><strong class="text-[#e7e9ea]">Fantasy / picks products:</strong> depending on state, FanDuel offers fantasy contests and pick-style games that can feel like sports betting even when branded differently.</li>
+  <li><strong class="text-[#e7e9ea]">Cross-sell:</strong> casino and racing products appear in some markets under linked accounts.</li>
+  <li><strong class="text-[#e7e9ea]">Social proof:</strong> shared bet slips and win screenshots spread on TikTok, Instagram, and group chats.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Underage access and weak checks</h3>
+<p class="text-muted">FanDuel is frequently cited in journalism and regulatory discussion about <strong>teens using sportsbooks</strong>. Official rules require adults (typically <strong>21+</strong> for sports betting in US states that permit it). In practice, families report minors using <strong>parent accounts</strong>, <strong>shared phones</strong>, or false sign-up details. FanDuel is not unique here, but its scale and advertising reach mean more teens are exposed.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Risks for young people</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Chasing losses:</strong> reloading deposits after a bad weekend.</li>
+  <li><strong class="text-[#e7e9ea]">Parlay culture:</strong> long-shot tickets marketed as fun can teach distorted odds intuition.</li>
+  <li><strong class="text-[#e7e9ea]">Identity bleed:</strong> a teen “just checking Dad’s app” can place real wagers in seconds.</li>
+  <li><strong class="text-[#e7e9ea]">Overlap with prediction markets:</strong> teens curious about “calling outcomes” may also try <a href="/articles/kalshi/" class="text-accent font-semibold no-underline hover:underline">Kalshi</a> or offshore apps (<a href="/articles/stake/" class="text-accent font-semibold no-underline hover:underline">Stake</a>, <a href="/articles/roobet/" class="text-accent font-semibold no-underline hover:underline">Roobet</a>).</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Look for the FanDuel icon and logged-in sessions on sports weekends.</li>
+  <li>Agree household rules: <strong>no betting accounts for minors</strong>, no using a relative’s profile.</li>
+  <li>Explain that promo cash still ties to real identity and gambling risk.</li>
+  <li>If your teen is 18+ and betting legally, discuss limits; if they are underage and betting, treat it as a safeguarding and financial issue, not a one-off joke.</li>
+  <li>Use national problem-gambling resources if mood, secrecy, or debt appears.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/draftkings/" class="text-accent font-semibold">DraftKings</a> · <a href="/articles/gambling-prediction-apps/" class="text-accent font-semibold">Gambling and prediction apps</a> · <a href="/articles/kalshi/" class="text-accent font-semibold">Kalshi</a> · <a href="/articles/sports-betting-adoption-siena-2026/" class="text-accent font-semibold">Sports betting adoption</a> · <a href="/finance/" class="text-accent font-semibold">Money overview</a></p>`,
+  },
+  {
+    slug: "chud-the-builder",
+    title: "Chud the Builder (ChudTheBuilder): IRL streamer and what parents should know",
+    labels: ["live-streaming", "social-media", "content", "emerging", "platforms"],
+    section: "ongoing",
+    excerpt:
+      "Chud the Builder is a controversial IRL livestreamer known for public confrontations filmed for Kick and TikTok. Press coverage ties the brand to harassment complaints, platform bans, and arrests.",
+    severity: "High",
+    platformTags: ["Kick", "TikTok", "YouTube"],
+    sourceTitle: "Times of India: Kick action against streamer ChudTheBuilder after harassment video",
+    sourceUrl: "https://timesofindia.indiatimes.com/world/us-streamers/kick-takes-strict-action-against-streamer-chudthebuilder-after-public-harassment-video-surfaces/articleshow/130539393.cms",
+    content: `<p class="text-muted text-sm mb-6">Informational only. This page summarises a public creator and news reporting; it is not legal advice. Charges, bans, and platform decisions change. Verify anything your teen repeats with trusted news outlets.</p>
+
+<p><strong>Chud the Builder</strong> (often written <strong>ChudTheBuilder</strong> online) is a US <strong>IRL (in-real-life) livestreamer</strong> whose content centres on <strong>approaching strangers in public</strong>, filming reactions, and framing clashes as “free speech” or edgy debate. Clips spread on <strong>TikTok</strong>, <strong>YouTube</strong>, and <strong>X</strong>, even when the original broadcast was on <a href="/articles/kick-streaming/" class="text-accent font-semibold no-underline hover:underline">Kick</a>.</p>
+<p>Reporting has named the creator as <strong>Dalton Levi Eatherly</strong>; treat legal names in press as identifiers, not gossip. For how IRL streaming fits the wider teen landscape, start with <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold no-underline hover:underline">Online streaming platforms</a> and <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold no-underline hover:underline">Stream clippers and clipping</a> (short viral cuts often strip context).</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What teens may see</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Street confrontations:</strong> filmed arguments with bystanders who did not agree to be recorded.</li>
+  <li><strong class="text-[#e7e9ea]">“Free speech” framing:</strong> provocative language presented as comedy or politics; critics describe it as harassment.</li>
+  <li><strong class="text-[#e7e9ea]">Platform drama:</strong> ban appeals, monetization loss, and “main character” storylines that pull viewers into side debates.</li>
+  <li><strong class="text-[#e7e9ea]">Cross-over creators:</strong> the same Kick and IRL ecosystem as other high-drama streamers (see <a href="/articles/clavicular/" class="text-accent font-semibold no-underline hover:underline">Clavicular</a> for a different but related shock-culture pattern).</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Kick ban and press coverage</h3>
+<p class="text-muted">Outlets including the <a href="https://timesofindia.indiatimes.com/world/us-streamers/kick-takes-strict-action-against-streamer-chudthebuilder-after-public-harassment-video-surfaces/articleshow/130539393.cms" target="_blank" rel="noopener" class="text-accent font-semibold">Times of India</a> and <a href="https://www.sportskeeda.com/us/streamers/who-chudthebuilder-streamer-s-career-explored-gets-indefinitely-banned-kick" target="_blank" rel="noopener" class="text-accent font-semibold">Sportskeeda</a> reported that Kick took action after videos showed the streamer continuing to film people who asked him to stop. Coverage described an initial suspension, a denied appeal, and later loss of verification or monetization on the platform. Teens may still see reposted clips elsewhere.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Legal incidents reported in 2026</h3>
+<p class="text-muted">News reports in 2026 described an arrest in <strong>Nashville</strong> following a restaurant dispute, with charges cited in coverage such as <strong>theft of services</strong>, <strong>disorderly conduct</strong>, and <strong>resisting</strong> related to a search. The streamer later discussed the incident online. An arrest is not a conviction; details can change. The parent takeaway is that <strong>IRL stunt streaming can have real police contact</strong>, not only platform strikes.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Update: courthouse shooting (May 2026)</h3>
+<p class="text-muted">In mid-May 2026, press reported a <strong>shooting outside a Tennessee courthouse</strong> involving the same creator, with <strong>both men hospitalised</strong> and serious criminal charges filed. Viral clips and commentary spread fast on TikTok and X. For a parent-focused summary of what was reported (injuries, charges, and why teens may see gun footage in their feed), see <a href="/articles/chud-the-builder-courthouse-shooting-2026/" class="text-accent font-semibold no-underline hover:underline">Chud the Builder: courthouse shooting update (May 2026)</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why this matters for families</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Consent:</strong> filming strangers (especially minors) for entertainment can break school rules, venue policies, or law.</li>
+  <li><strong class="text-[#e7e9ea]">Normalization:</strong> watching “debate me” harassment can make rude filming feel like a career path.</li>
+  <li><strong class="text-[#e7e9ea]">Clip culture:</strong> your child may only see the wildest 30 seconds, not the full context. See <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold no-underline hover:underline">clipping</a>.</li>
+  <li><strong class="text-[#e7e9ea]">If they stream themselves:</strong> distinguish commentary from targeting individuals in public.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask which IRL or “debate” creators they follow on Kick, TikTok, or YouTube.</li>
+  <li>State clearly: <strong>no filming people who say no</strong>, and no joining pile-ons in comment sections.</li>
+  <li>If your teen admires the lifestyle, ask what they think “success” means when bans and arrests appear in the same feed.</li>
+  <li>Use platform block and report tools; discuss <a href="/articles/know-where-to-report/" class="text-accent font-semibold no-underline hover:underline">where to report</a> serious harm.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/chud-the-builder-courthouse-shooting-2026/" class="text-accent font-semibold">Courthouse shooting update (May 2026)</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/twitch/" class="text-accent font-semibold">Twitch</a> · <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clipping</a> · <a href="/articles/clavicular/" class="text-accent font-semibold">Clavicular</a> · <a href="/articles/live-streaming-video/" class="text-accent font-semibold">Live streaming and video chat</a></p>`,
+  },
+  {
+    slug: "chud-the-builder-courthouse-shooting-2026",
+    title: "Chud the Builder: courthouse shooting update (May 2026)",
+    labels: ["live-streaming", "social-media", "content", "emerging", "ongoing"],
+    section: "ongoing",
+    excerpt:
+      "Press reported that streamer ChudTheBuilder (Dalton Eatherly) was shot and wounded in a Clarksville, Tennessee courthouse confrontation in May 2026, with attempted murder charges filed. Clips spread widely among teens.",
+    severity: "High",
+    platformTags: ["Kick", "TikTok", "YouTube"],
+    sourceTitle: "Times of India: ChudTheBuilder charged with attempted murder after Tennessee courthouse shooting",
+    sourceUrl: "https://timesofindia.indiatimes.com/world/us-streamers/streamer-chudthebuilder-charged-with-attempted-murder-after-tennessee-courthouse-shooting/articleshow/131102727.cms",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not legal advice. Charges, medical status, and court outcomes can change. This is an update to our main profile: <a href="/articles/chud-the-builder/" class="text-accent font-semibold no-underline hover:underline">Chud the Builder (ChudTheBuilder)</a>.</p>
+
+<p>In <strong>May 2026</strong>, mainstream and streamer-focused press reported that <strong>Dalton Levi Eatherly</strong>, known online as <strong>ChudTheBuilder</strong> or <strong>Chud the Builder</strong>, was involved in a <strong>shooting outside the Montgomery County Courthouse</strong> in <strong>Clarksville, Tennessee</strong>. Coverage described a public confrontation that escalated to gunfire. This came days after separate reporting on a <strong>Nashville restaurant arrest</strong> tied to a livestream dispute.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What press reported happened</h3>
+<p class="text-muted">According to outlets including the <a href="https://timesofindia.indiatimes.com/world/us-streamers/streamer-chudthebuilder-charged-with-attempted-murder-after-tennessee-courthouse-shooting/articleshow/131102727.cms" target="_blank" rel="noopener" class="text-accent font-semibold">Times of India</a> and other summaries of local law-enforcement statements:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Gunfire near the courthouse:</strong> reported around mid-afternoon on <strong>13 May 2026</strong> (local time in Clarksville).</li>
+  <li><strong class="text-[#e7e9ea]">Both men injured:</strong> Eatherly and another man were both reported <strong>shot</strong>. Coverage said both were hospitalised and described as <strong>stable</strong> at the time of early reports, but serious injury is still traumatic and outcomes can change.</li>
+  <li><strong class="text-[#e7e9ea]">He was shot, and charges allege he shot:</strong> parents should understand this is not a simple “victim only” headline. Reporting said Eatherly faced charges including <strong>attempted murder</strong>, <strong>aggravated assault</strong>, <strong>reckless endangerment</strong>, and <strong>employing a firearm during a dangerous felony</strong>. An arrest or charge is not the same as a conviction.</li>
+  <li><strong class="text-[#e7e9ea]">Jail and court:</strong> coverage described detention pending bond or arraignment steps; exact status will move with the case.</li>
+</ul>
+<p class="text-muted text-sm">Some tabloid pieces highlighted chaotic quotes and viral video frames (for example confusion about who fired). Treat sensational posts as incomplete. Use local news or court records for anything serious.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why teens see this in their feeds</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Clip algorithms:</strong> gunfire, bodycam-style angles, and “did he shoot himself?” hooks spread through <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold no-underline hover:underline">clipping</a> accounts.</li>
+  <li><strong class="text-[#e7e9ea]">Creator drama arcs:</strong> the same audience that followed Kick bans and restaurant arrests gets pushed the next chapter automatically.</li>
+  <li><strong class="text-[#e7e9ea]">Desensitisation risk:</strong> repeated exposure can make real violence feel like entertainment background noise.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask if they saw <strong>Chud</strong> or courthouse footage; listen without mocking fear or fascination.</li>
+  <li>Separate <strong>news</strong> from <strong>stan culture</strong>: comment sections often joke about charges and injuries.</li>
+  <li>Reinforce that filming or chasing confrontations for content can end in <strong>hospital and prison</strong>, not just views.</li>
+  <li>Limit re-sharing of graphic clips; report platforms if violence violates rules.</li>
+  <li>If your teen is anxious after seeing gun content, normalise turning off feeds and talk to school pastoral care if needed.</li>
+</ul>
+
+<p class="text-sm text-muted mt-6">Background profile: <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder (main article)</a> · Streaming context: <a href="/articles/online-streaming-platforms/" class="text-accent font-semibold">Online streaming platforms</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a></p>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/chud-the-builder/" class="text-accent font-semibold">Chud the Builder (overview)</a> · <a href="/articles/stream-clippers-and-clipping/" class="text-accent font-semibold">Stream clipping</a> · <a href="/articles/kick-streaming/" class="text-accent font-semibold">Kick</a> · <a href="/articles/know-where-to-report/" class="text-accent font-semibold">Know where to report</a></p>`,
+  },
+  {
+    slug: "drug-mules-young-travellers",
+    title: "Drug mules and young travellers: what parents should know",
+    labels: ["ongoing", "drugs", "emerging", "mental-health"],
+    section: "ongoing",
+    excerpt:
+      "A drug mule carries illegal drugs for someone else, often after being groomed with cash, flights, or a “holiday.” Recent UK cases in Jamaica and Turkey show airport arrests, years abroad in jail, and families campaigning on social media.",
+    severity: "High",
+    sourceTitle: "Jamaica Observer: British college students on drug rap face trial",
+    sourceUrl: "https://www.jamaicaobserver.com/2024/12/22/british-college-students-drug-rap-face-trial-next-month/",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not legal advice. Laws and sentences differ by country. If someone is in immediate danger or being pressured to carry drugs, contact police or a trusted adult now.</p>
+
+<p>A <strong>drug mule</strong> is someone used to <strong>move illegal drugs across borders</strong>, usually hidden in luggage, clothing, or body packs. Organisers often target <strong>young adults and students</strong>: free trips, “easy money,” romance, or friends-of-friends offers that sound like work, not crime. When airport security finds drugs, the person holding the bag is typically the one arrested, even if they say they did not know what was inside.</p>
+<p>Recent British cases have been widely shared on TikTok, Instagram, and fundraising pages. They are a stark reminder for UK families that <strong>foreign holidays do not mean foreign leniency</strong>. See also <a href="/articles/drugs-overview/" class="text-accent font-semibold no-underline hover:underline">Drugs overview</a> and <a href="/articles/social-media-dm/" class="text-accent font-semibold no-underline hover:underline">social media and DMs</a> (recruitment often starts in private chat).</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">How grooming often works</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">The hook:</strong> paid flights, festival tickets, modelling shoots, or “courier” jobs with cash upfront.</li>
+  <li><strong class="text-[#e7e9ea]">The blind spot:</strong> drugs sewn into shoes, double suitcase bases, or gifts you are told not to open.</li>
+  <li><strong class="text-[#e7e9ea]">The trap:</strong> organisers disappear; the young person faces local police and courts alone.</li>
+  <li><strong class="text-[#e7e9ea]">Social media after arrest:</strong> viral videos and GoFundMe campaigns can spread partial stories; teach teens to verify with reputable news, not comment threads.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Jamaica: two English students (2024–2026)</h3>
+<p class="text-muted"><strong>Teraiya Stapleton</strong> and <strong>Genevieve Sanoussi</strong>, both reported as <strong>21-year-old British university students</strong>, were arrested at <strong>Sangster International Airport</strong> in Montego Bay, Jamaica, on <strong>20 October 2024</strong> as they prepared to leave after a holiday, according to the <a href="https://www.jamaicaobserver.com/2024/12/22/british-college-students-drug-rap-face-trial-next-month/" target="_blank" rel="noopener" class="text-accent font-semibold">Jamaica Observer</a> and follow-on UK reporting.</p>
+<p class="text-muted">Press said authorities found <strong>cocaine hidden inside footwear</strong> in their luggage (roughly two separate quantities in each woman’s bags). The women have <strong>maintained they did not know</strong> the drugs were there; families publicly claimed they were misled by a man they met during the trip. Later coverage reported they were <strong>found guilty</strong> in early <strong>2026</strong> of attempting to smuggle cocaine, with <strong>sentencing</strong> discussed for <strong>March 2026</strong>. Jamaican drug-trafficking offences can carry <strong>long mandatory minimum prison terms</strong>.</p>
+<p class="text-muted text-sm">Parent takeaway: a one-week trip with new online contacts can end in <strong>years in an overseas prison</strong>, regardless of what the young person believed.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Turkey: Holly Cooper and partner (2026)</h3>
+<p class="text-muted"><strong>Holly Cooper</strong>, reported as <strong>20</strong>, and her boyfriend <strong>Taylor Johnson</strong>, also <strong>20</strong>, from the West Midlands, were arrested at <strong>Istanbul airport</strong> in <strong>April 2026</strong> on a connecting route back to the UK after travel that press linked to <strong>Thailand</strong>, according to outlets such as <a href="https://metro.co.uk/2026/05/05/young-british-couple-face-years-turkish-jail-cannabis-smuggling-arrest-28238883/" target="_blank" rel="noopener" class="text-accent font-semibold">Metro</a> and <a href="https://www.thesun.co.uk/news/39033996/brit-drug-mules-busted-smuggling-cannabis-to-uk/" target="_blank" rel="noopener" class="text-accent font-semibold">The Sun</a>.</p>
+<p class="text-muted">Reporting described Turkish customs finding a <strong>large quantity of cannabis</strong> (press cited roughly <strong>19 kg</strong> in vacuum-sealed bags in luggage). If convicted, coverage warned of <strong>very long sentences</strong> (often quoted in the range of <strong>10 to 30 years</strong> under Turkish drug laws, depending on charge and court outcome). Families and friends publicly described the couple as exploited by older criminals; the UK Foreign Office was reported to be providing consular support. As with the Jamaica case, social feeds may show only one side of the story.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why teens need to hear this</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">“Just carry this bag”</strong> is a classic mule line, including at airports teens recognise from holidays.</li>
+  <li><strong class="text-[#e7e9ea]">Cannabis vs cocaine:</strong> both can trigger severe penalties abroad; size of seizure matters in press reports but is not a “get out of jail” card.</li>
+  <li><strong class="text-[#e7e9ea]">UK passport does not protect you</strong> from local courts in Jamaica, Turkey, or elsewhere.</li>
+  <li><strong class="text-[#e7e9ea]">Fundraising videos are not legal advice</strong> and may omit what investigators say they found.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Discuss these real cases calmly when travel or festivals come up; use names only to anchor reality, not to mock the people involved.</li>
+  <li>Rule: <strong>never carry luggage you did not pack yourself</strong>, and never take sealed packages from new contacts.</li>
+  <li>Watch for sudden paid trips, secretive WhatsApp groups, or “courier” offers tied to <a href="/articles/online-marketplaces/" class="text-accent font-semibold no-underline hover:underline">online marketplaces</a> or DMs.</li>
+  <li>If your child is approached, preserve messages and tell police or school safeguarding staff before travel.</li>
+  <li>Know UK government travel and consular guidance if a family member is detained abroad.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/drugs-overview/" class="text-accent font-semibold">Drugs overview</a> · <a href="/articles/thc-gummies/" class="text-accent font-semibold">THC gummies</a> · <a href="/articles/balloons-nitrous-oxide/" class="text-accent font-semibold">Balloons and nitrous oxide</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/articles/talk-regularly/" class="text-accent font-semibold">Talk regularly</a></p>`,
+  },
+  {
+    slug: "elva-silicone-face-injections",
+    title: "Elva and DIY silicone face injections: what parents should know",
+    labels: ["body-image", "health", "social-media", "emerging", "self-harm"],
+    section: "body-image",
+    excerpt:
+      "Polish TikTok personality Elva went viral after injecting silicone into her face. Press and doctors warned of disfigurement, serious health harm, and why DIY “filler” content is not the same as licensed care.",
+    severity: "High",
+    platformTags: ["TikTok", "Instagram"],
+    sourceTitle: "BOOP.PL: Elva trafiła do specjalisty (May 2026)",
+    sourceUrl: "https://boop.pl/rozrywka/tiktok/elva-trafila-do-specjalisty-ktory-ma-jej-pomoc-kto-to-jest-i-o-co-chodzi",
+    content: `<p class="text-muted text-sm mb-6">Informational only, not medical advice. If someone has sudden facial swelling, breathing difficulty, severe pain, or infection after an injection, call emergency services.</p>
+
+<p><strong>Elva</strong> is a <strong>Polish TikTok personality</strong> who became widely discussed in <strong>2025 and 2026</strong> after videos and photos showed severe facial changes linked to <strong>self-injected silicone</strong>, not licensed clinic filler. Some older posts and forums refer to her as <strong>Laura</strong>; online names change, but the safeguarding pattern is the same: <strong>DIY cosmetic procedures filmed for attention</strong>, then health collapse discussed in comment sections.</p>
+<p>Reporting in May 2026, including Polish outlet <a href="https://boop.pl/rozrywka/tiktok/elva-trafila-do-specjalisty-ktory-ma-jej-pomoc-kto-to-jest-i-o-co-chodzi" target="_blank" rel="noopener" class="text-accent font-semibold">BOOP.PL</a>, said she finally saw a specialist who publicly described her deformities as consistent with silicone use, and that she was receiving medical and psychological support. Outcomes can change; this page is about what parents should understand when teens see the story.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What teens may have seen</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Before/after shock clips</strong> on TikTok, Instagram Reels, and repost accounts.</li>
+  <li><strong class="text-[#e7e9ea]">Speculation threads</strong> guessing whether she used industrial silicone, bootleg filler, or multiple procedures.</li>
+  <li><strong class="text-[#e7e9ea]">“Praying she gets help”</strong> comment campaigns, which can feel caring but also keep the person as entertainment.</li>
+  <li><strong class="text-[#e7e9ea]">Doctor reaction videos</strong> explaining why non-medical silicone in the face is dangerous.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why silicone is not “cheap Botox”</h3>
+<p class="text-muted">Licensed <strong>dermal fillers</strong> in the UK and EU are specific medical products used by trained clinicians in sterile settings. <strong>Liquid silicone</strong> sold for industrial use or injected at home is a different category of risk. Medical literature and enforcement cases (including historic US salon prosecutions) warn that injected silicone can cause:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Permanent lumps, migration, and disfigurement</strong> that surgery cannot fully reverse.</li>
+  <li><strong class="text-[#e7e9ea]">Infection and tissue death</strong> around the injection site.</li>
+  <li><strong class="text-[#e7e9ea]">Silicone embolism</strong> (material travelling in blood vessels), which can be life-threatening.</li>
+</ul>
+<p class="text-muted">The Elva story sits alongside other appearance pressures your child may already scroll past: <a href="/articles/brazilian-butt-lift-bbl/" class="text-accent font-semibold no-underline hover:underline">BBL surgery hype</a>, <a href="/articles/weight-loss-glp1/" class="text-accent font-semibold no-underline hover:underline">GLP-1 weight-loss trends</a>, and male-side extremes such as <a href="/articles/bone-smashing/" class="text-accent font-semibold no-underline hover:underline">bone smashing</a> or <a href="/articles/looksmaxxing/" class="text-accent font-semibold no-underline hover:underline">looksmaxxing</a>. Different aesthetics, same lesson: <strong>the feed rewards escalation</strong>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Safeguarding and mental health angles</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Body dysmorphia:</strong> fixation on one feature can drive repeated harmful “fixes.”</li>
+  <li><strong class="text-[#e7e9ea]">Parasocial cruelty:</strong> mocking appearance can worsen shame and secrecy.</li>
+  <li><strong class="text-[#e7e9ea]">Copycat risk:</strong> teens may search where to buy silicone or “DIY filler kits” after watching stitches compilations.</li>
+  <li><strong class="text-[#e7e9ea]">Filming harm:</strong> broadcasting injections normalises self-injury as content. See <a href="/articles/tiktok-live/" class="text-accent font-semibold no-underline hover:underline">TikTok Live</a> for live-pressure context.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask if they saw <strong>Elva</strong> or similar “DIY filler” accounts; listen without ridicule.</li>
+  <li>State clearly: <strong>only licensed clinicians inject approved products</strong>, and never at home from online kits.</li>
+  <li>Block or mute accounts that sell illegal injectables; report to the platform if they promote DIY procedures.</li>
+  <li>If your teen is obsessed with changing their face or body, involve a GP and consider specialist mental health support early.</li>
+  <li>Discuss empathy: curiosity about a story is not permission to share humiliating clips at school.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/brazilian-butt-lift-bbl/" class="text-accent font-semibold">Brazilian butt lift (BBL)</a> · <a href="/articles/looksmaxxing/" class="text-accent font-semibold">Looksmaxxing</a> · <a href="/articles/bone-smashing/" class="text-accent font-semibold">Bone smashing</a> · <a href="/articles/weight-loss-glp1/" class="text-accent font-semibold">GLP-1 and body-image pressure</a> · <a href="/articles/tiktok-live/" class="text-accent font-semibold">TikTok Live</a> · <a href="/body-image/" class="text-accent font-semibold">Body image hub</a></p>`,
+  },
+  {
+    slug: "motherless-shutdown-zzz-content",
+    title: "Motherless shutdown: Zzz content, sleep videos, and what parents should know",
+    labels: ["platforms", "telegram", "moderation", "ongoing", "grooming", "sextortion", "emerging"],
+    section: "platforms",
+    excerpt:
+      "Dutch authorities took the adult site Motherless offline in May 2026 after investigations into sexual abuse videos, including “sleep” content, and links to a private Telegram group called Zzz.",
+    severity: "High",
+    platformTags: ["Motherless", "Telegram"],
+    sourceTitle: "DutchNews.nl: prosecutors take Motherless offline (May 2026)",
+    sourceUrl: "https://www.dutchnews.nl/2026/05/prosecutors-take-dutch-hosted-abuse-site-motherless-offline/",
+    content: `<p class="text-muted text-sm mb-6">Informational only. This article discusses serious sexual violence and illegal material. If you or your child has seen child sexual abuse material, report it immediately via <a href="https://www.iwf.org.uk/" target="_blank" rel="noopener" class="text-accent no-underline hover:underline">IWF</a> (UK) or <a href="/articles/know-where-to-report/" class="text-accent font-semibold no-underline hover:underline">our reporting guide</a>. UK support: NSPCC 0808 800 5000.</p>
+
+<p><strong>Motherless</strong> was a long-running, user-uploaded <strong>adult pornography website</strong> (not a teen social app). In <strong>May 2026</strong>, the <strong>Dutch Public Prosecution Service</strong> took it offline after Dutch broadcasters <strong>NOS</strong> and <strong>Nieuwsuur</strong> reported that it had been <strong>hosted on servers in the Netherlands</strong> since at least 2024 and carried large volumes of material depicting <strong>sexual abuse</strong>, not ordinary consensual adult content.</p>
+<p>Press including <a href="https://www.dutchnews.nl/2026/05/prosecutors-take-dutch-hosted-abuse-site-motherless-offline/" target="_blank" rel="noopener" class="text-accent font-semibold">DutchNews.nl</a> said the site drew on the order of <strong>tens of millions of visits per month</strong>. An abuse-reporting body, <strong>Offlimits</strong>, told reporters it had received nearly <strong>142 reports</strong> in 2026 alone concerning roughly <strong>12,000 videos</strong> on the site, with <strong>25 reports involving children</strong>. A criminal investigation was opened.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What “sleep content” and Zzz mean</h3>
+<p class="text-muted">Investigators and journalists used euphemisms that teens may repeat without understanding the harm:</p>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">“Sleep” or “sleep porn” content:</strong> videos of women filmed while <strong>unconscious, sedated, or asleep</strong>, often without meaningful consent. This is abuse, not a niche genre.</li>
+  <li><strong class="text-[#e7e9ea]">Tags and categories:</strong> reporting described user tags and titles that framed assault as hidden from a partner or victim (for example categories implying someone “would never know”).</li>
+  <li><strong class="text-[#e7e9ea]">The Zzz Telegram group:</strong> a <strong>March 2026 CNN investigation</strong> (following wider reporting on drug-facilitated sexual assault) said Motherless hosted large numbers of these videos and linked users to a private <strong>Telegram</strong> group named <strong>Zzz</strong> with hundreds of members. Investigative accounts described members trading tips on drugging, livestream links, and assaulting unconscious women. That is organised crime territory, not “edgy” internet culture.</li>
+</ul>
+<p class="text-muted">For how <a href="/articles/telegram/" class="text-accent font-semibold no-underline hover:underline">Telegram</a> channels and invite-only groups work, and why harm often moves there, see our Telegram article and <a href="/articles/encrypted-ephemeral/" class="text-accent font-semibold no-underline hover:underline">encrypted or ephemeral spaces</a>.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Why your teen might hear about it</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">News and true-crime commentary</strong> on YouTube, TikTok, Reddit, or podcasts (often without graphic clips).</li>
+  <li><strong class="text-[#e7e9ea]">“Website got shut down” threads</strong> mixing facts with jokes or minimising language.</li>
+  <li><strong class="text-[#e7e9ea]">Curiosity about banned sites</strong> or mirror links shared in group chats (mirrors may still be dangerous or illegal to access).</li>
+  <li><strong class="text-[#e7e9ea]">Overlap with adult-content culture:</strong> unlike subscription platforms such as <a href="/articles/onlyfans/" class="text-accent font-semibold no-underline hover:underline">OnlyFans</a>, Motherless was known for unmoderated user uploads. The lesson for families is not “which brand is safer,” but that <strong>some sites exist specifically to host crime</strong>.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">Safeguarding points for parents</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li><strong class="text-[#e7e9ea]">Viewing or sharing</strong> sexual abuse material (including “sleep” videos) can be a <strong>criminal offence</strong> in the UK and many other countries, even for minors.</li>
+  <li><strong class="text-[#e7e9ea]">Do not seek out mirrors</strong> “to see what was on there.” Report links if they appear in school chats.</li>
+  <li><strong class="text-[#e7e9ea]">Telegram invite links</strong> to groups like Zzz are not harmless curiosity. Treat unknown adult groups as a serious red flag.</li>
+  <li><strong class="text-[#e7e9ea]">Spiking and drink safety:</strong> use this news as an age-appropriate talk about parties, festivals, and never leaving drinks unattended (relevant for older teens).</li>
+  <li><strong class="text-[#e7e9ea]">If your child was sent material:</strong> stay calm, do not forward it, preserve evidence if safe, and report via official channels. See <a href="/articles/know-where-to-report/" class="text-accent font-semibold no-underline hover:underline">know where to report</a>.</li>
+</ul>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What the shutdown does and does not fix</h3>
+<p class="text-muted">Taking Motherless offline stops that domain for now, but similar material can reappear on other hosts. Dutch reporting also noted wider concern that a large share of <strong>child sexual abuse material hosted in Europe</strong> has passed through Dutch infrastructure. Parents should focus on <strong>behaviour and reporting</strong>, not on memorising site names.</p>
+
+<h3 class="text-base font-semibold mt-8 mb-3 text-[#e7e9ea]">What parents can do</h3>
+<ul class="list-disc pl-6 my-3 space-y-2 text-muted">
+  <li>Ask neutrally if they saw headlines about <strong>Motherless</strong> or <strong>Zzz</strong>; listen without panic or shame.</li>
+  <li>Explain clearly: videos of unconscious people are <strong>assault documentation</strong>, not pornography in a normal sense.</li>
+  <li>Review whether <strong>Telegram</strong> is on their phone and which groups they joined.</li>
+  <li>Use device filters and DNS blocking where appropriate; no filter is perfect, so conversation still matters.</li>
+  <li>If anyone in the household accessed illegal material, seek legal advice and focus on safety reporting rather than punishment alone.</li>
+</ul>
+
+<p class="mt-8 text-sm text-muted">Related: <a href="/articles/telegram/" class="text-accent font-semibold">Telegram</a> · <a href="/articles/encrypted-ephemeral/" class="text-accent font-semibold">Encrypted and ephemeral spaces</a> · <a href="/articles/onlyfans/" class="text-accent font-semibold">OnlyFans</a> · <a href="/articles/social-media-dm/" class="text-accent font-semibold">Social media and DMs</a> · <a href="/articles/dating-apps/" class="text-accent font-semibold">Dating apps</a> · <a href="/articles/know-where-to-report/" class="text-accent font-semibold">Know where to report</a></p>`,
   },
 ];

@@ -23,10 +23,24 @@
 | Whatnot | <code>/articles/whatnot/</code> | In focus: specific platforms | 2026-03 |
 | Creator content marketplaces | <code>/articles/creator-content-marketplaces/</code> | In focus: specific platforms | 2026-03 |
 | OnlyFans | <code>/articles/onlyfans/</code> | In focus: specific platforms | 2026-03 |
+| BOP House (OnlyFans collective) | <code>/articles/bop-house/</code> | In focus: specific platforms | 2026-05 |
+| OnlyFans agencies / management | <code>/articles/onlyfans-agencies/</code> | In focus: specific platforms | 2026-05 |
 | Stake | <code>/articles/stake/</code>, gambling hub | Money / streaming | 2026-03 |
 | Rainbow Bet | <code>/articles/rainbow-bet/</code>, gambling hub | Money / streaming | 2026-03 |
 | Telegram (Brazil suspension case) | <code>/articles/brazil-telegram-suspension/</code> | In focus: specific platforms | 2026-03 |
 | Stream clipping / clip accounts | <code>/articles/stream-clippers-and-clipping/</code> | Ongoing areas of risk | 2026-05 |
+| Scientology speed runs (TikTok trend) | <code>/articles/scientology-speed-runs-youth/</code> | Emerging &amp; new | 2026-05 |
+| Gen Z stare (lingo / TikTok) | <code>/articles/gen-z-stare/</code> | Lingo | 2026-05 |
+| Meta glasses (stealth mode / policy) | <code>/articles/meta-glasses-stealth-mode-amendments/</code> | Emerging &amp; new | 2026-05 |
+| Mounjaro (tirzepatide) | <code>/articles/mounjaro/</code> | Body image | 2026-05 |
+| GLP-1 weight-loss meds (overview) | <code>/articles/weight-loss-glp1/</code> | Body image | (existing) |
+| DraftKings | <code>/articles/draftkings/</code> | Money / gambling | 2026-05 |
+| FanDuel | <code>/articles/fanduel/</code> | Money / gambling | 2026-05 |
+| Chud the Builder (streamer) | <code>/articles/chud-the-builder/</code> | Ongoing / streaming | 2026-05 |
+| Chud the Builder (courthouse shooting, May 2026) | <code>/articles/chud-the-builder-courthouse-shooting-2026/</code> | Ongoing / streaming | 2026-05 |
+| Drug mules (young travellers) | <code>/articles/drug-mules-young-travellers/</code> | Ongoing / drugs | 2026-05 |
+| Elva (silicone face injections, TikTok) | <code>/articles/elva-silicone-face-injections/</code> | Body image | 2026-05 |
+| Motherless (shutdown, Zzz / sleep content) | <code>/articles/motherless-shutdown-zzz-content/</code> | Platforms | 2026-05 |
 ---
 
 ## How to use
